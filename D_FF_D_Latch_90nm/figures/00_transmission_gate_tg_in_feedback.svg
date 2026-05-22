@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="760" viewBox="0 0 1500 760">
+  <defs>
+    <style>
+      .w{stroke:#111;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .thin{stroke:#111;stroke-width:2;fill:none}
+      .gate{stroke:#111;stroke-width:3;fill:none}
+      .p{fill:#ffecec;stroke:#b3261e;stroke-width:2}
+      .n{fill:#eaffea;stroke:#188038;stroke-width:2}
+      .box{fill:#f8fbff;stroke:#8aa1c5;stroke-width:2}
+      .pin{fill:#d22;stroke:#111;stroke-width:1.5}
+      .node{fill:#1573d1}
+      .t{font:25px Arial,sans-serif;fill:#111}
+      .s{font:19px Arial,sans-serif;fill:#111}
+      .m{font:16px Arial,sans-serif;fill:#555}
+      .mono{font:18px Consolas,monospace;fill:#111}
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#fff"/>
+  <text x="45" y="52" class="t">Correct CMOS transmission gate connections</text>
+  <text x="45" y="84" class="s">A and B are bidirectional data pins. They must not be shorted directly; they connect only through PMOS/NMOS channels.</text>
+
+  <rect x="70" y="130" width="620" height="520" rx="10" class="box"/>
+  <text x="235" y="172" class="t">TG_in for latch input</text>
+  <text x="200" y="205" class="s">ON when EN=1, ENB=0</text>
+
+  <polygon points="130,390 160,372 160,408" class="pin"/>
+  <text x="98" y="398" class="t">A</text>
+  <polygon points="630,390 600,372 600,408" class="pin"/>
+  <text x="646" y="398" class="t">B</text>
+
+  <line x1="160" y1="390" x2="245" y2="390" class="w"/>
+  <line x1="515" y1="390" x2="600" y2="390" class="w"/>
+  <circle cx="245" cy="390" r="7" class="node"/>
+  <circle cx="515" cy="390" r="7" class="node"/>
+
+  <line x1="245" y1="390" x2="300" y2="315" class="w"/>
+  <line x1="460" y1="315" x2="515" y2="390" class="w"/>
+  <line x1="245" y1="390" x2="300" y2="465" class="w"/>
+  <line x1="460" y1="465" x2="515" y2="390" class="w"/>
+
+  <rect x="300" y="285" width="160" height="60" rx="6" class="p"/>
+  <text x="350" y="322" class="mono">PMOS</text>
+  <line x1="380" y1="285" x2="380" y2="235" class="gate"/>
+  <polygon points="380,220 362,250 398,250" class="pin"/>
+  <text x="330" y="218" class="s">ENB</text>
+  <line x1="455" y1="285" x2="505" y2="245" class="thin"/>
+  <text x="508" y="248" class="s">bulk -> VDD</text>
+
+  <rect x="300" y="435" width="160" height="60" rx="6" class="n"/>
+  <text x="350" y="472" class="mono">NMOS</text>
+  <line x1="380" y1="495" x2="380" y2="545" class="gate"/>
+  <polygon points="380,562 362,532 398,532" class="pin"/>
+  <text x="350" y="592" class="s">EN</text>
+  <line x1="455" y1="495" x2="505" y2="535" class="thin"/>
+  <text x="508" y="540" class="s">bulk -> GND</text>
+
+  <text x="125" y="617" class="m">Custom Designer pin type: A,B = inout; EN,ENB = input.</text>
+
+  <rect x="810" y="130" width="620" height="520" rx="10" class="box"/>
+  <text x="950" y="172" class="t">TG_feedback / TG_out</text>
+  <text x="918" y="205" class="s">ON when EN=0, ENB=1. Controls are reversed.</text>
+
+  <polygon points="870,390 900,372 900,408" class="pin"/>
+  <text x="835" y="398" class="t">Q</text>
+  <polygon points="1370,390 1340,372 1340,408" class="pin"/>
+  <text x="1388" y="398" class="t">n1</text>
+
+  <line x1="900" y1="390" x2="985" y2="390" class="w"/>
+  <line x1="1255" y1="390" x2="1340" y2="390" class="w"/>
+  <circle cx="985" cy="390" r="7" class="node"/>
+  <circle cx="1255" cy="390" r="7" class="node"/>
+
+  <line x1="985" y1="390" x2="1040" y2="315" class="w"/>
+  <line x1="1200" y1="315" x2="1255" y2="390" class="w"/>
+  <line x1="985" y1="390" x2="1040" y2="465" class="w"/>
+  <line x1="1200" y1="465" x2="1255" y2="390" class="w"/>
+
+  <rect x="1040" y="285" width="160" height="60" rx="6" class="p"/>
+  <text x="1090" y="322" class="mono">PMOS</text>
+  <line x1="1120" y1="285" x2="1120" y2="235" class="gate"/>
+  <polygon points="1120,220 1102,250 1138,250" class="pin"/>
+  <text x="1095" y="218" class="s">EN</text>
+  <line x1="1195" y1="285" x2="1245" y2="245" class="thin"/>
+  <text x="1248" y="248" class="s">bulk -> VDD</text>
+
+  <rect x="1040" y="435" width="160" height="60" rx="6" class="n"/>
+  <text x="1090" y="472" class="mono">NMOS</text>
+  <line x1="1120" y1="495" x2="1120" y2="545" class="gate"/>
+  <polygon points="1120,562 1102,532 1138,532" class="pin"/>
+  <text x="1090" y="592" class="s">ENB</text>
+  <line x1="1195" y1="495" x2="1245" y2="535" class="thin"/>
+  <text x="1248" y="540" class="s">bulk -> GND</text>
+
+  <text x="860" y="617" class="m">Same physical TG cell can be reused; reverse EN/ENB when instantiating feedback path.</text>
+</svg>

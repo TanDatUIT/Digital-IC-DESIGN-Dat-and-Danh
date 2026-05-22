@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="740" viewBox="0 0 1500 740">
+  <defs>
+    <style>
+      .axis{stroke:#111;stroke-width:2}
+      .grid{stroke:#ddd;stroke-width:1}
+      .wave{stroke:#0055aa;stroke-width:4;fill:none}
+      .wave2{stroke:#0a7f32;stroke-width:4;fill:none}
+      .wave3{stroke:#b24b00;stroke-width:4;fill:none}
+      .t{font:24px Arial,sans-serif;fill:#111}
+      .s{font:18px Arial,sans-serif;fill:#111}
+      .m{font:16px Arial,sans-serif;fill:#555}
+      .dash{stroke:#d22;stroke-width:2;stroke-dasharray:8 7}
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#fff"/>
+  <text x="45" y="50" class="t">Functional timing for positive-edge master-slave DFF</text>
+  <text x="45" y="82" class="s">Use first for GUI transient testbench. Period 2 ns, VDD 1.2 V, rise/fall 10-20 ps, Q load 5-10 fF.</text>
+
+  <g transform="translate(150,120)">
+    <line x1="0" y1="0" x2="1180" y2="0" class="axis"/>
+    <line x1="0" y1="120" x2="1180" y2="120" class="axis"/>
+    <line x1="0" y1="240" x2="1180" y2="240" class="axis"/>
+    <line x1="0" y1="360" x2="1180" y2="360" class="axis"/>
+    <line x1="0" y1="480" x2="1180" y2="480" class="axis"/>
+    <text x="-95" y="8" class="s">CLK</text>
+    <text x="-95" y="128" class="s">D</text>
+    <text x="-95" y="248" class="s">Qm</text>
+    <text x="-95" y="368" class="s">Q</text>
+    <text x="-95" y="488" class="s">mode</text>
+
+    <g>
+      <line x1="0" y1="-25" x2="0" y2="520" class="grid"/>
+      <line x1="295" y1="-25" x2="295" y2="520" class="grid"/>
+      <line x1="590" y1="-25" x2="590" y2="520" class="grid"/>
+      <line x1="885" y1="-25" x2="885" y2="520" class="grid"/>
+      <line x1="1180" y1="-25" x2="1180" y2="520" class="grid"/>
+      <text x="-10" y="548" class="m">0ns</text>
+      <text x="270" y="548" class="m">1ns</text>
+      <text x="565" y="548" class="m">2ns</text>
+      <text x="860" y="548" class="m">3ns</text>
+      <text x="1150" y="548" class="m">4ns</text>
+    </g>
+
+    <polyline class="wave" points="0,60 290,60 300,0 585,0 595,60 880,60 890,0 1175,0 1180,0"/>
+    <polyline class="wave2" points="0,180 170,180 180,120 470,120 480,180 760,180 770,120 1180,120"/>
+    <polyline class="wave3" points="0,300 180,300 200,240 480,240 500,300 770,300 790,240 1180,240"/>
+    <polyline class="wave" points="0,420 305,420 340,360 595,360 630,420 895,420 930,360 1180,360"/>
+
+    <line x1="295" y1="-25" x2="295" y2="430" class="dash"/>
+    <line x1="885" y1="-25" x2="885" y2="430" class="dash"/>
+    <text x="235" y="-38" class="s">rising edge</text>
+    <text x="820" y="-38" class="s">rising edge</text>
+
+    <text x="40" y="505" class="m">CLK=0: master transparent, slave hold</text>
+    <text x="345" y="505" class="m">CLK=1: master hold, slave transparent</text>
+    <text x="635" y="505" class="m">CLK=0: master samples next D</text>
+    <text x="925" y="505" class="m">CLK=1: Q updates from Qm</text>
+  </g>
+</svg>

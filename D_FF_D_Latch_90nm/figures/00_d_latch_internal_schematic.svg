@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="780" viewBox="0 0 1500 780">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#111"/>
+    </marker>
+    <style>
+      .w{stroke:#111;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .thin{stroke:#111;stroke-width:2;fill:none}
+      .ctrl{stroke:#7b1fa2;stroke-width:3;fill:none;stroke-linecap:round}
+      .b{fill:#fff;stroke:#111;stroke-width:3}
+      .tg{fill:#f8fbff;stroke:#315a9a;stroke-width:3}
+      .inv{fill:#fffaf2;stroke:#b36b00;stroke-width:3}
+      .hold{fill:#f7fff8;stroke:#188038;stroke-width:3}
+      .pin{fill:#d22;stroke:#111;stroke-width:1.5}
+      .node{fill:#1573d1}
+      .t{font:25px Arial,sans-serif;fill:#111}
+      .s{font:19px Arial,sans-serif;fill:#111}
+      .m{font:16px Arial,sans-serif;fill:#555}
+      .mono{font:17px Consolas,monospace;fill:#111}
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#fff"/>
+  <text x="45" y="52" class="t">Static transmission-gate D-latch internal schematic</text>
+  <text x="45" y="84" class="s">Data path: D -> TG_in -> n1 -> INV_store -> n2 -> INV_out -> Q. Feedback path: Q -> TG_feedback -> n1.</text>
+
+  <polygon points="70,300 105,280 105,320" class="pin"/>
+  <text x="38" y="308" class="t">D</text>
+  <line x1="105" y1="300" x2="205" y2="300" class="w" marker-end="url(#arrow)"/>
+
+  <rect x="205" y="235" width="150" height="130" rx="8" class="tg"/>
+  <text x="238" y="292" class="s">TG_in</text>
+  <text x="223" y="322" class="m">A,B inout</text>
+
+  <line x1="355" y1="300" x2="500" y2="300" class="w" marker-end="url(#arrow)"/>
+  <circle cx="442" cy="300" r="8" class="node"/>
+  <text x="420" y="280" class="t">n1</text>
+
+  <polygon points="500,230 500,370 630,300" class="inv"/>
+  <circle cx="645" cy="300" r="11" class="inv"/>
+  <text x="500" y="410" class="s">INV_store</text>
+  <line x1="656" y1="300" x2="790" y2="300" class="w" marker-end="url(#arrow)"/>
+  <circle cx="735" cy="300" r="8" class="node"/>
+  <text x="715" y="280" class="t">n2</text>
+
+  <polygon points="790,230 790,370 920,300" class="inv"/>
+  <circle cx="935" cy="300" r="11" class="inv"/>
+  <text x="800" y="410" class="s">INV_out</text>
+  <line x1="946" y1="300" x2="1170" y2="300" class="w" marker-end="url(#arrow)"/>
+  <circle cx="1095" cy="300" r="8" class="node"/>
+  <polygon points="1200,300 1165,280 1165,320" class="pin"/>
+  <text x="1220" y="308" class="t">Q</text>
+
+  <path d="M1095 300 L1095 520 L355 520 L355 300" class="hold"/>
+  <rect x="540" y="455" width="170" height="130" rx="8" class="hold"/>
+  <text x="560" y="515" class="s">TG_feedback</text>
+  <text x="562" y="545" class="m">Q -> n1</text>
+
+  <polygon points="205,605 235,587 235,623" class="pin"/>
+  <text x="165" y="613" class="t">EN</text>
+  <line x1="235" y1="605" x2="280" y2="605" class="ctrl"/>
+  <path d="M280 605 L280 365" class="ctrl"/>
+  <text x="295" y="435" class="mono">TG_in NMOS gate</text>
+  <path d="M280 605 L625 605 L625 585" class="ctrl"/>
+  <text x="640" y="608" class="mono">TG_feedback PMOS gate</text>
+
+  <polygon points="205,675 235,657 235,693" class="pin"/>
+  <text x="145" y="683" class="t">ENB</text>
+  <line x1="235" y1="675" x2="330" y2="675" class="ctrl"/>
+  <path d="M330 675 L330 365" class="ctrl"/>
+  <text x="345" y="467" class="mono">TG_in PMOS gate</text>
+  <path d="M330 675 L675 675 L675 585" class="ctrl"/>
+  <text x="690" y="680" class="mono">TG_feedback NMOS gate</text>
+
+  <rect x="970" y="480" width="390" height="160" rx="8" fill="#f7f7f7" stroke="#bbb" stroke-width="2"/>
+  <text x="995" y="515" class="s">Latch modes</text>
+  <text x="995" y="550" class="m">EN=1, ENB=0: TG_in ON, feedback OFF.</text>
+  <text x="995" y="578" class="m">D propagates to Q after inverter delay.</text>
+  <text x="995" y="610" class="m">EN=0, ENB=1: TG_in OFF, feedback ON.</text>
+  <text x="995" y="638" class="m">Q is fed back to n1 and state is held.</text>
+</svg>

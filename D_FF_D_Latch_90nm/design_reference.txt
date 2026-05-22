@@ -1,0 +1,326 @@
+================================================================================
+  D FLIP-FLOP MASTER-SLAVE TRANSMISSION GATE - 90nm CMOS
+  Design Reference File
+  Project: VI MẠCH SỐ / D_FF_D_Latch_90nm
+================================================================================
+
+[ 1. SPEC ]
+--------------------------------------------------------------------------------
+Technology    : CMOS 90nm
+VDD           : 1.2 V
+GND           : 0 V
+Lmin          : 0.1 um (chanel length cho tat ca transistor)
+Temperature   : 25 degC nominal
+Tool          : Synopsys Custom Designer / Custom Compiler
+Topology      : Master-slave D-FF tu 2 D-latch transmission gate static
+
+
+[ 2. KIEN TRUC TONG QUAT ]
+--------------------------------------------------------------------------------
+
+   D ---> [ D_LATCH_TG (MASTER) ] --Qm--> [ D_LATCH_TG (SLAVE) ] ---> Q
+            ^                                ^
+            |                                |
+            CLKB <----[CLOCK_INV]<---- CLK ---+
+
+  - Master transparent khi CLK=0 (CLKB=1)
+  - Slave   transparent khi CLK=1 (CLKB=0)
+  - Q chi doi tai canh len CLK (positive-edge triggered)
+
+
+[ 3. D_LATCH_TG - 4 BLOCK ]
+--------------------------------------------------------------------------------
+
+  D ---[TG_in]---+---[INV_store]---+--[INV_out]--- Q
+                 |                 |
+                 +<----[TG_fb]<----+
+
+  Quy tac clock cua 1 latch (cell noi bo):
+  - TG_in  : NMOS gate = EN,  PMOS gate = ENB   (mo khi EN=1)
+  - TG_fb  : NMOS gate = ENB, PMOS gate = EN    (mo khi EN=0, nguoc TG_in)
+
+  Pin export ra ngoai cell D_LATCH_TG:
+  - D, Q (data)
+  - EN_TG_IN, ENB_TG_IN     (clock cho TG_in)
+  - EN_TG_OUT, ENB_TG_OUT   (clock cho TG_fb)
+  - VDD, GND
+
+
+[ 4. SIZING BASELINE (Config A) ]
+--------------------------------------------------------------------------------
+Tat ca L = 0.1u
+
+  Block         | Wn (um) | Wp (um) | Wp/Wn
+  --------------+---------+---------+-------
+  TG_in         |  0.18   |  0.28   |  1.56
+  INV_store     |  0.12   |  0.30   |  2.50
+  INV_out       |  0.18   |  0.42   |  2.33
+  TG_fb         |  0.10   |  0.20   |  2.00   (YEU hon TG_in)
+  Clock inv     |  0.24   |  0.60   |  2.50
+
+
+[ 5. 4 CONFIG SWEEP A / B / C / D ]
+--------------------------------------------------------------------------------
+Scale so voi Config A (INV_store va TG_fb giu nguyen):
+
+  Config       | INV_out | TG_in  | Clock_inv | Muc dich
+  -------------+---------+--------+-----------+-------------------
+  A_min_area   |  1.0x   |  1.0x  |  1.0x     | Dien tich nho nhat
+  B_fast_input |  1.5x   |  1.0x  |  1.0x     | Drive output nhanh
+  C_fast_clkq  |  1.5x   |  1.0x  |  1.5x     | FMAX max
+  D_balanced   |  1.3x   |  1.1x  |  1.3x     | Can bang
+
+W tuyet doi cho moi config:
+
+  Config A:
+    INV_out:   Wn=0.18  Wp=0.42
+    TG_in:     Wn=0.18  Wp=0.28
+    Clock_inv: Wn=0.24  Wp=0.60
+
+  Config B:
+    INV_out:   Wn=0.27  Wp=0.63   (1.5x)
+    TG_in:     Wn=0.18  Wp=0.28
+    Clock_inv: Wn=0.24  Wp=0.60
+
+  Config C:
+    INV_out:   Wn=0.27  Wp=0.63
+    TG_in:     Wn=0.18  Wp=0.28
+    Clock_inv: Wn=0.36  Wp=0.90   (1.5x)
+
+  Config D:
+    INV_out:   Wn=0.234 Wp=0.546
+    TG_in:     Wn=0.198 Wp=0.308
+    Clock_inv: Wn=0.312 Wp=0.78
+
+
+[ 6. CONNECTION TABLE DFF ]
+--------------------------------------------------------------------------------
+
+  DFF Instance:
+    I0 = MASTER (D_LATCH_TG)
+    I1 = SLAVE  (D_LATCH_TG)
+    I2 = CLOCK_INV (inv)
+
+  Data path:
+    PIN_D       -> I0.D
+    I0.Q        -> Qm net -> I1.D
+    I1.Q        -> PIN_Q (output)
+
+  Clock path:
+    PIN_CLK     -> I2.in
+    I2.out      -> CLKB net
+
+    Master (I0):
+      EN_TG_IN  <- CLKB
+      ENB_TG_IN <- CLK
+      EN_TG_OUT <- CLK
+      ENB_TG_OUT<- CLKB
+
+    Slave (I1):
+      EN_TG_IN  <- CLK
+      ENB_TG_IN <- CLKB
+      EN_TG_OUT <- CLKB
+      ENB_TG_OUT<- CLK
+
+  Power:
+    VDD! -> I0.VDD, I1.VDD, I2.VDD
+    GND! -> I0.GND, I1.GND, I2.GND
+
+
+[ 7. ASCII SCHEMATIC - TRANSMISSION GATE ]
+--------------------------------------------------------------------------------
+
+           VDD bulk
+            |
+      +-----+-----+
+      |           |
+   ENB-|PMOS Wp=0.28u
+      |   L=0.1u  |
+   A--+           +--B
+      |           |
+    EN-|NMOS Wn=0.18u
+      |   L=0.1u  |
+      +-----+-----+
+            |
+           GND bulk
+
+  Logic:
+    EN=1, ENB=0  -> NMOS+PMOS ON -> TG MO  -> B=A
+    EN=0, ENB=1  -> NMOS+PMOS OFF-> TG DONG-> B floating (cell luu boi INV_store + TG_fb)
+
+
+[ 8. HSPICE NETLIST TEMPLATE ]
+--------------------------------------------------------------------------------
+
+* ====== D-LATCH TG static ======
+.subckt D_LATCH D EN ENB Q VDD GND
+* TG_in
+M_TGI_N st  D   EN  GND  nmos w=0.18u l=0.1u
+M_TGI_P st  D   ENB VDD  pmos w=0.28u l=0.1u
+* INV_store
+M_IS_N  qb  st  GND GND  nmos w=0.12u l=0.1u
+M_IS_P  qb  st  VDD VDD  pmos w=0.30u l=0.1u
+* INV_out
+M_IO_N  Q   qb  GND GND  nmos w=0.18u l=0.1u
+M_IO_P  Q   qb  VDD VDD  pmos w=0.42u l=0.1u
+* TG_fb
+M_FB_N  qb  Q   ENB GND  nmos w=0.10u l=0.1u
+M_FB_P  qb  Q   EN  VDD  pmos w=0.20u l=0.1u
+.ends
+
+* ====== Inverter ======
+.subckt INV in out VDD GND
+M_N out in GND GND nmos w=0.24u l=0.1u
+M_P out in VDD VDD pmos w=0.60u l=0.1u
+.ends
+
+* ====== D Flip-Flop master-slave ======
+.subckt DFF D CLK Q VDD GND
+X_INV   CLK   CLKB                       VDD GND INV
+* Master: EN=CLKB, ENB=CLK
+X_MST   D    CLKB CLK    Qm              VDD GND D_LATCH
+* Slave : EN=CLK,  ENB=CLKB
+X_SLV   Qm   CLK  CLKB   Q               VDD GND D_LATCH
+.ends
+
+
+[ 9. VERILOG BEHAVIORAL (verify functional) ]
+--------------------------------------------------------------------------------
+
+module dff_tg (
+    input  D,
+    input  CLK,
+    output reg Q
+);
+    reg Qm;
+    always @(*) if (~CLK) Qm = D;     // master transparent
+    always @(*) if ( CLK) Q  = Qm;    // slave transparent
+endmodule
+
+
+[ 10. TESTBENCH SOURCES ]
+--------------------------------------------------------------------------------
+
+# TB_DFF_FUNC - kiem functional
+  D    = vpulse v1=0 v2=1.2 td=0.3n tr=20p tf=20p pw=0.95n per=2n
+  CLK  = vpulse v1=0 v2=1.2 td=0    tr=20p tf=20p pw=0.5n  per=1n
+  Cload Q = 2fF
+  tran stop=20n step=1p
+
+# TB_DFF_TCQ - do t_cq
+  D    = vdc 1.2  (test rise) hoac vdc 0 (test fall)
+  CLK  = vpulse v1=0 v2=1.2 td=2n tr=20p tf=20p pw=5n per=10n
+  Cload Q = 2fF
+
+# TB_DFF_SETUP - sweep setup
+  D.td   = '5n - tSU'
+  CLK.td = 5n
+  sweep tSU = 300p 200p 150p 100p 75p 50p 25p 0
+
+# TB_DFF_HOLD - sweep hold
+  D.td   = '5n + tHOLD'
+  CLK.td = 5n
+  sweep tHOLD = 0 10p 20p 30p 50p 75p 100p
+
+# TB_DFF_SKEW - kiem race
+  Tach CLK_M va CLK_S rieng (khong dung inverter chung)
+  sweep overlap = 0 20p 50p 100p
+
+
+[ 11. WAVEFORM CALCULATOR FORMULA ]
+--------------------------------------------------------------------------------
+
+  t_cq_rise = delay(VT("/CLK"), 0.6, "rising",
+                    VT("/Q"),   0.6, "rising", 1, 1)
+
+  t_cq_fall = delay(VT("/CLK"), 0.6, "rising",
+                    VT("/Q"),   0.6, "falling", 1, 1)
+
+  t_dq_rise = delay(VT("/D"), 0.6, "rising",
+                    VT("/Q"), 0.6, "rising", 1, 1)
+
+  cross-based:
+  delay = cross(VT("/Q"),   0.6, 1, "rising")
+        - cross(VT("/CLK"), 0.6, 1, "rising")
+
+
+[ 12. METRIC TARGET 90nm/1.2V ]
+--------------------------------------------------------------------------------
+
+  Metric           | Target intrinsic (Cload=2fF) | Loaded (Cload=20fF)
+  -----------------+------------------------------+--------------------
+  t_cq_rise        | 40 - 80 ps                   | 150 - 250 ps
+  t_cq_fall        | 40 - 80 ps                   | 150 - 250 ps
+  t_setup_min      | 25 - 75 ps                   | 50 - 100 ps
+  t_hold_min       | 0 - 30 ps                    | 0 - 30 ps
+  FMAX             | 5 - 10 GHz                   | 2 - 4 GHz
+  Power @ 1GHz     | ~ 20 - 50 uW                 | -
+
+
+[ 13. CONG THUC FMAX ]
+--------------------------------------------------------------------------------
+
+  T_min = t_cq_max + t_setup_min + margin_skew
+  FMAX  = 1 / T_min
+
+  margin_skew thuong 20 ps (90nm)
+
+
+[ 14. LAYOUT FLOORPLAN ]
+--------------------------------------------------------------------------------
+
+  +---------------------------------------------------------------+
+  |                    NWELL  (PMOS row)                          |
+  | [P_TG_M][P_IS_M][P_IO_M][P_FB_M] | [P_TG_S][P_IS_S]...        |
+  | [P_INV_CLK]                                                   |
+  +---------------------------------------------------------------+
+  |  VDD rail  M1  width 0.4u                                     |
+  +---------------------------------------------------------------+
+  |  N_TG_M ][N_IS_M][N_IO_M][N_FB_M] | [N_TG_S][N_IS_S]...       |
+  | [N_INV_CLK]                                                   |
+  |                    PWELL  (NMOS row)                          |
+  +---------------------------------------------------------------+
+  |  GND rail  M1  width 0.4u                                     |
+  +---------------------------------------------------------------+
+  |  Clock route M2 horizontal: CLK, CLKB                         |
+  +---------------------------------------------------------------+
+
+  Estimated dimensions: ~6.5u x 4.2u  (~27 um^2)
+
+  Rule 90nm:
+    DIFF/POLY width & spacing : 0.09 um
+    Contact size              : 0.09 x 0.09 um
+    M1 width & spacing        : 0.1 um
+    NWELL width & spacing     : 0.55 um
+
+  Flow: DRC -> LVS -> parasitic extract -> post-layout transient
+
+
+[ 15. GOTCHAS QUAN TRONG ]
+--------------------------------------------------------------------------------
+
+1. Master vs Slave clock NGUOC PHA - sai cho nay DFF bien thanh buffer trong suot
+2. TG_fb phai YEU hon TG_in - khong cell tu fight, setup xau
+3. Cload Q chuan 2fF, KHONG dung 1pF (kep delay len 500-1500ps)
+4. KHONG mac tu o node Qm noi bo
+5. vpulse phai co tr=tf=20ps, khong de mac dinh 0
+6. tran maxstep <= 1ps cho 90nm
+7. t_dq do voi EN=vdc giu, D=vpulse. t_cq do voi D=vdc, CLK=vpulse.
+8. Trieu chung Master fail: Qm chi pulse 0.2V -> sai noi clock cua Master
+9. Spike feedthrough nho luc hold la BINH THUONG (clock feedthrough qua Cgd)
+10. Comment va log dung TIENG VIET KHONG DAU (quy uoc workspace)
+
+
+[ 16. FILE LIEN QUAN ]
+--------------------------------------------------------------------------------
+
+  CLAUDE.md                              - huong dan cho Claude (detail)
+  dff_ms_tg_template.sp                  - HSPICE template tham khao
+  skew_race_tb_notes.sp                  - skeleton TB skew/race
+  d_latch_tg_schematic_reference.png     - schematic reference
+  papers/                                - 6 paper tham khao (90nm DFF)
+  photo/                                 - screenshot debug
+
+================================================================================
+End of design_reference.txt
+================================================================================

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="780" viewBox="0 0 1500 780">
+  <defs>
+    <style>
+      .wave{stroke:#0055aa;stroke-width:4;fill:none}
+      .wave2{stroke:#0a7f32;stroke-width:4;fill:none}
+      .bad{stroke:#c21807;stroke-width:4;fill:none}
+      .axis{stroke:#111;stroke-width:2}
+      .dash{stroke:#c21807;stroke-width:2;stroke-dasharray:8 7}
+      .zone{fill:#ffd6d0;stroke:#c21807;stroke-width:2;opacity:.75}
+      .ok{fill:#e9f8ee;stroke:#0a7f32;stroke-width:2}
+      .t{font:24px Arial,sans-serif;fill:#111}
+      .s{font:18px Arial,sans-serif;fill:#111}
+      .m{font:16px Arial,sans-serif;fill:#555}
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#fff"/>
+  <text x="45" y="52" class="t">Clock skew / race-condition testbench</text>
+  <text x="45" y="84" class="s">Use separate master/slave enables for this test: CLK_M controls master, CLK_S controls slave.</text>
+
+  <g transform="translate(155,140)">
+    <text x="-115" y="8" class="s">CLK_M_EN</text>
+    <text x="-115" y="128" class="s">CLK_S_EN</text>
+    <text x="-115" y="248" class="s">D</text>
+    <text x="-115" y="368" class="s">Qm</text>
+    <text x="-115" y="488" class="s">Q fail</text>
+    <line x1="0" y1="0" x2="1180" y2="0" class="axis"/>
+    <line x1="0" y1="120" x2="1180" y2="120" class="axis"/>
+    <line x1="0" y1="240" x2="1180" y2="240" class="axis"/>
+    <line x1="0" y1="360" x2="1180" y2="360" class="axis"/>
+    <line x1="0" y1="480" x2="1180" y2="480" class="axis"/>
+
+    <rect x="560" y="-25" width="130" height="540" class="zone"/>
+    <text x="570" y="-42" class="s" fill="#c21807">overlap 20-100ps</text>
+
+    <polyline class="wave" points="0,0 560,0 690,60 1180,60"/>
+    <polyline class="wave2" points="0,180 560,180 565,120 1180,120"/>
+    <polyline class="wave2" points="0,300 610,300 630,240 1180,240"/>
+    <polyline class="wave" points="0,420 630,420 660,360 1180,360"/>
+    <polyline class="bad" points="0,540 612,540 650,480 1180,480"/>
+
+    <line x1="560" y1="-35" x2="560" y2="525" class="dash"/>
+    <line x1="690" y1="-35" x2="690" y2="525" class="dash"/>
+  </g>
+
+  <rect x="92" y="665" width="580" height="62" rx="8" class="ok"/>
+  <text x="115" y="692" class="s">Normal: master closes before slave opens.</text>
+  <text x="115" y="718" class="m">Q only changes from stored Qm after valid edge.</text>
+  <rect x="750" y="665" width="640" height="62" rx="8" class="zone"/>
+  <text x="773" y="692" class="s">Race: master and slave both transparent during overlap.</text>
+  <text x="773" y="718" class="m">If D changes inside overlap, D can run through to Q in same cycle.</text>
+</svg>

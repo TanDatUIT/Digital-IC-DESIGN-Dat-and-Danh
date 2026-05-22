@@ -1,0 +1,4 @@
+TDMCHECKPOINT="1.0"
+project_d_ff/D_FF.Cat type="category"
+project_d_ff/D_LATCH_SLAVE.Cat type="category"
+project_d_ff/INV.Cat type="category"

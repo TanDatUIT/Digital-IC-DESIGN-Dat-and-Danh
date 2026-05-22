@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="760" viewBox="0 0 1500 760">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#111"/></marker>
+    <marker id="arr2" markerWidth="10" markerHeight="10" refX="1" refY="3" orient="auto"><path d="M9,0 L9,6 L0,3 z" fill="#111"/></marker>
+    <style>
+      .wave{stroke:#0055aa;stroke-width:4;fill:none}
+      .d{stroke:#0a7f32;stroke-width:4;fill:none}
+      .q{stroke:#b24b00;stroke-width:4;fill:none}
+      .axis{stroke:#111;stroke-width:2}
+      .dash{stroke:#d22;stroke-width:2;stroke-dasharray:8 7}
+      .dim{stroke:#111;stroke-width:2;marker-end:url(#arr);marker-start:url(#arr2)}
+      .t{font:24px Arial,sans-serif;fill:#111}
+      .s{font:18px Arial,sans-serif;fill:#111}
+      .m{font:16px Arial,sans-serif;fill:#555}
+      .box{fill:#f8fbff;stroke:#b6c4d8;stroke-width:2}
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#fff"/>
+  <text x="45" y="52" class="t">Setup and hold measurement testbench</text>
+  <text x="45" y="84" class="s">Sweep D transition around the active rising clock edge. Pass when Q captures the intended value and tCQ does not explode.</text>
+
+  <g transform="translate(150,145)">
+    <text x="-95" y="8" class="s">CLK</text>
+    <text x="-95" y="128" class="s">D setup</text>
+    <text x="-95" y="248" class="s">D hold</text>
+    <text x="-95" y="368" class="s">Q</text>
+    <line x1="0" y1="0" x2="1180" y2="0" class="axis"/>
+    <line x1="0" y1="120" x2="1180" y2="120" class="axis"/>
+    <line x1="0" y1="240" x2="1180" y2="240" class="axis"/>
+    <line x1="0" y1="360" x2="1180" y2="360" class="axis"/>
+    <polyline class="wave" points="0,60 580,60 600,0 1180,0"/>
+    <line x1="600" y1="-40" x2="600" y2="420" class="dash"/>
+    <text x="560" y="-54" class="s">CLK 50%</text>
+    <polyline class="d" points="0,180 410,180 430,120 1180,120"/>
+    <polyline class="d" points="0,300 600,300 635,240 1180,240"/>
+    <polyline class="q" points="0,420 620,420 690,360 1180,360"/>
+
+    <line x1="430" y1="92" x2="600" y2="92" class="dim"/>
+    <text x="482" y="78" class="s">tSETUP</text>
+    <line x1="600" y1="212" x2="635" y2="212" class="dim"/>
+    <text x="610" y="198" class="s">tHOLD</text>
+    <line x1="600" y1="455" x2="690" y2="455" class="dim"/>
+    <text x="620" y="486" class="s">tCQ</text>
+  </g>
+
+  <rect x="80" y="620" width="1320" height="88" rx="8" class="box"/>
+  <text x="110" y="650" class="s">Suggested manual sweep in GUI: setup = 300ps, 200ps, 100ps, 50ps, 25ps, 0ps before CLK edge.</text>
+  <text x="110" y="680" class="s">Hold sweep: D changes 0ps, 20ps, 50ps, 100ps after CLK edge. Load Q = 5fF to 10fF.</text>
+</svg>

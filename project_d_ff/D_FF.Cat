@@ -1,0 +1,8 @@
+TDMCHECKPOINT="1.0"
+keepEmptyCategory type="unknown"
+project_d_ff/D_FF type="cell"
+project_d_ff/D_FF_tb type="cell"
+project_d_ff/D_latch type="cell"
+project_d_ff/D_latch_MS_TG type="cell"
+project_d_ff/tb_d_latch type="cell"
+project_d_ff/tb_d_latch_2 type="cell"

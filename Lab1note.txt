@@ -1,0 +1,49 @@
+Ghi chú Lab 1 - Hiện tượng gợn sóng ở đầu ra inverter
+
+Trong quá trình mô phỏng mạch inverter CMOS, dạng sóng đầu ra có thể xuất hiện hiện tượng gợn sóng, bo cạnh hoặc xuất hiện overshoot/undershoot nhẹ ở thời điểm chuyển mức. Nguyên nhân chính là do điện dung ký sinh tại nút output và trong các transistor MOS. Khi tín hiệu đầu vào thay đổi quá nhanh, các điện dung ký sinh này bị nạp và xả đột ngột, làm điện áp đầu ra chưa kịp ổn định ngay mà xuất hiện dao động ngắn hạn.
+
+Trong bài thí nghiệm này, một cách khắc phục hiệu quả là điều chỉnh thời gian sườn lên và sườn xuống của nguồn xung vpulse. Ban đầu nếu đặt rise time và fall time quá nhỏ, ví dụ 0.1 ps, thì tốc độ thay đổi điện áp đầu vào rất lớn. Điều này làm cho dv/dt tăng cao, từ đó kích thích mạnh các điện dung ký sinh trong mạch và gây ra hiện tượng gợn sóng ở đầu ra.
+
+Cách chỉnh:
+- Giữ nguồn nuôi VDD = 1.2 V.
+- Nguồn vào vpulse đặt:
+  v1 = 0 V
+  v2 = 1.2 V
+  chu kỳ = 2 ns
+  độ rộng xung = 1 ns
+- Tăng rise time và fall time từ 0.1 ps lên khoảng 10 ps.
+
+Lý do cách chỉnh này có hiệu quả:
+- Khi tăng rise time và fall time, tín hiệu đầu vào chuyển mức mềm hơn, không còn quá gắt.
+- Tốc độ biến thiên điện áp giảm xuống nên ảnh hưởng của điện dung ký sinh tại nút output cũng giảm.
+- Quá trình nạp và xả điện dung diễn ra êm hơn, nhờ đó đầu ra ổn định hơn và giảm đáng kể hiện tượng gợn sóng.
+- Dạng sóng output sau khi chỉnh sẽ gần với sóng vuông lý tưởng hơn, mức logic cao và thấp rõ ràng hơn.
+
+Kết luận:
+Việc tăng rise/fall time của nguồn vpulse là một cách đơn giản nhưng hiệu quả để giảm gợn sóng ở đầu ra inverter trong mô phỏng. Đây là biện pháp phù hợp khi nguyên nhân chủ yếu đến từ điện dung ký sinh và quá trình chuyển mạch quá nhanh của tín hiệu đầu vào.
+
+Ghi chú thêm - Cách tra tỷ lệ Wp/Wn trong PDK 90nm
+
+- File mục lục thư viện: `/home/itsupport/Desktop/lab1vlsi/PDK/reference90RF/reference90RF.TopCat`
+  File này chỉ là mục lục tổng, dùng để lần ra các category như `Mos_3t.Cat`, `Mos_4t.Cat`, không cho trực tiếp tỷ lệ `Wp/Wn`.
+
+- File công nghệ layout: `Santana.tech`
+  File này cho biết layer, mask, connectivity của layout, không chứa tham số điện để suy ra `Wp/Wn`.
+
+- File cần xem để biện luận `Wp/Wn`: file model trong thư mục `hspice`
+  Trong file model HSPICE generic 90nm, cần tìm 2 model:
+  `.model N nmos`
+  `.model P pmos`
+
+- Hai dòng quan trọng:
+  `+ u0 = 4.031486E-02` cho NMOS
+  `+ u0 = 8.391744E-03` cho PMOS
+
+- Ý nghĩa:
+  `u0` là tham số liên quan tới độ linh động hạt tải. NMOS có `u0` lớn hơn PMOS nên NMOS dẫn mạnh hơn PMOS. Vì vậy để inverter cân bằng hơn thì PMOS phải có bề rộng lớn hơn NMOS.
+
+- Suy ra gần đúng:
+  `Wp/Wn ~= u0n/u0p ~= 4.031486E-02 / 8.391744E-03 ~= 4.8`
+
+- Lưu ý:
+  Đây là model generic 90nm, không phải foundry model thực. Với BSIM4, dòng còn phụ thuộc thêm các tham số khác như `vth0`, `vsat`, `rdsw`, nên không nên coi `4.8` là giá trị tuyệt đối. Khi làm inverter thực hành có thể chọn giá trị khởi đầu `Wp/Wn` khoảng `2` đến `3`, rồi hiệu chỉnh bằng mô phỏng để điểm chuyển gần `VDD/2`.

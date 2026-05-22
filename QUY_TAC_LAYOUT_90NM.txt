@@ -1,0 +1,43 @@
+QUY TẮC THIẾT KẾ LAYOUT (DESIGN RULES) - CÔNG NGHỆ 90NM
+(Dựa trên Synopsys Reference PDK)
+
+Dưới đây là các quy tắc vật lý cơ bản nhất bạn cần tuân thủ khi vẽ Layout để đảm bảo không vi phạm lỗi DRC (Design Rule Check). Đơn vị đo là Micromet (um).
+
+1. LỚP KHUẾCH TÁN (DIFFUSION - Lớp DIFF)
+- Độ rộng tối thiểu (Min Width): 0.09 um
+- Khoảng cách tối thiểu giữa 2 DIFF (Min Spacing): 0.09 um
+- Khoảng cách từ NWELL đến DIFF (Min Spacing from NWELL to DIFF): 0.22 um
+- DIFF nằm trong NWELL (Enclosure of DIFF within NWELL): 0.23 um
+
+2. LỚP ĐA TINH THỂ (POLY SILICON - Lớp POLY)
+- Độ rộng tối thiểu (Min Width): 0.09 um
+- Khoảng cách tối thiểu giữa 2 POLY (Min Spacing): 0.09 um
+- Poly vươn ra khỏi lớp DIFF (Poly Extension beyond DIFF): 0.13 um (Rất quan trọng để tránh hở kênh)
+- Khoảng cách từ Poly đến DIFF (Poly to DIFF Spacing): 0.045 um
+- Độ bao phủ của DIFF quanh Poly (Enclosure of DIFF within Poly - cho gate): 0.13 um
+
+3. LỚP TIẾP ĐIỂM (CONTACT - Lớp CO)
+- Kích thước cố định (Size): 0.09 um x 0.09 um
+- Khoảng cách tối thiểu giữa 2 Contact (Min Spacing): 0.1 um
+- Khoảng cách từ Contact đến Poly (Min Spacing from CO to Poly): 0.08 um
+- Độ bao phủ của Metal 1 quanh Contact (Enclosure of CO within M1): 0.005 um
+- Độ bao phủ của DIFF quanh Contact (Enclosure of CO within DIFF): 0.05 um
+
+4. LỚP KIM LOẠI 1 (METAL 1 - Lớp M1)
+- Độ rộng tối thiểu (Min Width): 0.1 um
+- Khoảng cách tối thiểu giữa 2 M1 (Min Spacing): 0.1 um
+- Diện tích tối thiểu của một miếng M1 (Min Area): 0.04 um2
+
+5. LỚP GIẾNG N (N-WELL)
+- Độ rộng tối thiểu (Min Width): 0.55 um
+- Khoảng cách tối thiểu giữa 2 NWELL (Min Spacing): 0.55 um
+- Diện tích tối thiểu (Min Area): 1.2 um2
+
+6. MỘT SỐ LƯU Ý KHI VẼ LAYOUT LAB 3 (NAND2):
+- Auto-abutment: Khi đặt 2 NMOS nối tiếp hoặc 2 PMOS song song, hãy để chúng sát nhau để công cụ tự động nối chung cực Source/Drain, giúp tiết kiệm diện tích.
+- Guard Rings: Luôn bao quanh khu vực PMOS bằng N-Well Tap và khu vực NMOS bằng P-Substrate Tap để chống hiện tượng Latch-up.
+- Sắp xếp (Placement): Đặt các PMOS thành một hàng ngang và NMOS thành một hàng ngang để đường đi của dây nguồn VDD và GND được thẳng và gọn.
+
+---------------------------------------------------------
+Người thực hiện: Gemini CLI Agent
+Ngày cập nhật: 12/05/2026

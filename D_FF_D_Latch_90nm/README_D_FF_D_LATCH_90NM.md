@@ -81,9 +81,9 @@ Dung `L=Lmin`. Neu schematic hien tai dang dung `L=0.10u` va PDK cho phep, giu `
 | `TG_OUT` feedback | `0.12u` | `0.20u` | `0.12u` | `0.20u` | NMOS dung min PDK, PMOS giu nho de tranh write conflict |
 | `INV_store` | `0.12u` | `0.30u` | `0.12u` | `0.30u` | Giu node noi bo va input cap vua phai |
 | `INV_out` | `0.18u` | `0.42u` | `0.27u` | `0.63u` | Slave output drive tai lon hon |
-| `CLOCK_inv` | - | - | `0.36u` | `0.90u` | Clock driver rieng, tang neu `CLKB` edge cham |
+| `CLOCK_inv` | - | - | `0.30u` | `0.75u` | Diem Pareto clock; neu uu tien FMAX tuyet doi thi dung `0.36u/0.90u` |
 
-Neu `CLKB` van cham, thu `CLOCK_inv Wn=0.48u, Wp=1.20u`. Neu `Qout` cham khi `CLKB` da sac, tang `INV_out slave` truoc; khong tang `TG_OUT` feedback len ngang `TG_IN`.
+Neu `CLKB` van cham, thu `CLOCK_inv Wn=0.36u, Wp=0.90u` roi toi da `0.48u, 1.20u`. Neu `Qout` cham khi `CLKB` da sac, tang `INV_out slave` truoc; khong tang `TG_OUT` feedback len ngang `TG_IN`.
 
 Pin TG trong schematic: `ENB` cua ca `TG_IN` va `TG_OUT` noi vao PMOS; `EN` noi vao NMOS. Phase top-level van phai lam `TG_IN` va `TG_OUT` nguoc nhau trong moi latch.
 
@@ -180,6 +180,16 @@ Ket qua do dung hien tai tren waveform pre-layout bang cursor 50%:
 | `t_cq_max` | `36 ps` |
 
 Luu y do trong Custom WaveView: Delay Tool de bat sai canh neu waveform co nhieu chu ky hoac `D` toggle lap lai, co the hien ns/200ns gia. Khi lay so lieu bao cao, zoom hep quanh canh clock can do, dat cursor tai `CLK=0.6V` va `Q=0.6V` cua dung transition, hoac dung X-range visible/user specified rat hep.
+
+Sweep kich thuoc `CLOCK_inv`:
+
+| `CLOCK_inv` | Tong W | `t_cq_rise` | `t_cq_fall` | Danh gia |
+|---|---:|---:|---:|---|
+| `Wn=0.36u, Wp=0.90u` | `1.26u` | `36 ps` | `27.1 ps` | delay tot nhat |
+| `Wn=0.30u, Wp=0.75u` | `1.05u` | `38.8 ps` | `27.9 ps` | nen chon neu can can bang: giam clock area/power ~17% so voi 0.36/0.90, `t_cq_max` tang ~2.8ps |
+| `Wn=0.24u, Wp=0.60u` | `0.84u` | `40 ps` | `29 ps` | baseline nho nhat, delay tang ~11% theo `t_cq_max` |
+
+Ket luan sizing clock: `0.30u/0.75u` la diem can bang tot neu de bai can toi uu ca dien tich, do tre, tan so. `0.36u/0.90u` chi nen dung neu bao cao uu tien FMAX cuc dai hon area/power. Neu cursor hien `-38.8ps`/`-27.9ps`, dau am chi do chon cursor nguoc; delay vat ly lay tri tuyet doi khi dung transition.
 
 Voi bai bao cao, nen chon cau hinh co `FMAX/area` tot nhat, nhung neu hai cau hinh gan nhau thi chon cau hinh FMAX cao hon vi user requirement uu tien FMAX.
 

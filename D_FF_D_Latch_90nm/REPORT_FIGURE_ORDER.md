@@ -121,6 +121,8 @@ Uu tien hien tai cua bao cao: FMAX/delay truoc, area sau. Neu sizing paper dung 
 
 So do dung hien tai cho hinh waveform pre-layout: `tCQ_rise ~= 36ps`, `tCQ_fall ~= 27.1ps` do bang cursor 50% CLK -> 50% Q. Neu Custom WaveView Delay Tool hien ns/200ns thi la bat sai canh, khong dua so do vao bao cao.
 
+Neu can giai thich sizing clock trong bao cao: sweep cho thay `CLOCK_inv 0.30u/0.75u` dat `tCQ_rise ~= 38.8ps`, `tCQ_fall ~= 27.9ps`, gan bang `0.36u/0.90u` nhung giam tong W clock inverter tu `1.26u` xuong `1.05u`. Baseline `0.24u/0.60u` cho `40ps/29ps`, nho hon nhung cham hon ro hon. Neu waveform cursor hien so am, do la do chon cursor nguoc, khong phai delay am.
+
 ## 6. Mo phong skew/race condition
 
 Hinh:

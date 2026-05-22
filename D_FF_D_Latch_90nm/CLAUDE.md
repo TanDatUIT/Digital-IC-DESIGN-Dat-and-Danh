@@ -61,7 +61,7 @@ Dung khi muc tieu la giam delay. Neu schematic hien tai dung `L=0.10u` va PDK ch
 | `TG_OUT` feedback | `0.12u / 0.20u` | `0.12u / 0.20u` | Keeper dung NMOS min PDK, PMOS giu nho de yeu hon `TG_IN` |
 | `INV_store` | `0.12u / 0.30u` | `0.12u / 0.30u` | Giu input cap vua phai |
 | `INV_out` | `0.18u / 0.42u` | `0.27u / 0.63u` | Slave drive `Qout`, tai lon hon |
-| `CLOCK_inv` | - | `0.36u / 0.90u` | Clock driver rieng; neu `CLKB` cham thi thu `0.48u / 1.20u` |
+| `CLOCK_inv` | - | `0.30u / 0.75u` | Diem Pareto clock; neu uu tien FMAX tuyet doi thi dung `0.36u / 0.90u` |
 
 Ghi nho symbol TG: `ENB` cua ca `TG_IN` va `TG_OUT` noi vao gate PMOS; `EN` noi vao gate NMOS. Trong cung latch, `TG_IN` va `TG_OUT` van phai nguoc pha de khong cung bat khi ghi du lieu.
 
@@ -85,6 +85,16 @@ Ket qua do dung hien tai (pre-layout, cursor 50%):
 - `t_cq_rise ~= 36 ps`
 - `t_cq_fall ~= 27.1 ps`
 - Custom WaveView Delay Tool de bat sai canh neu waveform dai/nhieu chu ky, co the ra ns/200ns gia. Khi bao cao, zoom quanh canh can do va dung cursor 50% CLK -> 50% Q, hoac gioi han visible/user X-range rat hep.
+
+Sweep `CLOCK_inv` moi nhat voi 2 latch giong nhau:
+
+| `CLOCK_inv` Wn/Wp | `t_cq_rise` | `t_cq_fall` | Nhan xet |
+|---|---:|---:|---|
+| `0.36u / 0.90u` | `36 ps` | `27.1 ps` | nhanh nhat, clock area/power lon hon |
+| `0.30u / 0.75u` | `38.8 ps` | `27.9 ps` | diem Pareto neu chap nhan rise cham hon ~2.8ps, clock nho hon |
+| `0.24u / 0.60u` | `40 ps` | `29 ps` | baseline nho hon, delay tang ro hon |
+
+Khuyen nghi hien tai cho bao cao: dung `CLOCK_inv = 0.30u / 0.75u` neu muon can bang area-delay; dung `0.36u / 0.90u` neu uu tien FMAX tuyet doi. Neu cursor hien dau am (`-38.8ps`, `-27.9ps`) thi do thu tu cursor/reference bi nguoc; bao cao lay do lon delay va chup dung huong `CLK 50% -> Q 50%`.
 
 ## Skew/Race testbench
 

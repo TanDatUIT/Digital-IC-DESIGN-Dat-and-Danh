@@ -243,11 +243,12 @@
     <nav aria-label="Muc luc">
       <a href="#chot">1. Chot thiet ke</a>
       <a href="#pin">2. Quy tac pin TG</a>
-      <a href="#cell">3. Layout 1 D_latch</a>
-      <a href="#dff">4. Ghep master-slave</a>
-      <a href="#route">5. Route CLK, CLKB, Qm</a>
-      <a href="#drc">6. DRC, LVS, PEX</a>
-      <a href="#checklist">7. Checklist nop bai</a>
+      <a href="#parts">3. Layout tung bo phan</a>
+      <a href="#cell">4. Layout 1 D_latch</a>
+      <a href="#dff">5. Ghep master-slave</a>
+      <a href="#route">6. Route CLK, CLKB, Qm</a>
+      <a href="#drc">7. DRC, LVS, PEX</a>
+      <a href="#checklist">8. Checklist nop bai</a>
     </nav>
 
     <div>
@@ -378,8 +379,119 @@ Khong sua noi noi bo TG khi layout.
 Chi route CLK/CLKB vao dung pin cua tung TG.</pre>
       </section>
 
+      <section id="parts">
+        <h2>3. Layout tung bo phan: ghi ro S va D</h2>
+        <div class="warn">
+          Trong layout MOS, <code>S</code> va <code>D</code> co the doi vai tuy dien ap lam viec, nhung khi ve cell nen dat co chu dich: source gan rail hoac node on dinh, drain gan node tin hieu can ke tiep. Muc tieu la giam dien tich diffusion cua node dong, giam C ky sinh tren <code>n1</code>, <code>n2</code>, <code>Qm</code>.
+        </div>
+
+        <h3>Inverter <code>INV_store</code> va <code>INV_out</code></h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Transistor</th>
+              <th>Source S</th>
+              <th>Drain D</th>
+              <th>Gate</th>
+              <th>Layout nen lam</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>PMOS inverter</td>
+              <td><code>VDD</code></td>
+              <td><code>OUT</code></td>
+              <td><code>IN</code></td>
+              <td>Dat S sat rail <code>VDD</code>, D quay xuong node output. Co n-well tap gan source.</td>
+            </tr>
+            <tr>
+              <td>NMOS inverter</td>
+              <td><code>GND</code></td>
+              <td><code>OUT</code></td>
+              <td><code>IN</code></td>
+              <td>Dat S sat rail <code>GND</code>, D quay len node output. Co substrate tap gan source.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <pre>INV_store:
+  IN  = n1
+  OUT = n2
+
+INV_out:
+  IN  = n2
+  OUT = Q hoac Qm tuy latch</pre>
+
+        <h3>Transmission gate <code>TG_in</code></h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Device</th>
+              <th>S phia input</th>
+              <th>D phia node latch</th>
+              <th>Gate</th>
+              <th>Layout nen lam</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>PMOS <code>0.42/0.10</code></td>
+              <td><code>D</code> hoac <code>Qm</code> vao slave</td>
+              <td><code>n1</code></td>
+              <td><code>ENB</code></td>
+              <td>Dat song song NMOS, diffusion phia <code>n1</code> ngan, khong keo poly/metal dai qua node <code>n1</code>.</td>
+            </tr>
+            <tr>
+              <td>NMOS <code>0.18/0.10</code></td>
+              <td><code>D</code> hoac <code>Qm</code> vao slave</td>
+              <td><code>n1</code></td>
+              <td><code>EN</code></td>
+              <td>Noi chung hai drain phia <code>n1</code> bang metal ngan. Tranh mo rong diffusion <code>n1</code>.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Transmission gate feedback <code>TG_out</code></h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Device</th>
+              <th>S phia output</th>
+              <th>D phia node latch</th>
+              <th>Gate</th>
+              <th>Layout nen lam</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>PMOS <code>0.22/0.10</code></td>
+              <td><code>Q</code> hoac <code>Qm</code></td>
+              <td><code>n1</code></td>
+              <td><code>ENB</code></td>
+              <td>Dat gan node output va gan <code>n1</code>. Feedback phai ngan, khong vong xa quanh cell.</td>
+            </tr>
+            <tr>
+              <td>NMOS <code>0.12/0.10</code></td>
+              <td><code>Q</code> hoac <code>Qm</code></td>
+              <td><code>n1</code></td>
+              <td><code>EN</code></td>
+              <td>Do TG_out nho hon TG_in, uu tien compact diffusion de C tren <code>n1</code> nho.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="ok">
+          Quy tac toi uu S/D cho D_latch: source inverter noi rail truc tiep; drain inverter gom thanh node output ngan; S/D cua TG quay theo truc data path; node <code>n1</code>, <code>n2</code>, <code>Qm</code> khong duoc co diffusion/metal thua. Cang nhieu diffusion tren node noi bo, C ky sinh cang lon, delay va gai clock feedthrough cang de tang.
+        </div>
+
+        <figure style="margin-top: 14px;">
+          <img src="figures/10_tg_layout_sd_same_side.svg" alt="TG layout with same side S D placement">
+          <figcaption>Layout TG theo cach chot moi: PMOS va NMOS cung ben. Ben trai la <code>IN</code>, ben phai la <code>OUT/n1</code>. Cach nay de route, it noi cheo, LVS de sach hon.</figcaption>
+        </figure>
+      </section>
+
       <section id="cell">
-        <h2>3. Layout 1 cell D_latch truoc</h2>
+        <h2>4. Layout 1 cell D_latch truoc</h2>
         <div class="grid2">
           <div>
             <h3>Thu tu dat block</h3>
@@ -416,7 +528,7 @@ Muc tieu:
       </section>
 
       <section id="dff">
-        <h2>4. Ghep thanh D-FF master-slave</h2>
+        <h2>5. Ghep thanh D-FF master-slave</h2>
         <div class="grid3">
           <div class="note">
             <strong>Master</strong><br>
@@ -448,7 +560,7 @@ Muc tieu:
       </section>
 
       <section id="route">
-        <h2>5. Route CLK, CLKB, Qm</h2>
+        <h2>6. Route CLK, CLKB, Qm</h2>
         <table>
           <thead>
             <tr>
@@ -486,7 +598,7 @@ Muc tieu:
       </section>
 
       <section id="drc">
-        <h2>6. DRC, LVS, PEX</h2>
+        <h2>7. DRC, LVS, PEX</h2>
         <ol>
           <li>DRC cell <code>TG_in</code>, <code>TG_out</code>, <code>INV_store</code>, <code>INV_out</code>.</li>
           <li>LVS tung cell nho truoc.</li>
@@ -502,13 +614,15 @@ Muc tieu:
       </section>
 
       <section id="checklist">
-        <h2>7. Checklist nop bai</h2>
+        <h2>8. Checklist nop bai</h2>
         <div class="grid2">
           <div>
             <h3>Checklist layout</h3>
             <ul>
               <li><span class="tag green">OK</span> PMOS nam trong n-well, NMOS nam trong p-sub.</li>
               <li><span class="tag green">OK</span> PMOS source inverter noi VDD, NMOS source noi GND.</li>
+              <li><span class="tag green">S/D</span> Source gan rail/node on dinh, drain gan node tin hieu ke tiep.</li>
+              <li><span class="tag cyan">Cpar</span> Node <code>n1</code>, <code>n2</code>, <code>Qm</code> ngan, it diffusion thua.</li>
               <li><span class="tag blue">TG</span> PMOS gate luon la <code>ENB</code>, NMOS gate luon la <code>EN</code>.</li>
               <li><span class="tag violet">CLK</span> Master/slave dung nguoc pha.</li>
               <li><span class="tag cyan">Route</span> <code>Qm</code> ngan, khong buffer.</li>

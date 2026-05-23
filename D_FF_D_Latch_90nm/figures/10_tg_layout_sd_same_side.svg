@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; fill: #172033; }
+      .title { font-size: 34px; font-weight: 700; }
+      .subtitle { font-size: 18px; fill: #46556d; }
+      .label { font-size: 20px; font-weight: 700; }
+      .small { font-size: 16px; fill: #334155; }
+      .tiny { font-size: 14px; fill: #334155; }
+      .box { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; rx: 14; }
+      .well { fill: #fff7ce; stroke: #b78b00; stroke-width: 2; }
+      .psub { fill: #e9f8ee; stroke: #178a55; stroke-width: 2; }
+      .active { fill: #37b37e; stroke: #0f6b48; stroke-width: 2; }
+      .poly { fill: #246bfe; stroke: #063cbb; stroke-width: 2; }
+      .pin { fill: #f8fafc; stroke: #334155; stroke-width: 2; rx: 7; }
+      .enb { fill: #f1e8ff; stroke: #7755cc; stroke-width: 2; }
+      .en { fill: #e8fbfd; stroke: #008a99; stroke-width: 2; }
+      .note { fill: #eef5ff; stroke: #1769e0; stroke-width: 2; rx: 10; }
+      .warn { fill: #fff8e6; stroke: #b36b00; stroke-width: 2; rx: 10; }
+      .wire { stroke: #d33131; stroke-width: 8; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .wire2 { stroke: #334155; stroke-width: 3; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+
+  <rect width="1400" height="820" fill="#f5f7fb"/>
+  <text x="50" y="58" class="title">Layout TG_in / TG_out voi S-D cung ben</text>
+  <text x="50" y="88" class="subtitle">Chot de layout de va LVS sach: ben trai = IN, ben phai = OUT/n1. PMOS gate = ENB, NMOS gate = EN.</text>
+
+  <rect x="50" y="120" width="620" height="570" class="box"/>
+  <text x="82" y="165" class="label">TG_in: ghi du lieu vao latch</text>
+  <text x="82" y="194" class="small">PMOS 0.42/0.10, NMOS 0.18/0.10</text>
+
+  <rect x="110" y="230" width="500" height="150" class="well"/>
+  <text x="120" y="255" class="tiny">n-well / PMOS row</text>
+  <rect x="110" y="465" width="500" height="130" class="psub"/>
+  <text x="120" y="490" class="tiny">p-sub / NMOS row</text>
+
+  <rect x="190" y="280" width="105" height="55" class="active"/>
+  <rect x="425" y="280" width="105" height="55" class="active"/>
+  <rect x="342" y="245" width="38" height="125" class="poly"/>
+  <text x="212" y="315" class="label">S</text>
+  <text x="448" y="315" class="label">D</text>
+  <text x="320" y="235" class="small">PMOS gate ENB</text>
+
+  <rect x="190" y="512" width="105" height="55" class="active"/>
+  <rect x="425" y="512" width="105" height="55" class="active"/>
+  <rect x="342" y="485" width="38" height="108" class="poly"/>
+  <text x="212" y="547" class="label">S</text>
+  <text x="448" y="547" class="label">D</text>
+  <text x="325" y="625" class="small">NMOS gate EN</text>
+
+  <path d="M242 307 L242 540" class="wire"/>
+  <path d="M477 307 L477 540" class="wire"/>
+  <rect x="135" y="405" width="110" height="48" class="pin"/>
+  <text x="159" y="436" class="label">IN/D</text>
+  <path d="M245 429 L242 429" class="wire"/>
+  <rect x="475" y="405" width="112" height="48" class="pin"/>
+  <text x="492" y="436" class="label">OUT</text>
+  <text x="497" y="459" class="tiny">n1</text>
+  <path d="M477 429 L475 429" class="wire"/>
+
+  <rect x="300" y="205" width="130" height="38" class="enb"/>
+  <text x="342" y="230" class="label">ENB</text>
+  <path d="M365 243 L365 245" class="wire2"/>
+  <rect x="312" y="630" width="106" height="38" class="en"/>
+  <text x="341" y="655" class="label">EN</text>
+  <path d="M365 630 L365 593" class="wire2"/>
+
+  <rect x="730" y="120" width="620" height="570" class="box"/>
+  <text x="762" y="165" class="label">TG_out / feedback: giu latch</text>
+  <text x="762" y="194" class="small">PMOS 0.22/0.10, NMOS 0.12/0.10</text>
+
+  <rect x="790" y="230" width="500" height="150" class="well"/>
+  <text x="800" y="255" class="tiny">n-well / PMOS row</text>
+  <rect x="790" y="465" width="500" height="130" class="psub"/>
+  <text x="800" y="490" class="tiny">p-sub / NMOS row</text>
+
+  <rect x="885" y="286" width="82" height="45" class="active"/>
+  <rect x="1110" y="286" width="82" height="45" class="active"/>
+  <rect x="1022" y="248" width="34" height="120" class="poly"/>
+  <text x="910" y="315" class="label">S</text>
+  <text x="1135" y="315" class="label">D</text>
+  <text x="998" y="235" class="small">PMOS gate ENB</text>
+
+  <rect x="885" y="517" width="82" height="45" class="active"/>
+  <rect x="1110" y="517" width="82" height="45" class="active"/>
+  <rect x="1022" y="488" width="34" height="100" class="poly"/>
+  <text x="910" y="547" class="label">S</text>
+  <text x="1135" y="547" class="label">D</text>
+  <text x="1005" y="625" class="small">NMOS gate EN</text>
+
+  <path d="M926 308 L926 540" class="wire"/>
+  <path d="M1151 308 L1151 540" class="wire"/>
+  <rect x="815" y="405" width="130" height="48" class="pin"/>
+  <text x="840" y="436" class="label">IN/Q</text>
+  <path d="M945 429 L926 429" class="wire"/>
+  <rect x="1150" y="405" width="112" height="48" class="pin"/>
+  <text x="1167" y="436" class="label">OUT</text>
+  <text x="1172" y="459" class="tiny">n1</text>
+  <path d="M1151 429 L1150 429" class="wire"/>
+
+  <rect x="980" y="205" width="130" height="38" class="enb"/>
+  <text x="1022" y="230" class="label">ENB</text>
+  <path d="M1039 243 L1039 248" class="wire2"/>
+  <rect x="992" y="630" width="106" height="38" class="en"/>
+  <text x="1021" y="655" class="label">EN</text>
+  <path d="M1039 630 L1039 588" class="wire2"/>
+
+  <rect x="50" y="715" width="620" height="74" class="note"/>
+  <text x="72" y="744" class="label">Net rule</text>
+  <text x="72" y="772" class="small">IN = PMOS S trai + NMOS S trai. OUT/n1 = PMOS D phai + NMOS D phai.</text>
+
+  <rect x="730" y="715" width="620" height="74" class="warn"/>
+  <text x="752" y="744" class="label">Layout rule</text>
+  <text x="752" y="772" class="small">Khong route cheo neu khong bat buoc. Node n1 ngan, it diffusion thua, it via.</text>
+</svg>

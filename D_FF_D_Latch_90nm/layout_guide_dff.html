@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Huong dan layout D-FF master-slave TG 90nm</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --panel: #ffffff;
+      --ink: #18202a;
+      --muted: #5b6675;
+      --line: #d6deea;
+      --blue: #1769e0;
+      --green: #178a55;
+      --red: #c83532;
+      --amber: #b36b00;
+      --violet: #7755cc;
+      --cyan: #008a99;
+      --mono: "Consolas", "Courier New", monospace;
+      --sans: Arial, Helvetica, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--sans);
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.45;
+    }
+
+    header {
+      padding: 28px 34px 18px;
+      background: #101820;
+      color: #fff;
+      border-bottom: 5px solid var(--blue);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 30px;
+      letter-spacing: 0;
+    }
+
+    header p {
+      margin: 0;
+      max-width: 1180px;
+      color: #dce7f7;
+      font-size: 16px;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: 22px;
+      padding: 22px;
+      max-width: 1500px;
+      margin: 0 auto;
+    }
+
+    nav {
+      position: sticky;
+      top: 16px;
+      align-self: start;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+    }
+
+    nav a {
+      display: block;
+      padding: 9px 10px;
+      color: var(--ink);
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    nav a:hover { background: #eef4ff; color: var(--blue); }
+
+    section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px;
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 22px;
+      color: #101820;
+    }
+
+    h3 {
+      margin: 18px 0 10px;
+      font-size: 17px;
+      color: #243246;
+    }
+
+    .grid2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .grid3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .note {
+      border-left: 4px solid var(--blue);
+      background: #eef5ff;
+      padding: 12px 14px;
+      border-radius: 6px;
+      color: #1f344d;
+    }
+
+    .warn {
+      border-left: 4px solid var(--amber);
+      background: #fff8e6;
+      padding: 12px 14px;
+      border-radius: 6px;
+      color: #4b350a;
+    }
+
+    .ok {
+      border-left: 4px solid var(--green);
+      background: #ecfbf4;
+      padding: 12px 14px;
+      border-radius: 6px;
+      color: #153a29;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0 6px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 9px 10px;
+      vertical-align: top;
+    }
+
+    th {
+      background: #edf2f8;
+      text-align: left;
+    }
+
+    code, pre {
+      font-family: var(--mono);
+      font-size: 13px;
+    }
+
+    pre {
+      margin: 10px 0 0;
+      padding: 12px;
+      overflow: auto;
+      background: #101820;
+      color: #e9f2ff;
+      border-radius: 7px;
+    }
+
+    .flow {
+      width: 100%;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 10px;
+    }
+
+    svg text { font-family: Arial, Helvetica, sans-serif; }
+
+    .imgrow {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      align-items: start;
+    }
+
+    figure {
+      margin: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    figure img {
+      width: 100%;
+      display: block;
+      background: #000;
+    }
+
+    figcaption {
+      padding: 9px 10px;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 2px 7px;
+      margin: 1px 3px 1px 0;
+      border-radius: 999px;
+      font-size: 12px;
+      background: #eef2f7;
+      color: #334155;
+    }
+
+    .tag.blue { background: #e8f1ff; color: var(--blue); }
+    .tag.green { background: #e8f8ef; color: var(--green); }
+    .tag.red { background: #ffecec; color: var(--red); }
+    .tag.violet { background: #f0edff; color: var(--violet); }
+    .tag.cyan { background: #e8fbfd; color: var(--cyan); }
+
+    ol, ul { padding-left: 22px; }
+    li { margin: 6px 0; }
+
+    @media (max-width: 980px) {
+      main { grid-template-columns: 1fr; padding: 14px; }
+      nav { position: static; }
+      .grid2, .grid3, .imgrow { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Huong dan layout D-FF master-slave transmission-gate 90nm</h1>
+    <p>Ban chot cho schematic hien tai: dung 2 cell D_latch giong nhau, khong them buffer giua Qm va slave, TG cell luon co PMOS gate = ENB va NMOS gate = EN.</p>
+  </header>
+
+  <main>
+    <nav aria-label="Muc luc">
+      <a href="#chot">1. Chot thiet ke</a>
+      <a href="#pin">2. Quy tac pin TG</a>
+      <a href="#cell">3. Layout 1 D_latch</a>
+      <a href="#dff">4. Ghep master-slave</a>
+      <a href="#route">5. Route CLK, CLKB, Qm</a>
+      <a href="#drc">6. DRC, LVS, PEX</a>
+      <a href="#checklist">7. Checklist nop bai</a>
+    </nav>
+
+    <div>
+      <section id="chot">
+        <h2>1. Chot thiet ke truoc layout</h2>
+        <div class="ok">
+          Phuong an chot: khong buffer giua <code>Qm</code> va <code>D_slave</code>. Waveform khong buffer dep hon, layout nho hon, ky sinh it hon, delay it hon. Gai nho tren <code>Qm</code> do clock feedthrough la chap nhan duoc neu <code>Q</code> van dung logic.
+        </div>
+
+        <h3>Sizing cho moi D_latch</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Block</th>
+              <th>NMOS W/L</th>
+              <th>PMOS W/L</th>
+              <th>Ghi chu layout</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>TG_in</code></td>
+              <td><code>0.18 / 0.10 um</code></td>
+              <td><code>0.42 / 0.10 um</code></td>
+              <td>Manh hon feedback de ghi du lieu vao latch de hon.</td>
+            </tr>
+            <tr>
+              <td><code>TG_out</code> / feedback</td>
+              <td><code>0.12 / 0.10 um</code></td>
+              <td><code>0.22 / 0.10 um</code></td>
+              <td>Nho hon <code>TG_in</code> de giu trang thai nhung tranh tranh chap voi duong ghi.</td>
+            </tr>
+            <tr>
+              <td><code>INV_store</code></td>
+              <td><code>0.12 / 0.10 um</code></td>
+              <td><code>0.30 / 0.10 um</code></td>
+              <td>Inverter noi bo, khong can qua lon.</td>
+            </tr>
+            <tr>
+              <td><code>INV_out</code></td>
+              <td><code>0.18 / 0.10 um</code></td>
+              <td><code>0.42 / 0.10 um</code></td>
+              <td>Tro lai sizing vua phai, khong dung <code>0.60/0.24</code> neu module dung chung cho ca 2 latch.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="flow" aria-label="So do DFF">
+          <svg width="1120" height="230" viewBox="0 0 1120 230" role="img">
+            <defs>
+              <marker id="arr" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto"><path d="M0,0 L12,4 L0,8 Z" fill="#1769e0"/></marker>
+            </defs>
+            <rect x="20" y="25" width="220" height="150" rx="8" fill="#eef5ff" stroke="#1769e0" stroke-width="2"/>
+            <rect x="470" y="25" width="220" height="150" rx="8" fill="#ecfbf4" stroke="#178a55" stroke-width="2"/>
+            <text x="66" y="58" font-size="22" font-weight="700" fill="#18202a">Master D_latch</text>
+            <text x="530" y="58" font-size="22" font-weight="700" fill="#18202a">Slave D_latch</text>
+            <text x="48" y="92" font-size="16" fill="#18202a">TG_in mo khi CLK=0</text>
+            <text x="48" y="119" font-size="16" fill="#18202a">TG_out mo khi CLK=1</text>
+            <text x="498" y="92" font-size="16" fill="#18202a">TG_in mo khi CLK=1</text>
+            <text x="498" y="119" font-size="16" fill="#18202a">TG_out mo khi CLK=0</text>
+            <line x1="250" y1="100" x2="460" y2="100" stroke="#1769e0" stroke-width="4" marker-end="url(#arr)"/>
+            <line x1="700" y1="100" x2="900" y2="100" stroke="#1769e0" stroke-width="4" marker-end="url(#arr)"/>
+            <line x1="0" y1="100" x2="18" y2="100" stroke="#1769e0" stroke-width="4" marker-end="url(#arr)"/>
+            <text x="6" y="88" font-size="18" font-weight="700">D</text>
+            <text x="330" y="86" font-size="18" font-weight="700" fill="#b36b00">Qm route ngan</text>
+            <text x="913" y="106" font-size="18" font-weight="700">Q</text>
+            <line x1="130" y1="190" x2="580" y2="190" stroke="#7755cc" stroke-width="3"/>
+            <line x1="130" y1="210" x2="580" y2="210" stroke="#008a99" stroke-width="3"/>
+            <text x="610" y="196" font-size="15" fill="#7755cc">CLK route song song</text>
+            <text x="610" y="216" font-size="15" fill="#008a99">CLKB route song song</text>
+          </svg>
+        </div>
+      </section>
+
+      <section id="pin">
+        <h2>2. Quy tac pin transmission gate</h2>
+        <div class="warn">
+          Luu y quan trong: trong cell <code>TG_in</code> va <code>TG_out</code>, pin <code>ENB</code> luon noi vao gate PMOS, pin <code>EN</code> luon noi vao gate NMOS. Khi can doi pha, doi tin hieu gan vao pin <code>EN/ENB</code>, khong doi noi trong cell TG.
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Latch</th>
+              <th>Block</th>
+              <th>Noi pin EN</th>
+              <th>Noi pin ENB</th>
+              <th>Mo khi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Master</td>
+              <td><code>TG_in</code></td>
+              <td><code>CLKB</code></td>
+              <td><code>CLK</code></td>
+              <td><code>CLK=0</code></td>
+            </tr>
+            <tr>
+              <td>Master</td>
+              <td><code>TG_out</code></td>
+              <td><code>CLK</code></td>
+              <td><code>CLKB</code></td>
+              <td><code>CLK=1</code></td>
+            </tr>
+            <tr>
+              <td>Slave</td>
+              <td><code>TG_in</code></td>
+              <td><code>CLK</code></td>
+              <td><code>CLKB</code></td>
+              <td><code>CLK=1</code></td>
+            </tr>
+            <tr>
+              <td>Slave</td>
+              <td><code>TG_out</code></td>
+              <td><code>CLKB</code></td>
+              <td><code>CLK</code></td>
+              <td><code>CLK=0</code></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <pre>Trong TG cell:
+  PMOS gate = ENB
+  NMOS gate = EN
+
+Khong sua noi noi bo TG khi layout.
+Chi route CLK/CLKB vao dung pin cua tung TG.</pre>
+      </section>
+
+      <section id="cell">
+        <h2>3. Layout 1 cell D_latch truoc</h2>
+        <div class="grid2">
+          <div>
+            <h3>Thu tu dat block</h3>
+            <ol>
+              <li>Dat rail <code>VDD</code> tren, <code>GND</code> duoi.</li>
+              <li>Dat PMOS row trong n-well, NMOS row trong p-sub.</li>
+              <li>Xep block trai sang phai: <code>TG_in -> INV_store -> INV_out</code>.</li>
+              <li>Dat <code>TG_out</code> / feedback gan phia <code>Q</code>, route ve node <code>n1</code>.</li>
+              <li>Giua PMOS/NMOS them tap day du, n-well tap gan VDD, substrate tap gan GND.</li>
+            </ol>
+          </div>
+          <div>
+            <h3>Huong node noi bo</h3>
+            <pre>D -> TG_in -> n1 -> INV_store -> n2 -> INV_out -> Q
+Q -> TG_out -> n1
+
+Muc tieu:
+  data path ngan va thang
+  feedback route ngan, khong cat qua data path
+  CLK/CLKB route song song, it skew</pre>
+          </div>
+        </div>
+
+        <div class="imgrow">
+          <figure>
+            <img src="figures/07_d_latch_layout_layered_floorplan.svg" alt="D latch layered floorplan">
+            <figcaption>Floorplan D_latch: data path thang, feedback vong ve n1, clock route duoi TG.</figcaption>
+          </figure>
+          <figure>
+            <img src="figures/09_en_enb_cross_connection_check.svg" alt="EN ENB cross connection check">
+            <figcaption>Kiem tra pha EN/ENB khi dung TG cho duong input va duong feedback.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="dff">
+        <h2>4. Ghep thanh D-FF master-slave</h2>
+        <div class="grid3">
+          <div class="note">
+            <strong>Master</strong><br>
+            Nhan <code>D</code>, cho ra <code>Qm</code>. Master transparent khi <code>CLK=0</code>.
+          </div>
+          <div class="note">
+            <strong>Slave</strong><br>
+            Nhan <code>Qm</code>, cho ra <code>Q</code>. Slave transparent khi <code>CLK=1</code>.
+          </div>
+          <div class="note">
+            <strong>Clock inverter</strong><br>
+            Tao <code>CLKB</code> tu <code>CLK</code>. Dat gan giua 2 latch de route can bang.
+          </div>
+        </div>
+
+        <h3>Thu tu layout DFF</h3>
+        <ol>
+          <li>Copy cell <code>D_latch</code> thanh master va slave.</li>
+          <li>Dat master ben trai, slave ben phai.</li>
+          <li>Route <code>Qm</code> tu output master sang input slave ngan nhat co the.</li>
+          <li>Khong chen buffer giua <code>Qm</code> va slave trong phuong an chot.</li>
+          <li>Dat <code>clock_inv</code> gan duong clock chung; route <code>CLK</code> va <code>CLKB</code> song song.</li>
+        </ol>
+
+        <figure>
+          <img src="photo/schematic/D_ff_schematic.jpg" alt="DFF schematic">
+          <figcaption>Schematic DFF hien tai: 2 D_latch master/slave, Qm noi truc tiep vao D cua slave, CLKB tao bang clock inverter.</figcaption>
+        </figure>
+      </section>
+
+      <section id="route">
+        <h2>5. Route CLK, CLKB, Qm</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Net</th>
+              <th>Uu tien layout</th>
+              <th>Can tranh</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>Qm</code></td>
+              <td>Route ngan, it via, khong chay song song lau voi clock.</td>
+              <td>Di sat <code>CLK/CLKB</code> qua doan dai vi de bi coupling.</td>
+            </tr>
+            <tr>
+              <td><code>CLK</code>, <code>CLKB</code></td>
+              <td>Route song song, chieu dai gan bang nhau, vao master/slave ro rang.</td>
+              <td>De mot net clock dai hon qua nhieu lam skew.</td>
+            </tr>
+            <tr>
+              <td><code>VDD</code>, <code>GND</code></td>
+              <td>Rail thang, rong, co tap gan transistor.</td>
+              <td>Rail he, it tap, lam waveform co gai lon hon.</td>
+            </tr>
+            <tr>
+              <td><code>n1</code>, <code>n2</code></td>
+              <td>Node noi bo ngan, tranh metal dai.</td>
+              <td>Keo node noi bo ra xa lam C ky sinh tang.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Giai thich gai nho tren Qm</h3>
+        <p>Gai nho tai <code>Qm</code> khi clock doi canh la hien tuong clock feedthrough va charge injection cua TG. Neu <code>Qm</code> khong vuot nguong logic sai va <code>Q</code> van sach, khong can them buffer. Neu muon giam nhe, uu tien route clock sach, them tap tot, can bang <code>CLK/CLKB</code>, khong tang transistor qua lon.</p>
+      </section>
+
+      <section id="drc">
+        <h2>6. DRC, LVS, PEX</h2>
+        <ol>
+          <li>DRC cell <code>TG_in</code>, <code>TG_out</code>, <code>INV_store</code>, <code>INV_out</code>.</li>
+          <li>LVS tung cell nho truoc.</li>
+          <li>DRC/LVS cell <code>D_latch</code>.</li>
+          <li>DRC/LVS toan <code>DFF</code>.</li>
+          <li>PEX toan DFF, chay lai transient voi testbench cu.</li>
+          <li>Do <code>CLK -> Q</code> tai muc <code>0.6V</code>, do setup/hold neu can bao cao timing.</li>
+        </ol>
+
+        <div class="warn">
+          Sau PEX, gai tren <code>Qm</code> co the lon hon do C/R ky sinh. Chi sua neu <code>Q</code> sai logic, delay vuot muc, hoac <code>Qm</code> tut qua nguong inverter slave.
+        </div>
+      </section>
+
+      <section id="checklist">
+        <h2>7. Checklist nop bai</h2>
+        <div class="grid2">
+          <div>
+            <h3>Checklist layout</h3>
+            <ul>
+              <li><span class="tag green">OK</span> PMOS nam trong n-well, NMOS nam trong p-sub.</li>
+              <li><span class="tag green">OK</span> PMOS source inverter noi VDD, NMOS source noi GND.</li>
+              <li><span class="tag blue">TG</span> PMOS gate luon la <code>ENB</code>, NMOS gate luon la <code>EN</code>.</li>
+              <li><span class="tag violet">CLK</span> Master/slave dung nguoc pha.</li>
+              <li><span class="tag cyan">Route</span> <code>Qm</code> ngan, khong buffer.</li>
+              <li><span class="tag red">Check</span> DRC/LVS sach truoc khi PEX.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Cau ghi vao bao cao</h3>
+            <pre>Thiet ke su dung D-FF master-slave tao tu hai D_latch
+transmission-gate. Trong moi TG, PMOS gate duoc dieu khien
+boi ENB, NMOS gate duoc dieu khien boi EN. Master va slave
+dung hai pha clock nguoc nhau. Node Qm duoc noi truc tiep
+vao slave de giam so tang logic, giam dien tich va giam ky sinh.
+Gai nho tai Qm khi clock chuyen canh la do clock feedthrough
+cua TG va khong lam sai logic ngo ra Q.</pre>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1120" viewBox="0 0 1800 1120">
+  <defs>
+    <marker id="arrowData" markerWidth="14" markerHeight="10" refX="12" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L14,5 L0,10 Z" fill="#0b57d0"/>
+    </marker>
+    <marker id="arrowFb" markerWidth="14" markerHeight="10" refX="12" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L14,5 L0,10 Z" fill="#b06000"/>
+    </marker>
+    <marker id="arrowClk" markerWidth="14" markerHeight="10" refX="12" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L14,5 L0,10 Z" fill="#7b1fa2"/>
+    </marker>
+    <style>
+      .title{font:700 34px Arial,sans-serif;fill:#101418}
+      .subtitle{font:22px Arial,sans-serif;fill:#30363d}
+      .label{font:20px Arial,sans-serif;fill:#101418}
+      .small{font:17px Arial,sans-serif;fill:#202428}
+      .tiny{font:15px Arial,sans-serif;fill:#202428}
+      .mono{font:16px Consolas,monospace;fill:#101418}
+      .dim{font:16px Arial,sans-serif;fill:#4a4f55}
+      .note{font:18px Arial,sans-serif;fill:#1f2933}
+      .cell{fill:#ffffff;stroke:#2f3946;stroke-width:3}
+      .nwell{fill:#fff1cc;stroke:#c58a00;stroke-width:3}
+      .pdiff{fill:#ffd9df;stroke:#b3261e;stroke-width:3}
+      .ndiff{fill:#dff7df;stroke:#188038;stroke-width:3}
+      .poly{fill:#d7c2ff;stroke:#6f35c0;stroke-width:3}
+      .m1{fill:#d8e7ff;stroke:#2864b4;stroke-width:3}
+      .m2{fill:#d6f0ff;stroke:#0077a3;stroke-width:3}
+      .co{fill:#202124;stroke:#ffffff;stroke-width:1}
+      .tap{fill:#f3f4f6;stroke:#6b7280;stroke-width:2}
+      .module{fill:none;stroke:#1f2937;stroke-width:3;stroke-dasharray:9 7}
+      .wireData{stroke:#0b57d0;stroke-width:6;fill:none;marker-end:url(#arrowData)}
+      .wireFb{stroke:#b06000;stroke-width:5;fill:none;marker-end:url(#arrowFb)}
+      .wireClk{stroke:#7b1fa2;stroke-width:5;fill:none;marker-end:url(#arrowClk)}
+      .wireHold{stroke:#555;stroke-width:4;fill:none}
+      .dimLine{stroke:#444;stroke-width:2;fill:none}
+      .railText{font:700 20px Arial,sans-serif;fill:#0b376d}
+    </style>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <text x="55" y="58" class="title">D-latch 90nm - layout phan lop va huong di tin hieu</text>
+  <text x="55" y="93" class="subtitle">Static transmission-gate latch: D ben trai, storage/output S/Q ben phai; data di thang, feedback di vong ngan ve nut n1.</text>
+
+  <rect x="55" y="120" width="1690" height="820" rx="6" class="cell"/>
+
+  <!-- power rails -->
+  <rect x="115" y="155" width="1525" height="56" class="m2"/>
+  <text x="135" y="191" class="railText">VDD rail M2/M1, width >= 0.30um, chay ngang tren PMOS</text>
+  <rect x="115" y="815" width="1525" height="56" class="m2"/>
+  <text x="135" y="851" class="railText">GND rail M2/M1, width >= 0.30um, chay ngang duoi NMOS + substrate tap</text>
+
+  <!-- dimension outline -->
+  <line x1="115" y1="910" x2="1640" y2="910" class="dimLine"/>
+  <line x1="115" y1="900" x2="115" y2="920" class="dimLine"/>
+  <line x1="1640" y1="900" x2="1640" y2="920" class="dimLine"/>
+  <text x="760" y="936" class="dim">Tong cell target: 5.40um x 3.20um (floorplan huong dan, co the co gian khi route thuc te)</text>
+  <line x1="1682" y1="155" x2="1682" y2="871" class="dimLine"/>
+  <line x1="1672" y1="155" x2="1692" y2="155" class="dimLine"/>
+  <line x1="1672" y1="871" x2="1692" y2="871" class="dimLine"/>
+  <text x="1700" y="525" class="dim" transform="rotate(90 1700 525)">3.20um</text>
+
+  <!-- well and active regions -->
+  <rect x="145" y="240" width="1430" height="205" class="nwell"/>
+  <text x="156" y="266" class="small">NWELL - PMOS row, enclosure DIFF >= 0.23um</text>
+
+  <rect x="195" y="300" width="1170" height="74" class="pdiff"/>
+  <text x="205" y="292" class="small">P-DIFF chung hang PMOS</text>
+  <rect x="195" y="615" width="1170" height="74" class="ndiff"/>
+  <text x="205" y="605" class="small">N-DIFF chung hang NMOS</text>
+
+  <!-- taps -->
+  <rect x="150" y="300" width="38" height="74" class="tap"/>
+  <rect x="1380" y="300" width="38" height="74" class="tap"/>
+  <text x="120" y="289" class="tiny">N-well tap</text>
+  <text x="1360" y="289" class="tiny">N-well tap</text>
+  <rect x="150" y="615" width="38" height="74" class="tap"/>
+  <rect x="1380" y="615" width="38" height="74" class="tap"/>
+  <text x="118" y="713" class="tiny">P-sub tap</text>
+  <text x="1354" y="713" class="tiny">P-sub tap</text>
+
+  <!-- module boundaries -->
+  <rect x="205" y="260" width="270" height="470" class="module"/>
+  <rect x="500" y="260" width="260" height="470" class="module"/>
+  <rect x="785" y="260" width="285" height="470" class="module"/>
+  <rect x="1095" y="260" width="270" height="470" class="module"/>
+  <text x="270" y="252" class="label">TG_in</text>
+  <text x="542" y="252" class="label">INV_store</text>
+  <text x="855" y="252" class="label">INV_out</text>
+  <text x="1142" y="252" class="label">TG_feedback</text>
+  <text x="218" y="747" class="dim">0.70um x 1.90um</text>
+  <text x="512" y="747" class="dim">0.80um x 1.90um</text>
+  <text x="802" y="747" class="dim">0.95um x 1.90um</text>
+  <text x="1108" y="747" class="dim">0.70um x 1.90um</text>
+
+  <!-- poly gates -->
+  <rect x="285" y="245" width="30" height="500" class="poly"/>
+  <rect x="365" y="245" width="30" height="500" class="poly"/>
+  <rect x="585" y="245" width="30" height="500" class="poly"/>
+  <rect x="905" y="245" width="30" height="500" class="poly"/>
+  <rect x="1165" y="245" width="30" height="500" class="poly"/>
+  <rect x="1245" y="245" width="30" height="500" class="poly"/>
+
+  <text x="260" y="232" class="mono">ENB</text>
+  <text x="351" y="232" class="mono">EN</text>
+  <text x="232" y="286" class="tiny">TG_in gate: PMOS=ENB, NMOS=EN</text>
+  <text x="570" y="232" class="mono">n1 gate</text>
+  <text x="890" y="232" class="mono">n2 gate</text>
+  <text x="1148" y="232" class="mono">EN</text>
+  <text x="1228" y="232" class="mono">ENB</text>
+  <text x="1112" y="286" class="tiny">TG_feedback gate: PMOS=EN, NMOS=ENB</text>
+
+  <!-- contacts -->
+  <g>
+    <rect x="235" y="325" width="18" height="18" class="co"/><rect x="420" y="325" width="18" height="18" class="co"/>
+    <rect x="235" y="642" width="18" height="18" class="co"/><rect x="420" y="642" width="18" height="18" class="co"/>
+    <rect x="535" y="325" width="18" height="18" class="co"/><rect x="710" y="325" width="18" height="18" class="co"/>
+    <rect x="535" y="642" width="18" height="18" class="co"/><rect x="710" y="642" width="18" height="18" class="co"/>
+    <rect x="820" y="325" width="18" height="18" class="co"/><rect x="1015" y="325" width="18" height="18" class="co"/>
+    <rect x="820" y="642" width="18" height="18" class="co"/><rect x="1015" y="642" width="18" height="18" class="co"/>
+    <rect x="1125" y="325" width="18" height="18" class="co"/><rect x="1310" y="325" width="18" height="18" class="co"/>
+    <rect x="1125" y="642" width="18" height="18" class="co"/><rect x="1310" y="642" width="18" height="18" class="co"/>
+  </g>
+
+  <!-- metal vertical trunks -->
+  <rect x="222" y="330" width="45" height="330" class="m1"/>
+  <rect x="405" y="330" width="45" height="330" class="m1"/>
+  <rect x="520" y="330" width="45" height="330" class="m1"/>
+  <rect x="695" y="330" width="45" height="330" class="m1"/>
+  <rect x="805" y="330" width="45" height="330" class="m1"/>
+  <rect x="1000" y="330" width="45" height="330" class="m1"/>
+  <rect x="1110" y="330" width="45" height="330" class="m1"/>
+  <rect x="1295" y="330" width="45" height="330" class="m1"/>
+
+  <!-- source/drain labels -->
+  <text x="213" y="395" class="mono">D side</text>
+  <text x="397" y="395" class="mono">n1 side</text>
+  <text x="506" y="395" class="mono">VDD/S</text>
+  <text x="692" y="395" class="mono">n2/D</text>
+  <text x="790" y="395" class="mono">VDD/S</text>
+  <text x="995" y="395" class="mono">Q/D</text>
+  <text x="1094" y="395" class="mono">Q side</text>
+  <text x="1280" y="395" class="mono">n1 side</text>
+
+  <text x="505" y="708" class="mono">GND/S</text>
+  <text x="692" y="708" class="mono">n2/D</text>
+  <text x="790" y="708" class="mono">GND/S</text>
+  <text x="995" y="708" class="mono">Q/D</text>
+
+  <!-- signal routes -->
+  <path d="M80 505 H222" class="wireData"/>
+  <text x="60" y="493" class="label">D input</text>
+
+  <path d="M450 505 H520" class="wireData"/>
+  <text x="456" y="492" class="mono">n1</text>
+  <path d="M740 505 H805" class="wireData"/>
+  <text x="750" y="492" class="mono">n2</text>
+  <path d="M1045 505 H1518" class="wireData"/>
+  <text x="1450" y="493" class="label">S/Q output</text>
+
+  <path d="M1045 555 C1125 555 1170 560 1185 615" class="wireFb"/>
+  <path d="M1295 555 C1335 520 1350 470 1320 440 C1250 350 470 370 450 455" class="wireFb"/>
+  <text x="1120" y="545" class="label" fill="#b06000">feedback Q -> TG_feedback -> n1</text>
+
+  <!-- power straps to inverters -->
+  <path d="M542 211 V330" class="wireHold"/>
+  <path d="M827 211 V330" class="wireHold"/>
+  <path d="M542 660 V815" class="wireHold"/>
+  <path d="M827 660 V815" class="wireHold"/>
+
+  <!-- clock routes -->
+  <path d="M285 790 V745" class="wireClk"/>
+  <path d="M365 790 V745" class="wireClk"/>
+  <path d="M1165 790 V745" class="wireClk"/>
+  <path d="M1245 790 V745" class="wireClk"/>
+  <text x="190" y="790" class="label" fill="#7b1fa2">EN/ENB bus di doc duoi TG, route doi xung de giam skew</text>
+
+  <!-- dimensions and design rule callouts -->
+  <line x1="285" y1="760" x2="315" y2="760" class="dimLine"/>
+  <text x="247" y="782" class="dim">poly W >= 0.09um</text>
+  <line x1="315" y1="763" x2="365" y2="763" class="dimLine"/>
+  <text x="322" y="784" class="dim">space >= 0.09um</text>
+  <line x1="195" y1="590" x2="365" y2="590" class="dimLine"/>
+  <text x="210" y="575" class="dim">DIFF width >= 0.09um, poly extension >= 0.13um</text>
+  <text x="1090" y="770" class="dim">Contact 0.09um x 0.09um, M1 enclosure >= 0.005um</text>
+
+  <!-- sizing table -->
+  <rect x="85" y="965" width="790" height="118" rx="6" fill="#f8fafc" stroke="#c3c7cc" stroke-width="2"/>
+  <text x="105" y="995" class="label">Kich thuoc transistor dung cho layout</text>
+  <text x="105" y="1028" class="mono">TG_in:       NMOS 0.18/0.10um, PMOS 0.28/0.10um</text>
+  <text x="105" y="1055" class="mono">INV_store:   NMOS 0.12/0.10um, PMOS 0.30/0.10um</text>
+  <text x="105" y="1082" class="mono">INV_out:     NMOS 0.18/0.10um, PMOS 0.42/0.10um</text>
+
+  <rect x="910" y="965" width="835" height="118" rx="6" fill="#f8fafc" stroke="#c3c7cc" stroke-width="2"/>
+  <text x="930" y="995" class="label">Legend lop mau</text>
+  <rect x="935" y="1018" width="34" height="22" class="nwell"/><text x="978" y="1036" class="small">NWELL</text>
+  <rect x="1055" y="1018" width="34" height="22" class="pdiff"/><text x="1098" y="1036" class="small">P-DIFF</text>
+  <rect x="1190" y="1018" width="34" height="22" class="ndiff"/><text x="1233" y="1036" class="small">N-DIFF</text>
+  <rect x="1325" y="1018" width="34" height="22" class="poly"/><text x="1368" y="1036" class="small">POLY</text>
+  <rect x="1435" y="1018" width="34" height="22" class="m1"/><text x="1478" y="1036" class="small">M1</text>
+  <rect x="1530" y="1018" width="34" height="22" class="m2"/><text x="1573" y="1036" class="small">M2 rail</text>
+  <rect x="935" y="1052" width="22" height="22" class="co"/><text x="970" y="1069" class="small">Contact</text>
+  <text x="1090" y="1069" class="small">Chu y: S/D cua TG doi vai theo dien ap; trong layout gan theo net D, n1, Q de route ngan.</text>
+</svg>

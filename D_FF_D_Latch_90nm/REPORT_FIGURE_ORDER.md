@@ -162,6 +162,8 @@ Noi dung can viet:
 Hinh:
 
 - `figures/06_layout_floorplan_guideline.svg`
+- `figures/07_d_latch_layout_layered_floorplan.svg`
+- `figures/08_d_latch_layout_interactive.html`
 
 Noi dung can viet:
 
@@ -169,12 +171,16 @@ Noi dung can viet:
 - Rut ngan `n1`, `n2`, `Qm`.
 - Route `CLK/CLKB` can bang do dai den cac TG de giam skew noi bo.
 - Sau layout can co DRC clean, LVS match, neu co thi LPE/post-layout sim.
+- Voi rieng D-latch, dat `D` ben trai, `S/Q` ben phai. Duong data di thang qua `TG_in`, `INV_store`, `INV_out`; duong feedback `Q -> TG_feedback -> n1` chay vong rieng va ngan.
+- TG khong co source/drain co dinh theo chuc nang logic; trong layout nen gan nhan theo net `D side`, `n1 side`, `Q side`. Inverter thi PMOS source gan VDD, NMOS source gan GND.
+- Neu can thao tac/de phong chu de nhau, mo file HTML. Ban HTML co zoom/pan, bat/tat layer va click module de xem chi tiet rieng.
 
 ## Trang thai file hinh
 
 Da tao va kiem tra XML hop le:
 
-- 8 file SVG trong `figures/`
+- 9 file SVG trong `figures/`
+- 1 file HTML thao tac trong `figures/`
 - 2 file PNG tham khao trong thu muc cha
 
 Chua tao PNG tu SVG vi may hien tai khong co `inkscape`, `rsvg-convert`, hoac `cairosvg`. Neu can PNG, mo SVG bang browser/PowerPoint de xuat, hoac cai mot trong cac tool tren.

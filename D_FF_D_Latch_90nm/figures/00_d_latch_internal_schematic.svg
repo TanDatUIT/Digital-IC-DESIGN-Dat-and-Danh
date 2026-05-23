@@ -56,7 +56,7 @@
   <text x="562" y="545" class="m">Q -> n1</text>
 
   <polygon points="205,605 235,587 235,623" class="pin"/>
-  <text x="165" y="613" class="t">EN</text>
+  <text x="145" y="613" class="t">CLK</text>
   <line x1="235" y1="605" x2="280" y2="605" class="ctrl"/>
   <path d="M280 605 L280 365" class="ctrl"/>
   <text x="295" y="435" class="mono">TG_in NMOS gate</text>
@@ -64,7 +64,7 @@
   <text x="640" y="608" class="mono">TG_feedback PMOS gate</text>
 
   <polygon points="205,675 235,657 235,693" class="pin"/>
-  <text x="145" y="683" class="t">ENB</text>
+  <text x="130" y="683" class="t">CLKB</text>
   <line x1="235" y1="675" x2="330" y2="675" class="ctrl"/>
   <path d="M330 675 L330 365" class="ctrl"/>
   <text x="345" y="467" class="mono">TG_in PMOS gate</text>
@@ -73,8 +73,8 @@
 
   <rect x="970" y="480" width="390" height="160" rx="8" fill="#f7f7f7" stroke="#bbb" stroke-width="2"/>
   <text x="995" y="515" class="s">Latch modes</text>
-  <text x="995" y="550" class="m">EN=1, ENB=0: TG_in ON, feedback OFF.</text>
+  <text x="995" y="550" class="m">CLK=1, CLKB=0: TG_in ON, feedback OFF.</text>
   <text x="995" y="578" class="m">D propagates to Q after inverter delay.</text>
-  <text x="995" y="610" class="m">EN=0, ENB=1: TG_in OFF, feedback ON.</text>
+  <text x="995" y="610" class="m">CLK=0, CLKB=1: TG_in OFF, feedback ON.</text>
   <text x="995" y="638" class="m">Q is fed back to n1 and state is held.</text>
 </svg>

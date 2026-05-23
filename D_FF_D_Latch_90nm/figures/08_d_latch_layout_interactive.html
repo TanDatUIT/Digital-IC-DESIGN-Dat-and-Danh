@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>D-latch 90nm interactive layout</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --panel: #ffffff;
+      --ink: #111827;
+      --muted: #5b6470;
+      --line: #c9d1dc;
+      --data: #0b57d0;
+      --feedback: #b06000;
+      --clock: #7b1fa2;
+      --nwell: #fff1cc;
+      --pdiff: #ffd9df;
+      --ndiff: #dff7df;
+      --poly: #d7c2ff;
+      --m1: #d8e7ff;
+      --m2: #d6f0ff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--ink);
+      font: 14px/1.45 Arial, sans-serif;
+    }
+
+    .app {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 360px;
+      grid-template-rows: auto minmax(0, 1fr);
+      min-height: 100vh;
+    }
+
+    header {
+      grid-column: 1 / -1;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--line);
+      background: var(--panel);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.2;
+    }
+
+    .sub {
+      margin-left: auto;
+      color: var(--muted);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .stage {
+      position: relative;
+      overflow: hidden;
+      min-height: 0;
+      background:
+        linear-gradient(#eef2f7 1px, transparent 1px),
+        linear-gradient(90deg, #eef2f7 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+
+    .toolbar {
+      position: absolute;
+      left: 14px;
+      top: 14px;
+      z-index: 5;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px;
+      background: rgba(255,255,255,.94);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(15,23,42,.08);
+    }
+
+    button {
+      border: 1px solid #b8c1ce;
+      background: #fff;
+      color: var(--ink);
+      border-radius: 6px;
+      padding: 7px 10px;
+      font: 600 13px Arial, sans-serif;
+      cursor: pointer;
+    }
+
+    button:hover { background: #eef4ff; border-color: #7aa7e8; }
+
+    .zoomLabel {
+      color: var(--muted);
+      min-width: 52px;
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+
+    input[type="range"] { width: 130px; }
+
+    .viewport {
+      width: 100%;
+      height: 100%;
+      cursor: grab;
+      touch-action: none;
+    }
+
+    .viewport.dragging { cursor: grabbing; }
+
+    aside {
+      min-height: 0;
+      overflow: auto;
+      padding: 16px;
+      border-left: 1px solid var(--line);
+      background: var(--panel);
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 16px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 12px;
+      background: #fff;
+    }
+
+    .checks {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      color: #20242b;
+      user-select: none;
+    }
+
+    .swatch {
+      width: 18px;
+      height: 14px;
+      border: 1px solid #7b8491;
+      border-radius: 3px;
+      flex: 0 0 auto;
+    }
+
+    .facts {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 7px 10px;
+      margin-top: 10px;
+    }
+
+    .k { color: var(--muted); }
+    .v { font-family: Consolas, monospace; }
+
+    .hint {
+      color: var(--muted);
+      margin: 8px 0 0;
+    }
+
+    .legendRow {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 7px 0;
+    }
+
+    svg text { font-family: Arial, sans-serif; }
+    .tTitle { font-size: 18px; font-weight: 700; fill: #101418; }
+    .tSmall { font-size: 13px; fill: #20242b; }
+    .tNet { font-size: 14px; font-weight: 700; fill: #101418; }
+    .tPin { font-size: 18px; font-weight: 700; fill: #101418; }
+    .dimText { font-size: 12px; fill: #4a4f55; }
+    .cell { fill: #fff; stroke: #2f3946; stroke-width: 2; }
+    .moduleBox { fill: rgba(255,255,255,.2); stroke: #1f2937; stroke-width: 2; stroke-dasharray: 8 6; }
+    .moduleHot { fill: transparent; stroke: transparent; cursor: pointer; }
+    .moduleHot:hover + .moduleBox, .moduleBox.active { stroke: #0b57d0; stroke-width: 4; stroke-dasharray: none; }
+    .nwell { fill: var(--nwell); stroke: #c58a00; stroke-width: 2; }
+    .pdiff { fill: var(--pdiff); stroke: #b3261e; stroke-width: 2; }
+    .ndiff { fill: var(--ndiff); stroke: #188038; stroke-width: 2; }
+    .poly { fill: var(--poly); stroke: #6f35c0; stroke-width: 2; }
+    .m1 { fill: var(--m1); stroke: #2864b4; stroke-width: 2; }
+    .m2 { fill: var(--m2); stroke: #0077a3; stroke-width: 2; }
+    .contact { fill: #202124; stroke: #fff; stroke-width: .8; }
+    .tap { fill: #f3f4f6; stroke: #6b7280; stroke-width: 1.5; }
+    .dimLine { stroke: #4a4f55; stroke-width: 1.5; fill: none; }
+    .dataWire { stroke: var(--data); stroke-width: 5; fill: none; marker-end: url(#arrowData); }
+    .fbWire { stroke: var(--feedback); stroke-width: 4; fill: none; marker-end: url(#arrowFb); }
+    .clkWire { stroke: var(--clock); stroke-width: 4; fill: none; marker-end: url(#arrowClk); }
+    .powerWire { stroke: #3c4654; stroke-width: 3; fill: none; }
+    .hiddenLayer { display: none; }
+
+    @media (max-width: 980px) {
+      .app {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 62vh auto;
+      }
+      aside {
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+      .sub { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>D-latch 90nm interactive layout</h1>
+      <div class="sub">D ben trai -> TG_in -> INV_store -> INV_out -> S/Q ben phai</div>
+    </header>
+
+    <main class="stage">
+      <div class="toolbar">
+        <button id="resetBtn">Reset</button>
+        <button id="fitBtn">Fit</button>
+        <input id="zoomRange" type="range" min="70" max="220" value="100">
+        <span id="zoomText" class="zoomLabel">100%</span>
+      </div>
+
+      <svg id="layoutSvg" class="viewport" viewBox="0 0 1200 720" role="img" aria-label="D-latch 90nm interactive layout">
+        <defs>
+          <marker id="arrowData" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L12,4 L0,8 Z" fill="#0b57d0"></path>
+          </marker>
+          <marker id="arrowFb" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L12,4 L0,8 Z" fill="#b06000"></path>
+          </marker>
+          <marker id="arrowClk" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L12,4 L0,8 Z" fill="#7b1fa2"></path>
+          </marker>
+        </defs>
+
+        <g id="world">
+          <rect x="50" y="45" width="1085" height="580" rx="8" class="cell"></rect>
+          <text x="70" y="78" class="tTitle">D-latch floorplan - lop mau rieng, nhan ngan de khong de chu</text>
+          <text x="70" y="103" class="tSmall">Click module de xem kich thuoc/S-D/ghi chu o panel ben phai. Keo canvas de pan, dung slider de zoom.</text>
+
+          <g data-layer="m2">
+            <rect x="90" y="130" width="985" height="38" class="m2"></rect>
+            <text x="108" y="154" class="tNet">VDD rail</text>
+            <rect x="90" y="540" width="985" height="38" class="m2"></rect>
+            <text x="108" y="564" class="tNet">GND rail</text>
+          </g>
+
+          <g data-layer="nwell">
+            <rect x="110" y="200" width="930" height="135" class="nwell"></rect>
+            <text x="120" y="224" class="tNet">NWELL / PMOS row</text>
+          </g>
+
+          <g data-layer="diff">
+            <rect x="145" y="242" width="760" height="52" class="pdiff"></rect>
+            <rect x="145" y="405" width="760" height="52" class="ndiff"></rect>
+          </g>
+
+          <g data-layer="tap">
+            <rect x="112" y="242" width="24" height="52" class="tap"></rect>
+            <rect x="922" y="242" width="24" height="52" class="tap"></rect>
+            <rect x="112" y="405" width="24" height="52" class="tap"></rect>
+            <rect x="922" y="405" width="24" height="52" class="tap"></rect>
+          </g>
+
+          <g data-layer="poly">
+            <rect x="206" y="194" width="18" height="300" class="poly"></rect>
+            <rect x="258" y="194" width="18" height="300" class="poly"></rect>
+            <rect x="407" y="194" width="18" height="300" class="poly"></rect>
+            <rect x="612" y="194" width="18" height="300" class="poly"></rect>
+            <rect x="790" y="194" width="18" height="300" class="poly"></rect>
+            <rect x="842" y="194" width="18" height="300" class="poly"></rect>
+            <text x="196" y="187" class="tSmall">ENB</text>
+            <text x="252" y="187" class="tSmall">EN</text>
+            <text x="166" y="548" class="tSmall">TG_in: PMOS=ENB, NMOS=EN</text>
+            <text x="387" y="187" class="tSmall">n1 gate</text>
+            <text x="592" y="187" class="tSmall">n2 gate</text>
+            <text x="785" y="187" class="tSmall">EN</text>
+            <text x="834" y="187" class="tSmall">ENB</text>
+            <text x="748" y="548" class="tSmall">TG_feedback: PMOS=EN, NMOS=ENB</text>
+          </g>
+
+          <g data-layer="m1">
+            <rect x="160" y="258" width="34" height="185" class="m1"></rect>
+            <rect x="305" y="258" width="34" height="185" class="m1"></rect>
+            <rect x="365" y="258" width="34" height="185" class="m1"></rect>
+            <rect x="500" y="258" width="34" height="185" class="m1"></rect>
+            <rect x="570" y="258" width="34" height="185" class="m1"></rect>
+            <rect x="710" y="258" width="34" height="185" class="m1"></rect>
+            <rect x="760" y="258" width="34" height="185" class="m1"></rect>
+            <rect x="884" y="258" width="34" height="185" class="m1"></rect>
+          </g>
+
+          <g data-layer="contact">
+            <rect x="168" y="264" width="12" height="12" class="contact"></rect>
+            <rect x="313" y="264" width="12" height="12" class="contact"></rect>
+            <rect x="373" y="264" width="12" height="12" class="contact"></rect>
+            <rect x="508" y="264" width="12" height="12" class="contact"></rect>
+            <rect x="578" y="264" width="12" height="12" class="contact"></rect>
+            <rect x="718" y="264" width="12" height="12" class="contact"></rect>
+            <rect x="768" y="264" width="12" height="12" class="contact"></rect>
+            <rect x="892" y="264" width="12" height="12" class="contact"></rect>
+            <rect x="168" y="425" width="12" height="12" class="contact"></rect>
+            <rect x="313" y="425" width="12" height="12" class="contact"></rect>
+            <rect x="373" y="425" width="12" height="12" class="contact"></rect>
+            <rect x="508" y="425" width="12" height="12" class="contact"></rect>
+            <rect x="578" y="425" width="12" height="12" class="contact"></rect>
+            <rect x="718" y="425" width="12" height="12" class="contact"></rect>
+            <rect x="768" y="425" width="12" height="12" class="contact"></rect>
+            <rect x="892" y="425" width="12" height="12" class="contact"></rect>
+          </g>
+
+          <g data-layer="module">
+            <rect x="142" y="215" width="205" height="290" class="moduleHot" data-module="tgIn"></rect>
+            <rect id="box-tgIn" x="142" y="215" width="205" height="290" class="moduleBox"></rect>
+            <text x="192" y="522" class="tNet">TG_in</text>
+
+            <rect x="360" y="215" width="185" height="290" class="moduleHot" data-module="invStore"></rect>
+            <rect id="box-invStore" x="360" y="215" width="185" height="290" class="moduleBox"></rect>
+            <text x="407" y="522" class="tNet">INV_store</text>
+
+            <rect x="560" y="215" width="195" height="290" class="moduleHot" data-module="invOut"></rect>
+            <rect id="box-invOut" x="560" y="215" width="195" height="290" class="moduleBox"></rect>
+            <text x="614" y="522" class="tNet">INV_out</text>
+
+            <rect x="768" y="215" width="170" height="290" class="moduleHot" data-module="tgFb"></rect>
+            <rect id="box-tgFb" x="768" y="215" width="170" height="290" class="moduleBox"></rect>
+            <text x="792" y="522" class="tNet">TG_feedback</text>
+          </g>
+
+          <g data-layer="route">
+            <path d="M55 350 H160" class="dataWire"></path>
+            <text x="62" y="337" class="tPin">D</text>
+            <path d="M339 350 H365" class="dataWire"></path>
+            <text x="335" y="338" class="tNet">n1</text>
+            <path d="M534 350 H570" class="dataWire"></path>
+            <text x="532" y="338" class="tNet">n2</text>
+            <path d="M744 350 H1120" class="dataWire"></path>
+            <text x="1080" y="337" class="tPin">S/Q</text>
+
+            <path d="M744 390 C805 390 845 405 855 450" class="fbWire"></path>
+            <path d="M884 330 C925 300 932 250 875 235 C700 190 360 200 318 315" class="fbWire"></path>
+            <text x="790" y="608" class="tSmall">Feedback Q -> TG_feedback -> n1</text>
+
+            <path d="M206 590 V494" class="clkWire"></path>
+            <path d="M258 590 V494" class="clkWire"></path>
+            <path d="M790 590 V494" class="clkWire"></path>
+            <path d="M842 590 V494" class="clkWire"></path>
+            <text x="185" y="612" class="tSmall">EN/ENB bus: route doi xung, giam skew TG</text>
+          </g>
+
+          <g data-layer="dim">
+            <line x1="90" y1="655" x2="1075" y2="655" class="dimLine"></line>
+            <line x1="90" y1="646" x2="90" y2="664" class="dimLine"></line>
+            <line x1="1075" y1="646" x2="1075" y2="664" class="dimLine"></line>
+            <text x="420" y="681" class="dimText">Tong cell target: 5.40um x 3.20um</text>
+            <text x="148" y="206" class="dimText">TG_in 0.70um x 1.90um</text>
+            <text x="366" y="206" class="dimText">0.80um x 1.90um</text>
+            <text x="568" y="206" class="dimText">0.95um x 1.90um</text>
+            <text x="770" y="206" class="dimText">0.70um x 1.90um</text>
+            <text x="962" y="270" class="dimText">poly W >= 0.09um</text>
+            <text x="962" y="292" class="dimText">poly space >= 0.09um</text>
+            <text x="962" y="314" class="dimText">contact 0.09um x 0.09um</text>
+            <text x="962" y="336" class="dimText">M1 width >= 0.10um</text>
+          </g>
+        </g>
+      </svg>
+    </main>
+
+    <aside>
+      <section class="card">
+        <h2>Layer hien thi</h2>
+        <div class="checks">
+          <label><input type="checkbox" data-toggle="nwell" checked><span class="swatch" style="background:var(--nwell)"></span>NWELL</label>
+          <label><input type="checkbox" data-toggle="diff" checked><span class="swatch" style="background:linear-gradient(90deg,var(--pdiff),var(--ndiff))"></span>DIFF</label>
+          <label><input type="checkbox" data-toggle="poly" checked><span class="swatch" style="background:var(--poly)"></span>POLY</label>
+          <label><input type="checkbox" data-toggle="m1" checked><span class="swatch" style="background:var(--m1)"></span>M1</label>
+          <label><input type="checkbox" data-toggle="m2" checked><span class="swatch" style="background:var(--m2)"></span>M2</label>
+          <label><input type="checkbox" data-toggle="contact" checked><span class="swatch" style="background:#202124"></span>Contact</label>
+          <label><input type="checkbox" data-toggle="route" checked><span class="swatch" style="background:linear-gradient(90deg,var(--data),var(--feedback),var(--clock))"></span>Route</label>
+          <label><input type="checkbox" data-toggle="dim" checked><span class="swatch" style="background:#fff"></span>Kich thuoc</label>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2 id="infoTitle">Tong quan D-latch</h2>
+        <div id="infoText">
+          Data path duoc dat thang tu trai sang phai: D -> TG_in -> n1 -> INV_store -> n2 -> INV_out -> S/Q.
+          Feedback di vong rieng tu Q ve n1 qua TG_feedback de tranh de chu va tranh cat data path.
+        </div>
+        <div class="facts" id="facts"></div>
+        <p class="hint">Click module tren canvas de doi noi dung panel.</p>
+      </section>
+
+      <section class="card">
+        <h2>Huong dat S/D</h2>
+        <p>
+          Transmission gate khong co source/drain co dinh theo logic vi S/D doi vai theo muc dien ap.
+          Hinh gan nhan theo net layout: <b>D side</b>, <b>n1 side</b>, <b>Q side</b>.
+        </p>
+        <p>
+          Inverter co huong ro hon: PMOS source gan VDD, NMOS source gan GND, drain ghep vao output nut n2 hoac Q.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Quy tac 90nm can nho</h2>
+        <div class="legendRow"><span class="swatch" style="background:var(--poly)"></span>POLY min width 0.09um, spacing 0.09um</div>
+        <div class="legendRow"><span class="swatch" style="background:var(--m1)"></span>M1 min width 0.10um, spacing 0.10um</div>
+        <div class="legendRow"><span class="swatch" style="background:#202124"></span>Contact 0.09um x 0.09um</div>
+        <div class="legendRow"><span class="swatch" style="background:var(--nwell)"></span>NWELL enclosure DIFF >= 0.23um</div>
+      </section>
+    </aside>
+  </div>
+
+  <script>
+    const svg = document.getElementById('layoutSvg');
+    const world = document.getElementById('world');
+    const zoomRange = document.getElementById('zoomRange');
+    const zoomText = document.getElementById('zoomText');
+    const infoTitle = document.getElementById('infoTitle');
+    const infoText = document.getElementById('infoText');
+    const facts = document.getElementById('facts');
+
+    const modules = {
+      tgIn: {
+        title: 'TG_in',
+        text: 'Cong truyen du lieu vao latch. Dat sat D input de duong vao ngan. TG_in dung PMOS=ENB, NMOS=EN. Khi EN=1 va ENB=0, TG_in mo va day D vao n1.',
+        box: 'box-tgIn',
+        rows: [
+          ['Kich thuoc', '0.70um x 1.90um'],
+          ['NMOS', 'W/L = 0.18/0.10um'],
+          ['NMOS gate', 'EN'],
+          ['PMOS', 'W/L = 0.28/0.10um'],
+          ['PMOS gate', 'ENB'],
+          ['Ben trai', 'D side'],
+          ['Ben phai', 'n1 side']
+        ]
+      },
+      invStore: {
+        title: 'INV_store',
+        text: 'Inverter luu nut n1 thanh n2. PMOS source gan VDD, NMOS source gan GND, drain chung la n2.',
+        box: 'box-invStore',
+        rows: [
+          ['Kich thuoc', '0.80um x 1.90um'],
+          ['NMOS', 'W/L = 0.12/0.10um'],
+          ['PMOS', 'W/L = 0.30/0.10um'],
+          ['Input', 'n1 gate'],
+          ['Output', 'n2']
+        ]
+      },
+      invOut: {
+        title: 'INV_out',
+        text: 'Inverter output tao S/Q. Kich thuoc lon hon INV_store de keo tai output tot hon.',
+        box: 'box-invOut',
+        rows: [
+          ['Kich thuoc', '0.95um x 1.90um'],
+          ['NMOS', 'W/L = 0.18/0.10um'],
+          ['PMOS', 'W/L = 0.42/0.10um'],
+          ['Input', 'n2 gate'],
+          ['Output', 'S/Q']
+        ]
+      },
+      tgFb: {
+        title: 'TG_feedback',
+        text: 'Cong feedback giu trang thai khi TG_in tat. TG_feedback noi cheo voi TG_in: PMOS=EN, NMOS=ENB. Dat ben phai gan Q, route vong ve n1 ngan va rieng voi data path.',
+        box: 'box-tgFb',
+        rows: [
+          ['Kich thuoc', '0.70um x 1.90um'],
+          ['NMOS', 'W/L = 0.10-0.12/0.10um'],
+          ['NMOS gate', 'ENB'],
+          ['PMOS', 'W/L = 0.20-0.24/0.10um'],
+          ['PMOS gate', 'EN'],
+          ['Ben trai', 'Q side'],
+          ['Ben phai', 'n1 side']
+        ]
+      }
+    };
+
+    let scale = 1;
+    let tx = 0;
+    let ty = 0;
+    let drag = null;
+
+    function applyTransform() {
+      world.setAttribute('transform', `translate(${tx} ${ty}) scale(${scale})`);
+      zoomText.textContent = Math.round(scale * 100) + '%';
+      zoomRange.value = Math.round(scale * 100);
+    }
+
+    function showModule(key) {
+      document.querySelectorAll('.moduleBox').forEach(el => el.classList.remove('active'));
+      const data = modules[key];
+      if (!data) return;
+      document.getElementById(data.box).classList.add('active');
+      infoTitle.textContent = data.title;
+      infoText.textContent = data.text;
+      facts.innerHTML = data.rows.map(([k, v]) => `<div class="k">${k}</div><div class="v">${v}</div>`).join('');
+    }
+
+    document.querySelectorAll('[data-toggle]').forEach(input => {
+      input.addEventListener('change', () => {
+        document.querySelectorAll(`[data-layer="${input.dataset.toggle}"]`).forEach(g => {
+          g.classList.toggle('hiddenLayer', !input.checked);
+        });
+      });
+    });
+
+    document.querySelectorAll('.moduleHot').forEach(el => {
+      el.addEventListener('click', () => showModule(el.dataset.module));
+    });
+
+    zoomRange.addEventListener('input', () => {
+      scale = Number(zoomRange.value) / 100;
+      applyTransform();
+    });
+
+    document.getElementById('resetBtn').addEventListener('click', () => {
+      scale = 1;
+      tx = 0;
+      ty = 0;
+      applyTransform();
+    });
+
+    document.getElementById('fitBtn').addEventListener('click', () => {
+      scale = 0.88;
+      tx = 35;
+      ty = 30;
+      applyTransform();
+    });
+
+    svg.addEventListener('pointerdown', (event) => {
+      drag = { x: event.clientX, y: event.clientY, tx, ty };
+      svg.setPointerCapture(event.pointerId);
+      svg.classList.add('dragging');
+    });
+
+    svg.addEventListener('pointermove', (event) => {
+      if (!drag) return;
+      tx = drag.tx + (event.clientX - drag.x);
+      ty = drag.ty + (event.clientY - drag.y);
+      applyTransform();
+    });
+
+    svg.addEventListener('pointerup', () => {
+      drag = null;
+      svg.classList.remove('dragging');
+    });
+
+    svg.addEventListener('wheel', (event) => {
+      event.preventDefault();
+      const delta = event.deltaY > 0 ? -0.08 : 0.08;
+      scale = Math.min(2.2, Math.max(0.7, scale + delta));
+      applyTransform();
+    }, { passive: false });
+
+    showModule('tgIn');
+    applyTransform();
+  </script>
+</body>
+</html>

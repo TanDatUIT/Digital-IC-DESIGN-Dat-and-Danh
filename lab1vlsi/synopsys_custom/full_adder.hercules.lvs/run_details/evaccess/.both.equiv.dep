@@ -1,4 +1,0 @@
-full_adder::full_adder { P::P N::N }
-N::N { }
-NAND2_2::NAND2_2 { P::P N::N }
-P::P { }

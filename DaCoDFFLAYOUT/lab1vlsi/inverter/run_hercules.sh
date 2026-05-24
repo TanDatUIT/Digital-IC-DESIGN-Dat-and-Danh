@@ -1,2 +1,0 @@
-#!/bin/sh
-cd /home/itsupport/Desktop/lab1vlsi/inverter; unset TCLLIBPATH; unset TCL_LIBRARY; exec-oa22.04.hercules hercules_oa -f openaccess -i inverter -b inv -p . -O gdsii -o inv_result.gds -s /home/itsupport/Desktop/lab1vlsi/synopsys_custom/inv.hercules.lvs/inv.custom_compiler.sp -sf CDL -stb inv /home/itsupport/Desktop/lab1vlsi/inverter/reference_lvs.lvs.evx > /home/itsupport/Desktop/lab1vlsi/inverter/stdout.lvs.log 2>&1

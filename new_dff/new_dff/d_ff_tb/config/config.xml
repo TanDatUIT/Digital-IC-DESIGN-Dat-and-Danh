@@ -15,4 +15,11 @@
     <overlay_view_name></overlay_view_name>
     <ignore_name_list>nlAction</ignore_name_list>
     <remove_name_list></remove_name_list>
+    <instance_data>
+        <lib>new_dff</lib>
+        <cell>d_ff_tb</cell>
+        <view>schematic</view>
+        <instance_type>I0</instance_type>
+        <selection_rule_type>starrc</selection_rule_type>
+    </instance_data>
 </config.xml>

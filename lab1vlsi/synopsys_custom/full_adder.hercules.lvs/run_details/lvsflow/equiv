@@ -1,2 +1,0 @@
-equiv full_adder=full_adder { }
-equiv NAND2_2=NAND2_2 { }

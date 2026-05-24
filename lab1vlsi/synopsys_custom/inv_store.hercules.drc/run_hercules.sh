@@ -1,2 +1,0 @@
-#!/bin/sh
-cd /home/itsupport/Desktop/lab1vlsi/synopsys_custom/inv_store.hercules.drc; unset TCLLIBPATH; unset TCL_LIBRARY; exec-oa22.04.hercules hercules_oa -f openaccess -i project_d_ff -b inv_store -p . -O gdsii -o inv_store_result.gds /home/itsupport/Desktop/lab1vlsi/synopsys_custom/inv_store.hercules.drc/reference_drc.drc.evx > /home/itsupport/Desktop/lab1vlsi/synopsys_custom/inv_store.hercules.drc/stdout.drc.log 2>&1

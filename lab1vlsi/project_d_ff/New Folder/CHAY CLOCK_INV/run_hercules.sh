@@ -1,2 +1,0 @@
-#!/bin/sh
-cd /home/itsupport/Desktop/lab1vlsi/project_d_ff/New Folder/CHAY CLOCK_INV; unset TCLLIBPATH; unset TCL_LIBRARY; exec-oa22.04.hercules hercules_oa -f openaccess -i project_d_ff -b CLOCK_inv -p . -O gdsii -o CLOCK_inv_result.gds -s /home/itsupport/Desktop/lab1vlsi/project_d_ff/New Folder/CHAY CLOCK_INV/CLOCK_inv.custom_compiler.sp -sf CDL -stb CLOCK_inv /home/itsupport/Desktop/lab1vlsi/project_d_ff/New Folder/CHAY CLOCK_INV/reference_lvs.lvs.evx > /home/itsupport/Desktop/lab1vlsi/project_d_ff/New Folder/CHAY CLOCK_INV/stdout.lvs.log 2>&1

@@ -1,3 +1,0 @@
-N::N { }
-P::P { }
-TG_in::TG_in { P::P N::N }

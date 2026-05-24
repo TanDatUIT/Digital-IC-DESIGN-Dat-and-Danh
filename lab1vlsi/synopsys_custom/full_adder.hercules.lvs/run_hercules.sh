@@ -1,2 +1,0 @@
-#!/bin/sh
-cd /home/itsupport/Desktop/lab1vlsi/synopsys_custom/full_adder.hercules.lvs; unset TCLLIBPATH; unset TCL_LIBRARY; exec-oa22.04.hercules hercules_oa -f openaccess -i inverter -b full_adder -p . -O gdsii -o full_adder_result.gds -s /home/itsupport/Desktop/lab1vlsi/synopsys_custom/full_adder.hercules.lvs/full_adder.custom_compiler.sp -sf CDL -stb full_adder /home/itsupport/Desktop/lab1vlsi/synopsys_custom/full_adder.hercules.lvs/reference_lvs.lvs.evx > /home/itsupport/Desktop/lab1vlsi/synopsys_custom/full_adder.hercules.lvs/stdout.lvs.log 2>&1

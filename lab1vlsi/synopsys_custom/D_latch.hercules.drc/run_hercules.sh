@@ -1,2 +1,0 @@
-#!/bin/sh
-cd /home/itsupport/Desktop/lab1vlsi/synopsys_custom/D_latch.hercules.drc; unset TCLLIBPATH; unset TCL_LIBRARY; exec-oa22.04.hercules hercules_oa -f openaccess -i project_d_ff -b D_latch -p . -O gdsii -o D_latch_result.gds /home/itsupport/Desktop/lab1vlsi/synopsys_custom/D_latch.hercules.drc/reference_drc.drc.evx > /home/itsupport/Desktop/lab1vlsi/synopsys_custom/D_latch.hercules.drc/stdout.drc.log 2>&1

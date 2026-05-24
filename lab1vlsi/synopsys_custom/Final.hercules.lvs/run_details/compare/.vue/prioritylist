@@ -1,8 +1,0 @@
-
-
-NAME = "Final::Final"
-SCH_CELL_NAME = "Final"
-LAY_CELL_NAME = "Final"
-LEVEL = 0
-STARTING_POINT = TRUE
-

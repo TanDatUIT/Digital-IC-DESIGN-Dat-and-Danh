@@ -1,5 +1,0 @@
-TDMCHECKPOINT="1.0"
-keepEmptyCategory type="unknown"
-project_d_ff/D_latch_slave type="cell"
-project_d_ff/tg_in_ds type="cell"
-project_d_ff/tg_out_ds type="cell"

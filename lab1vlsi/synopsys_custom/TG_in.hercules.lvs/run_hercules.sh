@@ -1,2 +1,0 @@
-#!/bin/sh
-cd /home/itsupport/Desktop/lab1vlsi/synopsys_custom/TG_in.hercules.lvs; unset TCLLIBPATH; unset TCL_LIBRARY; exec-oa22.04.hercules hercules_oa -f openaccess -i project_d_ff -b TG_in -p . -O gdsii -o TG_in_result.gds -s /home/itsupport/Desktop/lab1vlsi/synopsys_custom/TG_in.hercules.lvs/TG_in.custom_compiler.sp -sf CDL -stb TG_in /home/itsupport/Desktop/lab1vlsi/synopsys_custom/TG_in.hercules.lvs/reference_lvs.lvs.evx > /home/itsupport/Desktop/lab1vlsi/synopsys_custom/TG_in.hercules.lvs/stdout.lvs.log 2>&1

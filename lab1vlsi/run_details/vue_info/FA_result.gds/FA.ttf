@@ -1,4 +1,0 @@
-# V <version>
-V 1
-# I <cellName> <x_offset> <y_offset> <angle> <refl> <mag>
-I NAND2_2 -42.440000 27.020000 0 0

@@ -1,2 +1,0 @@
-#!/bin/sh
-cd /home/itsupport/Desktop/lab1vlsi/synopsys_custom/CMOS.hercules.lvs; unset TCLLIBPATH; unset TCL_LIBRARY; exec-oa22.04.hercules hercules_oa -f openaccess -i inverter -b CMOS -p . -O gdsii -o CMOS_result.gds -s /home/itsupport/Desktop/lab1vlsi/synopsys_custom/CMOS.hercules.lvs/CMOS.custom_compiler.sp -sf CDL -stb CMOS /home/itsupport/Desktop/lab1vlsi/synopsys_custom/CMOS.hercules.lvs/reference_lvs.lvs.evx > /home/itsupport/Desktop/lab1vlsi/synopsys_custom/CMOS.hercules.lvs/stdout.lvs.log 2>&1

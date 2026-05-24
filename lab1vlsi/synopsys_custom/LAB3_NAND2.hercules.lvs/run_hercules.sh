@@ -1,2 +1,0 @@
-#!/bin/sh
-cd /home/itsupport/Desktop/lab1vlsi/synopsys_custom/LAB3_NAND2.hercules.lvs; unset TCLLIBPATH; unset TCL_LIBRARY; exec-oa22.04.hercules hercules_oa -f openaccess -i inverter -b LAB3_NAND2 -p . -O gdsii -o LAB3_NAND2_result.gds -s /home/itsupport/Desktop/lab1vlsi/synopsys_custom/LAB3_NAND2.hercules.lvs/LAB3_NAND2.custom_compiler.sp -sf CDL -stb LAB3_NAND2 /home/itsupport/Desktop/lab1vlsi/synopsys_custom/LAB3_NAND2.hercules.lvs/reference_lvs.lvs.evx > /home/itsupport/Desktop/lab1vlsi/synopsys_custom/LAB3_NAND2.hercules.lvs/stdout.lvs.log 2>&1

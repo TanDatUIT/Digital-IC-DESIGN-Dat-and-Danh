@@ -1,8 +1,0 @@
-LAB3_NAND2
-	Cell Level Device Counts
-		NMOS[N] = 2
-		PMOS[P] = 2
-
-********  DEVICE EXTRACTION STATS    TOPBLOCK = LAB3_NAND2  *******
-		NMOS[N] = 2
-		PMOS[P] = 2

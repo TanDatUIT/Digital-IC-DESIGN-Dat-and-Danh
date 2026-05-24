@@ -12,5 +12,5 @@ ProcessCreationTime_Readable   Sun 24 May 2026 04:03:38 PM +07 +07
 AppIdentifier                  OA File System Design Manager
 OSType                         unix
 ReasonForPlacingEditLock       OpenAccess edit lock
-FilePathUsedToEditLock         /home/itsupport/Desktop/lab1vlsi/new_dff/new_dff/D_latch/layout/layout.oa.cdslck
-TimeEditLocked                 Sun 24 May 2026 04:26:04 PM +07 +07
+FilePathUsedToEditLock         /home/itsupport/Desktop/lab1vlsi/new_dff/new_dff/d_ff/schematic/sch.oa.cdslck
+TimeEditLocked                 Sun 24 May 2026 04:43:15 PM +07 +07

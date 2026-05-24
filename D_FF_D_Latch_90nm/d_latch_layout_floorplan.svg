@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#d9d9d9"/>
+    </marker>
+    <style>
+      .bg { fill: #080808; }
+      .grid { stroke: #222; stroke-width: 1; }
+      .rail { stroke-width: 14; stroke-linecap: round; }
+      .m1 { stroke: #2f8cff; stroke-width: 8; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .m2 { stroke: #25d6d6; stroke-width: 6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .clk { stroke: #ff9f1c; stroke-width: 6; fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 14 10; }
+      .cell { fill: #111; stroke: #34d399; stroke-width: 4; rx: 8; }
+      .tg { fill: #101b16; stroke: #34d399; stroke-width: 4; rx: 8; }
+      .inv { fill: #111827; stroke: #34d399; stroke-width: 4; }
+      .pmos { fill: #5b123d; stroke: #d946ef; stroke-width: 3; }
+      .nmos { fill: #103f2f; stroke: #22c55e; stroke-width: 3; }
+      .pin { fill: #ef4444; stroke: #ffb4b4; stroke-width: 2; }
+      .dot { fill: #60a5fa; stroke: #bfdbfe; stroke-width: 2; }
+      .label { fill: #e5e7eb; font: 28px Arial, sans-serif; }
+      .small { fill: #cbd5e1; font: 22px Arial, sans-serif; }
+      .net { fill: #7dd3fc; font: 24px Arial, sans-serif; font-weight: bold; }
+      .note { fill: #fde68a; font: 22px Arial, sans-serif; }
+      .title { fill: #f8fafc; font: 38px Arial, sans-serif; font-weight: bold; }
+    </style>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" class="grid"/>
+      <circle cx="0" cy="0" r="2" fill="#333"/>
+    </pattern>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="900"/>
+  <rect x="0" y="0" width="1600" height="900" fill="url(#grid)" opacity="0.65"/>
+
+  <text x="70" y="70" class="title">D-latch layout floorplan: TG_IN - INV_STORE - INV_OUT, feedback TG_OUT below</text>
+
+  <line x1="120" y1="150" x2="1480" y2="150" class="rail" stroke="#60a5fa"/>
+  <line x1="120" y1="760" x2="1480" y2="760" class="rail" stroke="#22c55e"/>
+  <text x="130" y="135" class="net">VDD rail</text>
+  <text x="130" y="805" class="net">GND rail</text>
+
+  <rect x="190" y="210" width="240" height="190" class="tg"/>
+  <text x="245" y="250" class="label">TG_IN</text>
+  <rect x="230" y="210" width="70" height="58" class="pmos"/>
+  <rect x="320" y="210" width="70" height="58" class="pmos"/>
+  <rect x="230" y="342" width="70" height="58" class="nmos"/>
+  <rect x="320" y="342" width="70" height="58" class="nmos"/>
+  <text x="204" y="204" class="small">ENB on PMOS</text>
+  <text x="238" y="430" class="small">EN on NMOS</text>
+
+  <polygon points="610,215 610,400 780,307" class="inv"/>
+  <text x="610" y="195" class="label">INV_STORE</text>
+  <rect x="625" y="225" width="70" height="58" class="pmos"/>
+  <rect x="625" y="332" width="70" height="58" class="nmos"/>
+
+  <polygon points="980,215 980,400 1150,307" class="inv"/>
+  <text x="990" y="195" class="label">INV_OUT</text>
+  <rect x="995" y="225" width="70" height="58" class="pmos"/>
+  <rect x="995" y="332" width="70" height="58" class="nmos"/>
+
+  <rect x="670" y="555" width="260" height="170" class="tg"/>
+  <text x="735" y="595" class="label">TG_OUT</text>
+  <rect x="710" y="555" width="70" height="55" class="pmos"/>
+  <rect x="820" y="555" width="70" height="55" class="pmos"/>
+  <rect x="710" y="670" width="70" height="55" class="nmos"/>
+  <rect x="820" y="670" width="70" height="55" class="nmos"/>
+  <text x="680" y="545" class="small">ENB on PMOS</text>
+  <text x="725" y="754" class="small">EN on NMOS</text>
+
+  <path d="M90 307 H190" class="m1" marker-end="url(#arrow)"/>
+  <text x="55" y="297" class="label">D</text>
+  <rect x="72" y="285" width="24" height="24" class="pin"/>
+
+  <path d="M430 307 H610" class="m1"/>
+  <circle cx="520" cy="307" r="11" class="dot"/>
+  <text x="505" y="285" class="net">n1</text>
+
+  <path d="M780 307 H980" class="m1"/>
+  <circle cx="870" cy="307" r="11" class="dot"/>
+  <text x="855" y="285" class="net">n2 = Qbar internal</text>
+
+  <path d="M1150 307 H1470" class="m1" marker-end="url(#arrow)"/>
+  <circle cx="1230" cy="307" r="11" class="dot"/>
+  <text x="1238" y="295" class="net">Q</text>
+  <rect x="1466" y="285" width="24" height="24" class="pin"/>
+
+  <path d="M1230 307 V640 H930" class="m2" marker-end="url(#arrow)"/>
+  <text x="1055" y="625" class="net">feedback from Q</text>
+
+  <path d="M670 640 H520 V307" class="m2" marker-end="url(#arrow)"/>
+  <text x="435" y="625" class="net">back to n1</text>
+
+  <path d="M265 120 V210" class="clk"/>
+  <path d="M356 120 V210" class="clk"/>
+  <path d="M745 520 V555" class="clk"/>
+  <path d="M855 520 V555" class="clk"/>
+  <text x="205" y="112" class="note">TG_IN: EN=CLK, ENB=CLKB</text>
+  <text x="625" y="512" class="note">TG_OUT: EN=CLKB, ENB=CLK</text>
+
+  <path d="M1300 110 V700" class="clk"/>
+  <path d="M1370 110 V700" class="clk"/>
+  <text x="1280" y="92" class="note">Route CLK / CLKB vertical, parallel, same length</text>
+
+  <rect x="85" y="835" width="1430" height="42" fill="#111827" stroke="#475569" stroke-width="2" rx="6"/>
+  <text x="105" y="864" class="small">Rule: keep n1 short, keep n2 short, make Q route wider if driving load, place TG_OUT below middle to minimize feedback wire.</text>
+</svg>

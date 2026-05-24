@@ -1,0 +1,11 @@
+{NETLIST TG_in
+{VERSION 1 0 0}
+
+{CELL TG_in
+    {PORT A B ENB EN }
+    {INST M2=P {PROP n="P" x=6.940 y=6.085 Length=0.1 Width=0.42 }
+	{PIN ENB=GATE B=SRC A=DRN }}
+    {INST M1=N {PROP n="N" x=6.870 y=4.580 Length=0.1 Width=0.18 }
+	{PIN EN=GATE B=SRC A=DRN }}
+}
+}

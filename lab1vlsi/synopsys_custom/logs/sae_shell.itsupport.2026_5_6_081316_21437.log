@@ -1,0 +1,33 @@
+[08:13:17.83] /m Information: License 'SAE' checked out. (LICENSE-003)
+[08:13:18.91] /o sae_shell Version Custom Compiler N-2017.12-SP1-2
+              /c Build  (OPT) compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Execution time: Wed May  6 08:13:16 2026
+              /c Host: localhost.localdomain
+              /c 
+              /c Copyright © 2004-2018 Synopsys, Inc.
+              /c This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, or distribution of this software is strictly prohibited.
+              /c 
+              /c 
+[08:13:18.92] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[08:13:18.92] /o 	#######################################
+[08:13:18.92] /o 	PDK Library Name	: reference90RF
+[08:13:18.92] /o 	PDK Version		: 2.0
+[08:13:18.92] /o 	PDK Release Date	: 25-March-2010 
+[08:13:18.92] /o 	#######################################
+[08:13:18.92] /o 
+[08:13:18.92] /i ::sa::_backgroundSaeShell::signalProcessReady 1778029996
+[08:13:18.93] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::processReady 2
+[08:14:21.49] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/inverter,TB_CMOS_2,schematic/history_1/simulation/default/HSPICE/parametric/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession5 testbenchName default resultsDir /home/itsupport/simulation/inverter,TB_CMOS_2,schematic/history_1/simulation/default/HSPICE/parametric/results testSuiteDir /home/itsupport/simulation/inverter,TB_CMOS_2,schematic/history_1/simulation/default/HSPICE/parametric databaseName /home/itsupport/simulation/inverter,TB_CMOS_2,schematic/history_1/simulation/default/HSPICE/parametric/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[08:14:21.93] /m Information: Started sharing "Custom WaveView" license. (WAVEFORM-110)
+[08:14:22.36] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.8 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession5 testbenchName default resultsDir /home/itsupport/simulation/inverter,TB_CMOS_2,schematic/history_1/simulation/default/HSPICE/parametric/results testSuiteDir /home/itsupport/simulation/inverter,TB_CMOS_2,schematic/history_1/simulation/default/HSPICE/parametric databaseName /home/itsupport/simulation/inverter,TB_CMOS_2,schematic/history_1/simulation/default/HSPICE/parametric/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[08:14:22.36] /o false
+[08:14:50.66] /i ::wf::viewerExited
+[08:14:57.28] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/inverter,TB_CMOS_2,schematic/history_1/simulation/default/HSPICE/parametric/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession5 testbenchName default resultsDir /home/itsupport/simulation/inverter,TB_CMOS_2,schematic/history_1/simulation/default/HSPICE/parametric/results testSuiteDir /home/itsupport/simulation/inverter,TB_CMOS_2,schematic/history_1/simulation/default/HSPICE/parametric databaseName /home/itsupport/simulation/inverter,TB_CMOS_2,schematic/history_1/simulation/default/HSPICE/parametric/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[08:14:57.82] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.5 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession5 testbenchName default resultsDir /home/itsupport/simulation/inverter,TB_CMOS_2,schematic/history_1/simulation/default/HSPICE/parametric/results testSuiteDir /home/itsupport/simulation/inverter,TB_CMOS_2,schematic/history_1/simulation/default/HSPICE/parametric databaseName /home/itsupport/simulation/inverter,TB_CMOS_2,schematic/history_1/simulation/default/HSPICE/parametric/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[08:14:57.82] /o false
+[08:15:20.60] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/inverter,TB_CMOS_2,schematic/history_1/simulation/default/HSPICE/parametric/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession5 testbenchName default resultsDir /home/itsupport/simulation/inverter,TB_CMOS_2,schematic/history_1/simulation/default/HSPICE/parametric/results testSuiteDir /home/itsupport/simulation/inverter,TB_CMOS_2,schematic/history_1/simulation/default/HSPICE/parametric databaseName /home/itsupport/simulation/inverter,TB_CMOS_2,schematic/history_1/simulation/default/HSPICE/parametric/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[08:15:21.25] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.6 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession5 testbenchName default resultsDir /home/itsupport/simulation/inverter,TB_CMOS_2,schematic/history_1/simulation/default/HSPICE/parametric/results testSuiteDir /home/itsupport/simulation/inverter,TB_CMOS_2,schematic/history_1/simulation/default/HSPICE/parametric databaseName /home/itsupport/simulation/inverter,TB_CMOS_2,schematic/history_1/simulation/default/HSPICE/parametric/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[08:15:21.25] /o false
+[08:15:57.17] /i ::wf::viewerExited
+[08:16:01.05] /i ::sa::_backgroundSaeShell::exit
+[08:16:01.05] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::childFormallyExiting

@@ -1,0 +1,15 @@
+{NETLIST LAB3_NAND2
+{VERSION 1 0 0}
+
+{CELL LAB3_NAND2
+    {PORT A gnd! vdd! B Y }
+    {INST MM2=N {PROP n="N" Length=0.1 Width=0.24 Mult=1 }
+	{PIN A=GATE net19=SRC Y=DRN }}
+    {INST MM1=P {PROP n="P" Length=0.1 Width=0.3 Mult=1 }
+	{PIN A=GATE vdd!=SRC Y=DRN }}
+    {INST MM0=P {PROP n="P" Length=0.1 Width=0.3 Mult=1 }
+	{PIN B=GATE vdd!=SRC Y=DRN }}
+    {INST MM3=N {PROP n="N" Length=0.1 Width=0.24 Mult=1 }
+	{PIN B=GATE gnd!=SRC net19=DRN }}
+}
+}

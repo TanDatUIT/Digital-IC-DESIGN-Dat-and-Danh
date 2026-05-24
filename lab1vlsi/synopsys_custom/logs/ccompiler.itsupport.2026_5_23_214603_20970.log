@@ -1,0 +1,643 @@
+[21:46:05.69] /r giWindowId 0
+[21:46:05.69] /r giWindowGeometry 600x300
+[21:46:05.70] /o 
+              /c                                 Custom Compiler 
+              /c 
+              /c               Version N-2017.12-SP1-2 for linux64 - May 16, 2018 
+              /c 
+              /c                     Copyright (c) 2004 - 2018 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c             or distribution of this software is strictly prohibited.
+              /c 
+              /c Build  (OPT) Config 4182185 compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Invocation: /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/platform/bin/cdesigner
+              /c Execution time: Sat May 23 21:46:03 2026
+              /c Host: localhost.localdomain
+              /c Working directory: /home/itsupport/Desktop/lab1vlsi
+              /c 
+[21:46:06.88] /r giShowFrameTabs true
+[21:46:06.88] /r giWindowId 1
+[21:46:06.88] /r giWindowGeometry 1040x800
+[21:46:23.85] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[21:46:23.86] /# 
+[21:46:23.86] /i dm::openLibraryManager
+[21:46:23.86] /r giWindowId 2
+[21:46:23.86] /r giWindowGeometry 660x600+50+78
+[21:46:23.88] /o oa:0x188ed5a0
+[21:46:25.56] /i gi::setCurrentIndex {libs} -index {project_d_ff} -in [gi::getWindows 2]
+[21:46:25.58] /i gi::setItemSelection {libs} -index {project_d_ff} -in [gi::getWindows 2]
+[21:46:27.52] /i gi::setCurrentIndex {cellCategories} -index {D_LATCH_SLAVE} -in [gi::getWindows 2]
+[21:46:27.52] /i gi::setItemSelection {cellCategories} -index {D_LATCH_SLAVE} -in [gi::getWindows 2]
+[21:46:27.77] /i gi::setCurrentIndex {cellCategories} -index {INV} -in [gi::getWindows 2]
+[21:46:27.77] /i gi::setItemSelection {cellCategories} -index {INV} -in [gi::getWindows 2]
+[21:46:29.08] /i gi::setCurrentIndex {cells} -index {TG_in} -in [gi::getWindows 2]
+[21:46:29.09] /i gi::setItemSelection {cells} -index {TG_in} -in [gi::getWindows 2]
+[21:46:29.50] /i gi::setCurrentIndex {cells} -index {TG_out} -in [gi::getWindows 2]
+[21:46:29.50] /i gi::setItemSelection {cells} -index {TG_out} -in [gi::getWindows 2]
+[21:46:30.11] /i gi::setCurrentIndex {cells} -index {TG_in} -in [gi::getWindows 2]
+[21:46:30.11] /i gi::setItemSelection {cells} -index {TG_in} -in [gi::getWindows 2]
+[21:46:30.94] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[21:46:31.28] /i db::setAttr geometry -of [gi::getFrames 1] -value 1910x1101+5+56
+[21:46:32.02] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 2]
+[21:46:32.03] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 2]
+[21:46:32.18] /i gi::executeAction dmOpen -in [gi::getWindows 2]
+[21:46:32.19] /m Information: License 'Basic' checked out. (LICENSE-003)
+[21:46:32.20] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[21:46:32.20] /o 	#######################################
+[21:46:32.20] /o 	PDK Library Name	: reference90RF
+[21:46:32.20] /o 	PDK Version		: 2.0
+[21:46:32.20] /o 	PDK Release Date	: 25-March-2010 
+[21:46:32.20] /o 	#######################################
+[21:46:32.20] /o 
+[21:46:32.48] /r giWindowId 3
+[21:46:32.49] /r giWindowGeometry 1632x1020
+[21:46:32.54] /# de::setActiveLPP [de::getLPPs "exclude blockage" -from [db::getAttr editDesign -of [de::getContexts -window 3]]]
+[21:46:34.96] /i gi::setField {stopLevel} -value {2} -in [gi::getToolbars {leHierarchy} -from [gi::getWindows 3]]
+[21:46:35.59] /# gi::executeAction deSelectActive -in [gi::getWindows 3]
+[21:46:35.59] /i de::deselectAllLogic -context [db::getNext [de::getContexts -window 3]]
+[21:46:43.07] /i gi::executeAction deSaveDesign -in [gi::getWindows 3]
+[21:46:43.07] /m Information: Saving design 'project_d_ff TG_in layout'. (DESIGN_WINDOW-004)
+[21:46:45.36] /# gi::executeAction xtDRCSetup -in [gi::getWindows 3]
+[21:46:45.36] /i xt::showDRCSetup -job drc -window 3
+[21:46:45.59] /o oa:0x1da35450
+[21:46:45.65] /i gi::setActiveDialog [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 3]]
+[21:46:45.92] /i db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 3]] -value 475x427+865+447
+[21:46:47.58] /i gi::pressButton {/tabGroup/mainTab/runDir/browseButton} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 3]]
+[21:46:50.09] /r giFileDialog accept .
+[21:46:52.80] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/controlVariablesTab} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 3]]
+[21:46:53.28] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/customOptionsTab} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 3]]
+[21:46:54.95] /i gi::setField {/tabGroup/customOptionsTab/layerMapFile/entryField} -value {/home/itsupport/Desktop/lab1vlsi/PDK/techfiles/reference90RF_layer.map} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 3]]
+[21:46:55.91] /i gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 3]]
+[21:46:56.28] /# xt::physicalVerification::executePve drc 3
+[21:46:57.35] /r giWindowId 4
+[21:46:57.35] /r giWindowGeometry 800x600
+[21:46:58.21] /m Information: 
+              /c =============================
+              /c JobID: hercules_drc_21
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[21:46:59.39] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
+[21:46:59.40] /i gi::setActiveWindow 3
+[21:46:59.40] /i gi::setActiveWindow 3 -raise true
+[21:47:01.06] /# gi::executeAction deSelectActive -in [gi::getWindows 3]
+[21:47:01.06] /i de::deselectAll [db::getNext [de::getContexts -window 3]]
+[21:47:01.06] /i de::select [de::getActiveFigure [gi::getWindows 3] -point {7.142 6.246} -index 0 -intent none]
+[21:47:01.06] /o oa:0x1f5c9a70
+[21:47:03.19] /# gi::executeAction deSelectActive -in [gi::getWindows 3]
+[21:47:03.19] /i de::deselectAll [db::getNext [de::getContexts -window 3]]
+[21:47:03.19] /i de::select [de::getActiveFigure [gi::getWindows 3] -point {7 4.724} -index 0 -intent none]
+[21:47:03.19] /o oa:0x1f077170
+[21:47:07.01] /# gi::executeAction xtLVSSetup -in [gi::getWindows 3]
+[21:47:07.01] /i xt::showLVSSetup -job lvs -window 3
+[21:47:07.27] /o oa:0x1f3986d0
+[21:47:07.35] /i gi::setActiveDialog [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 3]]
+[21:47:07.62] /i db::setAttr geometry -of [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 3]] -value 704x454+787+419
+[21:47:09.84] /i gi::pressButton {/apply} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 3]]
+[21:47:09.84] /e Error: The requested action could not be completed because one or more inputs are incomplete or invalid. (CUSTOM_WIDGETS-001)
+[21:47:12.09] /i gi::pressButton {/tabGroup/mainTab/jobParametersGroup/runsetFile/browseButton} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 3]]
+[21:47:26.81] /r giFileDialog accept PDK/hercules/lvs/reference_lvs.ev
+[21:47:27.47] /i gi::pressButton {/apply} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 3]]
+[21:47:27.83] /# xt::physicalVerification::executePve lvs 3
+[21:47:28.70] /m Information: "Starting netlisting for design "project_d_ff/TG_in/schematic"..." (NETLISTING-010)
+[21:47:28.72] /o No Design Integrity rule violations found in "project_d_ff/TG_in/schematic"
+[21:47:28.73] /m Information: "Netlisting design "project_d_ff/TG_in/schematic" finished successfully." (NETLISTING-012)
+[21:47:28.90] /r giWindowId 5
+[21:47:28.91] /r giWindowGeometry 800x600
+[21:47:30.91] /m Information: 
+              /c =============================
+              /c JobID: hercules_lvs_9
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[21:47:32.63] /i gi::closeWindows [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 3]]
+[21:47:33.59] /i gi::executeAction giCloseWindow -in [gi::getWindows 5]
+[21:47:33.60] /i gi::setActiveWindow 3
+[21:47:33.60] /i gi::setActiveWindow 3 -raise true
+[21:47:35.61] /# gi::executeAction xtLPESetup -in [gi::getWindows 3]
+[21:47:35.61] /i xt::showLPESetup -job lpe -window 3
+[21:47:35.89] /o oa:0x1ecc4fa0
+[21:47:35.96] /i gi::setActiveDialog [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 3]]
+[21:47:36.22] /i db::setAttr geometry -of [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 3]] -value 487x659+830+226
+[21:47:37.88] /i gi::pressButton {/tabGroup/mainTab/runDir/browseButton} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 3]]
+[21:47:40.02] /r giFileDialog accept .
+[21:47:41.12] /i gi::pressButton {/tabGroup/mainTab/jobParametersGroup/runsetFile/browseButton} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 3]]
+[21:47:52.16] /r giFileDialog accept PDK/starrc/star_herc_cmd
+[21:47:52.83] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/extractionOptionsTab} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 3]]
+[21:47:53.80] /i gi::setField {/tabGroup/extractionOptionsTab/layoutExtractionGroup/milkywayDatabase/entryField} -value {../testcell.hercules.lvs/EXTRACT_VIEW} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 3]]
+[21:47:53.87] /i gi::pressButton {/tabGroup/extractionOptionsTab/layoutExtractionGroup/milkywayDatabase/browseButton} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 3]]
+[21:47:55.86] /r giFileDialog accept EXTRACT_VIEW
+[21:47:56.43] /i gi::pressButton {/apply} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 3]]
+[21:47:56.73] /# xt::physicalVerification::executePve lpe 3
+[21:47:56.75] /w Warning: Failed to copy '/home/itsupport/Desktop/lab1vlsi/synopsys_custom/.lib_20970_7f0100.defs' to '/home/itsupport/Desktop/lab1vlsi/lib.defs': copy would overwrite top library definitions file.
+[21:47:56.87] /r giWindowId 6
+[21:47:56.88] /r giWindowGeometry 800x600
+[21:47:57.19] /i gi::setActiveTab {tabs} -tabName {stdout.lpe.log} -in [gi::getWindows 6]
+[21:47:57.19] /i gi::setActiveTab {tabs} -tabName {stdout.lpe.log} -in [gi::getWindows 6]
+[21:47:57.19] /i gi::setActiveTab {tabs} -tabName {stdout.lpe.log} -in [gi::getWindows 6]
+[21:47:57.19] /i gi::setActiveTab {tabs} -tabName {stdout.lpe.log} -in [gi::getWindows 6]
+[21:47:57.20] /e Error: The job 'starrc_lpe_13' started on host 'localhost' with process id 21606 failed to start or complete successfully; the job's return code is 255.
+[21:48:00.16] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/mainTab} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 3]]
+[21:48:04.09] /i gi::pressButton {/ok} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 3]]
+[21:48:04.36] /# xt::physicalVerification::executePve lpe 3
+[21:48:04.38] /w Warning: Failed to copy '/home/itsupport/Desktop/lab1vlsi/synopsys_custom/.lib_20970_7f0100.defs' to '/home/itsupport/Desktop/lab1vlsi/lib.defs': copy would overwrite top library definitions file.
+[21:48:04.42] /i gi::setActiveWindow 6
+[21:48:04.42] /i gi::setActiveWindow 6 -raise true
+[21:48:04.51] /i gi::setActiveTab {tabs} -tabName {stdout.lpe.log} -in [gi::getWindows 6]
+[21:48:04.51] /i gi::setActiveTab {tabs} -tabName {stdout.lpe.log} -in [gi::getWindows 6]
+[21:48:04.51] /i gi::setActiveTab {tabs} -tabName {stdout.lpe.log} -in [gi::getWindows 6]
+[21:48:04.51] /i gi::setActiveTab {tabs} -tabName {stdout.lpe.log} -in [gi::getWindows 6]
+[21:48:04.80] /i gi::setActiveTab {tabs} -tabName {stdout.lpe.log} -in [gi::getWindows 6]
+[21:48:04.80] /i gi::setActiveTab {tabs} -tabName {stdout.lpe.log} -in [gi::getWindows 6]
+[21:48:04.80] /i gi::setActiveTab {tabs} -tabName {stdout.lpe.log} -in [gi::getWindows 6]
+[21:48:04.80] /i gi::setActiveTab {tabs} -tabName {stdout.lpe.log} -in [gi::getWindows 6]
+[21:48:04.81] /e Error: The job 'starrc_lpe_14' started on host 'localhost' with process id 21699 failed to start or complete successfully; the job's return code is 255.
+[21:48:08.42] /i gi::executeAction giCloseWindow -in [gi::getWindows 6]
+[21:48:08.43] /i gi::setActiveWindow 3
+[21:48:08.43] /i gi::setActiveWindow 3 -raise true
+[21:48:10.27] /# gi::executeAction xtLVSSetup -in [gi::getWindows 3]
+[21:48:10.27] /i xt::showLVSSetup -job lvs -window 3
+[21:48:10.91] /# gi::setActiveDialog [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 3]]
+[21:48:11.03] /o oa:0x1e56a110
+[21:48:11.05] /i db::setAttr geometry -of [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 3]] -value 704x454+787+382
+[21:48:12.30] /i gi::pressButton {/tabGroup/mainTab/runDir/browseButton} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 3]]
+[21:48:14.80] /r giFileDialog accept .
+[21:48:18.05] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/netlistingOptionsTab} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 3]]
+[21:48:20.81] /i gi::setCurrentIndex {/tabGroup/controlVariablesTab/controlVariablesTable} -index {0,0} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 3]]
+[21:48:20.81] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/controlVariablesTab} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 3]]
+[21:48:21.22] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/customOptionsTab} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 3]]
+[21:48:22.94] /i gi::pressButton {/apply} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 3]]
+[21:48:23.26] /# xt::physicalVerification::executePve lvs 3
+[21:48:24.14] /m Information: "Starting netlisting for design "project_d_ff/TG_in/schematic"..." (NETLISTING-010)
+[21:48:24.17] /o No Design Integrity rule violations found in "project_d_ff/TG_in/schematic"
+[21:48:24.18] /m Information: "Netlisting design "project_d_ff/TG_in/schematic" finished successfully." (NETLISTING-012)
+[21:48:24.33] /r giWindowId 7
+[21:48:24.34] /r giWindowGeometry 800x600
+[21:48:26.52] /m Information: 
+              /c =============================
+              /c JobID: hercules_lvs_10
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[21:48:27.00] /i gi::closeWindows [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 3]]
+[21:48:28.93] /i gi::pressButton {ConsoleToggleButton} -in [db::getAttr statusbar -of [gi::getWindows 7]]
+[21:48:30.76] /i gi::executeAction giCloseWindow -in [gi::getWindows 7]
+[21:48:30.77] /i gi::setActiveWindow 3
+[21:48:30.77] /i gi::setActiveWindow 3 -raise true
+[21:48:33.80] /# gi::executeAction xtLPESetup -in [gi::getWindows 3]
+[21:48:33.80] /i xt::showLPESetup -job lpe -window 3
+[21:48:34.14] /o oa:0x1f064220
+[21:48:34.21] /i gi::setActiveDialog [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 3]]
+[21:48:34.48] /i db::setAttr geometry -of [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 3]] -value 487x659+830+189
+[21:48:36.62] /i gi::pressButton {/ok} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 3]]
+[21:48:36.62] /# gi::setActiveTab {/tabGroup} -tabName {/tabGroup/extractionOptionsTab} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 3]]
+[21:48:36.62] /e Error: The requested action could not be completed because one or more inputs are incomplete or invalid. (CUSTOM_WIDGETS-001)
+[21:48:38.33] /i gi::setField {/tabGroup/extractionOptionsTab/layoutExtractionGroup/milkywayDatabase/entryField} -value {../testcell.hercules.lvs/EXTRACT_VIEW} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 3]]
+[21:48:38.39] /i gi::pressButton {/tabGroup/extractionOptionsTab/layoutExtractionGroup/milkywayDatabase/browseButton} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 3]]
+[21:48:40.49] /r giFileDialog accept EXTRACT_VIEW
+[21:48:41.36] /i gi::pressButton {/ok} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 3]]
+[21:48:41.64] /# xt::physicalVerification::executePve lpe 3
+[21:48:41.66] /w Warning: Failed to copy '/home/itsupport/Desktop/lab1vlsi/synopsys_custom/.lib_20970_7f0100.defs' to '/home/itsupport/Desktop/lab1vlsi/lib.defs': copy would overwrite top library definitions file.
+[21:48:41.81] /r giWindowId 8
+[21:48:41.82] /r giWindowGeometry 800x600
+[21:48:43.91] /m Information: 
+              /c =============================
+              /c JobID: starrc_lpe_15
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[21:48:43.94] /r giWindowId 9
+[21:48:43.95] /r giWindowGeometry 1632x1020
+[21:48:43.97] /i de::setActiveLPP [de::getLPPs "exclude blockage" -from [db::getAttr editDesign -of [de::getContexts -window 9]]]
+[21:48:46.80] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 9]
+[21:48:46.80] /i de::zoom -window [gi::getWindows 9] -factor 2.0 -center {6.849 5.524}
+[21:48:46.80] /o {5.667 4.778} {8.054 6.185}
+[21:48:47.44] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 9]
+[21:48:47.44] /i de::zoom -window [gi::getWindows 9] -factor 2.0 -center {6.845 5.531}
+[21:48:47.44] /o {6.256 5.154} {7.45 5.858}
+[21:48:47.58] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 9]
+[21:48:47.58] /i de::zoom -window [gi::getWindows 9] -factor 2.0 -center {6.845 5.531}
+[21:48:47.58] /o {6.55 5.343} {7.147 5.694}
+[21:48:47.90] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 9]
+[21:48:47.90] /i de::zoom -window [gi::getWindows 9] -factor 0.5 -center {6.845 5.531}
+[21:48:47.90] /o {6.256 5.154} {7.45 5.858}
+[21:48:47.95] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 9]
+[21:48:47.95] /i de::zoom -window [gi::getWindows 9] -factor 0.5 -center {6.845 5.531}
+[21:48:47.95] /o {5.667 4.778} {8.054 6.185}
+[21:48:48.10] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 9]
+[21:48:48.10] /i de::zoom -window [gi::getWindows 9] -factor 0.5 -center {6.845 5.531}
+[21:48:48.10] /o {4.489 4.024} {9.263 6.839}
+[21:48:48.23] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 9]
+[21:48:48.23] /i de::zoom -window [gi::getWindows 9] -factor 0.5 -center {6.844 5.532}
+[21:48:48.23] /o {2.133 2.517} {11.683 8.145}
+[21:48:48.63] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 9]
+[21:48:48.63] /i de::zoom -window [gi::getWindows 9] -factor 2.0 -center {6.844 5.532}
+[21:48:48.63] /o {4.489 4.024} {9.263 6.839}
+[21:48:50.18] /i gi::executeAction giCloseWindow -in [gi::getWindows 9]
+[21:48:50.20] /i gi::setActiveWindow 8
+[21:48:50.20] /i gi::setActiveWindow 8 -raise true
+[21:48:50.90] /i gi::executeAction giCloseWindow -in [gi::getWindows 8]
+[21:48:50.91] /i gi::setActiveWindow 3
+[21:48:50.91] /i gi::setActiveWindow 3 -raise true
+[21:48:51.96] /i gi::setActiveWindow 2
+[21:48:51.96] /i gi::setActiveWindow 2 -raise true
+[21:48:53.16] /i gi::setCurrentIndex {cells} -index {TG_out} -in [gi::getWindows 2]
+[21:48:53.16] /i gi::setItemSelection {cells} -index {TG_out} -in [gi::getWindows 2]
+[21:48:53.86] /i gi::sortItems {views} -column {Views} -order {descending} -in [gi::getWindows 2]
+[21:48:54.11] /i gi::setCurrentIndex {views} -index {symbol} -in [gi::getWindows 2]
+[21:48:54.11] /i gi::setItemSelection {views} -index {symbol} -in [gi::getWindows 2]
+[21:48:55.45] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 2]
+[21:48:55.45] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 2]
+[21:48:56.25] /i gi::executeAction dmOpen -in [gi::getWindows 2]
+[21:48:56.28] /r giWindowId 10
+[21:48:56.28] /r giWindowGeometry 1632x1020
+[21:48:56.30] /# de::setActiveLPP [de::getLPPs "exclude blockage" -from [db::getAttr editDesign -of [de::getContexts -window 10]]]
+[21:48:58.57] /i gi::setField {stopLevel} -value {2} -in [gi::getToolbars {leHierarchy} -from [gi::getWindows 10]]
+[21:48:59.70] /# gi::executeAction deSelectActive -in [gi::getWindows 10]
+[21:48:59.70] /i de::deselectAll [db::getNext [de::getContexts -window 10]]
+[21:48:59.70] /i de::select [de::getActiveFigure [gi::getWindows 10] -point {1.706 2.316} -index 0 -intent none]
+[21:48:59.70] /o oa:0x209074f0
+[21:49:01.44] /# gi::executeAction deSelectActive -in [gi::getWindows 10]
+[21:49:01.44] /i de::deselectAll [db::getNext [de::getContexts -window 10]]
+[21:49:01.44] /i de::select [de::getActiveFigure [gi::getWindows 10] -point {1.53 0.8} -index 0 -intent none]
+[21:49:01.44] /o oa:0x208c1050
+[21:49:06.33] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 10]
+[21:49:06.33] /i de::zoom -window [gi::getWindows 10] -factor 2.0 -center {1.661 2.176}
+[21:49:06.33] /o {0.464 1.164} {2.812 2.548}
+[21:49:06.39] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 10]
+[21:49:06.39] /i de::zoom -window [gi::getWindows 10] -factor 2.0 -center {1.649 2.179}
+[21:49:06.39] /o {1.056 1.671} {2.231 2.364}
+[21:49:07.01] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 10]
+[21:49:07.01] /i de::zoom -window [gi::getWindows 10] -factor 0.5 -center {1.454 2.246}
+[21:49:07.02] /o {0.659 1.097} {3.007 2.481}
+[21:49:07.40] /# gi::executeAction deFitView -in [gi::getWindows 10]
+[21:49:07.40] /i de::fit -window 10 -fitView true
+[21:49:07.40] /o {-0.734 0.152} {3.964 2.92}
+[21:49:08.41] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 10]
+[21:49:08.41] /i de::zoom -window [gi::getWindows 10] -factor 2.0 -center {1.386 2.433}
+[21:49:08.41] /o {0.326 1.292} {2.675 2.677}
+[21:49:08.48] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 10]
+[21:49:08.48] /i de::zoom -window [gi::getWindows 10] -factor 2.0 -center {1.412 2.433}
+[21:49:08.49] /o {0.869 1.863} {2.043 2.555}
+[21:49:08.86] /# gi::executeAction leStretch -in [gi::getWindows 10]
+[21:49:08.86] /i ile::stretch
+[21:49:09.62] /# gi::executeAction deAddPoint -in [gi::getWindows 10]
+[21:49:09.62] /i de::addPoint {1.439 2.451} -context [db::getNext [de::getContexts -window 10]]
+[21:49:10.50] /# gi::executeAction deAbortCommand -in [gi::getWindows 10]
+[21:49:10.50] /i de::abortCommand -context [db::getNext [de::getContexts -window 10]]
+[21:49:10.77] /# gi::executeAction deSelectActive -in [gi::getWindows 10]
+[21:49:10.77] /i de::deselectAll [db::getNext [de::getContexts -window 10]]
+[21:49:10.77] /i de::select [de::getActiveFigure [gi::getWindows 10] -point {1.448 2.447} -index 0 -intent none]
+[21:49:10.77] /o oa:0x1f69bcb0
+[21:49:11.27] /# gi::executeAction deSelectActive -in [gi::getWindows 10]
+[21:49:11.27] /i de::deselectAll [db::getNext [de::getContexts -window 10]]
+[21:49:11.27] /i de::select [de::getActiveFigure [gi::getWindows 10] -point {1.448 2.423} -index 0 -intent none]
+[21:49:11.27] /o oa:0x20559ff0
+[21:49:11.66] /# gi::executeAction leStretch -in [gi::getWindows 10]
+[21:49:11.66] /i ile::stretch
+[21:49:12.08] /# gi::executeAction deAddPoint -in [gi::getWindows 10]
+[21:49:12.08] /i de::addPoint {1.451 2.446} -context [db::getNext [de::getContexts -window 10]]
+[21:49:13.04] /# gi::executeAction deAbortCommand -in [gi::getWindows 10]
+[21:49:13.04] /i de::abortCommand -context [db::getNext [de::getContexts -window 10]]
+[21:49:14.25] /# gi::executeAction deSelectActive -in [gi::getWindows 10]
+[21:49:14.25] /i de::deselectAll [db::getNext [de::getContexts -window 10]]
+[21:49:14.25] /i de::select [de::getActiveFigure [gi::getWindows 10] -point {1.101 2.424} -index 0 -intent none]
+[21:49:14.25] /o oa:0x1fb27100
+[21:49:14.35] /i gi::executeAction deCanvasDragCancel -in [gi::getWindows 10]
+[21:49:14.50] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 10]
+[21:49:14.50] /i de::zoom -window [gi::getWindows 10] -factor 0.5 -center {1.108 2.409}
+[21:49:14.50] /o {0.63 1.316} {2.979 2.701}
+[21:49:15.16] /# gi::executeAction deSelectActive -in [gi::getWindows 10]
+[21:49:15.16] /i de::deselectAll [db::getNext [de::getContexts -window 10]]
+[21:49:15.16] /i de::deselectAllLogic -context [db::getNext [de::getContexts -window 10]]
+[21:49:15.65] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 10]
+[21:49:15.65] /i de::zoom -window [gi::getWindows 10] -factor 2.0 -center {1.249 2.484}
+[21:49:15.65] /o {0.94 1.9} {2.114 2.592}
+[21:49:15.72] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 10]
+[21:49:15.72] /i de::zoom -window [gi::getWindows 10] -factor 2.0 -center {1.272 2.484}
+[21:49:15.72] /o {1.106 2.192} {1.693 2.538}
+[21:49:16.18] /# gi::executeAction leStretch -in [gi::getWindows 10]
+[21:49:16.18] /i ile::stretch
+[21:49:16.75] /# gi::executeAction deAddPoint -in [gi::getWindows 10]
+[21:49:16.75] /i de::addPoint {1.435 2.449} -context [db::getNext [de::getContexts -window 10]]
+[21:49:18.12] /# gi::executeAction deAddPoint -in [gi::getWindows 10]
+[21:49:18.12] /i de::addPoint {1.438 2.253} -context [db::getNext [de::getContexts -window 10]]
+[21:49:18.26] /# gi::executeAction deFitView -in [gi::getWindows 10]
+[21:49:18.26] /i de::fit -window 10 -fitView true
+[21:49:18.26] /o {-0.734 0.152} {3.964 2.92}
+[21:49:18.98] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 10]
+[21:49:18.98] /i de::zoom -window [gi::getWindows 10] -factor 2.0 -center {1.727 2.469}
+[21:49:18.98] /o {0.497 1.31} {2.845 2.695}
+[21:49:19.34] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 10]
+[21:49:19.34] /i de::zoom -window [gi::getWindows 10] -factor 2.0 -center {1.892 2.375}
+[21:49:19.34] /o {1.194 1.843} {2.369 2.535}
+[21:49:19.64] /# gi::executeAction deAbortCommand -in [gi::getWindows 10]
+[21:49:19.64] /i de::abortCommand -context [db::getNext [de::getContexts -window 10]]
+[21:49:20.25] /# gi::executeAction deSelectActive -in [gi::getWindows 10]
+[21:49:20.25] /i de::deselectAll [db::getNext [de::getContexts -window 10]]
+[21:49:20.25] /i de::select [de::getActiveFigure [gi::getWindows 10] -point {1.803 2.433} -index 0 -intent none]
+[21:49:20.25] /o oa:0x20606f40
+[21:49:20.94] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 10]
+[21:49:20.95] /i de::zoom -window [gi::getWindows 10] -factor 0.5 -center {2.165 2.272}
+[21:49:20.95] /o {0.224 1.413} {2.572 2.798}
+[21:49:20.97] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 10]
+[21:49:20.97] /i de::zoom -window [gi::getWindows 10] -factor 0.5 -center {2.166 2.271}
+[21:49:20.97] /o {-1.719 0.556} {2.979 3.324}
+[21:49:21.38] /# gi::executeAction deSelectActive -in [gi::getWindows 10]
+[21:49:21.39] /i de::deselectAll [db::getNext [de::getContexts -window 10]]
+[21:49:21.39] /i de::deselectAllLogic -context [db::getNext [de::getContexts -window 10]]
+[21:49:21.80] /i gi::executeAction deCanvasDragCancel -in [gi::getWindows 10]
+[21:49:22.02] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 10]
+[21:49:22.02] /i de::zoom -window [gi::getWindows 10] -factor 2.0 -center {1.914 2.559}
+[21:49:22.02] /o {0.098 1.557} {2.446 2.942}
+[21:49:22.53] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 10]
+[21:49:22.53] /i de::zoom -window [gi::getWindows 10] -factor 2.0 -center {1.795 2.466}
+[21:49:22.53] /o {0.946 2.012} {2.121 2.704}
+[21:49:22.93] /# gi::executeAction leStretch -in [gi::getWindows 10]
+[21:49:22.93] /i ile::stretch
+[21:49:23.45] /# gi::executeAction deAddPoint -in [gi::getWindows 10]
+[21:49:23.45] /i de::addPoint {1.799 2.448} -context [db::getNext [de::getContexts -window 10]]
+[21:49:23.90] /# gi::executeAction deAbortCommand -in [gi::getWindows 10]
+[21:49:23.90] /i de::abortCommand -context [db::getNext [de::getContexts -window 10]]
+[21:49:24.47] /# gi::executeAction deSelectActive -in [gi::getWindows 10]
+[21:49:24.47] /i de::deselectAll [db::getNext [de::getContexts -window 10]]
+[21:49:24.47] /i de::select [de::getActiveFigure [gi::getWindows 10] -point {1.819 2.396} -index 0 -intent none]
+[21:49:24.47] /o oa:0x20492e00
+[21:49:24.95] /# gi::executeAction deSelectActive -in [gi::getWindows 10]
+[21:49:24.95] /i de::deselectAll [db::getNext [de::getContexts -window 10]]
+[21:49:24.95] /i de::deselectAllLogic -context [db::getNext [de::getContexts -window 10]]
+[21:49:25.18] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 10]
+[21:49:25.19] /i de::zoom -window [gi::getWindows 10] -factor 0.5 -center {1.962 2.558}
+[21:49:25.19] /o {-0.069 1.465} {2.279 2.85}
+[21:49:25.32] /# gi::executeAction deFitView -in [gi::getWindows 10]
+[21:49:25.32] /i de::fit -window 10 -fitView true
+[21:49:25.32] /o {-0.734 0.152} {3.964 2.92}
+[21:49:25.81] /# gi::executeAction deSelectActive -in [gi::getWindows 10]
+[21:49:25.82] /i de::deselectAllLogic -context [db::getNext [de::getContexts -window 10]]
+[21:49:26.07] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 10]
+[21:49:26.07] /i de::zoom -window [gi::getWindows 10] -factor 2.0 -center {2.265 2.433}
+[21:49:26.07] /o {0.766 1.292} {3.114 2.677}
+[21:49:26.15] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 10]
+[21:49:26.15] /i de::zoom -window [gi::getWindows 10] -factor 2.0 -center {2.238 2.452}
+[21:49:26.15] /o {1.502 1.872} {2.676 2.564}
+[21:49:26.66] /# gi::executeAction leStretch -in [gi::getWindows 10]
+[21:49:26.66] /i ile::stretch
+[21:49:27.47] /# gi::executeAction deAddPoint -in [gi::getWindows 10]
+[21:49:27.47] /i de::addPoint {1.792 2.449} -context [db::getNext [de::getContexts -window 10]]
+[21:49:28.40] /# gi::executeAction deAddPoint -in [gi::getWindows 10]
+[21:49:28.40] /i de::addPoint {1.809 2.201} -context [db::getNext [de::getContexts -window 10]]
+[21:49:28.47] /# gi::executeAction deFitView -in [gi::getWindows 10]
+[21:49:28.47] /i de::fit -window 10 -fitView true
+[21:49:28.47] /o {-0.734 0.152} {3.964 2.92}
+[21:49:29.72] /i gi::executeAction deSaveDesign -in [gi::getWindows 10]
+[21:49:29.72] /m Information: Saving design 'project_d_ff TG_out layout'. (DESIGN_WINDOW-004)
+[21:49:30.14] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 10]
+[21:49:30.14] /i de::zoom -window [gi::getWindows 10] -factor 2.0 -center {1.297 0.522}
+[21:49:30.14] /o {0.282 0.337} {2.63 1.721}
+[21:49:30.29] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 10]
+[21:49:30.29] /i de::zoom -window [gi::getWindows 10] -factor 2.0 -center {1.324 0.509}
+[21:49:30.29] /o {0.803 0.423} {1.977 1.115}
+[21:49:31.82] /# gi::executeAction xtDRCRun -in [gi::getWindows 10]
+[21:49:31.82] /i xt::physicalVerification::executeRun drc 10
+[21:49:31.94] /# xt::physicalVerification::executePve drc 10
+[21:49:31.95] /e Error: xtDRCHerculesRunsetFile: preference value is empty in '/home/itsupport/Desktop/lab1vlsi/synopsys_custom/TG_out.hercules.drc_pve' scope.
+[21:49:32.17] /i gi::setActiveDialog [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 10]]
+[21:49:32.43] /i db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 10]] -value 475x427+865+447
+[21:49:33.47] /i gi::pressButton {/tabGroup/mainTab/runDir/browseButton} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 10]]
+[21:49:35.81] /r giFileDialog accept .
+[21:49:37.68] /i gi::pressButton {/tabGroup/mainTab/jobParametersGroup/runsetFile/browseButton} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 10]]
+[21:49:43.28] /r giFileDialog accept PDK/hercules/drc/reference_drc.ev
+[21:49:43.84] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/customOptionsTab} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 10]]
+[21:49:44.62] /i gi::setField {/tabGroup/customOptionsTab/layerMapFile/entryField} -value {/remote/dept-seg-cae2/FTK/agarwals/PERFORCE/IPL/reference/90nm/techfiles/reference90RF_layer.map} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 10]]
+[21:49:44.71] /i gi::pressButton {/tabGroup/customOptionsTab/layerMapFile/browseButton} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 10]]
+[21:49:53.38] /r giFileDialog accept PDK/techfiles/reference90RF_layer.map
+[21:49:53.79] /i gi::pressButton {/apply} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 10]]
+[21:49:54.14] /# xt::physicalVerification::executePve drc 10
+[21:49:55.29] /r giWindowId 11
+[21:49:55.30] /r giWindowGeometry 800x600
+[21:49:56.98] /m Information: 
+              /c =============================
+              /c JobID: hercules_drc_22
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[21:49:58.26] /i gi::closeWindows [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 10]]
+[21:49:59.39] /i gi::executeAction giCloseWindow -in [gi::getWindows 11]
+[21:49:59.40] /i gi::setActiveWindow 10
+[21:49:59.40] /i gi::setActiveWindow 10 -raise true
+[21:50:00.55] /# gi::executeAction xtDRCRun -in [gi::getWindows 10]
+[21:50:00.55] /i xt::physicalVerification::executeRun drc 10
+[21:50:00.60] /# xt::physicalVerification::executePve drc 10
+[21:50:01.72] /r giWindowId 12
+[21:50:01.73] /r giWindowGeometry 800x600
+[21:50:03.30] /m Information: 
+              /c =============================
+              /c JobID: hercules_drc_23
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[21:50:04.58] /i gi::executeAction giCloseWindow -in [gi::getWindows 12]
+[21:50:04.59] /i gi::setActiveWindow 10
+[21:50:04.60] /i gi::setActiveWindow 10 -raise true
+[21:50:05.52] /# gi::executeAction xtLPERun -in [gi::getWindows 10]
+[21:50:05.52] /i xt::physicalVerification::executeRun lpe 10
+[21:50:05.64] /# xt::physicalVerification::executePve lpe 10
+[21:50:05.65] /e Error: xtLPEStarOutputRunset: preference value is empty in '/home/itsupport/Desktop/lab1vlsi/synopsys_custom/TG_out.starrc.lpe_pve' scope.
+[21:50:05.95] /i gi::setActiveDialog [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 10]]
+[21:50:06.21] /i db::setAttr geometry -of [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 10]] -value 487x659+830+226
+[21:50:06.92] /i gi::pressButton {/tabGroup/mainTab/runDir/browseButton} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 10]]
+[21:50:09.00] /r giFileDialog accept .
+[21:50:09.83] /i gi::pressButton {/tabGroup/mainTab/jobParametersGroup/runsetFile/browseButton} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 10]]
+[21:50:17.34] /r giFileDialog accept PDK/starrc/star_herc_cmd
+[21:50:18.07] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/extractionOptionsTab} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 10]]
+[21:50:19.04] /i gi::setField {/tabGroup/extractionOptionsTab/layoutExtractionGroup/milkywayDatabase/entryField} -value {../testcell.hercules.lvs/EXTRACT_VIEW} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 10]]
+[21:50:19.10] /i gi::pressButton {/tabGroup/extractionOptionsTab/layoutExtractionGroup/milkywayDatabase/browseButton} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 10]]
+[21:50:21.59] /r giFileDialog accept EXTRACT_VIEW
+[21:50:22.34] /i gi::pressButton {/apply} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 10]]
+[21:50:22.68] /# xt::physicalVerification::executePve lpe 10
+[21:50:22.70] /w Warning: Failed to copy '/home/itsupport/Desktop/lab1vlsi/synopsys_custom/.lib_20970_7f0100.defs' to '/home/itsupport/Desktop/lab1vlsi/lib.defs': copy would overwrite top library definitions file.
+[21:50:22.91] /r giWindowId 13
+[21:50:22.91] /r giWindowGeometry 800x600
+[21:50:23.20] /i gi::setActiveTab {tabs} -tabName {stdout.lpe.log} -in [gi::getWindows 13]
+[21:50:23.20] /i gi::setActiveTab {tabs} -tabName {stdout.lpe.log} -in [gi::getWindows 13]
+[21:50:23.20] /i gi::setActiveTab {tabs} -tabName {stdout.lpe.log} -in [gi::getWindows 13]
+[21:50:23.20] /i gi::setActiveTab {tabs} -tabName {stdout.lpe.log} -in [gi::getWindows 13]
+[21:50:23.22] /e Error: The job 'starrc_lpe_16' started on host 'localhost' with process id 22802 failed to start or complete successfully; the job's return code is 255.
+[21:50:27.10] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/customOptionsTab} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 10]]
+[21:50:27.41] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/outputOptionsTab} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 10]]
+[21:50:28.67] /i gi::closeWindows [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 10]]
+[21:50:30.57] /i gi::setActiveTab {tabs} -tabName {TG_out.star_sum} -in [gi::getWindows 13]
+[21:50:30.88] /i gi::setActiveWindow 10
+[21:50:30.88] /i gi::setActiveWindow 10 -raise true
+[21:50:33.71] /# gi::executeAction xtLVSRun -in [gi::getWindows 10]
+[21:50:33.71] /i xt::physicalVerification::executeRun lvs 10
+[21:50:33.84] /# xt::physicalVerification::executePve lvs 10
+[21:50:33.85] /e Error: xtLVSHerculesRunsetFile: preference value is empty in '/home/itsupport/Desktop/lab1vlsi/synopsys_custom/TG_out.hercules.lvs_pve' scope.
+[21:50:34.16] /i gi::setActiveDialog [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 10]]
+[21:50:34.42] /i db::setAttr geometry -of [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 10]] -value 704x454+787+419
+[21:50:35.67] /i gi::pressButton {/tabGroup/mainTab/runDir/browseButton} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 10]]
+[21:50:38.81] /r giFileDialog accept .
+[21:50:39.89] /i gi::pressButton {/tabGroup/mainTab/jobParametersGroup/runsetFile/browseButton} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 10]]
+[21:50:45.29] /r giFileDialog accept PDK/hercules/lvs/reference_lvs.ev
+[21:50:45.88] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/netlistingOptionsTab} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 10]]
+[21:50:46.96] /i gi::setField {/tabGroup/netlistingOptionsTab/schematicOutputNetlist/entryField} -value {/home/itsupport/Desktop/lab1vlsi/synopsys_custom/TG_out.hercules.lvs/TG_out.custom_compiler.sp} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 10]]
+[21:50:46.96] /i gi::setCurrentIndex {/tabGroup/controlVariablesTab/controlVariablesTable} -index {0,0} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 10]]
+[21:50:46.96] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/controlVariablesTab} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 10]]
+[21:50:47.38] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/customOptionsTab} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 10]]
+[21:50:47.85] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/controlVariablesTab} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 10]]
+[21:50:48.30] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/netlistingOptionsTab} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 10]]
+[21:50:49.35] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/controlVariablesTab} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 10]]
+[21:50:49.86] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/customOptionsTab} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 10]]
+[21:50:50.76] /i gi::pressButton {/ok} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 10]]
+[21:50:51.09] /# xt::physicalVerification::executePve lvs 10
+[21:50:51.96] /m Information: "Starting netlisting for design "project_d_ff/TG_out/schematic"..." (NETLISTING-010)
+[21:50:51.98] /m Information: 
+[21:50:51.98] /o Checking "project_d_ff/TG_out/schematic"
+[21:50:51.98] /o No rule violations found in "project_d_ff/TG_out/schematic"
+[21:50:51.98] /o No Design Integrity rule violations found in "project_d_ff/TG_out/schematic"
+[21:50:51.99] /m Information: "Netlisting design "project_d_ff/TG_out/schematic" finished successfully." (NETLISTING-012)
+[21:50:52.17] /r giWindowId 14
+[21:50:52.18] /r giWindowGeometry 800x600
+[21:50:54.20] /m Information: 
+              /c =============================
+              /c JobID: hercules_lvs_11
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[21:50:58.39] /i gi::executeAction giCloseWindow -in [gi::getWindows 14]
+[21:50:58.39] /i gi::setActiveWindow 10
+[21:50:58.40] /i gi::setActiveWindow 10 -raise true
+[21:50:58.84] /i gi::executeAction giCloseWindow -in [gi::getWindows 13]
+[21:50:59.22] /i gi::executeAction giCloseWindow -in [gi::getWindows 3]
+[21:51:00.38] /# gi::executeAction xtLPERun -in [gi::getWindows 10]
+[21:51:00.38] /i xt::physicalVerification::executeRun lpe 10
+[21:51:00.78] /i gi::setActiveDialog [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 10]]
+[21:51:01.02] /i db::setAttr geometry -of [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 10]] -value 487x659+830+189
+[21:51:02.90] /i gi::pressButton {/tabGroup/mainTab/jobParametersGroup/runsetFile/browseButton} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 10]]
+[21:51:08.13] /r giFileDialog accept PDK/starrc/star_herc_cmd
+[21:51:09.77] /i gi::pressButton {/ok} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 10]]
+[21:51:09.78] /# gi::setActiveTab {/tabGroup} -tabName {/tabGroup/extractionOptionsTab} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 10]]
+[21:51:09.78] /e Error: The requested action could not be completed because one or more inputs are incomplete or invalid. (CUSTOM_WIDGETS-001)
+[21:51:11.10] /i gi::setField {/tabGroup/extractionOptionsTab/layoutExtractionGroup/milkywayDatabase/entryField} -value {../testcell.hercules.lvs/EXTRACT_VIEW} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 10]]
+[21:51:11.19] /i gi::pressButton {/tabGroup/extractionOptionsTab/layoutExtractionGroup/milkywayDatabase/browseButton} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 10]]
+[21:51:14.12] /r giFileDialog accept EXTRACT_VIEW
+[21:51:15.00] /i gi::pressButton {/ok} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 10]]
+[21:51:15.32] /# xt::physicalVerification::executePve lpe 10
+[21:51:15.35] /w Warning: Failed to copy '/home/itsupport/Desktop/lab1vlsi/synopsys_custom/.lib_20970_7f0100.defs' to '/home/itsupport/Desktop/lab1vlsi/lib.defs': copy would overwrite top library definitions file.
+[21:51:15.49] /r giWindowId 15
+[21:51:15.50] /r giWindowGeometry 800x600
+[21:51:17.71] /m Information: 
+              /c =============================
+              /c JobID: starrc_lpe_17
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[21:51:17.75] /r giWindowId 16
+[21:51:17.76] /r giWindowGeometry 1632x1020
+[21:51:17.78] /i de::setActiveLPP [de::getLPPs "exclude blockage" -from [db::getAttr editDesign -of [de::getContexts -window 16]]]
+[21:51:23.39] /i gi::executeAction giCloseWindow -in [gi::getWindows 16]
+[21:51:23.41] /i gi::setActiveWindow 15
+[21:51:23.41] /i gi::setActiveWindow 15 -raise true
+[21:51:24.10] /i gi::executeAction giCloseWindow -in [gi::getWindows 15]
+[21:51:24.11] /i gi::setActiveWindow 10
+[21:51:24.11] /i gi::setActiveWindow 10 -raise true
+[21:51:35.52] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 10]
+[21:51:35.52] /i de::zoom -window [gi::getWindows 10] -factor 0.5 -center {1.573 0.682}
+[21:51:35.52] /o {0.033 0.164} {2.381 1.548}
+[21:51:36.22] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 10]
+[21:51:36.22] /i de::zoom -window [gi::getWindows 10] -factor 0.5 -center {1.688 0.92}
+[21:51:36.22] /o {-1.623 -0.592} {3.075 2.176}
+[21:51:36.30] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 10]
+[21:51:36.30] /i de::zoom -window [gi::getWindows 10] -factor 0.5 -center {1.681 0.927}
+[21:51:36.30] /o {-4.927 -2.112} {4.469 3.426}
+[21:51:36.69] /# gi::executeAction deFitView -in [gi::getWindows 10]
+[21:51:36.69] /i de::fit -window 10 -fitView true
+[21:51:36.69] /o {-0.734 0.152} {3.964 2.92}
+[21:51:48.45] /i gi::setActiveWindow 2
+[21:51:48.45] /i gi::setActiveWindow 2 -raise true
+[21:51:50.91] /i gi::setCurrentIndex {cells} -index {TG_in} -in [gi::getWindows 2]
+[21:51:50.91] /i gi::setItemSelection {cells} -index {TG_in} -in [gi::getWindows 2]
+[21:51:51.86] /i gi::setCurrentIndex {views} -index {symbol} -in [gi::getWindows 2]
+[21:51:51.87] /i gi::setItemSelection {views} -index {symbol} -in [gi::getWindows 2]
+[21:51:52.22] /i gi::setCurrentIndex {views} -index {starrc} -in [gi::getWindows 2]
+[21:51:52.22] /i gi::setItemSelection {views} -index {starrc} -in [gi::getWindows 2]
+[21:51:52.57] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 2]
+[21:51:52.57] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 2]
+[21:51:53.43] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 2]
+[21:51:53.43] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 2]
+[21:51:54.28] /i gi::executeAction dmOpen -in [gi::getWindows 2]
+[21:51:54.30] /r giWindowId 17
+[21:51:54.31] /r giWindowGeometry 1632x1020
+[21:51:54.33] /# de::setActiveLPP [de::getLPPs "exclude blockage" -from [db::getAttr editDesign -of [de::getContexts -window 17]]]
+[21:51:56.66] /i gi::setField {stopLevel} -value {1} -in [gi::getToolbars {leHierarchy} -from [gi::getWindows 17]]
+[21:52:23.41] /i gi::setActiveWindow 2
+[21:52:23.41] /i gi::setActiveWindow 2 -raise true
+[21:52:24.76] /i gi::setCurrentIndex {cells} -index {inv_out} -in [gi::getWindows 2]
+[21:52:24.76] /i gi::setItemSelection {cells} -index {inv_out} -in [gi::getWindows 2]
+[21:52:25.48] /i gi::setCurrentIndex {views} -index {symbol} -in [gi::getWindows 2]
+[21:52:25.49] /i gi::setItemSelection {views} -index {symbol} -in [gi::getWindows 2]
+[21:52:25.92] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 2]
+[21:52:25.92] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 2]
+[21:52:26.53] /i gi::setCurrentIndex {views} -index {symbol} -in [gi::getWindows 2]
+[21:52:26.53] /i gi::setItemSelection {views} -index {symbol} -in [gi::getWindows 2]
+[21:52:27.44] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 2]
+[21:52:27.44] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 2]
+[21:52:27.59] /i gi::executeAction dmOpen -in [gi::getWindows 2]
+[21:52:27.62] /r giWindowId 18
+[21:52:27.63] /r giWindowGeometry 1632x1020
+[21:52:27.65] /# de::setActiveLPP [de::getLPPs "exclude blockage" -from [db::getAttr editDesign -of [de::getContexts -window 18]]]
+[21:52:30.02] /i gi::setField {stopLevel} -value {1} -in [gi::getToolbars {leHierarchy} -from [gi::getWindows 18]]
+[21:53:51.16] /# gi::executeAction deSelectActive -in [gi::getWindows 18]
+[21:53:51.17] /i de::deselectAllLogic -context [db::getNext [de::getContexts -window 18]]
+[21:53:52.87] /i gi::setActiveWindow 2
+[21:53:52.87] /i gi::setActiveWindow 2 -raise true
+[21:53:54.80] /i gi::setCurrentIndex {cells} -index {TG_in} -in [gi::getWindows 2]
+[21:53:54.80] /i gi::setItemSelection {cells} -index {TG_in} -in [gi::getWindows 2]
+[21:53:55.16] /i gi::setCurrentIndex {cells} -index {int_out_ds} -in [gi::getWindows 2]
+[21:53:55.17] /i gi::setItemSelection {cells} -index {int_out_ds} -in [gi::getWindows 2]
+[21:53:55.60] /i gi::setCurrentIndex {cells} -index {inv_out} -in [gi::getWindows 2]
+[21:53:55.60] /i gi::setItemSelection {cells} -index {inv_out} -in [gi::getWindows 2]
+[21:53:55.90] /i gi::setCurrentIndex {cells} -index {inv_store_tb} -in [gi::getWindows 2]
+[21:53:55.90] /i gi::setItemSelection {cells} -index {inv_store_tb} -in [gi::getWindows 2]
+[21:53:56.17] /i gi::setCurrentIndex {cells} -index {tg_in_tb} -in [gi::getWindows 2]
+[21:53:56.17] /i gi::setItemSelection {cells} -index {tg_in_tb} -in [gi::getWindows 2]
+[21:53:56.59] /i gi::setCurrentIndex {cells} -index {inv_store_tb} -in [gi::getWindows 2]
+[21:53:56.59] /i gi::setItemSelection {cells} -index {inv_store_tb} -in [gi::getWindows 2]
+[21:53:56.95] /i gi::setCurrentIndex {cells} -index {inv_store} -in [gi::getWindows 2]
+[21:53:56.95] /i gi::setItemSelection {cells} -index {inv_store} -in [gi::getWindows 2]
+[21:53:57.29] /i gi::setCurrentIndex {cells} -index {inv_out} -in [gi::getWindows 2]
+[21:53:57.29] /i gi::setItemSelection {cells} -index {inv_out} -in [gi::getWindows 2]
+[21:53:57.84] /i gi::setCurrentIndex {cells} -index {TG_out} -in [gi::getWindows 2]
+[21:53:57.84] /i gi::setItemSelection {cells} -index {TG_out} -in [gi::getWindows 2]
+[21:53:58.78] /i gi::setCurrentIndex {cells} -index {TG_in} -in [gi::getWindows 2]
+[21:53:58.78] /i gi::setItemSelection {cells} -index {TG_in} -in [gi::getWindows 2]
+[21:54:08.04] /i gi::setCurrentIndex {views} -index {starrc} -in [gi::getWindows 2]
+[21:54:08.04] /i gi::setItemSelection {views} -index {starrc} -in [gi::getWindows 2]
+[21:54:08.87] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 2]
+[21:54:08.88] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 2]
+[21:54:09.06] /i gi::executeAction dmOpen -in [gi::getWindows 2]
+[21:54:09.07] /r giWindowId 19
+[21:54:09.08] /r giWindowGeometry 1632x1020
+[21:54:09.10] /# de::setActiveLPP [de::getLPPs "exclude blockage" -from [db::getAttr editDesign -of [de::getContexts -window 19]]]
+[21:55:47.96] /r giDialog gi::setActiveDialog [gi::getDialogs {giCloseFrame}]
+[21:55:48.22] /r giDialog db::setAttr geometry -of [gi::getDialogs {giCloseFrame}] -value 299x108+811+560
+[21:55:49.04] /r giDialog gi::pressButton {giCloseTabsButton} -in [gi::getDialogs {giCloseFrame}]
+[21:55:49.06] /i exit
+[21:55:49.15] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[21:55:49.39] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 419x181+741+465
+[21:55:49.94] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[21:55:49.99] /i gi::setActiveWindow 2
+[21:55:49.99] /i gi::setActiveWindow 2 -raise true
+[21:55:50.06] /i gi::setActiveWindow 18
+[21:55:50.06] /i gi::setActiveWindow 18 -raise true
+[21:55:50.08] /i gi::setActiveWindow 17
+[21:55:50.08] /i gi::setActiveWindow 17 -raise true
+[21:55:50.14] /i gi::setActiveWindow 10
+[21:55:50.14] /i gi::setActiveWindow 10 -raise true
+[21:55:50.25] /i gi::setActiveWindow 1
+[21:55:50.25] /i gi::setActiveWindow 1 -raise true
+[21:55:50.40] /o Shutdown time: Sat May 23 21:55:50 2026
+[21:55:50.40] /o Elapsed session real time: 9.75 minutes
+[21:55:50.40] /o Session terminated. Log is at /home/itsupport/Desktop/lab1vlsi/synopsys_custom/logs/ccompiler.itsupport.2026_5_23_214603_20970.log

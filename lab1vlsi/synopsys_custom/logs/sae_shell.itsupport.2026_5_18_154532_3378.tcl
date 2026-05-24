@@ -1,0 +1,4 @@
+::sa::_backgroundSaeShell::signalProcessReady 1779093931
+::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/HSPICE_default/HSPICE/nominal/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession0 testbenchName HSPICE_default resultsDir /home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/HSPICE_default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/HSPICE_default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/HSPICE_default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+::wf::viewerExited
+::sa::_backgroundSaeShell::exit

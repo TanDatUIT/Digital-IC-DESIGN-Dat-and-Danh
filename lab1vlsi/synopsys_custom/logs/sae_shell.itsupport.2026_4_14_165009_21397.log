@@ -1,0 +1,47 @@
+[16:50:09.97] /m Information: License 'SAE' checked out. (LICENSE-003)
+[16:50:11.05] /o sae_shell Version Custom Compiler N-2017.12-SP1-2
+              /c Build  (OPT) compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Execution time: Tue Apr 14 16:50:09 2026
+              /c Host: localhost.localdomain
+              /c 
+              /c Copyright © 2004-2018 Synopsys, Inc.
+              /c This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, or distribution of this software is strictly prohibited.
+              /c 
+              /c 
+[16:50:11.06] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[16:50:11.06] /o 	#######################################
+[16:50:11.06] /o 	PDK Library Name	: reference90RF
+[16:50:11.06] /o 	PDK Version		: 2.0
+[16:50:11.06] /o 	PDK Release Date	: 25-March-2010 
+[16:50:11.06] /o 	#######################################
+[16:50:11.06] /o 
+[16:50:11.06] /i ::sa::_backgroundSaeShell::signalProcessReady 1776160208
+[16:50:11.07] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::processReady 3
+[16:50:39.13] /i ::wf::viewerExited
+[16:55:12.09] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[16:55:12.13] /i ::sa::_backgroundSaeShell::parentRunning
+[16:55:12.13] /o 1776160512
+[17:00:13.10] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[17:00:13.15] /i ::sa::_backgroundSaeShell::parentRunning
+[17:00:13.15] /o 1776160813
+[17:05:14.12] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[17:05:14.14] /i ::sa::_backgroundSaeShell::parentRunning
+[17:05:14.14] /o 1776161114
+[17:10:15.14] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[17:10:15.25] /i ::sa::_backgroundSaeShell::parentRunning
+[17:10:15.25] /o 1776161415
+[17:15:16.15] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[17:15:16.23] /i ::sa::_backgroundSaeShell::parentRunning
+[17:15:16.23] /o 1776161716
+[17:20:17.17] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[17:20:17.23] /i ::sa::_backgroundSaeShell::parentRunning
+[17:20:17.23] /o 1776162017
+[17:25:18.19] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[17:25:18.23] /i ::sa::_backgroundSaeShell::parentRunning
+[17:25:18.24] /o 1776162318
+[17:28:31.83] /i ::wf::viewerExited
+[17:30:19.21] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[17:30:19.23] /i ::sa::_backgroundSaeShell::parentRunning
+[17:30:19.23] /o 1776162619
+[17:34:29.63] /i ::sa::_backgroundSaeShell::exit
+[17:34:29.63] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::childFormallyExiting

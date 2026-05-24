@@ -1,0 +1,2 @@
+#!/bin/sh
+cd /home/itsupport/Desktop/lab1vlsi/synopsys_custom/NMOS.hercules.lvs; unset TCLLIBPATH; unset TCL_LIBRARY; exec-oa22.04.hercules hercules_oa -f openaccess -i BaiTap2 -b NMOS -p . -O gdsii -o NMOS_result.gds -s /home/itsupport/Desktop/lab1vlsi/synopsys_custom/NMOS.hercules.lvs/NMOS.custom_compiler.sp -sf CDL -stb NMOS /home/itsupport/Desktop/lab1vlsi/synopsys_custom/NMOS.hercules.lvs/reference_lvs.lvs.evx > /home/itsupport/Desktop/lab1vlsi/synopsys_custom/NMOS.hercules.lvs/stdout.lvs.log 2>&1

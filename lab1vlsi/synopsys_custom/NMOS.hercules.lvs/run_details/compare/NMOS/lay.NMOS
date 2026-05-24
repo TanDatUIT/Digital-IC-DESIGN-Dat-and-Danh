@@ -1,0 +1,9 @@
+{NETLIST NMOS
+{VERSION 1 0 0}
+
+{CELL NMOS
+    {PORT }
+    {INST M1=N {PROP n="N" x=0.850 y=0.900 Length=0.1 Width=0.2 }
+	{PIN N_6=GATE N_3=SRC N_2=DRN }}
+}
+}

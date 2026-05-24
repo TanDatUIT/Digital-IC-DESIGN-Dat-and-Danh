@@ -1,0 +1,11 @@
+::sa::_backgroundSaeShell::signalProcessReady 1779608766
+::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/new_dff,d_ff_tb,schematic/history_1/simulation/HSPICE_d_ff_tb/HSPICE/nominal/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession3 testbenchName HSPICE_d_ff_tb resultsDir /home/itsupport/simulation/new_dff,d_ff_tb,schematic/history_1/simulation/HSPICE_d_ff_tb/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/new_dff,d_ff_tb,schematic/history_1/simulation/HSPICE_d_ff_tb/HSPICE/nominal databaseName /home/itsupport/simulation/new_dff,d_ff_tb,schematic/history_1/simulation/HSPICE_d_ff_tb/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/new_dff,d_ff_tb,schematic/history_1/simulation/HSPICE_d_ff_tb/HSPICE/nominal/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession3 testbenchName HSPICE_d_ff_tb resultsDir /home/itsupport/simulation/new_dff,d_ff_tb,schematic/history_1/simulation/HSPICE_d_ff_tb/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/new_dff,d_ff_tb,schematic/history_1/simulation/HSPICE_d_ff_tb/HSPICE/nominal databaseName /home/itsupport/simulation/new_dff,d_ff_tb,schematic/history_1/simulation/HSPICE_d_ff_tb/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+::sa::_backgroundSaeShell::parentRunning
+::sa::_backgroundSaeShell::parentRunning
+::sa::_backgroundSaeShell::parentRunning
+::sa::_backgroundSaeShell::parentRunning
+::sa::_backgroundSaeShell::parentRunning
+::sa::_backgroundSaeShell::parentRunning
+::sa::_backgroundSaeShell::parentRunning
+::sa::_backgroundSaeShell::parentRunning

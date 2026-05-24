@@ -1,0 +1,33 @@
+[19:43:12.83] /m Information: License 'SAE' checked out. (LICENSE-003)
+[19:43:13.89] /o sae_shell Version Custom Compiler N-2017.12-SP1-2
+              /c Build  (OPT) compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Execution time: Mon Apr 13 19:43:11 2026
+              /c Host: localhost.localdomain
+              /c 
+              /c Copyright © 2004-2018 Synopsys, Inc.
+              /c This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, or distribution of this software is strictly prohibited.
+              /c 
+              /c 
+[19:43:13.90] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[19:43:13.90] /o 	#######################################
+[19:43:13.90] /o 	PDK Library Name	: reference90RF
+[19:43:13.90] /o 	PDK Version		: 2.0
+[19:43:13.90] /o 	PDK Release Date	: 25-March-2010 
+[19:43:13.90] /o 	#######################################
+[19:43:13.90] /o 
+[19:43:13.91] /i ::sa::_backgroundSaeShell::signalProcessReady 1776084191
+[19:43:13.91] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::processReady 2
+[19:43:15.80] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession4 testbenchName default resultsDir /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[19:43:16.03] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.2 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession4 testbenchName default resultsDir /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[19:43:16.03] /o false
+[19:45:22.28] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession4 testbenchName default resultsDir /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[19:45:22.50] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.2 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession4 testbenchName default resultsDir /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[19:45:22.50] /o false
+[19:47:57.92] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession4 testbenchName default resultsDir /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[19:47:58.14] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.2 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession4 testbenchName default resultsDir /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[19:47:58.14] /o false
+[19:48:54.30] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession4 testbenchName default resultsDir /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[19:48:54.51] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.2 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession4 testbenchName default resultsDir /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,tb_inv,schematic/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[19:48:54.51] /o false
+[19:49:06.17] /i ::sa::_backgroundSaeShell::exit
+[19:49:06.17] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::childFormallyExiting

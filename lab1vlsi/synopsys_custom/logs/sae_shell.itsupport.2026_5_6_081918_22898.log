@@ -1,0 +1,26 @@
+[08:19:18.87] /m Information: License 'SAE' checked out. (LICENSE-003)
+[08:19:19.91] /o sae_shell Version Custom Compiler N-2017.12-SP1-2
+              /c Build  (OPT) compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Execution time: Wed May  6 08:19:18 2026
+              /c Host: localhost.localdomain
+              /c 
+              /c Copyright © 2004-2018 Synopsys, Inc.
+              /c This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, or distribution of this software is strictly prohibited.
+              /c 
+              /c 
+[08:19:19.92] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[08:19:19.92] /o 	#######################################
+[08:19:19.92] /o 	PDK Library Name	: reference90RF
+[08:19:19.92] /o 	PDK Version		: 2.0
+[08:19:19.92] /o 	PDK Release Date	: 25-March-2010 
+[08:19:19.92] /o 	#######################################
+[08:19:19.92] /o 
+[08:19:19.93] /i ::sa::_backgroundSaeShell::signalProcessReady 1778030357
+[08:19:19.93] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::processReady 2
+[08:19:33.66] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/inverter,TB_CMOS,schematic/history_1/simulation/HSPICE_default/HSPICE/nominal/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession6 testbenchName HSPICE_default resultsDir /home/itsupport/simulation/inverter,TB_CMOS,schematic/history_1/simulation/HSPICE_default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,TB_CMOS,schematic/history_1/simulation/HSPICE_default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,TB_CMOS,schematic/history_1/simulation/HSPICE_default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[08:19:34.04] /m Information: Started sharing "Custom WaveView" license. (WAVEFORM-110)
+[08:19:34.17] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.5 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession6 testbenchName HSPICE_default resultsDir /home/itsupport/simulation/inverter,TB_CMOS,schematic/history_1/simulation/HSPICE_default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,TB_CMOS,schematic/history_1/simulation/HSPICE_default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,TB_CMOS,schematic/history_1/simulation/HSPICE_default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[08:19:34.17] /o false
+[08:20:03.27] /i ::wf::viewerExited
+[08:20:18.47] /i ::sa::_backgroundSaeShell::exit
+[08:20:18.47] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::childFormallyExiting

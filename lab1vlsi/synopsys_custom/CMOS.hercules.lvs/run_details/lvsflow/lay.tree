@@ -1,0 +1,11 @@
+CMOS Level=0 Count=1
+
+
+		CELL STATISTICS
+
+
+TOP CELL = CMOS
+	Ports                =	4
+
+CELL = CMOS
+	Flat Placements      =	0

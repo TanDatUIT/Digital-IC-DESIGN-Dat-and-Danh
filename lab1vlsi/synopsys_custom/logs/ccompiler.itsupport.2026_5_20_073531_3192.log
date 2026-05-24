@@ -1,0 +1,1056 @@
+[07:35:33.17] /r giWindowId 0
+[07:35:33.17] /r giWindowGeometry 600x300
+[07:35:33.18] /o 
+              /c                                 Custom Compiler 
+              /c 
+              /c               Version N-2017.12-SP1-2 for linux64 - May 16, 2018 
+              /c 
+              /c                     Copyright (c) 2004 - 2018 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c             or distribution of this software is strictly prohibited.
+              /c 
+              /c Build  (OPT) Config 4182185 compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Invocation: /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/platform/bin/cdesigner
+              /c Execution time: Wed May 20 07:35:31 2026
+              /c Host: localhost.localdomain
+              /c Working directory: /home/itsupport/Desktop/lab1vlsi
+              /c 
+[07:35:34.96] /r giShowFrameTabs true
+[07:35:34.96] /r giWindowId 1
+[07:35:34.96] /r giWindowGeometry 1040x800
+[07:35:39.54] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[07:35:39.55] /# 
+[07:35:39.55] /i dm::openLibraryManager
+[07:35:39.55] /r giWindowId 2
+[07:35:39.55] /r giWindowGeometry 660x600+50+78
+[07:35:39.58] /o oa:0x1d0f5fa0
+[07:35:41.52] /i gi::setCurrentIndex {libs} -index {basic} -in [gi::getWindows 2]
+[07:35:41.53] /i gi::setItemSelection {libs} -index {basic} -in [gi::getWindows 2]
+[07:35:41.96] /i gi::setCurrentIndex {libs} -index {inverter} -in [gi::getWindows 2]
+[07:35:41.96] /i gi::setItemSelection {libs} -index {inverter} -in [gi::getWindows 2]
+[07:35:42.23] /i gi::setCurrentIndex {libs} -index {parasitics} -in [gi::getWindows 2]
+[07:35:42.23] /i gi::setItemSelection {libs} -index {parasitics} -in [gi::getWindows 2]
+[07:35:42.60] /i gi::setCurrentIndex {libs} -index {inverter} -in [gi::getWindows 2]
+[07:35:42.61] /i gi::setItemSelection {libs} -index {inverter} -in [gi::getWindows 2]
+[07:35:43.70] /i gi::setCurrentIndex {cellCategories} -index {FULL_ADDER_2BIT} -in [gi::getWindows 2]
+[07:35:43.70] /i gi::setItemSelection {cellCategories} -index {FULL_ADDER_2BIT} -in [gi::getWindows 2]
+[07:35:43.98] /i gi::setCurrentIndex {cellCategories} -index {LAB3} -in [gi::getWindows 2]
+[07:35:43.98] /i gi::setItemSelection {cellCategories} -index {LAB3} -in [gi::getWindows 2]
+[07:35:44.73] /i gi::setCurrentIndex {cells} -index {NAND2} -in [gi::getWindows 2]
+[07:35:44.73] /i gi::setItemSelection {cells} -index {NAND2} -in [gi::getWindows 2]
+[07:35:45.05] /i gi::setCurrentIndex {cells} -index {FA_1bit_tb} -in [gi::getWindows 2]
+[07:35:45.05] /i gi::setItemSelection {cells} -index {FA_1bit_tb} -in [gi::getWindows 2]
+[07:35:45.80] /i gi::setCurrentIndex {views} -index {config} -in [gi::getWindows 2]
+[07:35:45.81] /i gi::setItemSelection {views} -index {config} -in [gi::getWindows 2]
+[07:35:47.47] /i gi::executeAction dmOpenConfigDesignWrite -in [gi::getWindows 2]
+[07:35:47.48] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[07:35:47.50] /o 	#######################################
+[07:35:47.50] /o 	PDK Library Name	: reference90RF
+[07:35:47.50] /o 	PDK Version		: 2.0
+[07:35:47.50] /o 	PDK Release Date	: 25-March-2010 
+[07:35:47.50] /o 	#######################################
+[07:35:47.50] /o 
+[07:35:47.51] /m Information: License 'Schematic' checked out. (LICENSE-003)
+[07:35:47.59] /r giWindowId 3
+[07:35:47.59] /r giWindowGeometry 1632x1020
+[07:35:47.75] /o "inverter/FA_1bit_tb/schematic" design does not need checking
+[07:35:49.07] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[07:35:49.41] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 3]] -value 290x865
+[07:35:49.41] /i db::setAttr dockSize -of [gi::getAssistants giConsole -from [gi::getWindows 3]] -value 1867x89
+[07:35:49.44] /i db::setAttr geometry -of [gi::getFrames 1] -value 1910x1101+5+56
+[07:35:50.08] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 3]
+[07:35:50.08] /i de::zoom -window [gi::getWindows 3] -factor 2.0 -center {4.125 3.725}
+[07:35:50.08] /o {2.0875 -0.76875} {11.95625 4.6625}
+[07:35:52.42] /# gi::executeAction deSelectActive -in [gi::getWindows 3]
+[07:35:52.42] /i de::deselectAll [db::getNext [de::getContexts -window 3]]
+[07:35:52.42] /i de::select [de::getActiveFigure [gi::getWindows 3] -point {8.18125 2.70625} -index 0 -intent none]
+[07:35:52.42] /o oa:0x1e400950
+[07:35:52.82] /# gi::executeAction seButton1DragStart -in [gi::getWindows 3]
+[07:35:52.82] /i ise::stretch -point {8.1875 2.6875}
+[07:35:53.61] /# gi::executeAction deEndDrag -in [gi::getWindows 3]
+[07:35:53.61] /i de::endDrag {8.1625 2.14375} -context [db::getNext [de::getContexts -window 3]]
+[07:35:54.66] /# gi::executeAction seSchCheckAndSave -in [gi::getWindows 3]
+[07:35:54.66] /i ise::check
+[07:35:54.67] /m Information: 
+[07:35:54.67] /o Checking "inverter/FA_1bit_tb/schematic"
+[07:35:54.67] /o No rule violations found in "inverter/FA_1bit_tb/schematic"
+[07:35:54.67] /m Information: Checking process is completed: marking the design violations
+[07:35:54.69] /m Information: Marking of designs is completed
+[07:35:54.69] /o true
+[07:35:54.83] /# gi::executeAction seSchCheckAndSave -in [gi::getWindows 3]
+[07:35:54.83] /i ise::check
+[07:35:54.84] /m Information: 
+[07:35:54.84] /o Checking "inverter/FA_1bit_tb/schematic"
+[07:35:54.84] /o No rule violations found in "inverter/FA_1bit_tb/schematic"
+[07:35:54.84] /m Information: Checking process is completed: marking the design violations
+[07:35:54.85] /m Information: Marking of designs is completed
+[07:35:54.85] /o true
+[07:35:56.52] /# gi::executeAction seShowConsoleForWindow -in [gi::getWindows 3]
+[07:35:56.52] /i sa::showConsole -context [db::getNext [de::getContexts -window 3]]
+[07:35:58.27] /m Information: License 'SAE' checked out. (LICENSE-003)
+[07:35:58.29] /r giWindowId 4
+[07:35:58.29] /r giWindowGeometry 600x500
+[07:35:58.37] /o oa:0x22588af0
+[07:35:58.40] /m Information: Launching Background sae_shell Server Process "cd /home/itsupport/Desktop/lab1vlsi && sae_shell -log sae_shell_session0_job1 -libDefFile /home/itsupport/Desktop/lab1vlsi/lib.defs"
+[07:35:59.76] /# gi::executeAction saLoadState -in [gi::getWindows 4]
+[07:35:59.76] /i sa::showLoadState -parent 4
+[07:35:59.80] /e Error: parse error in '/home/itsupport/.synopsys_custom/sae_states/inverter/FA_1bit_tb/HSPICE/FA_POST_LAYOUT/state.xml' at index (1,1): unexpected end of file (OPAL-006)
+[07:35:59.87] /e Error: parse error in '/home/itsupport/.synopsys_custom/sae_states/inverter/FA_1bit_tb/HSPICE/FA_POST_LAYOUT/state.xml' at index (1,1): unexpected end of file (OPAL-006)
+[07:35:59.87] /e Error: parse error in '/home/itsupport/.synopsys_custom/sae_states/inverter/FA_1bit_tb/HSPICE/FA_POST_LAYOUT/state.xml' at index (1,1): unexpected end of file (TCL)
+[07:35:59.94] /i gi::setActiveDialog [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 4]]
+[07:36:00.21] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 4]] -value 603x720+778+424
+[07:36:01.46] /i gi::closeWindows [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 4]]
+[07:36:02.01] /m Information: Received ready-for-commands signal from background job 'sae_shell_session0_job1' after 4 seconds.
+[07:36:02.62] /i gi::executeAction menuPreShow -in [gi::getWindows 4]
+[07:36:02.62] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 4]]
+[07:36:03.64] /# gi::executeAction saShowEditAnalyses -in [gi::getWindows 4]
+[07:36:03.64] /i sa::showEditAnalyses -parent 4 -analysisName "" 
+[07:36:03.74] /o oa:0x22b43db0
+[07:36:03.79] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]]
+[07:36:04.08] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]] -value 633x680+762+450
+[07:36:07.79] /i gi::setField {/analysesGroups/tabGeneral/anaPane/step} -value {20p} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]]
+[07:36:09.57] /i gi::setField {/analysesGroups/tabGeneral/anaPane/stop} -value {20n} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]]
+[07:36:09.66] /i gi::pressButton {/apply} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]]
+[07:36:09.69] /o tran
+[07:36:09.99] /i gi::pressButton {/ok} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]]
+[07:36:10.96] /i gi::executeAction menuPreShow -in [gi::getWindows 4]
+[07:36:10.96] /r giMenuAccess db::getNext [gi::getMenus saVariablesMenu -from [gi::getWindows 4]]
+[07:36:11.01] /i gi::executeAction menuPreShow -in [gi::getWindows 4]
+[07:36:11.01] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 4]]
+[07:36:11.12] /i gi::executeAction menuPreShow -in [gi::getWindows 4]
+[07:36:11.12] /r giMenuAccess db::getNext [gi::getMenus saConsoleSessionMenu -from [gi::getWindows 4]]
+[07:36:11.66] /i gi::executeAction menuPreShow -in [gi::getWindows 4]
+[07:36:11.66] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 4]]
+[07:36:13.79] /# gi::executeAction saShowEditAnalyses -in [gi::getWindows 4]
+[07:36:13.79] /i sa::showEditAnalyses -parent 4 -analysisName "" 
+[07:36:13.86] /o oa:0x22f6c5d0
+[07:36:13.91] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]]
+[07:36:14.19] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]] -value 633x680+762+413
+[07:36:16.99] /i gi::closeWindows [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]]
+[07:36:18.10] /i gi::executeAction menuPreShow -in [gi::getWindows 4]
+[07:36:18.10] /r giMenuAccess db::getNext [gi::getMenus saVariablesMenu -from [gi::getWindows 4]]
+[07:36:19.97] /i gi::executeAction menuPreShow -in [gi::getWindows 4]
+[07:36:19.97] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 4]]
+[07:36:20.35] /i gi::executeAction menuPreShow -in [gi::getWindows 4]
+[07:36:20.35] /r giMenuAccess db::getNext [gi::getMenus saVariablesMenu -from [gi::getWindows 4]]
+[07:36:20.70] /i gi::executeAction menuPreShow -in [gi::getWindows 4]
+[07:36:20.70] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 4]]
+[07:36:21.65] /# gi::executeAction saEditModels -in [gi::getWindows 4]
+[07:36:21.65] /i sa::showModelFiles -parent 4
+[07:36:21.70] /i gi::setActiveDialog [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 4]]
+[07:36:22.01] /i db::setAttr geometry -of [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 4]] -value 760x500+728+298
+[07:36:22.70] /i gi::pressButton {PathSelectorBrowse} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 4]]
+[07:36:24.66] /r giFileDialog accept PDK
+[07:36:25.27] /i gi::setCurrentIndex {modelFilesTable} -index {0,1} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 4]]
+[07:36:29.24] /r giFileDialog accept PDK/hspice/reference_models.inc
+[07:36:29.24] /i gi::setField {modelFilesTable} -index {0,1} -value {/home/itsupport/Desktop/lab1vlsi/PDK/hspice/reference_models.inc} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 4]]
+[07:36:29.24] /i gi::setField {modelFilesTable} -index {0,1} -value {hspice/reference_models.inc} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 4]]
+[07:36:29.60] /i gi::setField {PathSelector} -value {/home/itsupport/Desktop/lab1vlsi/PDK} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 4]]
+[07:36:29.68] /i gi::pressButton {apply} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 4]]
+[07:36:30.14] /i gi::pressButton {ok} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 4]]
+[07:36:31.23] /i gi::executeAction menuPreShow -in [gi::getWindows 4]
+[07:36:31.23] /r giMenuAccess db::getNext [gi::getMenus saResultsMenu -from [gi::getWindows 4]]
+[07:36:31.47] /i gi::executeAction menuPreShow -in [gi::getWindows 4]
+[07:36:31.47] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[07:36:32.26] /i gi::executeAction menuPreShow -in [gi::getWindows 4]
+[07:36:32.26] /r giMenuAccess db::getNext [gi::getMenus saResultsMenu -from [gi::getWindows 4]]
+[07:36:32.70] /i gi::executeAction menuPreShow -in [gi::getWindows 4]
+[07:36:32.70] /r giMenuAccess db::getNext [gi::getMenus saToolsMenu -from [gi::getWindows 4]]
+[07:36:33.10] /i gi::executeAction menuPreShow -in [gi::getWindows 4]
+[07:36:33.10] /r giMenuAccess db::getNext [gi::getMenus saToolsMenu -from [gi::getWindows 4]]
+[07:36:33.36] /i gi::executeAction menuPreShow -in [gi::getWindows 4]
+[07:36:33.36] /r giMenuAccess db::getNext [gi::getMenus saResultsMenu -from [gi::getWindows 4]]
+[07:36:33.78] /i gi::executeAction menuPreShow -in [gi::getWindows 4]
+[07:36:33.78] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[07:36:35.96] /# gi::executeAction saNetlistAndRun -in [gi::getWindows 4]
+[07:36:35.96] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 4] -mode overwrite
+[07:36:35.98] /r giWindowId 5
+[07:36:35.98] /r giWindowGeometry 800x600
+[07:36:36.04] /m Information: "Starting incremental netlisting for design "inverter/FA_1bit_tb/config"..." (NETLISTING-010)
+[07:36:36.06] /o No Design Integrity rule violations found in "inverter/FA_1bit_tb/schematic"
+[07:36:36.07] /m Information: 
+[07:36:36.07] /o Checking "inverter/full_adder/schematic"
+[07:36:36.07] /o No rule violations found in "inverter/full_adder/schematic"
+[07:36:36.12] /m Information: "inverter FA_1bit_tb schematic" renetlisted. (NETLISTING-056)
+[07:36:36.13] /m Information: "Netlisting design "inverter/FA_1bit_tb/config" finished successfully." (NETLISTING-012)
+[07:36:36.13] /m Information: "Composing simulator input file for design "inverter/FA_1bit_tb/config"..."
+[07:36:36.16] /m Information: "Simulator input file composed successfully for design "inverter/FA_1bit_tb/config""
+[07:36:36.30] /m Information: "Starting HSPICE simulation for design: inverter/FA_1bit_tb/config"
+[07:36:36.30] /# gi::collapse {jobMonitorTable} -index {0.0.0.1,0} -in [gi::getWindows 5]
+[07:36:36.34] /o 1
+[07:36:36.93] /m Information: "Simulation completed successfully for design: inverter/FA_1bit_tb/config "
+[07:36:37.10] /m Information: Launching Background sae_shell Server Process "cd /home/itsupport/Desktop/lab1vlsi && sae_shell -log sae_shell_session0_job2 -libDefFile /home/itsupport/Desktop/lab1vlsi/lib.defs"
+[07:36:37.38] /m Information: Measurement calculations completed for testbench: default in 0s
+[07:36:39.72] /m Information: Received ready-for-commands signal from background job 'sae_shell_session0_job2' after 2 seconds.
+[07:36:46.48] /i gi::setActiveWindow 4
+[07:36:46.49] /i gi::setActiveWindow 4 -raise true
+[07:36:47.66] /i gi::executeAction menuPreShow -in [gi::getWindows 4]
+[07:36:47.66] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[07:36:48.27] /i gi::executeAction menuPreShow -in [gi::getWindows 4]
+[07:36:48.27] /r giMenuAccess db::getNext [gi::getMenus saConsoleOutputsMenu -from [gi::getWindows 4]]
+[07:36:49.18] /# gi::executeAction saSelectInDesign -in [gi::getWindows 4]
+[07:36:49.18] /i sa::selectOutputs -window 4
+[07:36:50.19] /# gi::executeAction deAddPoint -in [gi::getWindows 3]
+[07:36:50.19] /i de::addPoint {2.80625 2.825} -context [db::getNext [de::getContexts -window 3]]
+[07:36:50.56] /# gi::executeAction deAddPoint -in [gi::getWindows 3]
+[07:36:50.56] /i de::addPoint {2.8625 2.7125} -context [db::getNext [de::getContexts -window 3]]
+[07:36:51.20] /# gi::executeAction deAddPoint -in [gi::getWindows 3]
+[07:36:51.20] /i de::addPoint {2.9625 2.5} -context [db::getNext [de::getContexts -window 3]]
+[07:36:52.22] /# gi::executeAction deAddPoint -in [gi::getWindows 3]
+[07:36:52.22] /i de::addPoint {4.88125 2.8} -context [db::getNext [de::getContexts -window 3]]
+[07:36:52.95] /# gi::executeAction deAddPoint -in [gi::getWindows 3]
+[07:36:52.95] /i de::addPoint {4.875 2.13125} -context [db::getNext [de::getContexts -window 3]]
+[07:36:53.75] /i gi::setActiveWindow 4
+[07:36:53.75] /i gi::setActiveWindow 4 -raise true
+[07:36:54.27] /i gi::executeAction menuPreShow -in [gi::getWindows 4]
+[07:36:54.27] /r giMenuAccess db::getNext [gi::getMenus saResultsMenu -from [gi::getWindows 4]]
+[07:36:54.32] /i gi::executeAction menuPreShow -in [gi::getWindows 4]
+[07:36:54.32] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[07:36:54.93] /# gi::executeAction saNetlistAndRun -in [gi::getWindows 4]
+[07:36:54.93] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 4] -mode overwrite
+[07:36:54.97] /m Information: "Starting incremental netlisting for design "inverter/FA_1bit_tb/config"..." (NETLISTING-010)
+[07:36:54.98] /o No Design Integrity rule violations found in "inverter/FA_1bit_tb/schematic"
+[07:36:54.99] /m Information: 
+[07:36:54.99] /o Checking "inverter/full_adder/schematic"
+[07:36:54.99] /o No rule violations found in "inverter/full_adder/schematic"
+[07:36:55.00] /m Information: "Netlisting design "inverter/FA_1bit_tb/config" finished successfully." (NETLISTING-012)
+[07:36:55.01] /m Information: "Composing simulator input file for design "inverter/FA_1bit_tb/config"..."
+[07:36:55.04] /m Information: "Simulator input file composed successfully for design "inverter/FA_1bit_tb/config""
+[07:36:55.22] /m Information: "Starting HSPICE simulation for design: inverter/FA_1bit_tb/config"
+[07:36:55.22] /# gi::collapse {jobMonitorTable} -index {0.0.0.1,0} -in [gi::getWindows 5]
+[07:36:55.26] /o 1
+[07:36:55.62] /m Information: "Simulation completed successfully for design: inverter/FA_1bit_tb/config "
+[07:36:55.80] /m Information: "Evaluating and plotting outputs..."
+[07:36:56.43] /m Information: Started sharing "Custom WaveView" license. (WAVEFORM-110)
+[07:36:56.45] /m Information: Launching Waveform Viewer "cd /home/itsupport/simulation/inverter,FA_1bit_tb,config/history_1/simulation/default/HSPICE/nominal/results &&  wv -k -cdesigner -spxkey /usr/synopsys/customcompiler/N-2017.12-SP1-2/auxx/waveform/sae.spxkey -spxrc /tmp/sae_spxrc_gkkeRw -unique_string ca0f50f540da148769aa7f613a217c24125e8d2b0833b894ed40d2f5efbf27a2fb0c0fc5bd619066b51b2eb8363c8c0828b752b133077f7c -lic_type 1    > /home/itsupport/simulation/inverter,FA_1bit_tb,config/history_1/simulation/default/HSPICE/nominal/results/viewer.log 2>&1"
+[07:36:56.45] /i gi::collapse {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 5]
+[07:36:56.54] /m Information: Measurement calculations completed for testbench: default in 0s
+[07:36:57.62] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_70b76b0_void_pp _70ffe00_void_pp} 
+[07:36:57.66] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_70b76b0_void_pp _70ffec8_void_pp} 
+[07:36:57.68] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_70b76b0_void_pp _70fff90_void_pp} 
+[07:36:57.72] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_70b76b0_void_pp _7100058_void_pp} 
+[07:36:57.76] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_70b76b0_void_pp _7100120_void_pp} 
+[07:38:36.17] /i gi::setActiveWindow 4
+[07:38:36.17] /i gi::setActiveWindow 4 -raise true
+[07:38:36.62] /i gi::setActiveWindow 3
+[07:38:36.62] /i gi::setActiveWindow 3 -raise true
+[07:38:44.95] /i gi::setActiveWindow 4
+[07:38:44.95] /i gi::setActiveWindow 4 -raise true
+[07:38:45.42] /i gi::setActiveWindow 5
+[07:38:45.42] /i gi::setActiveWindow 5 -raise true
+[07:38:48.46] /i gi::setActiveWindow 4
+[07:38:48.46] /i gi::setActiveWindow 4 -raise true
+[07:41:16.00] /i gi::setActiveWindow 5
+[07:41:16.00] /i gi::setActiveWindow 5 -raise true
+[07:41:16.08] /i gi::setActiveWindow 4
+[07:41:16.08] /i gi::setActiveWindow 4 -raise true
+[07:41:16.16] /i gi::addWindow 5 -to 1 -side top
+[07:41:16.17] /i gi::setActiveWindow 5
+[07:41:16.17] /i gi::setActiveWindow 5 -raise true
+[07:41:20.11] /i gi::setActiveWindow 4
+[07:41:20.11] /i gi::setActiveWindow 4 -raise true
+[07:41:33.77] /i gi::setCurrentIndex {analysisPane} -index {0,3} -in [gi::getWindows 4]
+[07:41:33.77] /i gi::setItemSelection {analysisPane} -index {0,3} -in [gi::getWindows 4]
+[07:41:35.58] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]]
+[07:41:35.83] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]] -value 633x680+762+413
+[07:41:41.88] /i gi::setField {/analysesGroups/tabGeneral/anaPane/step} -value {10p} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]]
+[07:41:46.20] /i gi::setField {/analysesGroups/tabGeneral/anaPane/stop} -value {100n} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]]
+[07:41:47.48] /i gi::pressButton {/ok} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]]
+[07:41:49.81] /i gi::executeAction menuPreShow -in [gi::getWindows 4]
+[07:41:49.81] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[07:41:51.35] /# gi::executeAction saNetlistAndRun -in [gi::getWindows 4]
+[07:41:51.35] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 4] -mode overwrite
+[07:41:51.40] /m Information: "Starting incremental netlisting for design "inverter/FA_1bit_tb/config"..." (NETLISTING-010)
+[07:41:51.41] /o No Design Integrity rule violations found in "inverter/FA_1bit_tb/schematic"
+[07:41:51.43] /m Information: 
+[07:41:51.43] /o Checking "inverter/full_adder/schematic"
+[07:41:51.43] /o No rule violations found in "inverter/full_adder/schematic"
+[07:41:51.46] /m Information: "Netlisting design "inverter/FA_1bit_tb/config" finished successfully." (NETLISTING-012)
+[07:41:51.47] /m Information: "Composing simulator input file for design "inverter/FA_1bit_tb/config"..."
+[07:41:51.49] /m Information: "Simulator input file composed successfully for design "inverter/FA_1bit_tb/config""
+[07:41:51.67] /m Information: "Starting HSPICE simulation for design: inverter/FA_1bit_tb/config"
+[07:41:51.67] /# gi::collapse {jobMonitorTable} -index {0.0.0.1,0} -in [gi::getWindows 5]
+[07:41:51.72] /o 1
+[07:41:52.73] /m Information: "Simulation completed successfully for design: inverter/FA_1bit_tb/config "
+[07:41:52.91] /m Information: "Evaluating and plotting outputs..."
+[07:41:53.21] /m Information: Measurement calculations completed for testbench: default in 0s
+[07:41:53.25] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_76e7b80_void_pp _71001e8_void_pp} 
+[07:41:53.35] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_76e7b80_void_pp _70ffe00_void_pp} 
+[07:41:53.41] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_76e7b80_void_pp _70ffec8_void_pp} 
+[07:41:53.51] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_76e7b80_void_pp _70fff90_void_pp} 
+[07:41:53.60] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_76e7b80_void_pp _7100058_void_pp} 
+[07:42:19.49] /i gi::setActiveWindow 4
+[07:42:19.49] /i gi::setActiveWindow 4 -raise true
+[07:42:21.00] /i gi::setActiveWindow 3
+[07:42:21.00] /i gi::setActiveWindow 3 -raise true
+[07:42:28.42] /i gi::setActiveWindow 5
+[07:42:28.42] /i gi::setActiveWindow 5 -raise true
+[07:46:58.81] /m Information: Stopped sharing "Custom WaveView" license. (WAVEFORM-111)
+[07:47:30.32] /i gi::createWindow -windowType [gi::getWindowTypes giHomePage]
+[07:47:30.32] /r giWindowId 6
+[07:47:30.33] /r giWindowGeometry 1040x800
+[07:47:31.19] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 6]
+[07:47:31.19] /# 
+[07:47:31.19] /i dm::openLibraryManager
+[07:47:31.19] /r giWindowId 7
+[07:47:31.20] /r giWindowGeometry 1040x800+439+194
+[07:47:31.26] /o oa:0x1ddc5550
+[07:47:31.26] /i gi::closeWindows [gi::getWindows 6]
+[07:47:32.69] /i gi::setCurrentIndex {libs} -index {basic} -in [gi::getWindows 7]
+[07:47:32.69] /i gi::setItemSelection {libs} -index {basic} -in [gi::getWindows 7]
+[07:47:33.06] /i gi::setCurrentIndex {libs} -index {inverter} -in [gi::getWindows 7]
+[07:47:33.07] /i gi::setItemSelection {libs} -index {inverter} -in [gi::getWindows 7]
+[07:47:34.05] /i gi::setCurrentIndex {cellCategories} -index {LAB1} -in [gi::getWindows 7]
+[07:47:34.05] /i gi::setItemSelection {cellCategories} -index {LAB1} -in [gi::getWindows 7]
+[07:47:34.62] /i gi::setCurrentIndex {cellCategories} -index {LAB3} -in [gi::getWindows 7]
+[07:47:34.63] /i gi::setItemSelection {cellCategories} -index {LAB3} -in [gi::getWindows 7]
+[07:47:36.48] /i gi::setCurrentIndex {cells} -index {NAND2_2} -in [gi::getWindows 7]
+[07:47:36.48] /i gi::setItemSelection {cells} -index {NAND2_2} -in [gi::getWindows 7]
+[07:47:39.74] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 7]
+[07:47:39.75] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 7]
+[07:47:40.45] /i gi::executeAction dmOpen -in [gi::getWindows 7]
+[07:47:40.50] /r giWindowId 8
+[07:47:40.52] /r giWindowGeometry 1632x1020
+[07:47:40.71] /o "inverter/NAND2_2/schematic" design does not need checking
+[07:47:41.53] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 8]
+[07:47:41.53] /i de::zoom -window [gi::getWindows 8] -factor 2.0 -center {4.025 3.35}
+[07:47:41.53] /o {1.93125 1.68125} {6.15625 4.0125}
+[07:47:44.16] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 8]
+[07:47:44.16] /i de::zoom -window [gi::getWindows 8] -factor 0.5 -center {4.975 2.31875}
+[07:47:44.16] /o {-1.1125 1.05} {7.3375 5.7}
+[07:47:44.72] /# gi::executeAction deFitEdit -in [gi::getWindows 8]
+[07:47:44.72] /i de::fit -window 8 -fitEdit true
+[07:47:44.72] /o {-0.1625 0.01875} {8.2875 4.66875}
+[07:49:45.25] /i gi::executeAction giCloseWindow -in [gi::getWindows 8]
+[07:49:45.26] /i gi::setActiveWindow 7
+[07:49:45.27] /i gi::setActiveWindow 7 -raise true
+[07:54:35.26] /i gi::setActiveWindow 4
+[07:54:35.27] /i gi::setActiveWindow 4 -raise true
+[07:54:36.76] /i gi::setActiveWindow 5
+[07:54:36.76] /i gi::setActiveWindow 5 -raise true
+[07:54:37.34] /i gi::setActiveWindow 7
+[07:54:37.34] /i gi::setActiveWindow 7 -raise true
+[07:54:38.28] /i gi::executeAction giCloseWindow -in [gi::getWindows 7]
+[07:54:38.29] /i gi::setActiveWindow 5
+[07:54:38.29] /i gi::setActiveWindow 5 -raise true
+[07:54:39.24] /i gi::executeAction giCloseWindow -in [gi::getWindows 5]
+[07:54:39.25] /i gi::setActiveWindow 4
+[07:54:39.25] /i gi::setActiveWindow 4 -raise true
+[07:54:40.91] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]]
+[07:54:41.12] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]] -value 633x680+762+376
+[07:54:46.30] /i gi::closeWindows [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]]
+[07:54:47.38] /i gi::setActiveWindow 3
+[07:54:47.38] /i gi::setActiveWindow 3 -raise true
+[07:54:48.31] /# gi::executeAction deFitEdit -in [gi::getWindows 3]
+[07:54:48.31] /i de::fit -window 3 -fitEdit true
+[07:54:48.31] /o {0.05625 -0.51875} {8.85625 4.33125}
+[07:55:11.52] /i gi::setActiveWindow 2
+[07:55:11.52] /i gi::setActiveWindow 2 -raise true
+[07:55:15.03] /i gi::setActiveWindow 3
+[07:55:15.03] /i gi::setActiveWindow 3 -raise true
+[07:55:15.94] /# gi::executeAction deSelectActive -in [gi::getWindows 3]
+[07:55:15.94] /i de::deselectAll [db::getNext [de::getContexts -window 3]]
+[07:55:15.94] /i de::select [de::getActiveFigure [gi::getWindows 3] -point {3.7375 2.51875} -index 0 -intent none]
+[07:55:15.94] /o oa:0x1e211060
+[07:55:16.07] /# gi::executeAction deDescend -in [gi::getWindows 3]
+[07:55:16.07] /i ide::descend 3 -inPlace false -promptView false -readOnly auto
+[07:55:16.08] /# Navigating to inverter/full_adder/schematic (I40)
+[07:55:16.15] /o true
+[07:55:17.92] /i gi::executeAction giCloseWindow -in [gi::getWindows 3]
+[07:55:17.96] /i gi::setActiveWindow 2
+[07:55:17.96] /i gi::setActiveWindow 2 -raise true
+[07:55:18.90] /i gi::setActiveWindow 4
+[07:55:18.90] /i gi::setActiveWindow 4 -raise true
+[07:55:19.66] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
+[07:55:19.74] /r giDialog gi::setActiveDialog [gi::getDialogs {giPrompt} -parent [gi::getWindows 4]]
+[07:55:20.01] /r giDialog db::setAttr geometry -of [gi::getDialogs {giPrompt} -parent [gi::getWindows 4]] -value 292x82+814+573
+[07:55:20.88] /r giDialog gi::pressButton {save} -in [gi::getDialogs {giPrompt} -parent [gi::getWindows 4]]
+[07:55:21.14] /r giDialog gi::setActiveDialog [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 4]]
+[07:55:21.41] /r giDialog db::setAttr geometry -of [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 4]] -value 462x528+729+350
+[07:55:22.43] /r giDialog gi::closeWindows [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 4]]
+[07:55:23.46] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
+[07:55:23.53] /r giDialog gi::setActiveDialog [gi::getDialogs {giPrompt} -parent [gi::getWindows 4]]
+[07:55:23.81] /r giDialog db::setAttr geometry -of [gi::getDialogs {giPrompt} -parent [gi::getWindows 4]] -value 292x82+814+573
+[07:55:24.58] /r giDialog gi::pressButton {discard} -in [gi::getDialogs {giPrompt} -parent [gi::getWindows 4]]
+[07:55:24.59] /i gi::setActiveWindow 2
+[07:55:24.59] /i gi::setActiveWindow 2 -raise true
+[07:55:28.19] /i gi::executeAction dmOpenConfigDesignWrite -in [gi::getWindows 2]
+[07:55:28.23] /r giWindowId 9
+[07:55:28.24] /r giWindowGeometry 1632x1020
+[07:55:28.41] /o "inverter/FA_1bit_tb/schematic" design does not need checking
+[07:55:29.16] /# gi::executeAction deSelectActive -in [gi::getWindows 9]
+[07:55:29.16] /i de::deselectAll [db::getNext [de::getContexts -window 9]]
+[07:55:29.16] /i de::select [de::getActiveFigure [gi::getWindows 9] -point {3.5 2.975} -index 0 -intent none]
+[07:55:29.16] /o oa:0x2291e480
+[07:55:29.30] /# gi::executeAction deDescend -in [gi::getWindows 9]
+[07:55:29.30] /i ide::descend 9 -inPlace false -promptView false -readOnly auto
+[07:55:29.31] /# Navigating to inverter/full_adder/schematic (I40)
+[07:55:29.36] /o true
+[07:55:30.68] /i gi::executeAction giCloseWindow -in [gi::getWindows 9]
+[07:55:30.70] /i gi::setActiveWindow 2
+[07:55:30.70] /i gi::setActiveWindow 2 -raise true
+[07:55:33.83] /i gi::executeAction dmOpenConfigWrite -in [gi::getWindows 2]
+[07:55:33.84] /r giWindowId 10
+[07:55:33.84] /r giWindowGeometry 750x750
+[07:55:35.61] /i gi::expand {heTreeWidget} -index {0,0} -in [gi::getWindows 10]
+[07:55:35.67] /i gi::setSectionSizes {heTreeWidget} -values {198 471 471 750} -in [gi::getWindows 10]
+[07:55:38.63] /i gi::setCurrentIndex {heTreeWidget} -index {0.2,1} -in [gi::getWindows 10]
+[07:55:38.63] /i gi::setItemSelection {heTreeWidget} -index {0.2,all} -in [gi::getWindows 10]
+[07:55:39.62] /i gi::setCurrentIndex {heTreeWidget} -index {0.2,2} -in [gi::getWindows 10]
+[07:55:39.64] /i gi::executeAction menuPreShow -in [gi::getWindows 10]
+[07:55:39.64] /r giMenuAccess db::getNext [gi::getMenus heViewSelectedContextMenu]
+[07:55:42.57] /# gi::executeAction heSelectView1 -in [gi::getWindows 10]
+[07:55:42.57] /i gi::setField {heTreeWidget} -value {starrc} -index {0.2,2} -in [gi::getWindows 10]
+[07:55:43.88] /i gi::setActiveWindow 2
+[07:55:43.88] /i gi::setActiveWindow 2 -raise true
+[07:55:47.40] /i gi::executeAction dmOpenConfigDesignWrite -in [gi::getWindows 2]
+[07:55:47.43] /r giWindowId 11
+[07:55:47.43] /r giWindowGeometry 1632x1020
+[07:55:47.58] /o "inverter/FA_1bit_tb/schematic" design does not need checking
+[07:55:48.30] /# gi::executeAction deSelectActive -in [gi::getWindows 11]
+[07:55:48.30] /i de::deselectAll [db::getNext [de::getContexts -window 11]]
+[07:55:48.30] /i de::select [de::getActiveFigure [gi::getWindows 11] -point {3.65 3.34375} -index 0 -intent none]
+[07:55:48.30] /o oa:0x1db4d4c0
+[07:55:48.51] /# gi::executeAction deDescend -in [gi::getWindows 11]
+[07:55:48.51] /i ide::descend 11 -inPlace false -promptView false -readOnly auto
+[07:55:48.52] /m Information: License 'Basic' checked out. (LICENSE-003)
+[07:55:48.52] /m Information: License 'Schematic' checked in. (LICENSE-004)
+[07:55:48.52] /# Navigating to inverter/full_adder/starrc (I40)
+[07:55:48.76] /# de::setActiveLPP [de::getLPPs "exclude blockage" -from [db::getAttr editDesign -of [de::getContexts -window 11]]]
+[07:55:49.01] /# gi::setItemSelection {sets} -index {Valid} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 11]]
+[07:55:49.21] /i db::setAttr dockSize -of [gi::getAssistants giConsole -from [gi::getWindows 11]] -value 1867x89
+[07:55:49.21] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 11]] -value 290x865
+[07:55:49.21] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 11]] -value 290x805
+[07:55:51.34] /# gi::executeAction deReturnToTop -in [gi::getWindows 11]
+[07:55:51.34] /i de::return [db::getNext [de::getContexts -window 11]] -levels -1
+[07:55:51.34] /# Navigating to inverter/FA_1bit_tb/schematic
+[07:55:51.58] /o oa:0x227833e0
+[07:55:51.82] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 11]] -value 290x865
+[07:55:51.82] /i db::setAttr dockSize -of [gi::getAssistants giConsole -from [gi::getWindows 11]] -value 1867x89
+[07:55:53.89] /# gi::executeAction seShowConsoleForWindow -in [gi::getWindows 11]
+[07:55:53.89] /i sa::showConsole -context [db::getNext [de::getContexts -window 11]]
+[07:55:53.91] /r giWindowId 12
+[07:55:53.93] /r giWindowGeometry 600x500
+[07:55:54.03] /o oa:0x22899fe0
+[07:55:54.07] /m Information: Launching Background sae_shell Server Process "cd /home/itsupport/Desktop/lab1vlsi && sae_shell -log sae_shell_session3_job1 -libDefFile /home/itsupport/Desktop/lab1vlsi/lib.defs"
+[07:55:55.41] /i gi::executeAction menuPreShow -in [gi::getWindows 12]
+[07:55:55.41] /r giMenuAccess db::getNext [gi::getMenus saVariablesMenu -from [gi::getWindows 12]]
+[07:55:55.56] /i gi::executeAction menuPreShow -in [gi::getWindows 12]
+[07:55:55.57] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 12]]
+[07:55:56.71] /# gi::executeAction saShowEditAnalyses -in [gi::getWindows 12]
+[07:55:56.71] /i sa::showEditAnalyses -parent 12 -analysisName "" 
+[07:55:56.83] /o oa:0x243ae9e0
+[07:55:56.88] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 12]]
+[07:55:57.18] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 12]] -value 633x680+762+450
+[07:55:57.71] /m Information: Received ready-for-commands signal from background job 'sae_shell_session3_job1' after 3 seconds.
+[07:56:00.61] /i gi::setField {/analysesGroups/tabGeneral/anaPane/step} -value {20p} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 12]]
+[07:56:01.97] /i gi::setField {/analysesGroups/tabGeneral/anaPane/stop} -value {40n} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 12]]
+[07:56:02.62] /i gi::pressButton {/apply} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 12]]
+[07:56:02.65] /o tran
+[07:56:03.11] /i gi::pressButton {/ok} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 12]]
+[07:56:04.73] /i gi::executeAction menuPreShow -in [gi::getWindows 12]
+[07:56:04.73] /r giMenuAccess db::getNext [gi::getMenus saConsoleOutputsMenu -from [gi::getWindows 12]]
+[07:56:05.52] /# gi::executeAction saSelectInDesign -in [gi::getWindows 12]
+[07:56:05.52] /i sa::selectOutputs -window 12
+[07:56:06.83] /# gi::executeAction deAddPoint -in [gi::getWindows 11]
+[07:56:06.83] /i de::addPoint {1.99375 2.825} -context [db::getNext [de::getContexts -window 11]]
+[07:56:07.38] /# gi::executeAction deAddPoint -in [gi::getWindows 11]
+[07:56:07.38] /i de::addPoint {2.2125 2.66875} -context [db::getNext [de::getContexts -window 11]]
+[07:56:08.31] /# gi::executeAction deAddPoint -in [gi::getWindows 11]
+[07:56:08.31] /i de::addPoint {2.6125 2.50625} -context [db::getNext [de::getContexts -window 11]]
+[07:56:09.13] /# gi::executeAction deAddPoint -in [gi::getWindows 11]
+[07:56:09.13] /i de::addPoint {5.7375 3.425} -context [db::getNext [de::getContexts -window 11]]
+[07:56:09.68] /# gi::executeAction deAddPoint -in [gi::getWindows 11]
+[07:56:09.68] /i de::addPoint {5.61875 2.05} -context [db::getNext [de::getContexts -window 11]]
+[07:56:10.00] /# gi::executeAction deAddPoint -in [gi::getWindows 11]
+[07:56:10.00] /i de::addPoint {5.60625 2.1} -context [db::getNext [de::getContexts -window 11]]
+[07:56:11.31] /i gi::setActiveWindow 12
+[07:56:11.31] /i gi::setActiveWindow 12 -raise true
+[07:56:15.32] /i gi::executeAction menuPreShow -in [gi::getWindows 12]
+[07:56:15.32] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 12]]
+[07:56:16.25] /# gi::executeAction saShowEditAnalyses -in [gi::getWindows 12]
+[07:56:16.25] /i sa::showEditAnalyses -parent 12 -analysisName "" 
+[07:56:16.35] /o oa:0x244f31b0
+[07:56:16.43] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 12]]
+[07:56:16.68] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 12]] -value 633x680+762+413
+[07:56:17.97] /i gi::closeWindows [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 12]]
+[07:56:18.92] /i gi::executeAction menuPreShow -in [gi::getWindows 12]
+[07:56:18.92] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 12]]
+[07:56:20.70] /# gi::executeAction saEditModels -in [gi::getWindows 12]
+[07:56:20.70] /i sa::showModelFiles -parent 12
+[07:56:20.79] /i gi::setActiveDialog [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 12]]
+[07:56:21.09] /i db::setAttr geometry -of [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 12]] -value 760x500+728+298
+[07:56:22.37] /i gi::pressButton {PathSelectorBrowse} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 12]]
+[07:56:24.86] /r giFileDialog accept .
+[07:56:25.36] /i gi::setCurrentIndex {modelFilesTable} -index {0,1} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 12]]
+[07:56:35.08] /r giFileDialog accept PDK/hspice/reference_models.inc
+[07:56:35.08] /i gi::setField {modelFilesTable} -index {0,1} -value {/home/itsupport/Desktop/lab1vlsi/PDK/hspice/reference_models.inc} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 12]]
+[07:56:35.09] /i gi::setField {modelFilesTable} -index {0,1} -value {PDK/hspice/reference_models.inc} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 12]]
+[07:56:35.51] /i gi::setField {PathSelector} -value {/home/itsupport/Desktop/lab1vlsi} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 12]]
+[07:56:35.57] /i gi::pressButton {apply} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 12]]
+[07:56:35.97] /i gi::pressButton {ok} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 12]]
+[07:56:37.11] /i gi::executeAction menuPreShow -in [gi::getWindows 12]
+[07:56:37.11] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 12]]
+[07:56:37.58] /# gi::executeAction saNetlistAndRun -in [gi::getWindows 12]
+[07:56:37.58] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 12] -mode overwrite
+[07:56:37.59] /r giWindowId 13
+[07:56:37.60] /r giWindowGeometry 800x600
+[07:56:37.68] /m Information: "Starting incremental netlisting for design "inverter/FA_1bit_tb/config"..." (NETLISTING-010)
+[07:56:37.69] /o No Design Integrity rule violations found in "inverter/FA_1bit_tb/schematic"
+[07:56:37.69] /m Information: 
+              /c Cross view checking for inverter/full_adder/symbol with inverter/full_adder/starrc
+              /c 	[warning] Missing Terminal
+              /c 		Terminal vdd! found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal gnd! found in starrc is missing in symbol (DE_EDIT-007)
+[07:56:37.69] /w Warning: "Terminal vdd! found in starrc is missing in symbol" (NETLISTING-003)
+[07:56:37.70] /w Warning: "Terminal gnd! found in starrc is missing in symbol" (NETLISTING-003)
+[07:56:37.73] /m Information: 
+              /c Cross view checking for reference90RF/n_4t/ivpcell with reference90RF/n_4t/symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal D found in symbol is missing in ivpcell
+              /c 	[warning] Missing Terminal
+              /c 		Terminal G found in symbol is missing in ivpcell
+              /c 	[warning] Missing Terminal
+              /c 		Terminal S found in symbol is missing in ivpcell
+              /c 	[warning] Missing Terminal
+              /c 		Terminal B found in symbol is missing in ivpcell (DE_EDIT-007)
+[07:56:37.73] /w Warning: "Terminal D found in symbol is missing in ivpcell" (NETLISTING-003)
+[07:56:37.73] /w Warning: "Terminal G found in symbol is missing in ivpcell" (NETLISTING-003)
+[07:56:37.73] /w Warning: "Terminal S found in symbol is missing in ivpcell" (NETLISTING-003)
+[07:56:37.73] /w Warning: "Terminal B found in symbol is missing in ivpcell" (NETLISTING-003)
+[07:56:38.84] /m Information: "inverter full_adder starrc" renetlisted. (NETLISTING-056)
+[07:56:38.86] /m Information: "inverter FA_1bit_tb schematic" renetlisted. (NETLISTING-056)
+[07:56:38.90] /m Information: "Netlisting design "inverter/FA_1bit_tb/config" finished successfully." (NETLISTING-012)
+[07:56:38.91] /m Information: "Composing simulator input file for design "inverter/FA_1bit_tb/config"..."
+[07:56:38.94] /m Information: "Simulator input file composed successfully for design "inverter/FA_1bit_tb/config""
+[07:56:39.14] /m Information: "Starting HSPICE simulation for design: inverter/FA_1bit_tb/config"
+[07:56:39.14] /# gi::collapse {jobMonitorTable} -index {0.0.0.1,0} -in [gi::getWindows 13]
+[07:56:39.17] /o 1
+[07:56:39.92] /m Information: "Simulation completed successfully for design: inverter/FA_1bit_tb/config "
+[07:56:40.18] /m Information: Launching Background sae_shell Server Process "cd /home/itsupport/Desktop/lab1vlsi && sae_shell -log sae_shell_session3_job2 -libDefFile /home/itsupport/Desktop/lab1vlsi/lib.defs"
+[07:56:40.19] /m Information: "Evaluating and plotting outputs..."
+[07:56:40.21] /m Information: Started sharing "Custom WaveView" license. (WAVEFORM-110)
+[07:56:40.80] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_71350e0_void_pp _7100120_void_pp} 
+[07:56:40.82] /m Information: Measurement calculations completed for testbench: default in 0s
+[07:56:40.92] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_71350e0_void_pp _71001e8_void_pp} 
+[07:56:41.07] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_71350e0_void_pp _70ffe00_void_pp} 
+[07:56:41.17] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_71350e0_void_pp _70ffec8_void_pp} 
+[07:56:41.29] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_71350e0_void_pp _70fff90_void_pp} 
+[07:56:43.32] /m Information: Received ready-for-commands signal from background job 'sae_shell_session3_job2' after 3 seconds.
+[07:56:43.66] /i gi::setActiveWindow 12
+[07:56:43.66] /i gi::setActiveWindow 12 -raise true
+[07:56:47.47] /i gi::setCurrentIndex {analysisPane} -index {0,3} -in [gi::getWindows 12]
+[07:56:47.47] /i gi::setItemSelection {analysisPane} -index {0,3} -in [gi::getWindows 12]
+[07:56:48.15] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 12]]
+[07:56:48.41] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 12]] -value 633x680+762+376
+[07:56:52.19] /i gi::setField {/analysesGroups/tabGeneral/anaPane/step} -value {40p} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 12]]
+[07:56:54.03] /i gi::pressButton {/apply} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 12]]
+[07:56:54.06] /o tran
+[07:56:54.35] /i gi::pressButton {/ok} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 12]]
+[07:56:55.29] /i gi::executeAction menuPreShow -in [gi::getWindows 12]
+[07:56:55.29] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 12]]
+[07:56:55.43] /i gi::executeAction menuPreShow -in [gi::getWindows 12]
+[07:56:55.43] /r giMenuAccess db::getNext [gi::getMenus saConsoleOutputsMenu -from [gi::getWindows 12]]
+[07:56:58.42] /i gi::setCurrentIndex {variablesTable} -index {0,0} -in [gi::getWindows 12]
+[07:56:59.98] /i gi::executeAction menuPreShow -in [gi::getWindows 12]
+[07:56:59.98] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 12]]
+[07:57:00.62] /# gi::executeAction saNetlistAndRun -in [gi::getWindows 12]
+[07:57:00.62] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 12] -mode overwrite
+[07:57:00.67] /m Information: "Starting incremental netlisting for design "inverter/FA_1bit_tb/config"..." (NETLISTING-010)
+[07:57:00.69] /o No Design Integrity rule violations found in "inverter/FA_1bit_tb/schematic"
+[07:57:00.69] /m Information: 
+              /c Cross view checking for inverter/full_adder/symbol with inverter/full_adder/starrc
+              /c 	[warning] Missing Terminal
+              /c 		Terminal vdd! found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal gnd! found in starrc is missing in symbol (DE_EDIT-007)
+[07:57:00.69] /w Warning: "Terminal vdd! found in starrc is missing in symbol" (NETLISTING-003)
+[07:57:00.69] /w Warning: "Terminal gnd! found in starrc is missing in symbol" (NETLISTING-003)
+[07:57:00.71] /m Information: 
+              /c Cross view checking for reference90RF/n_4t/ivpcell with reference90RF/n_4t/symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal D found in symbol is missing in ivpcell
+              /c 	[warning] Missing Terminal
+              /c 		Terminal G found in symbol is missing in ivpcell
+              /c 	[warning] Missing Terminal
+              /c 		Terminal S found in symbol is missing in ivpcell
+              /c 	[warning] Missing Terminal
+              /c 		Terminal B found in symbol is missing in ivpcell (DE_EDIT-007)
+[07:57:00.71] /w Warning: "Terminal D found in symbol is missing in ivpcell" (NETLISTING-003)
+[07:57:00.71] /w Warning: "Terminal G found in symbol is missing in ivpcell" (NETLISTING-003)
+[07:57:00.71] /w Warning: "Terminal S found in symbol is missing in ivpcell" (NETLISTING-003)
+[07:57:00.71] /w Warning: "Terminal B found in symbol is missing in ivpcell" (NETLISTING-003)
+[07:57:00.87] /m Information: "Netlisting design "inverter/FA_1bit_tb/config" finished successfully." (NETLISTING-012)
+[07:57:00.88] /m Information: "Composing simulator input file for design "inverter/FA_1bit_tb/config"..."
+[07:57:00.92] /m Information: "Simulator input file composed successfully for design "inverter/FA_1bit_tb/config""
+[07:57:01.12] /m Information: "Starting HSPICE simulation for design: inverter/FA_1bit_tb/config"
+[07:57:01.12] /# gi::collapse {jobMonitorTable} -index {0.0.0.1,0} -in [gi::getWindows 13]
+[07:57:01.15] /o 1
+[07:57:01.93] /m Information: "Simulation completed successfully for design: inverter/FA_1bit_tb/config "
+[07:57:02.17] /m Information: "Evaluating and plotting outputs..."
+[07:57:02.47] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_76c5fa0_void_pp _7100058_void_pp} 
+[07:57:02.57] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_76c5fa0_void_pp _7100120_void_pp} 
+[07:57:02.60] /m Information: Measurement calculations completed for testbench: default in 0s
+[07:57:02.63] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_76c5fa0_void_pp _71001e8_void_pp} 
+[07:57:02.68] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_76c5fa0_void_pp _70ffe00_void_pp} 
+[07:57:02.74] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_76c5fa0_void_pp _70ffec8_void_pp} 
+[07:57:04.34] /i gi::setActiveWindow 10
+[07:57:04.34] /i gi::setActiveWindow 10 -raise true
+[07:57:06.46] /i gi::executeAction giCloseWindow -in [gi::getWindows 10]
+[07:57:06.47] /i gi::setActiveWindow 13
+[07:57:06.47] /i gi::setActiveWindow 13 -raise true
+[07:57:07.25] /i gi::setActiveWindow 12
+[07:57:07.25] /i gi::setActiveWindow 12 -raise true
+[07:57:07.95] /i gi::setActiveWindow 11
+[07:57:07.95] /i gi::setActiveWindow 11 -raise true
+[07:57:08.69] /# gi::executeAction deSelectActive -in [gi::getWindows 11]
+[07:57:08.69] /i de::deselectAll [db::getNext [de::getContexts -window 11]]
+[07:57:08.69] /i de::deselectAllLogic -context [db::getNext [de::getContexts -window 11]]
+[07:57:10.00] /# gi::executeAction seCreateInst -in [gi::getWindows 11]
+[07:57:10.00] /i ise::createInst
+[07:57:10.07] /i gi::setActiveDialog [gi::getDialogs {seCreateInst} -parent [gi::getWindows 11]]
+[07:57:10.33] /i db::setAttr geometry -of [gi::getDialogs {seCreateInst}] -value 359x337+0+65
+[07:57:13.01] /i gi::setField {instMasterLib} -value {inverter} -in [gi::getDialogs {seCreateInst} -parent [gi::getWindows 11]]
+[07:57:13.31] /i db::setAttr geometry -of [gi::getDialogs {seCreateInst}] -value 359x337+0+65
+[07:57:15.04] /i gi::setField {instMasterCell} -value {2cmos} -in [gi::getDialogs {seCreateInst} -parent [gi::getWindows 11]]
+[07:57:15.38] /i db::setAttr geometry -of [gi::getDialogs {seCreateInst}] -value 359x337+0+65
+[07:57:16.76] /# gi::executeAction deAddPoint -in [gi::getWindows 11]
+[07:57:16.76] /i de::addPoint {5.61875 3.44375} -context [db::getNext [de::getContexts -window 11]]
+[07:57:17.98] /# gi::executeAction deAddPoint -in [gi::getWindows 11]
+[07:57:17.98] /i de::addPoint {5.4 2.1375} -context [db::getNext [de::getContexts -window 11]]
+[07:57:18.18] /# gi::executeAction deAbortCommand -in [gi::getWindows 11]
+[07:57:18.18] /i de::abortCommand -context [db::getNext [de::getContexts -window 11]]
+[07:57:18.34] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 11]
+[07:57:18.34] /i de::zoom -window [gi::getWindows 11] -factor 2.0 -center {5.975 2.2875}
+[07:57:18.34] /o {3.0125 0.8875} {7.41875 3.30625}
+[07:57:19.57] /# gi::executeAction deSelectActive -in [gi::getWindows 11]
+[07:57:19.57] /i de::deselectAll [db::getNext [de::getContexts -window 11]]
+[07:57:19.57] /i de::select [de::getActiveFigure [gi::getWindows 11] -point {5.79375 2.11875} -index 0 -intent none]
+[07:57:19.57] /o oa:0x2285ccc0
+[07:57:20.17] /# gi::executeAction seDelete -in [gi::getWindows 11]
+[07:57:20.17] /i ise::delete
+[07:57:20.72] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 11]
+[07:57:20.72] /i de::zoom -window [gi::getWindows 11] -factor 0.5 -center {5.825 2.44375}
+[07:57:20.72] /o {0.20625 -0.675} {9.00625 4.175}
+[07:57:22.00] /# gi::executeAction deSelectActive -in [gi::getWindows 11]
+[07:57:22.00] /i de::deselectAll [db::getNext [de::getContexts -window 11]]
+[07:57:22.00] /i de::select [de::getActiveFigure [gi::getWindows 11] -point {6.0125 3.425} -index 0 -intent none]
+[07:57:22.00] /o oa:0x22c0e1b0
+[07:57:24.02] /# gi::executeAction seSchCheckAndSave -in [gi::getWindows 11]
+[07:57:24.02] /i ise::check
+[07:57:24.03] /m Information: 
+[07:57:24.03] /o Checking "inverter/FA_1bit_tb/schematic"
+[07:57:24.03] /o 	[warning] Shorted Output Pins
+[07:57:24.03] /o 		Output pin 'Cout' on instance 'I40' is shorted to the following output pin(s): 'out' on instance 'I41'
+[07:57:24.03] /o 		Output pin 'out' on instance 'I41' is shorted to the following output pin(s): 'Cout' on instance 'I40'
+[07:57:24.03] /o 0 Error(s),2 Warning(s),0 Message(s) found   in "inverter/FA_1bit_tb/schematic"
+[07:57:24.03] /m Information: Checking process is completed: marking the design violations
+[07:57:24.06] /m Information: Marking of designs is completed
+[07:57:24.06] /o true
+[07:57:24.52] /i gi::executeAction deSaveDesign -in [gi::getWindows 11]
+[07:57:24.53] /m Information: Saving design 'inverter FA_1bit_tb schematic'. (DESIGN_WINDOW-004)
+[07:57:25.53] /i gi::executeAction deCanvasDragCancel -in [gi::getWindows 11]
+[07:57:27.05] /i gi::setActiveWindow 12
+[07:57:27.05] /i gi::setActiveWindow 12 -raise true
+[07:57:27.91] /i gi::executeAction menuPreShow -in [gi::getWindows 12]
+[07:57:27.91] /r giMenuAccess db::getNext [gi::getMenus saConsoleOutputsMenu -from [gi::getWindows 12]]
+[07:57:28.06] /i gi::executeAction menuPreShow -in [gi::getWindows 12]
+[07:57:28.06] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 12]]
+[07:57:28.66] /# gi::executeAction saNetlistAndRun -in [gi::getWindows 12]
+[07:57:28.66] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 12] -mode overwrite
+[07:57:28.75] /m Information: "Starting incremental netlisting for design "inverter/FA_1bit_tb/config"..." (NETLISTING-010)
+[07:57:28.77] /o No Design Integrity rule violations found in "inverter/FA_1bit_tb/schematic"
+[07:57:28.77] /m Information: 
+              /c Cross view checking for inverter/full_adder/symbol with inverter/full_adder/starrc
+              /c 	[warning] Missing Terminal
+              /c 		Terminal vdd! found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal gnd! found in starrc is missing in symbol (DE_EDIT-007)
+[07:57:28.77] /w Warning: "Terminal vdd! found in starrc is missing in symbol" (NETLISTING-003)
+[07:57:28.77] /w Warning: "Terminal gnd! found in starrc is missing in symbol" (NETLISTING-003)
+[07:57:28.79] /m Information: 
+              /c Cross view checking for reference90RF/n_4t/ivpcell with reference90RF/n_4t/symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal D found in symbol is missing in ivpcell
+              /c 	[warning] Missing Terminal
+              /c 		Terminal G found in symbol is missing in ivpcell
+              /c 	[warning] Missing Terminal
+              /c 		Terminal S found in symbol is missing in ivpcell
+              /c 	[warning] Missing Terminal
+              /c 		Terminal B found in symbol is missing in ivpcell (DE_EDIT-007)
+[07:57:28.79] /w Warning: "Terminal D found in symbol is missing in ivpcell" (NETLISTING-003)
+[07:57:28.79] /w Warning: "Terminal G found in symbol is missing in ivpcell" (NETLISTING-003)
+[07:57:28.79] /w Warning: "Terminal S found in symbol is missing in ivpcell" (NETLISTING-003)
+[07:57:28.79] /w Warning: "Terminal B found in symbol is missing in ivpcell" (NETLISTING-003)
+[07:57:28.85] /m Information: 
+[07:57:28.85] /o Checking "inverter/CMOS/schematic"
+[07:57:28.85] /o No rule violations found in "inverter/CMOS/schematic"
+[07:57:28.96] /m Information: "inverter CMOS schematic" renetlisted. (NETLISTING-056)
+[07:57:28.96] /m Information: "inverter 2cmos schematic" renetlisted. (NETLISTING-056)
+[07:57:28.98] /m Information: "inverter FA_1bit_tb schematic" renetlisted. (NETLISTING-056)
+[07:57:29.03] /m Information: "Netlisting design "inverter/FA_1bit_tb/config" finished successfully." (NETLISTING-012)
+[07:57:29.04] /m Information: "Composing simulator input file for design "inverter/FA_1bit_tb/config"..."
+[07:57:29.08] /m Information: "Simulator input file composed successfully for design "inverter/FA_1bit_tb/config""
+[07:57:29.30] /m Information: "Starting HSPICE simulation for design: inverter/FA_1bit_tb/config"
+[07:57:29.30] /# gi::collapse {jobMonitorTable} -index {0.0.0.1,0} -in [gi::getWindows 13]
+[07:57:29.33] /o 1
+[07:57:30.22] /m Information: "Simulation completed successfully for design: inverter/FA_1bit_tb/config "
+[07:57:30.48] /m Information: "Evaluating and plotting outputs..."
+[07:57:30.58] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_71350e0_void_pp _70fff90_void_pp} 
+[07:57:30.70] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_71350e0_void_pp _7100058_void_pp} 
+[07:57:30.74] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_71350e0_void_pp _7100120_void_pp} 
+[07:57:30.78] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_71350e0_void_pp _71001e8_void_pp} 
+[07:57:30.88] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_71350e0_void_pp _70ffe00_void_pp} 
+[07:57:30.92] /m Information: Measurement calculations completed for testbench: default in 0s
+[07:57:34.87] /i gi::setActiveWindow 12
+[07:57:34.88] /i gi::setActiveWindow 12 -raise true
+[07:57:35.79] /i gi::setActiveWindow 11
+[07:57:35.80] /i gi::setActiveWindow 11 -raise true
+[07:57:36.90] /# gi::executeAction deSelectActive -in [gi::getWindows 11]
+[07:57:36.90] /i de::deselectAll [db::getNext [de::getContexts -window 11]]
+[07:57:36.90] /i de::select [de::getActiveFigure [gi::getWindows 11] -point {7 3} -index 0 -intent none]
+[07:57:36.90] /o oa:0x23085340
+[07:57:38.58] /# gi::executeAction deSelectActive -in [gi::getWindows 11]
+[07:57:38.58] /i de::deselectAll [db::getNext [de::getContexts -window 11]]
+[07:57:38.58] /i de::select [de::getActiveFigure [gi::getWindows 11] -point {6.09375 3.38125} -index 0 -intent none]
+[07:57:38.59] /o oa:0x22a39570
+[07:57:39.24] /# gi::executeAction deSelectActive -in [gi::getWindows 11]
+[07:57:39.24] /i de::deselectAll [db::getNext [de::getContexts -window 11]]
+[07:57:39.24] /i de::select [de::getActiveFigure [gi::getWindows 11] -point {6.0625 3.425} -index 0 -intent none]
+[07:57:39.24] /o oa:0x22f98f60
+[07:57:39.93] /# gi::executeAction seDelete -in [gi::getWindows 11]
+[07:57:39.93] /i ise::delete
+[07:57:40.53] /# gi::executeAction deSelectActive -in [gi::getWindows 11]
+[07:57:40.53] /i de::deselectAllLogic -context [db::getNext [de::getContexts -window 11]]
+[07:57:41.35] /i gi::setActiveWindow 12
+[07:57:41.35] /i gi::setActiveWindow 12 -raise true
+[07:57:41.85] /i gi::executeAction menuPreShow -in [gi::getWindows 12]
+[07:57:41.85] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 12]]
+[07:57:42.39] /# gi::executeAction saNetlistAndRun -in [gi::getWindows 12]
+[07:57:42.39] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 12] -mode overwrite
+[07:57:42.48] /r giDialog gi::setActiveDialog [gi::getDialogs {xtShowDesignsPrompt}]
+[07:57:42.48] /r giDialog gi::setCurrentIndex {target} -index {0,0} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[07:57:42.71] /r giDialog db::setAttr geometry -of [gi::getDialogs {xtShowDesignsPrompt}] -value 649x290+626+410
+[07:57:43.95] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[07:57:43.97] /m Information: 
+[07:57:43.97] /o Checking "inverter/FA_1bit_tb/schematic"
+[07:57:43.98] /o No rule violations found in "inverter/FA_1bit_tb/schematic"
+[07:57:43.98] /o No Design Integrity rule violations found in "inverter/FA_1bit_tb/schematic"
+[07:57:43.98] /m Information: Checking process is completed: marking the design violations
+[07:57:43.98] /m Information: Marking of designs is completed
+[07:57:44.09] /m Information: "Starting incremental netlisting for design "inverter/FA_1bit_tb/config"..." (NETLISTING-010)
+[07:57:44.10] /o No Design Integrity rule violations found in "inverter/FA_1bit_tb/schematic"
+[07:57:44.10] /m Information: 
+              /c Cross view checking for inverter/full_adder/symbol with inverter/full_adder/starrc
+              /c 	[warning] Missing Terminal
+              /c 		Terminal vdd! found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal gnd! found in starrc is missing in symbol (DE_EDIT-007)
+[07:57:44.10] /w Warning: "Terminal vdd! found in starrc is missing in symbol" (NETLISTING-003)
+[07:57:44.10] /w Warning: "Terminal gnd! found in starrc is missing in symbol" (NETLISTING-003)
+[07:57:44.12] /m Information: 
+              /c Cross view checking for reference90RF/n_4t/ivpcell with reference90RF/n_4t/symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal D found in symbol is missing in ivpcell
+              /c 	[warning] Missing Terminal
+              /c 		Terminal G found in symbol is missing in ivpcell
+              /c 	[warning] Missing Terminal
+              /c 		Terminal S found in symbol is missing in ivpcell
+              /c 	[warning] Missing Terminal
+              /c 		Terminal B found in symbol is missing in ivpcell (DE_EDIT-007)
+[07:57:44.12] /w Warning: "Terminal D found in symbol is missing in ivpcell" (NETLISTING-003)
+[07:57:44.12] /w Warning: "Terminal G found in symbol is missing in ivpcell" (NETLISTING-003)
+[07:57:44.12] /w Warning: "Terminal S found in symbol is missing in ivpcell" (NETLISTING-003)
+[07:57:44.12] /w Warning: "Terminal B found in symbol is missing in ivpcell" (NETLISTING-003)
+[07:57:44.13] /m Information: 
+[07:57:44.13] /o Checking "inverter/CMOS/schematic"
+[07:57:44.13] /o No rule violations found in "inverter/CMOS/schematic"
+[07:57:44.26] /m Information: "inverter FA_1bit_tb schematic" renetlisted. (NETLISTING-056)
+[07:57:44.31] /m Information: "Netlisting design "inverter/FA_1bit_tb/config" finished successfully." (NETLISTING-012)
+[07:57:44.32] /m Information: "Composing simulator input file for design "inverter/FA_1bit_tb/config"..."
+[07:57:44.36] /m Information: "Simulator input file composed successfully for design "inverter/FA_1bit_tb/config""
+[07:57:44.57] /m Information: "Starting HSPICE simulation for design: inverter/FA_1bit_tb/config"
+[07:57:44.57] /# gi::collapse {jobMonitorTable} -index {0.0.0.1,0} -in [gi::getWindows 13]
+[07:57:44.60] /o 1
+[07:57:45.62] /m Information: "Simulation completed successfully for design: inverter/FA_1bit_tb/config "
+[07:57:45.89] /m Information: "Evaluating and plotting outputs..."
+[07:57:46.00] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_76cb870_void_pp _70ffec8_void_pp} 
+[07:57:46.10] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_76cb870_void_pp _70fff90_void_pp} 
+[07:57:46.18] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_76cb870_void_pp _7100058_void_pp} 
+[07:57:46.25] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_76cb870_void_pp _7100120_void_pp} 
+[07:57:46.33] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_76cb870_void_pp _71001e8_void_pp} 
+[07:57:46.34] /m Information: Measurement calculations completed for testbench: default in 0s
+[07:57:54.06] /i gi::setActiveWindow 12
+[07:57:54.06] /i gi::setActiveWindow 12 -raise true
+[07:57:55.65] /i gi::setItemSelection {analysisPane} -index {} -in [gi::getWindows 12]
+[07:57:55.96] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 12]]
+[07:57:56.21] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 12]] -value 633x680+762+376
+[07:57:56.35] /i gi::setItemSelection {analysisPane} -index {0,3} -in [gi::getWindows 12]
+[07:57:57.68] /i gi::closeWindows [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 12]]
+[07:57:58.86] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 12]]
+[07:57:59.11] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 12]] -value 633x680+762+376
+[07:58:03.97] /i gi::setField {/analysesGroups/tabGeneral/anaPane/step} -value {20p} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 12]]
+[07:58:04.06] /i gi::pressButton {/apply} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 12]]
+[07:58:04.09] /o tran
+[07:58:04.44] /i gi::pressButton {/ok} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 12]]
+[07:58:05.18] /i gi::setActiveWindow 11
+[07:58:05.18] /i gi::setActiveWindow 11 -raise true
+[07:58:06.03] /# gi::executeAction deSelectActive -in [gi::getWindows 11]
+[07:58:06.03] /i de::deselectAll [db::getNext [de::getContexts -window 11]]
+[07:58:06.03] /i de::select [de::getActiveFigure [gi::getWindows 11] -point {6.94375 2.9375} -index 0 -intent none]
+[07:58:06.03] /o oa:0x1bf25750
+[07:58:06.69] /# gi::executeAction seDelete -in [gi::getWindows 11]
+[07:58:06.69] /i ise::delete
+[07:58:07.29] /# gi::executeAction deSelectActive -in [gi::getWindows 11]
+[07:58:07.29] /i de::deselectAllLogic -context [db::getNext [de::getContexts -window 11]]
+[07:58:07.48] /i de::select [se::getNetComponents [de::getActiveFigure [gi::getWindows 11] -point {7.0125 2.71875} -index 0 -intent none] -of branch]
+[07:58:07.48] /o oa:0x1ebee660
+[07:58:07.66] /# gi::executeAction deSelectActive -in [gi::getWindows 11]
+[07:58:07.66] /i de::cycleActiveFigure [gi::getWindows 11] -direction next
+[07:58:07.66] /o oa:0x1bf7b020
+[07:58:07.82] /# gi::executeAction deDescend -in [gi::getWindows 11]
+[07:58:07.82] /i ide::descend 11 -inPlace false -promptView false -readOnly auto
+[07:58:07.82] /e Error: Could not descend in pre-selection mode. (DESIGN_COMMANDS-032)
+[07:58:07.97] /# gi::executeAction deAddPoint -in [gi::getWindows 11]
+[07:58:07.97] /i de::addPoint {7.0125 2.63125} -context [db::getNext [de::getContexts -window 11]]
+[07:58:08.05] /r giDialog gi::setActiveDialog [gi::getDialogs {deDescendFailed} -parent [gi::getWindows 11]]
+[07:58:08.31] /r giDialog db::setAttr geometry -of [gi::getDialogs {deDescendFailed} -parent [gi::getWindows 11]] -value 393x82+764+573
+[07:58:09.44] /r giDialog gi::closeWindows [gi::getDialogs {deDescendFailed} -parent [gi::getWindows 11]]
+[07:58:10.27] /# gi::executeAction deAddPoint -in [gi::getWindows 11]
+[07:58:10.27] /i de::addPoint {7.03125 1.64375} -context [db::getNext [de::getContexts -window 11]]
+[07:58:10.32] /r giDialog gi::setActiveDialog [gi::getDialogs {deDescendFailed} -parent [gi::getWindows 11]]
+[07:58:10.61] /r giDialog db::setAttr geometry -of [gi::getDialogs {deDescendFailed} -parent [gi::getWindows 11]] -value 392x82+764+573
+[07:58:11.32] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deDescendFailed} -parent [gi::getWindows 11]]
+[07:58:11.33] /# Navigating to analogLib/cap/symbol (C37)
+[07:58:11.81] /i db::setAttr dockSize -of [gi::getAssistants giConsole -from [gi::getWindows 11]] -value 1867x89
+[07:58:11.81] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 11]] -value 290x865
+[07:58:13.61] /# gi::executeAction deReturnToTop -in [gi::getWindows 11]
+[07:58:13.61] /i de::return [db::getNext [de::getContexts -window 11]] -levels -1
+[07:58:13.61] /# Navigating to inverter/FA_1bit_tb/schematic
+[07:58:13.89] /o oa:0x1b026c60
+[07:58:14.18] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 11]] -value 290x865
+[07:58:14.18] /i db::setAttr dockSize -of [gi::getAssistants giConsole -from [gi::getWindows 11]] -value 1867x89
+[07:58:15.28] /# gi::executeAction deSelectActive -in [gi::getWindows 11]
+[07:58:15.29] /i de::deselectAll [db::getNext [de::getContexts -window 11]]
+[07:58:15.29] /i de::select [de::getActiveFigure [gi::getWindows 11] -point {7.0875 1.4875} -index 0 -intent none]
+[07:58:15.29] /o oa:0x1bdf3c80
+[07:58:15.39] /# gi::executeAction seDelete -in [gi::getWindows 11]
+[07:58:15.39] /i ise::delete
+[07:58:16.49] /i gi::setActiveWindow 12
+[07:58:16.49] /i gi::setActiveWindow 12 -raise true
+[07:58:17.29] /i gi::executeAction menuPreShow -in [gi::getWindows 12]
+[07:58:17.29] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 12]]
+[07:58:17.99] /# gi::executeAction saNetlistAndRun -in [gi::getWindows 12]
+[07:58:17.99] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 12] -mode overwrite
+[07:58:18.12] /r giDialog gi::setActiveDialog [gi::getDialogs {xtShowDesignsPrompt}]
+[07:58:18.12] /r giDialog gi::setCurrentIndex {target} -index {0,0} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[07:58:18.31] /r giDialog db::setAttr geometry -of [gi::getDialogs {xtShowDesignsPrompt}] -value 649x290+626+410
+[07:58:19.19] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[07:58:19.21] /m Information: 
+[07:58:19.21] /o Checking "inverter/FA_1bit_tb/schematic"
+[07:58:19.22] /o No rule violations found in "inverter/FA_1bit_tb/schematic"
+[07:58:19.22] /o No Design Integrity rule violations found in "inverter/FA_1bit_tb/schematic"
+[07:58:19.22] /m Information: Checking process is completed: marking the design violations
+[07:58:19.22] /m Information: Marking of designs is completed
+[07:58:19.31] /m Information: "Starting incremental netlisting for design "inverter/FA_1bit_tb/config"..." (NETLISTING-010)
+[07:58:19.34] /o No Design Integrity rule violations found in "inverter/FA_1bit_tb/schematic"
+[07:58:19.34] /m Information: 
+              /c Cross view checking for inverter/full_adder/symbol with inverter/full_adder/starrc
+              /c 	[warning] Missing Terminal
+              /c 		Terminal vdd! found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal gnd! found in starrc is missing in symbol (DE_EDIT-007)
+[07:58:19.34] /w Warning: "Terminal vdd! found in starrc is missing in symbol" (NETLISTING-003)
+[07:58:19.34] /w Warning: "Terminal gnd! found in starrc is missing in symbol" (NETLISTING-003)
+[07:58:19.38] /m Information: 
+              /c Cross view checking for reference90RF/n_4t/ivpcell with reference90RF/n_4t/symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal D found in symbol is missing in ivpcell
+              /c 	[warning] Missing Terminal
+              /c 		Terminal G found in symbol is missing in ivpcell
+              /c 	[warning] Missing Terminal
+              /c 		Terminal S found in symbol is missing in ivpcell
+              /c 	[warning] Missing Terminal
+              /c 		Terminal B found in symbol is missing in ivpcell (DE_EDIT-007)
+[07:58:19.38] /w Warning: "Terminal D found in symbol is missing in ivpcell" (NETLISTING-003)
+[07:58:19.38] /w Warning: "Terminal G found in symbol is missing in ivpcell" (NETLISTING-003)
+[07:58:19.38] /w Warning: "Terminal S found in symbol is missing in ivpcell" (NETLISTING-003)
+[07:58:19.38] /w Warning: "Terminal B found in symbol is missing in ivpcell" (NETLISTING-003)
+[07:58:19.39] /m Information: 
+[07:58:19.39] /o Checking "inverter/CMOS/schematic"
+[07:58:19.39] /o No rule violations found in "inverter/CMOS/schematic"
+[07:58:19.52] /m Information: "inverter FA_1bit_tb schematic" renetlisted. (NETLISTING-056)
+[07:58:19.57] /m Information: "Netlisting design "inverter/FA_1bit_tb/config" finished successfully." (NETLISTING-012)
+[07:58:19.58] /m Information: "Composing simulator input file for design "inverter/FA_1bit_tb/config"..."
+[07:58:19.62] /m Information: "Simulator input file composed successfully for design "inverter/FA_1bit_tb/config""
+[07:58:19.85] /m Information: "Starting HSPICE simulation for design: inverter/FA_1bit_tb/config"
+[07:58:19.85] /# gi::collapse {jobMonitorTable} -index {0.0.0.1,0} -in [gi::getWindows 13]
+[07:58:19.88] /o 1
+[07:58:20.82] /m Information: "Simulation completed successfully for design: inverter/FA_1bit_tb/config "
+[07:58:21.09] /m Information: "Evaluating and plotting outputs..."
+[07:58:21.22] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_76cdc00_void_pp _70ffe00_void_pp} 
+[07:58:21.31] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_76cdc00_void_pp _70ffec8_void_pp} 
+[07:58:21.41] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_76cdc00_void_pp _70fff90_void_pp} 
+[07:58:21.52] /m Information: Measurement calculations completed for testbench: default in 0s
+[07:58:21.54] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_76cdc00_void_pp _7100058_void_pp} 
+[07:58:21.61] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_76cdc00_void_pp _7100120_void_pp} 
+[07:58:35.83] /i gi::setActiveWindow 12
+[07:58:35.83] /i gi::setActiveWindow 12 -raise true
+[07:58:36.60] /i gi::setActiveWindow 11
+[07:58:36.60] /i gi::setActiveWindow 11 -raise true
+[07:58:40.67] /i gi::setActiveWindow 2
+[07:58:40.67] /i gi::setActiveWindow 2 -raise true
+[07:58:44.42] /i gi::setCurrentIndex {cells} -index {full_adder} -in [gi::getWindows 2]
+[07:58:44.42] /i gi::setItemSelection {cells} -index {full_adder} -in [gi::getWindows 2]
+[07:58:45.52] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 2]
+[07:58:45.52] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 2]
+[07:58:45.68] /i gi::executeAction dmOpen -in [gi::getWindows 2]
+[07:58:45.73] /r giWindowId 14
+[07:58:45.75] /r giWindowGeometry 1632x1020
+[07:58:45.78] /# de::setActiveLPP [de::getLPPs "exclude blockage" -from [db::getAttr editDesign -of [de::getContexts -window 14]]]
+[07:58:49.33] /i gi::setField {stopLevel} -value {2} -in [gi::getToolbars {leHierarchy} -from [gi::getWindows 14]]
+[07:59:52.67] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 14]
+[07:59:52.67] /i de::zoom -window [gi::getWindows 14] -factor 2.0 -center {13.857 22.419}
+[07:59:52.67] /o {7.054 20.671} {14.476 25.046}
+[07:59:54.08] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 14]
+[07:59:54.08] /i de::zoom -window [gi::getWindows 14] -factor 0.5 -center {11.934 23.255}
+[07:59:54.08] /o {2.173 18.087} {17.018 26.837}
+[07:59:55.03] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 14]
+[07:59:55.03] /i de::zoom -window [gi::getWindows 14] -factor 2.0 -center {5.017 23.34}
+[07:59:55.04] /o {3.595 20.713} {11.017 25.088}
+[07:59:56.07] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 14]
+[07:59:56.07] /i de::zoom -window [gi::getWindows 14] -factor 2.0 -center {5.353 23.255}
+[07:59:56.07] /o {4.474 21.984} {8.185 24.172}
+[07:59:57.17] /# gi::executeAction deFitView -in [gi::getWindows 14]
+[07:59:57.17] /i de::fit -window 14 -fitView true
+[07:59:57.17] /o {0.25 18.923} {15.095 27.673}
+[07:59:57.88] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 14]
+[07:59:57.88] /i de::zoom -window [gi::getWindows 14] -factor 2.0 -center {3.595 21.379}
+[07:59:57.89] /o {1.923 20.151} {9.345 24.526}
+[07:59:57.99] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 14]
+[07:59:57.99] /i de::zoom -window [gi::getWindows 14] -factor 2.0 -center {3.515 21.289}
+[07:59:57.99] /o {2.719 20.72} {6.43 22.907}
+[07:59:58.64] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 14]
+[07:59:58.64] /i de::zoom -window [gi::getWindows 14] -factor 2.0 -center {3.498 21.14}
+[07:59:58.64] /o {3.108 20.93} {4.964 22.024}
+[07:59:58.72] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 14]
+[07:59:58.72] /i de::zoom -window [gi::getWindows 14] -factor 2.0 -center {3.498 21.14}
+[07:59:58.72] /o {3.303 21.035} {4.231 21.582}
+[07:59:59.12] /# gi::executeAction deFitView -in [gi::getWindows 14]
+[07:59:59.12] /i de::fit -window 14 -fitView true
+[07:59:59.12] /o {0.25 18.923} {15.095 27.673}
+[08:00:02.50] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 14]
+[08:00:02.50] /i de::zoom -window [gi::getWindows 14] -factor 2.0 -center {9.633 22.787}
+[08:00:02.50] /o {4.942 20.855} {12.364 25.23}
+[08:00:02.67] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 14]
+[08:00:02.67] /i de::zoom -window [gi::getWindows 14] -factor 2.0 -center {9.633 22.787}
+[08:00:02.67] /o {7.287 21.821} {10.998 24.008}
+[08:00:04.65] /# gi::executeAction deFitView -in [gi::getWindows 14]
+[08:00:04.65] /i de::fit -window 14 -fitView true
+[08:00:04.65] /o {0.25 18.923} {15.095 27.673}
+[08:00:18.22] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 14]
+[08:00:18.22] /i de::zoom -window [gi::getWindows 14] -factor 0.5 -center {9.605 23.959}
+[08:00:18.23] /o {-9.105 13.886} {20.585 31.386}
+[08:00:18.84] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 14]
+[08:00:18.84] /i de::zoom -window [gi::getWindows 14] -factor 2.0 -center {16.352 24.167}
+[08:00:18.84] /o {3.624 19.027} {18.468 27.777}
+[08:00:19.98] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 14]
+[08:00:19.98] /i de::zoom -window [gi::getWindows 14] -factor 0.5 -center {14.717 23.156}
+[08:00:19.98] /o {-7.47 14.897} {22.22 32.397}
+[08:00:22.64] /# gi::executeAction leInstance -in [gi::getWindows 14]
+[08:00:22.65] /i ile::createInst
+[08:00:22.74] /i gi::setActiveDialog [gi::getDialogs {leCreateInst} -parent [gi::getWindows 14]]
+[08:00:23.01] /i db::setAttr geometry -of [gi::getDialogs {leCreateInst}] -value 612x532+654+253
+[08:00:25.50] /i gi::setCurrentIndex {instLCVCellCategories} -index {FULL_ADDER_2BIT} -in [gi::getDialogs {leCreateInst} -parent [gi::getWindows 14]]
+[08:00:25.51] /i gi::setItemSelection {instLCVCellCategories} -index {FULL_ADDER_2BIT} -in [gi::getDialogs {leCreateInst} -parent [gi::getWindows 14]]
+[08:00:28.72] /i gi::closeWindows [gi::getDialogs {leCreateInst} -parent [gi::getWindows 14]]
+[08:00:29.26] /# gi::executeAction deFitView -in [gi::getWindows 14]
+[08:00:29.26] /i de::fit -window 14 -fitView true
+[08:00:29.26] /o {0.25 18.923} {15.095 27.673}
+[08:00:32.28] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 14]
+[08:00:32.28] /i de::zoom -window [gi::getWindows 14] -factor 2.0 -center {7.375 22.787}
+[08:00:32.28] /o {3.813 20.855} {11.235 25.23}
+[08:00:32.76] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 14]
+[08:00:32.76] /i de::zoom -window [gi::getWindows 14] -factor 0.5 -center {7.342 22.749}
+[08:00:32.76] /o {0.283 18.96} {15.128 27.71}
+[08:00:58.78] /i gi::setActiveWindow 12
+[08:00:58.79] /i gi::setActiveWindow 12 -raise true
+[08:00:59.94] /i gi::executeAction menuPreShow -in [gi::getWindows 12]
+[08:00:59.94] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 12]]
+[08:01:00.76] /# gi::executeAction saNetlistAndRun -in [gi::getWindows 12]
+[08:01:00.76] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 12] -mode overwrite
+[08:01:00.85] /m Information: "Starting incremental netlisting for design "inverter/FA_1bit_tb/config"..." (NETLISTING-010)
+[08:01:00.86] /o No Design Integrity rule violations found in "inverter/FA_1bit_tb/schematic"
+[08:01:00.86] /m Information: 
+              /c Cross view checking for inverter/full_adder/symbol with inverter/full_adder/starrc
+              /c 	[warning] Missing Terminal
+              /c 		Terminal vdd! found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal gnd! found in starrc is missing in symbol (DE_EDIT-007)
+[08:01:00.86] /w Warning: "Terminal vdd! found in starrc is missing in symbol" (NETLISTING-003)
+[08:01:00.86] /w Warning: "Terminal gnd! found in starrc is missing in symbol" (NETLISTING-003)
+[08:01:00.91] /m Information: 
+              /c Cross view checking for reference90RF/n_4t/ivpcell with reference90RF/n_4t/symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal D found in symbol is missing in ivpcell
+              /c 	[warning] Missing Terminal
+              /c 		Terminal G found in symbol is missing in ivpcell
+              /c 	[warning] Missing Terminal
+              /c 		Terminal S found in symbol is missing in ivpcell
+              /c 	[warning] Missing Terminal
+              /c 		Terminal B found in symbol is missing in ivpcell (DE_EDIT-007)
+[08:01:00.91] /w Warning: "Terminal D found in symbol is missing in ivpcell" (NETLISTING-003)
+[08:01:00.91] /w Warning: "Terminal G found in symbol is missing in ivpcell" (NETLISTING-003)
+[08:01:00.91] /w Warning: "Terminal S found in symbol is missing in ivpcell" (NETLISTING-003)
+[08:01:00.91] /w Warning: "Terminal B found in symbol is missing in ivpcell" (NETLISTING-003)
+[08:01:00.94] /m Information: 
+[08:01:00.94] /o Checking "inverter/CMOS/schematic"
+[08:01:00.94] /o No rule violations found in "inverter/CMOS/schematic"
+[08:01:01.12] /m Information: "Netlisting design "inverter/FA_1bit_tb/config" finished successfully." (NETLISTING-012)
+[08:01:01.13] /m Information: "Composing simulator input file for design "inverter/FA_1bit_tb/config"..."
+[08:01:01.16] /m Information: "Simulator input file composed successfully for design "inverter/FA_1bit_tb/config""
+[08:01:01.37] /m Information: "Starting HSPICE simulation for design: inverter/FA_1bit_tb/config"
+[08:01:01.37] /# gi::collapse {jobMonitorTable} -index {0.0.0.1,0} -in [gi::getWindows 13]
+[08:01:01.41] /o 1
+[08:01:02.52] /m Information: "Simulation completed successfully for design: inverter/FA_1bit_tb/config "
+[08:01:02.74] /m Information: "Evaluating and plotting outputs..."
+[08:01:02.84] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_76b9470_void_pp _71001e8_void_pp} 
+[08:01:02.92] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_76b9470_void_pp _70ffe00_void_pp} 
+[08:01:03.01] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_76b9470_void_pp _70ffec8_void_pp} 
+[08:01:03.03] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_76b9470_void_pp _70fff90_void_pp} 
+[08:01:03.13] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_76b9470_void_pp _7100058_void_pp} 
+[08:01:03.23] /m Information: Measurement calculations completed for testbench: default in 1s
+[08:01:27.13] /i gi::setActiveWindow 11
+[08:01:27.13] /i gi::setActiveWindow 11 -raise true
+[08:01:30.07] /# gi::executeAction deSelectActive -in [gi::getWindows 11]
+[08:01:30.07] /i de::deselectAll [db::getNext [de::getContexts -window 11]]
+[08:01:30.07] /i de::select [de::getActiveFigure [gi::getWindows 11] -point {3.81875 3.01875} -index 0 -intent none]
+[08:01:30.07] /o oa:0x24e92280
+[08:01:30.64] /# gi::executeAction seDelete -in [gi::getWindows 11]
+[08:01:30.64] /i ise::delete
+[08:01:31.80] /# gi::executeAction seCreateInst -in [gi::getWindows 11]
+[08:01:31.80] /i ise::createInst
+[08:01:31.84] /o seSchematic
+[08:01:31.89] /i gi::setActiveDialog [gi::getDialogs {seCreateInst} -parent [gi::getWindows 11]]
+[08:01:32.18] /i db::setAttr geometry -of [gi::getDialogs {seCreateInst}] -value 359x337+0+65
+[08:01:33.22] /i de::abortCommand
+[08:01:34.08] /# gi::executeAction seCreateInst -in [gi::getWindows 11]
+[08:01:34.08] /i ise::createInst
+[08:01:34.11] /o seSchematic
+[08:01:34.14] /i gi::setActiveDialog [gi::getDialogs {seCreateInst} -parent [gi::getWindows 11]]
+[08:01:34.42] /i db::setAttr geometry -of [gi::getDialogs {seCreateInst}] -value 359x337+0+65
+[08:01:44.04] /i gi::setField {instMasterCell} -value {full_adder} -in [gi::getDialogs {seCreateInst} -parent [gi::getWindows 11]]
+[08:01:44.33] /i db::setAttr geometry -of [gi::getDialogs {seCreateInst}] -value 359x337+0+65
+[08:01:44.72] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 11]
+[08:01:44.72] /i de::zoom -window [gi::getWindows 11] -factor 2.0 -center {3.45625 2.68125}
+[08:01:44.72] /o {1.83125 1.00625} {6.23125 3.425}
+[08:01:44.94] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 11]
+[08:01:44.94] /i de::zoom -window [gi::getWindows 11] -factor 2.0 -center {3.36875 2.725}
+[08:01:44.94] /o {2.6 1.8625} {4.8 3.075}
+[08:01:46.45] /# gi::executeAction deAddPoint -in [gi::getWindows 11]
+[08:01:46.45] /i de::addPoint {3.26875 2.79375} -context [db::getNext [de::getContexts -window 11]]
+[08:01:46.73] /# gi::executeAction deAbortCommand -in [gi::getWindows 11]
+[08:01:46.73] /i de::abortCommand -context [db::getNext [de::getContexts -window 11]]

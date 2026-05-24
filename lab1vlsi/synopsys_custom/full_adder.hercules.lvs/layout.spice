@@ -1,0 +1,55 @@
+* SPICE INPUT		Wed May 20 06:17:51 2026	full_adder
+* EV_NETLIST Version AMD.64 Release B-2008.09.SP5.26005 2012/07/14
+*
+*The following line needed for Star-CR:
+*CRU_OPT (KEEP_ELEMENTS "^[CR]D")
+*
+*The following line needed for CDL:
+*.BIPOLAR
+
+.subckt NAND2_2 Y gnd! vdd! A B ln_N_23 ln_N_25
+M_MM3 gnd! B net19 ln_N_23 N  l=0.100u w=0.240u
+M_MM2 net19 A Y ln_N_23 N  l=0.100u w=0.240u
+M_MM0 vdd! B Y ln_N_25 P  l=0.100u w=0.300u
+M_MM1 Y A vdd! ln_N_25 P  l=0.100u w=0.300u
+.ends NAND2_2
+
+* Top of hierarchy  cell=full_adder
+.subckt full_adder S Cout A B Cin vdd! gnd!
+M_XI0/MM3 gnd! B XI0/net19 ln_N_27 N  l=0.100u w=0.240u
+M_XI0/MM2 XI0/net19 A net27 ln_N_27 N  l=0.100u w=0.240u
+M_XI0/MM0 vdd! B net27 ln_N_59 P  l=0.100u w=0.300u
+M_XI0/MM1 net27 A vdd! ln_N_59 P  l=0.100u w=0.300u
+M_XI1/MM3 gnd! net27 XI1/net19 ln_N_27 N  l=0.100u w=0.240u
+M_XI1/MM2 XI1/net19 A net11 ln_N_27 N  l=0.100u w=0.240u
+M_XI1/MM0 vdd! net27 net11 ln_N_59 P  l=0.100u w=0.300u
+M_XI1/MM1 net11 A vdd! ln_N_59 P  l=0.100u w=0.300u
+M_XI3/MM3 gnd! net12 XI3/net19 ln_N_27 N  l=0.100u w=0.240u
+M_XI3/MM2 XI3/net19 net11 net17 ln_N_27 N  l=0.100u w=0.240u
+M_XI3/MM0 vdd! net12 net17 ln_N_59 P  l=0.100u w=0.300u
+M_XI3/MM1 net17 net11 vdd! ln_N_59 P  l=0.100u w=0.300u
+M_XI2/MM3 gnd! B XI2/net19 ln_N_27 N  l=0.100u w=0.240u
+M_XI2/MM2 XI2/net19 net27 net12 ln_N_27 N  l=0.100u w=0.240u
+M_XI2/MM0 vdd! B net12 ln_N_59 P  l=0.100u w=0.300u
+M_XI2/MM1 net12 net27 vdd! ln_N_59 P  l=0.100u w=0.300u
+M_XI5/MM3 gnd! net26 XI5/net19 ln_N_27 N  l=0.100u w=0.240u
+M_XI5/MM2 XI5/net19 net17 net29 ln_N_27 N  l=0.100u w=0.240u
+M_XI5/MM0 vdd! net26 net29 ln_N_59 P  l=0.100u w=0.300u
+M_XI5/MM1 net29 net17 vdd! ln_N_59 P  l=0.100u w=0.300u
+M_XI9/MM3 gnd! net30 XI9/net19 ln_N_27 N  l=0.100u w=0.240u
+M_XI9/MM2 XI9/net19 net29 S ln_N_27 N  l=0.100u w=0.240u
+M_XI9/MM0 vdd! net30 S ln_N_59 P  l=0.100u w=0.300u
+M_XI9/MM1 S net29 vdd! ln_N_59 P  l=0.100u w=0.300u
+M_XI6/MM3 gnd! Cin XI6/net19 ln_N_27 N  l=0.100u w=0.240u
+M_XI6/MM2 XI6/net19 net26 net30 ln_N_27 N  l=0.100u w=0.240u
+M_XI6/MM0 vdd! Cin net30 ln_N_59 P  l=0.100u w=0.300u
+M_XI6/MM1 net30 net26 vdd! ln_N_59 P  l=0.100u w=0.300u
+M_XI4/MM3 gnd! Cin XI4/net19 ln_N_27 N  l=0.100u w=0.240u
+M_XI4/MM2 XI4/net19 net17 net26 ln_N_27 N  l=0.100u w=0.240u
+M_XI4/MM0 vdd! Cin net26 ln_N_59 P  l=0.100u w=0.300u
+M_XI4/MM1 net26 net17 vdd! ln_N_59 P  l=0.100u w=0.300u
+M_XI8/MM3 gnd! net27 XI8/net19 ln_N_27 N  l=0.100u w=0.240u
+M_XI8/MM2 XI8/net19 net26 Cout ln_N_27 N  l=0.100u w=0.240u
+M_XI8/MM0 vdd! net27 Cout ln_N_59 P  l=0.100u w=0.300u
+M_XI8/MM1 Cout net26 vdd! ln_N_59 P  l=0.100u w=0.300u
+.ends full_adder

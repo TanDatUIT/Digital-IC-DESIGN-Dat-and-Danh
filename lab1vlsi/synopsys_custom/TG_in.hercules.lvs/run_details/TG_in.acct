@@ -1,0 +1,8 @@
+TG_in
+	Cell Level Device Counts
+		NMOS[N] = 1
+		PMOS[P] = 1
+
+********  DEVICE EXTRACTION STATS    TOPBLOCK = TG_in  *******
+		NMOS[N] = 1
+		PMOS[P] = 1

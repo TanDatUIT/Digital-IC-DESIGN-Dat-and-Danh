@@ -1,0 +1,11 @@
+D_latch Level=0 Count=1
+
+
+		CELL STATISTICS
+
+
+TOP CELL = D_latch
+	Ports                =	6
+
+CELL = D_latch
+	Flat Placements      =	0

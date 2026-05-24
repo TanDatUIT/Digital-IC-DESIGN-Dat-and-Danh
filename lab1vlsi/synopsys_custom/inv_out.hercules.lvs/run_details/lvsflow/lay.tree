@@ -1,0 +1,11 @@
+inv_out Level=0 Count=1
+
+
+		CELL STATISTICS
+
+
+TOP CELL = inv_out
+	Ports                =	4
+
+CELL = inv_out
+	Flat Placements      =	0

@@ -1,0 +1,11 @@
+LAB3_NAND2 Level=0 Count=1
+
+
+		CELL STATISTICS
+
+
+TOP CELL = LAB3_NAND2
+	Ports                =	5
+
+CELL = LAB3_NAND2
+	Flat Placements      =	0

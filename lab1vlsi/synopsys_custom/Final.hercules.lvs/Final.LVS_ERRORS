@@ -1,0 +1,451 @@
++------------------------------------------------------------------------+
+|                      Hercules LVS Comparison Report                    |
++------------------------------------------------------------------------+
+
+COMPARE (R) Hierarchical Layout Vs. Schematic
+	AMD.64 Release B-2008.09.SP5.26002 2012/07/10
+Copyright (C) Synopsys, Inc. All rights reserved.
+
+
+--------------------------------------------------------------------------
+LVS error file     = Final.LVS_ERRORS
+Layout error file  = Final.LAYOUT_ERRORS
+Schematic netlist  = Final.sch_out
+Layout netlist     = Final.net
+Equivalence file   = [automatic]
+Runset file        = /home/itsupport/Desktop/lab1vlsi/synopsys_custom/Final.hercules.lvs/reference_lvs.lvs.evx
+Working directory  = /home/itsupport/Desktop/lab1vlsi/synopsys_custom/Final.hercules.lvs
+Compare directory  = run_details/compare
+Compare start time = 2026-05-20 01:50:02
+
+
+
+--------------------------------------------------------------------------
+Top block compare result: FAIL
+
+			######   ##   ##### #    
+			#       #  #    #   #    
+			#####  ######   #   #    
+			#      #    #   #   #    
+			#      #    # ##### #####
+
+
+                             [Final != Final]
+
+--------------------------------------------------------------------------
+Comparison summary
+
+    0 successful equivalencies
+  * 1 failed equivalencies
+        1 first priority errors
+        0 second priority errors
+
+
+
+
+
+
+
++------------------------------------------------------------------------+
+|                          First Priority Errors                         |
++------------------------------------------------------------------------+
+
+First priority errors are equivalence points that Hercules has determined
+probably contain errors that need to be fixed first.
+
+==========================================================================
+
+> Final != Final (level = 0)
+
+Error summary:
+
+          32 unmatched schematic devices
+          34 unmatched schematic nets
+           0 unmatched layout device 
+           1 unmatched layout net 
+
+          36 matched devices
+          22 matched nets
+
+
+Post-compare summary (* = unmatched devices or nets):
+
+        Matched      Schematic    Layout           Instance types
+                     unmatched    unmatched        [schematic, layout]
+        ---------    ---------    ---------        --------------------
+               18           16            0      * [N, N]
+               18           16            0      * [P, P]
+        ---------    ---------    ---------        --------------------
+               36           32            0      * Total instances
+
+               22           34            1      * Total nets
+
+
+
+Diagnostic summary:
+
+    32 missing devices in layout
+    32 missing nets in layout
+    1 potential shorted net in the layout
+
+
+DIAGNOSTIC: Missing Layout Instances
+
+    The following schematic instances are missing in the layout netlist.
+
+        Schematic instance (type)                     Layout instance
+        -------------------------                     ---------------------------
+        XI8/MM2 (N)                                   * Missing instance
+        XI8/MM3 (N)                                   * Missing instance
+        XI8/MM0 (P)                                   * Missing instance
+        XI8/MM1 (P)                                   * Missing instance
+        XI1/MM2 (N)                                   * Missing instance
+        XI1/MM3 (N)                                   * Missing instance
+        XI1/MM0 (P)                                   * Missing instance
+        XI1/MM1 (P)                                   * Missing instance
+        XI2/MM2 (N)                                   * Missing instance
+        XI2/MM3 (N)                                   * Missing instance
+        XI2/MM0 (P)                                   * Missing instance
+        XI2/MM1 (P)                                   * Missing instance
+        XI3/MM2 (N)                                   * Missing instance
+        XI3/MM3 (N)                                   * Missing instance
+        XI3/MM0 (P)                                   * Missing instance
+        XI3/MM1 (P)                                   * Missing instance
+        XI4/MM2 (N)                                   * Missing instance
+        XI4/MM3 (N)                                   * Missing instance
+        XI4/MM0 (P)                                   * Missing instance
+        XI4/MM1 (P)                                   * Missing instance
+        XI5/MM2 (N)                                   * Missing instance
+        XI5/MM3 (N)                                   * Missing instance
+        XI5/MM0 (P)                                   * Missing instance
+        XI5/MM1 (P)                                   * Missing instance
+        XI6/MM2 (N)                                   * Missing instance
+        XI6/MM3 (N)                                   * Missing instance
+        XI6/MM0 (P)                                   * Missing instance
+        XI6/MM1 (P)                                   * Missing instance
+        XI7/MM2 (N)                                   * Missing instance
+        XI7/MM3 (N)                                   * Missing instance
+        XI7/MM0 (P)                                   * Missing instance
+        XI7/MM1 (P)                                   * Missing instance
+
+
+DIAGNOSTIC: Missing Layout Nets
+
+    The following schematic nets are missing in the layout netlist.
+
+        Schematic net : connections                   Layout net
+        ---------------------------                   ------------------------
+        XI1/Y : 3                                     * Missing net
+        XI1/net13 : 2                                 * Missing net
+        XI7/in2 : 2                                   * Missing net
+        XI7/in1 : 2                                   * Missing net
+        XI4/net13 : 2                                 * Missing net
+        XI7/net13 : 2                                 * Missing net
+        XI4/Y : 3                                     * Missing net
+        XI7/Y : 3                                     * Missing net
+        XI2/in2 : 2                                   * Missing net
+        XI2/in1 : 2                                   * Missing net
+        XI2/Y : 3                                     * Missing net
+        XI4/in2 : 2                                   * Missing net
+        XI4/in1 : 2                                   * Missing net
+        XI2/net13 : 2                                 * Missing net
+        XI5/net13 : 2                                 * Missing net
+        XI8/net13 : 2                                 * Missing net
+        XI5/Y : 3                                     * Missing net
+        XI6/in2 : 2                                   * Missing net
+        XI6/in1 : 2                                   * Missing net
+        XI8/Y : 3                                     * Missing net
+        XI8/in2 : 2                                   * Missing net
+        XI8/in1 : 2                                   * Missing net
+        XI1/in2 : 2                                   * Missing net
+        XI1/in1 : 2                                   * Missing net
+        XI3/net13 : 2                                 * Missing net
+        XI3/Y : 3                                     * Missing net
+        XI6/net13 : 2                                 * Missing net
+        XI3/in2 : 2                                   * Missing net
+        XI3/in1 : 2                                   * Missing net
+        XI6/Y : 3                                     * Missing net
+        XI5/in2 : 2                                   * Missing net
+        XI5/in1 : 2                                   * Missing net
+
+
+DIAGNOSTIC: Shorted Layout Nets
+
+    The following unmatched nets are highly suspected to indicate
+    source of shorts in the layout netlist.
+
+
+
+    Group 1 of 1:
+
+        Schematic net : connections  		Layout net : connections
+        ---------------------------  		------------------------
+        net6 : 2                                N_188 : 4
+        Cin : 2                                 
+
+
+    2 matched devices connected to the shorted net net6
+    --------------------------------------------------------------------
+
+    Instance 1 of 2:
+
+        Instance          Schematic                   Layout (-0.210, -2.925)
+        --------------    ------------------------    ------------------------
+        Instance type     NAND2_2/N                   N
+        Instance name     XI15/MM3                    M18
+        Properties        Length = 0.1000, Width =    Length = 0.1000, Width =
+                             0.2400                      0.2400
+
+        Class             Schematic net (port)        Layout net (port)
+        --------------    ------------------------    ------------------------
+        4                 net6 (GATE)               * N_188 (GATE)
+
+
+    Instance 2 of 2:
+
+        Instance          Schematic                   Layout (-0.380, 1.845)
+        --------------    ------------------------    ------------------------
+        Instance type     NAND2_2/P                   P
+        Instance name     XI15/MM0                    M22
+        Properties        Length = 0.1000, Width =    Length = 0.1000, Width =
+                             0.3000                      0.3000
+
+        Class             Schematic net (port)        Layout net (port)
+        --------------    ------------------------    ------------------------
+        4                 net6 (GATE)               * N_188 (GATE)
+
+
+
+    2 matched devices connected to the shorted net Cin
+    --------------------------------------------------------------------
+
+    Instance 1 of 2:
+
+        Instance          Schematic                   Layout (-1.800, 1.845)
+        --------------    ------------------------    ------------------------
+        Instance type     NAND2_2/P                   P
+        Instance name     XI14/MM0                    M28
+        Properties        Length = 0.1000, Width =    Length = 0.1000, Width =
+                             0.3000                      0.3000
+
+        Class             Schematic net (port)        Layout net (port)
+        --------------    ------------------------    ------------------------
+        4                 Cin (GATE)                * N_188 (GATE)
+
+
+    Instance 2 of 2:
+
+        Instance          Schematic                   Layout (-1.630, -2.925)
+        --------------    ------------------------    ------------------------
+        Instance type     NAND2_2/N                   N
+        Instance name     XI14/MM3                    M16
+        Properties        Length = 0.1000, Width =    Length = 0.1000, Width =
+                             0.2400                      0.2400
+
+        Class             Schematic net (port)        Layout net (port)
+        --------------    ------------------------    ------------------------
+        4                 Cin (GATE)                * N_188 (GATE)
+
+
++------------------------------------------------------------------------+
+|                            Unmatched Nodes                             |
++------------------------------------------------------------------------+
+
+Schematic unmatched nets are listed as follows:
+
+    Net name : connections
+    ----------------------------------------
+    XI7/in2 : 2
+    XI5/in1 : 2
+    XI5/in2 : 2
+    XI3/in1 : 2
+    XI1/in1 : 2
+    XI3/in2 : 2
+    XI1/in2 : 2
+    XI8/in1 : 2
+    XI8/in2 : 2
+    XI6/net13 : 2
+    XI2/net13 : 2
+    XI7/net13 : 2
+    XI3/net13 : 2
+    XI8/net13 : 2
+    XI4/net13 : 2
+    XI5/net13 : 2
+    XI1/net13 : 2
+    XI6/in1 : 2
+    XI6/in2 : 2
+    XI4/in1 : 2
+    XI4/in2 : 2
+    XI2/in1 : 2
+    XI2/in2 : 2
+    XI7/in1 : 2
+    XI5/Y : 3
+    XI4/Y : 3
+    XI3/Y : 3
+    XI2/Y : 3
+    XI1/Y : 3
+    XI8/Y : 3
+    XI7/Y : 3
+    XI6/Y : 3
+    Cin : 2
+    net6 : 2
+
+
+Layout unmatched nets are listed as follows:
+
+    Net name : connections
+    ----------------------------------------
+    N_188 : 4
+
+
+Schematic unmatched devices are listed as follows:
+
+    Instance type N:
+
+        Real devices:
+
+            XI6/MM2
+            XI5/MM3
+            XI1/MM3
+            XI8/MM3
+            XI6/MM3
+            XI3/MM3
+            XI7/MM3
+            XI8/MM2
+            XI5/MM2
+            XI2/MM2
+            XI1/MM2
+            XI4/MM2
+            XI7/MM2
+            XI3/MM2
+            XI4/MM3
+            XI2/MM3
+
+    Instance type P:
+
+        Real devices:
+
+            XI2/MM0
+            XI5/MM1
+            XI2/MM1
+            XI8/MM1
+            XI5/MM0
+            XI8/MM0
+            XI7/MM0
+            XI1/MM1
+            XI4/MM1
+            XI1/MM0
+            XI7/MM1
+            XI4/MM0
+            XI6/MM0
+            XI3/MM0
+            XI6/MM1
+            XI3/MM1
+
+
+
+
+
+    For details, please refer to run_details/compare/Final/sum.Final.Final
+
+
++------------------------------------------------------------------------+
+|                             Options Listing                            |
+|                   * = different from Hercules default                  |
++------------------------------------------------------------------------+
+
+    == Compare options ==
+
+    add_width_for_parallel_merge   = FALSE 
+    all_ports_texted               = FALSE 
+    auto_exclude_equiv             = TRUE 
+    combine_output_files           = FALSE 
+  * compare_properties             = TRUE 
+    delete_lay                     = [none]
+    delete_sch                     = [none]
+  * detect_permutable_ports        = TRUE 
+    equate_by_device_name          = FALSE 
+  * equate_by_net_name             = TRUE 
+    equiv_by_name                  = FALSE 
+  * explode_on_error               = TRUE 
+  * filter                         = TRUE 
+    find_additional_equivs         
+        ignore_case                = FALSE 
+        name_full                  = TRUE 
+        name_substring             = TRUE 
+        name_prefix                = TRUE 
+        statistical                = TRUE 
+        single_device_cell         = FALSE 
+        filter_multi_equivs        = FALSE 
+        full_equiv                 = FALSE 
+        duplicate_equivs           = FALSE 
+    find_duplicate_equivs          = FALSE 
+    generate_black_box             = [none] 
+    html_output                    = FALSE 
+  * match_by_property              = TRUE 
+    matched_ports_continue         = FALSE 
+    memory_array_comparison        = TRUE 
+    merge_all_caps                 = FALSE 
+    merge_all_ind                  = FALSE 
+    merge_all_res                  = FALSE 
+    merge_net_range                = 100 1000 
+  * merge_parallel                 = TRUE 
+    merge_paths                    = FALSE 
+    merge_paths_device_limit       = 0 
+  * merge_series                   = TRUE 
+    merge_series_gates             = FALSE 
+    net_print_limit                = 10 
+    one_connection_warning         = FALSE 
+  * optional_pins                  = FALSE 
+  * parallel_merge_ratio           = TRUE 
+    port_swap_on_top_block         = FALSE 
+    print_ignore_equiv             = [none] 
+    property_errors_continue       = FALSE 
+    property_tolerance             = 0.10 
+    property_warning               = FALSE 
+  * push_down_devices              = TRUE 
+  * push_down_pins                 = TRUE 
+  * remove_dangling_nets           = TRUE 
+    require_texted_ports_match     = FALSE 
+    require_texted_nets_match      = FALSE 
+    restrict_merge_by_length       = FALSE 
+    restrict_merge_by_width        = FALSE 
+    restrict_merge_series          = FALSE 
+    restrict_parallel_merging      = FALSE 
+    restrict_series_merging        = FALSE 
+  * retain_new_data                = TRUE 
+    retain_previous_data           = FALSE 
+    schematic_vs_schematic         = FALSE 
+    short_equivalent_nodes         = FALSE 
+    static_equated_nets            = TRUE 
+  * stop_on_error                  = FALSE 
+    stop_on_no_explode_error       = FALSE 
+    text_resolves_port_swap        = TRUE 
+    tolerance_device_count         = [none] 
+    tolerance_net_count            = [none] 
+    tolerance_type                 = RELATIVE 
+    use_total_width                = FALSE 
+    write_netlists                 = TRUE 
+    zero_connection_warning        = FALSE 
+
+    == General options ==
+
+    auto_schematic_global_on       = TRUE 
+  * create_vue_output              = TRUE 
+    ignore_case                    = FALSE 
+    layout_global                  = [none] 
+  * layout_ground                  = VSS GND 
+  * layout_power                   = VCC VDD 
+    lvs_report_level               = prop-2 xpin-0 dpin-1 
+    lvs_report_old_format          = FALSE 
+    lvs_report_record_limit        = 50 
+    message_enable                 = [none]
+    message_error                  = [none]
+    message_identifiers            = FALSE 
+    message_suppress               = [none]
+    print_precision                = 4 
+  * schematic_global               = gnd! vdd! 
+  * schematic_ground               = gnd! VSS GND 
+  * schematic_power                = vdd! VCC VDD 
+
+End of LVS comparison report

@@ -1,0 +1,62 @@
+[18:25:04.83] /m Information: License 'SAE' checked out. (LICENSE-003)
+[18:25:06.70] /o sae_shell Version Custom Compiler N-2017.12-SP1-2
+              /c Build  (OPT) compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Execution time: Sat May 16 18:25:03 2026
+              /c Host: localhost.localdomain
+              /c 
+              /c Copyright © 2004-2018 Synopsys, Inc.
+              /c This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, or distribution of this software is strictly prohibited.
+              /c 
+              /c 
+[18:25:06.71] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[18:25:06.72] /o 	#######################################
+[18:25:06.72] /o 	PDK Library Name	: reference90RF
+[18:25:06.72] /o 	PDK Version		: 2.0
+[18:25:06.72] /o 	PDK Release Date	: 25-March-2010 
+[18:25:06.72] /o 	#######################################
+[18:25:06.72] /o 
+[18:25:06.73] /i ::sa::_backgroundSaeShell::signalProcessReady 1778930703
+[18:25:06.73] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::processReady 3
+[18:26:51.93] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession1 testbenchName default resultsDir /home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[18:26:52.29] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.3 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession1 testbenchName default resultsDir /home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[18:26:52.29] /o false
+[18:27:41.11] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession1 testbenchName default resultsDir /home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[18:27:41.39] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.2 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession1 testbenchName default resultsDir /home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[18:27:41.39] /o false
+[18:27:58.14] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession1 testbenchName default resultsDir /home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[18:27:58.34] /m Information: Started sharing "Custom WaveView" license. (WAVEFORM-110)
+[18:27:58.35] /e Error: Evaluating 'A' for the analyses:
+              /c     Using default of resultType='tran'
+              /c        Error: Evaluating 'A': No expression result 'A' for results directory '/home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal/results'. (WAVEFORM-032)
+              /c     Using defaults of resultType='tran' and analysisName='tran'
+              /c        Error: Evaluating 'A': No expression result 'A' for results directory '/home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal/results', result type 'tran', analysis name 'tran'. (WAVEFORM-032)
+[18:27:58.35] /e Error: Evaluating 'B' for the analyses:
+              /c     Using default of resultType='tran'
+              /c        Error: Evaluating 'B': No expression result 'B' for results directory '/home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal/results'. (WAVEFORM-032)
+              /c     Using defaults of resultType='tran' and analysisName='tran'
+              /c        Error: Evaluating 'B': No expression result 'B' for results directory '/home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal/results', result type 'tran', analysis name 'tran'. (WAVEFORM-032)
+[18:27:58.35] /e Error: Evaluating 'Y' for the analyses:
+              /c     Using default of resultType='tran'
+              /c        Error: Evaluating 'Y': No expression result 'Y' for results directory '/home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal/results'. (WAVEFORM-032)
+              /c     Using defaults of resultType='tran' and analysisName='tran'
+              /c        Error: Evaluating 'Y': No expression result 'Y' for results directory '/home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal/results', result type 'tran', analysis name 'tran'. (WAVEFORM-032)
+[18:27:58.42] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.2 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession1 testbenchName default resultsDir /home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,NAND2_tb,schematic/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[18:27:58.42] /o false
+[18:28:13.10] /o Process killed
+              /c Information: The process was terminated by "Termination" signal.
+              /c signal number = 15
+              /c Stack Dump: VERSION N-2017.12-SP1-2 CONFIG 4182185 DATE Sat May 16 18:25:03 2026
+              /c Frame 0. /lib64/libc.so.6 ::0x7ff1e4294400 + 0x40
+              /c Frame 1. libc.so.6: __poll + 0x24
+              /c Frame 2. /lib64/libglib-2.0.so.0 ::0x7ff1f7e303fc + 0x43c
+              /c Frame 3. libglib-2.0.so.0: g_main_context_iteration + 0x2c
+              /c Frame 4. QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) + 0x6a
+              /c Frame 5. QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) + 0xea
+              /c Frame 6. QCoreApplication::exec() + 0x8d
+              /c Frame 7. 0x113b243 SNPSee_3cb5a937433b5647dfd0ba220bc88c363f9edc9e424f5618e629fa54920aaa2d42181fc4e419a971bdba91f3b1089c26 + 0xa3
+              /c Frame 8. sae_shell: main + 0x6b
+              /c Frame 9. libc.so.6: __libc_start_main + 0xf5
+              /c Frame 10. /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/platform/bin/sae_shell ::0x11306a5 + 0x29
+              /c 
+[18:28:13.15] /e Error: The application was unexpectedly terminated.
+              /c See the session log file for recovery details. (SHUT_DOWN-001)

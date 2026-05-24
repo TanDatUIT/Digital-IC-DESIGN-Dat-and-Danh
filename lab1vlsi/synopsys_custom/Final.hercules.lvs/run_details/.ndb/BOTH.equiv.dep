@@ -1,0 +1,3 @@
+Final::Final { P::P N::N }
+N::N { }
+P::P { }

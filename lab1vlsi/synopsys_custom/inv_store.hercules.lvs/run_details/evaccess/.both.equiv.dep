@@ -1,0 +1,3 @@
+inv_store::inv_store { P::P N::N }
+N::N { }
+P::P { }

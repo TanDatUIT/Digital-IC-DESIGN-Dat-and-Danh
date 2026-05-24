@@ -1,0 +1,13 @@
+WORKING_DIR       = .
+INLIB             = project_d_ff
+INLIB_PATH        = .
+OUTLIB            = CLOCK_inv_result.gds
+OUTLIB_PATH       = .
+BLOCK             = CLOCK_inv
+RUN_DETAILS_DIR   = run_details
+FORMAT            = OPENACCESS
+OUTPUT_FORMAT     = GDSII
+EXTRACTION_FLOW   = FALSE
+EVACCESS_PATH = run_details/evaccess
+DEVICE_PAGE       = FALSE
+RUN_STATUS        = SUCCEEDED

@@ -1,0 +1,23 @@
+{NETLIST D_latch
+{VERSION 1 0 0}
+
+{CELL D_latch
+    {PORT gnd! vdd! CLK Q D CLKB }
+    {INST MM27=N {PROP n="N" Length=0.1 Width=0.18 Mult=1 }
+	{PIN CLK=GATE n1=SRC D=DRN }}
+    {INST MM36=P {PROP n="P" Length=0.1 Width=0.2 Mult=1 }
+	{PIN CLK=GATE n1=SRC Q=DRN }}
+    {INST MM23=P {PROP n="P" Length=0.1 Width=0.3 Mult=1 }
+	{PIN n1=GATE vdd!=SRC n2=DRN }}
+    {INST MM19=P {PROP n="P" Length=0.1 Width=0.28 Mult=1 }
+	{PIN CLKB=GATE n1=SRC D=DRN }}
+    {INST MM25=P {PROP n="P" Length=0.1 Width=0.42 Mult=1 }
+	{PIN n2=GATE vdd!=SRC Q=DRN }}
+    {INST MM33=N {PROP n="N" Length=0.1 Width=0.18 Mult=1 }
+	{PIN n2=GATE gnd!=SRC Q=DRN }}
+    {INST MM31=N {PROP n="N" Length=0.1 Width=0.12 Mult=1 }
+	{PIN n1=GATE gnd!=SRC n2=DRN }}
+    {INST MM35=N {PROP n="N" Length=0.1 Width=0.12 Mult=1 }
+	{PIN CLKB=GATE n1=SRC Q=DRN }}
+}
+}

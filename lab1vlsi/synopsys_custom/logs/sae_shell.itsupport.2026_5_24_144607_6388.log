@@ -1,0 +1,51 @@
+[14:46:08.20] /m Information: License 'SAE' checked out. (LICENSE-003)
+[14:46:09.34] /o sae_shell Version Custom Compiler N-2017.12-SP1-2
+              /c Build  (OPT) compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Execution time: Sun May 24 14:46:07 2026
+              /c Host: localhost.localdomain
+              /c 
+              /c Copyright © 2004-2018 Synopsys, Inc.
+              /c This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, or distribution of this software is strictly prohibited.
+              /c 
+              /c 
+[14:46:09.35] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[14:46:09.35] /o 	#######################################
+[14:46:09.35] /o 	PDK Library Name	: reference90RF
+[14:46:09.35] /o 	PDK Version		: 2.0
+[14:46:09.35] /o 	PDK Release Date	: 25-March-2010 
+[14:46:09.35] /o 	#######################################
+[14:46:09.35] /o 
+[14:46:09.35] /i ::sa::_backgroundSaeShell::signalProcessReady 1779608766
+[14:46:09.35] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::processReady 3
+[14:46:14.44] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/new_dff,d_ff_tb,schematic/history_1/simulation/HSPICE_d_ff_tb/HSPICE/nominal/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession3 testbenchName HSPICE_d_ff_tb resultsDir /home/itsupport/simulation/new_dff,d_ff_tb,schematic/history_1/simulation/HSPICE_d_ff_tb/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/new_dff,d_ff_tb,schematic/history_1/simulation/HSPICE_d_ff_tb/HSPICE/nominal databaseName /home/itsupport/simulation/new_dff,d_ff_tb,schematic/history_1/simulation/HSPICE_d_ff_tb/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[14:46:14.89] /m Information: Started sharing "Custom WaveView" license. (WAVEFORM-110)
+[14:46:14.99] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.5 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession3 testbenchName HSPICE_d_ff_tb resultsDir /home/itsupport/simulation/new_dff,d_ff_tb,schematic/history_1/simulation/HSPICE_d_ff_tb/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/new_dff,d_ff_tb,schematic/history_1/simulation/HSPICE_d_ff_tb/HSPICE/nominal databaseName /home/itsupport/simulation/new_dff,d_ff_tb,schematic/history_1/simulation/HSPICE_d_ff_tb/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[14:46:14.99] /o false
+[14:46:24.38] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/new_dff,d_ff_tb,schematic/history_1/simulation/HSPICE_d_ff_tb/HSPICE/nominal/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession3 testbenchName HSPICE_d_ff_tb resultsDir /home/itsupport/simulation/new_dff,d_ff_tb,schematic/history_1/simulation/HSPICE_d_ff_tb/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/new_dff,d_ff_tb,schematic/history_1/simulation/HSPICE_d_ff_tb/HSPICE/nominal databaseName /home/itsupport/simulation/new_dff,d_ff_tb,schematic/history_1/simulation/HSPICE_d_ff_tb/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[14:46:24.72] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.3 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession3 testbenchName HSPICE_d_ff_tb resultsDir /home/itsupport/simulation/new_dff,d_ff_tb,schematic/history_1/simulation/HSPICE_d_ff_tb/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/new_dff,d_ff_tb,schematic/history_1/simulation/HSPICE_d_ff_tb/HSPICE/nominal databaseName /home/itsupport/simulation/new_dff,d_ff_tb,schematic/history_1/simulation/HSPICE_d_ff_tb/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[14:46:24.72] /o false
+[14:51:25.37] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[14:51:25.46] /i ::sa::_backgroundSaeShell::parentRunning
+[14:51:25.46] /o 1779609085
+[14:51:29.75] /m Information: Stopped sharing "Custom WaveView" license. (WAVEFORM-111)
+[14:56:26.38] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[14:56:26.46] /i ::sa::_backgroundSaeShell::parentRunning
+[14:56:26.46] /o 1779609386
+[15:01:27.38] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[15:01:27.46] /i ::sa::_backgroundSaeShell::parentRunning
+[15:01:27.46] /o 1779609687
+[15:06:28.38] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[15:06:28.46] /i ::sa::_backgroundSaeShell::parentRunning
+[15:06:28.46] /o 1779609988
+[15:11:29.41] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[15:11:29.46] /i ::sa::_backgroundSaeShell::parentRunning
+[15:11:29.46] /o 1779610289
+[15:16:30.42] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[15:16:30.46] /i ::sa::_backgroundSaeShell::parentRunning
+[15:16:30.46] /o 1779610590
+[15:21:31.42] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[15:21:31.46] /i ::sa::_backgroundSaeShell::parentRunning
+[15:21:31.46] /o 1779610891
+[15:26:32.43] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[15:26:32.46] /i ::sa::_backgroundSaeShell::parentRunning
+[15:26:32.46] /o 1779611192

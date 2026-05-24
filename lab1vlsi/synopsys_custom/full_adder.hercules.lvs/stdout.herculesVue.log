@@ -1,0 +1,89 @@
+DEBUG: ConnectToServer: localhost 58602
+DEBUG: connect back to cdesigner: 'localhost:58602'
+
+< LAYOUT: start_vue >
+V SET_COLOR white       white
+V SET_COLOR red         red
+V SET_COLOR darkRed     maroon
+V SET_COLOR green       lime
+V SET_COLOR darkGreen   forest
+V SET_COLOR blue        blue
+V SET_COLOR darkBlue    navy
+V SET_COLOR cyan        cyan
+V SET_COLOR darkCyan    cadetBlue
+V SET_COLOR magenta     magenta
+V SET_COLOR darkMagenta purple
+V SET_COLOR yellow      yellow
+V SET_FILL  blank       blank
+V SET_FILL  solid       solid
+V SET_FILL  backSlash   backSlash
+V SET_FILL  slash       slash
+V SET_FILL  dot         dots
+V SET_FILL  diagCross   X
+V SET_FILL  brick       brick
+V SET_FILL  horizontal  hLine
+V SET_FILL  vertical    vLine
+L CDESIGNER::StartFilter LAY
+L set curLayCell ""
+L set curLayView ""
+
+< LAYOUT: start_filter >
+  + INFO: Tcl-DP service had been loaded.
+DEBUG: ConnectToServer: localhost 58602
+DEBUG: return previous client localhost:58602
+
+< SCHEMATIC: start_vue >
+V SET_COLOR white       white
+V SET_COLOR red         red
+V SET_COLOR darkRed     maroon
+V SET_COLOR green       lime
+V SET_COLOR darkGreen   forest
+V SET_COLOR blue        blue
+V SET_COLOR darkBlue    navy
+V SET_COLOR cyan        cyan
+V SET_COLOR darkCyan    cadetBlue
+V SET_COLOR magenta     magenta
+V SET_COLOR darkMagenta purple
+V SET_COLOR yellow      yellow
+V SET_FILL  blank       blank
+V SET_FILL  solid       solid
+V SET_FILL  backSlash   backSlash
+V SET_FILL  slash       slash
+V SET_FILL  dot         dots
+V SET_FILL  diagCross   X
+V SET_FILL  brick       brick
+V SET_FILL  horizontal  hLine
+V SET_FILL  vertical    vLine
+S CDESIGNER::StartFilter SCH
+S set curSchCell ""
+S set curSchView ""
+
+< SCHEMATIC: start_filter >
+
+< SCHEMATIC: load_hercules >
+S set topSchLib "inverter"
+S CDESIGNER::SendCommand setTopSchLib "$topSchLib"
+
+< LAYOUT: load_hercules >
+L set inlibPath  "/home/itsupport/Desktop/lab1vlsi/synopsys_custom/full_adder.hercules.lvs/."
+L set topLayLib  "inverter"
+L set topLayCell [lindex {"full_adder"} 0]
+L set topLayView "layout"
+L set curLayLib  "$topLayLib"
+L set curLayCell "$topLayCell"
+L set curLayView "$topLayView"
+L CDESIGNER::SendCommand setInlibPath "$inlibPath"
+L CDESIGNER::SendCommand setTopLayLCV "$topLayLib" "$topLayCell" "$topLayView"
+L CDESIGNER::SendCommand openCell "$curLayLib" "$curLayCell" "$curLayView"
+DEBUG: PushBackXprobeMessage{vueSetDbu 0.001
+}
+
+< LAYOUT: remove_hilites >
+L CDESIGNER::SendCommand clearAllHighlights "$curLayCell" "$curLayView"
+
+< SCHEMATIC: remove_hilites >
+S CDESIGNER::SendCommand clearAllHighlights "$curSchCell" "$curSchView"
++ INFO: Filter has been loaded successfully.
+        '/usr/synopsys/hercules/B-2008.09-SP5/lib-u/AMD.64/VUE/Layout/libhiCDesignerLE.so'
++ INFO: Filter has been loaded successfully.
+        '/usr/synopsys/hercules/B-2008.09-SP5/lib-u/AMD.64/VUE/Schematic/libhiCDesignerSE.so'

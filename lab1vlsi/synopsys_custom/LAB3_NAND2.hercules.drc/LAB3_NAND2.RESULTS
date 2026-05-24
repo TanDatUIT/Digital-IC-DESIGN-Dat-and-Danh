@@ -1,0 +1,19 @@
+Hercules (R) Hierarchical Design Verification, AMD.64 Release B-2008.09.SP5.26005 2012/07/14
+
+  (C) Copyright 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+                2006, 2007, 2008, 2009, 2010, 2011, 2012.
+  Synopsys, Inc.  All rights reserved.
+
+Called as: /usr/synopsys/hercules/B-2008.09-SP5/bin/amd64/hercules -f openaccess -i inverter -b LAB3_NAND2 -p . -O gdsii -o LAB3_NAND2_result.gds /home/itsupport/Desktop/lab1vlsi/synopsys_custom/LAB3_NAND2.hercules.drc/reference_drc.drc.evx
+
+
+- Parsing runset "/home/itsupport/Desktop/lab1vlsi/synopsys_custom/LAB3_NAND2.hercules.drc/reference_drc.drc.evx" ... DONE
+
+- Checking input conditions ... DONE
+
+- Performing DRC checks and/or device extraction ... DONE
+    No layout errors
+
+
+Hercules Run: Time=  0:00:01 User=0.13 System=0.19
+Hercules is done.

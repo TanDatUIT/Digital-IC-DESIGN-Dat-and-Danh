@@ -1,0 +1,33 @@
+[16:59:10.58] /m Information: License 'SAE' checked out. (LICENSE-003)
+[16:59:11.66] /o sae_shell Version Custom Compiler N-2017.12-SP1-2
+              /c Build  (OPT) compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Execution time: Sat May 23 16:59:09 2026
+              /c Host: localhost.localdomain
+              /c 
+              /c Copyright © 2004-2018 Synopsys, Inc.
+              /c This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, or distribution of this software is strictly prohibited.
+              /c 
+              /c 
+[16:59:11.67] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[16:59:11.67] /o 	#######################################
+[16:59:11.67] /o 	PDK Library Name	: reference90RF
+[16:59:11.67] /o 	PDK Version		: 2.0
+[16:59:11.67] /o 	PDK Release Date	: 25-March-2010 
+[16:59:11.67] /o 	#######################################
+[16:59:11.67] /o 
+[16:59:11.68] /i ::sa::_backgroundSaeShell::signalProcessReady 1779530349
+[16:59:11.68] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::processReady 2
+[16:59:15.70] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/project_d_ff,tb_d_latch,schematic/history_1/simulation/HSPICE_tb_d_latch/HSPICE/nominal/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession0 testbenchName HSPICE_tb_d_latch resultsDir /home/itsupport/simulation/project_d_ff,tb_d_latch,schematic/history_1/simulation/HSPICE_tb_d_latch/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/project_d_ff,tb_d_latch,schematic/history_1/simulation/HSPICE_tb_d_latch/HSPICE/nominal databaseName /home/itsupport/simulation/project_d_ff,tb_d_latch,schematic/history_1/simulation/HSPICE_tb_d_latch/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[16:59:15.98] /m Information: Started sharing "Custom WaveView" license. (WAVEFORM-110)
+[16:59:16.08] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.3 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession0 testbenchName HSPICE_tb_d_latch resultsDir /home/itsupport/simulation/project_d_ff,tb_d_latch,schematic/history_1/simulation/HSPICE_tb_d_latch/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/project_d_ff,tb_d_latch,schematic/history_1/simulation/HSPICE_tb_d_latch/HSPICE/nominal databaseName /home/itsupport/simulation/project_d_ff,tb_d_latch,schematic/history_1/simulation/HSPICE_tb_d_latch/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[16:59:16.08] /o false
+[17:04:17.70] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[17:04:17.77] /i ::sa::_backgroundSaeShell::parentRunning
+[17:04:17.77] /o 1779530657
+[17:04:21.36] /m Information: Stopped sharing "Custom WaveView" license. (WAVEFORM-111)
+[17:08:48.21] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/project_d_ff,tb_d_latch,schematic/history_1/simulation/HSPICE_tb_d_latch/HSPICE/nominal/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession0 testbenchName HSPICE_tb_d_latch resultsDir /home/itsupport/simulation/project_d_ff,tb_d_latch,schematic/history_1/simulation/HSPICE_tb_d_latch/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/project_d_ff,tb_d_latch,schematic/history_1/simulation/HSPICE_tb_d_latch/HSPICE/nominal databaseName /home/itsupport/simulation/project_d_ff,tb_d_latch,schematic/history_1/simulation/HSPICE_tb_d_latch/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[17:08:48.38] /m Information: Started sharing "Custom WaveView" license. (WAVEFORM-110)
+[17:08:48.44] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.2 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession0 testbenchName HSPICE_tb_d_latch resultsDir /home/itsupport/simulation/project_d_ff,tb_d_latch,schematic/history_1/simulation/HSPICE_tb_d_latch/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/project_d_ff,tb_d_latch,schematic/history_1/simulation/HSPICE_tb_d_latch/HSPICE/nominal databaseName /home/itsupport/simulation/project_d_ff,tb_d_latch,schematic/history_1/simulation/HSPICE_tb_d_latch/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[17:08:48.44] /o false
+[17:13:38.04] /i ::sa::_backgroundSaeShell::exit
+[17:13:38.04] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::childFormallyExiting

@@ -1,0 +1,11 @@
+NAND2_2 Level=0 Count=1
+
+
+		CELL STATISTICS
+
+
+TOP CELL = NAND2_2
+	Ports                =	5
+
+CELL = NAND2_2
+	Flat Placements      =	0

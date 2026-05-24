@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- created by Custom Compiler build#  ,on -->
+<file-format name="synopsysPrefs" version="1.0">
+        <preferences>
+                <pref value="/home/itsupport/Desktop/lab1vlsi/PDK/hercules/drc/reference_drc.ev" name="xtDRCHerculesRunsetFile"/>
+                <pref value="{environment OPTION double {9}}" name="xtDRCHerculesVariables"/>
+                <pref value="D_latch" name="xtDRCLayCell"/>
+                <pref value="project_d_ff/D_latch/layout" name="xtDRCLayLCV"/>
+                <pref value="/home/itsupport/Desktop/lab1vlsi/synopsys_custom/D_latch.hercules.drc/D_latch.custom_compiler.gds" name="xtDRCLayStreamFile"/>
+                <pref value="Hercules" name="xtDRCTool"/>
+                <pref value="/home/itsupport/Desktop/lab1vlsi/PDK/techfiles/reference90RF_layer.map" name="xtPVLayerMapFile"/>
+        </preferences>
+</file-format>

@@ -1,0 +1,73 @@
+[14:18:42.52] /r giWindowId 0
+[14:18:42.52] /r giWindowGeometry 600x300
+[14:18:42.52] /o 
+              /c                                 Custom Compiler 
+              /c 
+              /c               Version N-2017.12-SP1-2 for linux64 - May 16, 2018 
+              /c 
+              /c                     Copyright (c) 2004 - 2018 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c             or distribution of this software is strictly prohibited.
+              /c 
+              /c Build  (OPT) Config 4182185 compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Invocation: /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/platform/bin/cdesigner
+              /c Execution time: Sun May 24 14:18:41 2026
+              /c Host: localhost.localdomain
+              /c Working directory: /home/itsupport/Desktop/lab1vlsi
+              /c 
+[14:18:43.68] /w Warning: In file /home/itsupport/Desktop/lab1vlsi/lib.defs: Syntax error in file '/home/itsupport/Desktop/lab1vlsi/lib.defs' at line '8' : '' (DATA_MANAGEMENT-014)
+[14:18:43.69] /r giShowFrameTabs true
+[14:18:43.69] /r giWindowId 1
+[14:18:43.69] /r giWindowGeometry 1040x800
+[14:18:46.79] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[14:18:46.79] /# 
+[14:18:46.79] /i dm::openLibraryManager
+[14:18:46.79] /r giWindowId 2
+[14:18:46.79] /r giWindowGeometry 660x600+50+78
+[14:18:46.82] /o oa:0x189221a0
+[14:18:50.06] /i gi::setCurrentIndex {libs} -index {project_d_ff} -in [gi::getWindows 2]
+[14:18:50.07] /i gi::setItemSelection {libs} -index {project_d_ff} -in [gi::getWindows 2]
+[14:18:51.01] /i gi::setCurrentIndex {libs} -index {inverter} -in [gi::getWindows 2]
+[14:18:51.02] /i gi::setItemSelection {libs} -index {inverter} -in [gi::getWindows 2]
+[14:18:51.38] /i gi::setCurrentIndex {libs} -index {new_dff} -in [gi::getWindows 2]
+[14:18:51.38] /i gi::setItemSelection {libs} -index {new_dff} -in [gi::getWindows 2]
+[14:18:59.87] /i gi::setItemSelection {libs} -index {} -in [gi::getWindows 2]
+[14:19:05.03] /# gi::executeAction dmShowCopyLibrary -in [gi::getWindows 2]
+[14:19:05.03] /i dm::showCopyLibrary -parent 2
+[14:19:05.04] /o oa:0x18a1d1e0
+[14:19:05.11] /i gi::setActiveDialog [gi::getDialogs {dmCopyLibrary} -parent [gi::getWindows 2]]
+[14:19:05.33] /i db::setAttr geometry -of [gi::getDialogs {dmCopyLibrary} -parent [gi::getWindows 2]] -value 500x600+699+230
+[14:19:05.89] /i gi::closeWindows [gi::getDialogs {dmCopyLibrary} -parent [gi::getWindows 2]]
+[14:19:07.16] /i gi::setCurrentIndex {libs} -index {inverter} -in [gi::getWindows 2]
+[14:19:07.16] /i gi::setItemSelection {libs} -index {inverter} -in [gi::getWindows 2]
+[14:19:07.57] /i gi::setCurrentIndex {libs} -index {parasitics} -in [gi::getWindows 2]
+[14:19:07.57] /i gi::setItemSelection {libs} -index {parasitics} -in [gi::getWindows 2]
+[14:19:07.91] /i gi::setCurrentIndex {libs} -index {project_d_ff} -in [gi::getWindows 2]
+[14:19:07.91] /i gi::setItemSelection {libs} -index {project_d_ff} -in [gi::getWindows 2]
+[14:19:14.78] /i gi::setCurrentIndex {libs} -index {new_dff} -in [gi::getWindows 2]
+[14:19:14.78] /i gi::setItemSelection {libs} -index {new_dff} -in [gi::getWindows 2]
+[14:19:16.22] /i gi::setCurrentIndex {libs} -index {project_d_ff} -in [gi::getWindows 2]
+[14:19:16.22] /i gi::setItemSelection {libs} -index {project_d_ff} -in [gi::getWindows 2]
+[14:19:18.02] /i gi::setCurrentIndex {cellCategories} -index {D_FF} -in [gi::getWindows 2]
+[14:19:18.02] /i gi::setItemSelection {cellCategories} -index {D_FF} -in [gi::getWindows 2]
+[14:19:18.37] /i gi::setCurrentIndex {cellCategories} -index {D_LATCH_SLAVE} -in [gi::getWindows 2]
+[14:19:18.37] /i gi::setItemSelection {cellCategories} -index {D_LATCH_SLAVE} -in [gi::getWindows 2]
+[14:19:18.71] /i gi::setCurrentIndex {cellCategories} -index {INV} -in [gi::getWindows 2]
+[14:19:18.71] /i gi::setItemSelection {cellCategories} -index {INV} -in [gi::getWindows 2]
+[14:19:19.01] /i gi::setCurrentIndex {cellCategories} -index {Uncategorized} -in [gi::getWindows 2]
+[14:19:19.01] /i gi::setItemSelection {cellCategories} -index {Uncategorized} -in [gi::getWindows 2]
+[14:19:19.72] /i gi::setCurrentIndex {libs} -index {new_dff} -in [gi::getWindows 2]
+[14:19:19.72] /i gi::setItemSelection {libs} -index {new_dff} -in [gi::getWindows 2]
+[14:19:20.60] /i gi::setCurrentIndex {libs} -index {inverter} -in [gi::getWindows 2]
+[14:19:20.60] /i gi::setItemSelection {libs} -index {inverter} -in [gi::getWindows 2]
+[14:19:23.90] /i exit
+[14:19:23.94] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[14:19:24.21] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 419x155+741+478
+[14:19:25.18] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[14:19:25.18] /i gi::setActiveWindow 1
+[14:19:25.18] /i gi::setActiveWindow 1 -raise true
+[14:19:25.24] /o Shutdown time: Sun May 24 14:19:25 2026
+[14:19:25.24] /o Elapsed session real time: 0.71 minutes
+[14:19:25.24] /o Session terminated. Log is at /home/itsupport/Desktop/lab1vlsi/synopsys_custom/logs/ccompiler.itsupport.2026_5_24_141841_11376.log

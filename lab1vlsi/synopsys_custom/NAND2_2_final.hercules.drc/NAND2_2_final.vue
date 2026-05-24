@@ -1,0 +1,13 @@
+WORKING_DIR       = .
+INLIB             = inverter
+INLIB_PATH        = .
+OUTLIB            = NAND2_2_final_result.gds
+OUTLIB_PATH       = .
+BLOCK             = NAND2_2_final
+RUN_DETAILS_DIR   = run_details
+FORMAT            = OPENACCESS
+OUTPUT_FORMAT     = GDSII
+EXTRACTION_FLOW   = FALSE
+EVACCESS_PATH = run_details/evaccess
+DEVICE_PAGE       = FALSE
+RUN_STATUS        = SUCCEEDED

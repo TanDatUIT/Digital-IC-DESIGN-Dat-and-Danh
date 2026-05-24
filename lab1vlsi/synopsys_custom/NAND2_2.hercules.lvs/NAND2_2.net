@@ -1,0 +1,18 @@
+{NETLIST NAND2_2
+{VERSION 1 0 0}
+
+/* Level 0 */
+
+{CELL NAND2_2
+	{PORT gnd! vdd! S B A}
+	{PROP top=8.425000 bottom=3.725000 left=-5.235000 right=-2.595000}
+	{INST M1=N {PROP x=-4.040 y=4.760  l=0.100 w=0.240}
+		{PIN A=GATE N_5=SRC gnd!=DRN N_21=BULK }}
+	{INST M2=N {PROP x=-3.690 y=4.760  l=0.100 w=0.240}
+		{PIN B=GATE S=SRC N_5=DRN N_21=BULK }}
+	{INST M3=P {PROP x=-4.215 y=7.275  l=0.100 w=0.300}
+		{PIN A=GATE S=SRC vdd!=DRN N_23=BULK }}
+	{INST M4=P {PROP x=-3.865 y=7.275  l=0.100 w=0.300}
+		{PIN B=GATE vdd!=SRC S=DRN N_23=BULK }}
+}
+}

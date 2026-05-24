@@ -1,0 +1,51 @@
+<module name="vsl: new_dff D_latch schematic vl: auCdl schematic symbol">
+<scope name="Instance">
+<forward>
+<mapping src="M19" dst="MM19"/>
+<mapping src="M23" dst="MM23"/>
+<mapping src="M36" dst="MM36"/>
+<mapping src="M35" dst="MM35"/>
+<mapping src="M27" dst="MM27"/>
+<mapping src="M25" dst="MM25"/>
+<mapping src="M33" dst="MM33"/>
+<mapping src="M31" dst="MM31"/>
+</forward>
+<reverse>
+<mapping src="MM25" dst="M25"/>
+<mapping src="MM19" dst="M19"/>
+<mapping src="MM23" dst="M23"/>
+<mapping src="MM36" dst="M36"/>
+<mapping src="MM31" dst="M31"/>
+<mapping src="MM35" dst="M35"/>
+<mapping src="MM33" dst="M33"/>
+<mapping src="MM27" dst="M27"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward/>
+<reverse/>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping src="&lt;termOrder>" dst="CLK CLKB D Q"/>
+<mapping src="&lt;unmappedTermOrder>" dst="CLK CLKB D Q"/>
+</forward>
+<reverse>
+<mapping src="CLK CLKB D Q" dst="&lt;unmappedTermOrder>"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="n_4t">
+<instance name="M27"/>
+<instance name="M31"/>
+<instance name="M33"/>
+<instance name="M35"/>
+</instance_header>
+<instance_header master="p_4t">
+<instance name="M19"/>
+<instance name="M23"/>
+<instance name="M25"/>
+<instance name="M36"/>
+</instance_header>
+</master_instances>
+</module>

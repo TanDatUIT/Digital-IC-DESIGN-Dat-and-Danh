@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- created by Custom Compiler build#  ,on -->
+<file-format name="synopsysPrefs" version="1.0">
+        <preferences>
+                <pref value="-sp /home/itsupport/Desktop/lab1vlsi/PDK/hercules/lvs/empty.subckt -cdl-a -cdl-p -mprop -slash" name="xtHerculesNettranOptions"/>
+                <pref value="true" name="xtLVSCalibreUseSVRFTranscript"/>
+                <pref value="/home/itsupport/Desktop/lab1vlsi/PDK/hercules/lvs/reference_lvs.ev" name="xtLVSHerculesRunsetFile"/>
+                <pref value="{environment RES_3TERM double {0}} {environment CAP_3TERM double {0}} {environment DRAWCBM double {1}} {environment cmim_2t double {0}}" name="xtLVSHerculesVariables"/>
+                <pref value="full_adder" name="xtLVSLayCell"/>
+                <pref value="/home/itsupport/Desktop/lab1vlsi/synopsys_custom/full_adder.hercules.lvs/full_adder.net" name="xtLVSLayInputNetlist"/>
+                <pref value="inverter/full_adder/layout" name="xtLVSLayLCV"/>
+                <pref value="/home/itsupport/Desktop/lab1vlsi/synopsys_custom/full_adder.hercules.lvs/full_adder.custom_compiler.gds" name="xtLVSLayStreamFile"/>
+                <pref value="full_adder" name="xtLVSSchCell"/>
+                <pref value="/home/itsupport/Desktop/lab1vlsi/synopsys_custom/full_adder.hercules.lvs/full_adder.custom_compiler.sp" name="xtLVSSchInputNetlist"/>
+                <pref value="CDL" name="xtLVSSchInputNetlistFormat"/>
+                <pref value="inverter/full_adder/schematic" name="xtLVSSchLCV"/>
+                <pref value="/home/itsupport/Desktop/lab1vlsi/synopsys_custom/full_adder.hercules.lvs/full_adder.custom_compiler.sp" name="xtLVSSchOutputNetlist"/>
+                <pref value="Hercules" name="xtLVSTool"/>
+                <pref value="/home/itsupport/Desktop/lab1vlsi/PDK/techfiles/reference90RF_layer.map" name="xtPVLayerMapFile"/>
+        </preferences>
+</file-format>

@@ -1,0 +1,14 @@
+{NETLIST inv_store
+{VERSION 1 0 0}
+
+/* Level 0 */
+
+{CELL inv_store
+	{PORT gnd! N_3 vdd! N_7}
+	{PROP top=-4.025000 bottom=-7.235000 left=-8.415000 right=-6.835000}
+	{INST M1=N {PROP x=-7.695 y=-6.205  l=0.100 w=0.120}
+		{PIN N_7=GATE N_3=SRC gnd!=DRN N_9=BULK }}
+	{INST M2=P {PROP x=-7.625 y=-5.315  l=0.100 w=0.300}
+		{PIN N_7=GATE N_3=SRC vdd!=DRN N_12=BULK }}
+}
+}

@@ -1,0 +1,78 @@
+<module name="vsl: inverter full_adder schematic vl: auCdl schematic symbol">
+<scope name="Instance">
+<forward>
+<mapping dst="XI9" src="I9"/>
+<mapping dst="XI11" src="I11"/>
+<mapping dst="XI12" src="I12"/>
+<mapping dst="XI15" src="I15"/>
+<mapping dst="XI16" src="I16"/>
+<mapping dst="XI17" src="I17"/>
+<mapping dst="XI13" src="I13"/>
+<mapping dst="XI3" src="I3"/>
+<mapping dst="XI5" src="I5"/>
+<mapping dst="XI4" src="I4"/>
+<mapping dst="XI58" src="I58"/>
+<mapping dst="XI6" src="I6"/>
+<mapping dst="XI7" src="I7"/>
+<mapping dst="XI10" src="I10"/>
+<mapping dst="XI59" src="I59"/>
+<mapping dst="XI8" src="I8"/>
+<mapping dst="XI14" src="I14"/>
+</forward>
+<reverse>
+<mapping dst="I12" src="XI12"/>
+<mapping dst="I13" src="XI13"/>
+<mapping dst="I14" src="XI14"/>
+<mapping dst="I16" src="XI16"/>
+<mapping dst="I10" src="XI10"/>
+<mapping dst="I15" src="XI15"/>
+<mapping dst="I3" src="XI3"/>
+<mapping dst="I58" src="XI58"/>
+<mapping dst="I4" src="XI4"/>
+<mapping dst="I17" src="XI17"/>
+<mapping dst="I5" src="XI5"/>
+<mapping dst="I11" src="XI11"/>
+<mapping dst="I9" src="XI9"/>
+<mapping dst="I59" src="XI59"/>
+<mapping dst="I6" src="XI6"/>
+<mapping dst="I7" src="XI7"/>
+<mapping dst="I8" src="XI8"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward/>
+<reverse/>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping dst="A B Cin Cout S" src="&lt;unmappedTermOrder>"/>
+<mapping dst="A B Cin Cout S" src="&lt;termOrder>"/>
+</forward>
+<reverse>
+<mapping dst="&lt;unmappedTermOrder>" src="A B Cin Cout S"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="NAND2">
+<instance name="I3"/>
+<instance name="I4"/>
+<instance name="I5"/>
+<instance name="I58"/>
+<instance name="I59"/>
+<instance name="I6"/>
+<instance name="I7"/>
+<instance name="I8"/>
+</instance_header>
+<instance_header master="NAND2_2">
+<instance name="I10"/>
+<instance name="I11"/>
+<instance name="I12"/>
+<instance name="I13"/>
+<instance name="I14"/>
+<instance name="I15"/>
+<instance name="I16"/>
+<instance name="I17"/>
+<instance name="I9"/>
+</instance_header>
+</master_instances>
+</module>

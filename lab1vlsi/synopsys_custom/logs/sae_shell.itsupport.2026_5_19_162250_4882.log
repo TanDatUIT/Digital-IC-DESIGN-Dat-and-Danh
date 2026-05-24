@@ -1,0 +1,40 @@
+[16:22:51.91] /m Information: License 'SAE' checked out. (LICENSE-003)
+[16:22:53.19] /o sae_shell Version Custom Compiler N-2017.12-SP1-2
+              /c Build  (OPT) compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Execution time: Tue May 19 16:22:50 2026
+              /c Host: localhost.localdomain
+              /c 
+              /c Copyright © 2004-2018 Synopsys, Inc.
+              /c This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, or distribution of this software is strictly prohibited.
+              /c 
+              /c 
+[16:22:53.20] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[16:22:53.22] /o 	#######################################
+[16:22:53.22] /o 	PDK Library Name	: reference90RF
+[16:22:53.22] /o 	PDK Version		: 2.0
+[16:22:53.22] /o 	PDK Release Date	: 25-March-2010 
+[16:22:53.22] /o 	#######################################
+[16:22:53.22] /o 
+[16:22:53.23] /i ::sa::_backgroundSaeShell::signalProcessReady 1779182569
+[16:22:53.23] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::processReady 4
+[16:24:19.90] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/inverter,NAND2_tb_2,config/history_1/simulation/HSPICE_NAND2_FINAL/HSPICE/nominal/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession0 testbenchName HSPICE_NAND2_FINAL resultsDir /home/itsupport/simulation/inverter,NAND2_tb_2,config/history_1/simulation/HSPICE_NAND2_FINAL/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,NAND2_tb_2,config/history_1/simulation/HSPICE_NAND2_FINAL/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,NAND2_tb_2,config/history_1/simulation/HSPICE_NAND2_FINAL/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[16:24:22.85] /m Information: Started sharing "Custom WaveView" license. (WAVEFORM-110)
+[16:24:23.23] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 3.3 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession0 testbenchName HSPICE_NAND2_FINAL resultsDir /home/itsupport/simulation/inverter,NAND2_tb_2,config/history_1/simulation/HSPICE_NAND2_FINAL/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,NAND2_tb_2,config/history_1/simulation/HSPICE_NAND2_FINAL/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,NAND2_tb_2,config/history_1/simulation/HSPICE_NAND2_FINAL/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[16:24:23.23] /o false
+[16:25:17.52] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/inverter,NAND2_tb_2,config/history_1/simulation/HSPICE_NAND2_FINAL/HSPICE/nominal/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession0 testbenchName HSPICE_NAND2_FINAL resultsDir /home/itsupport/simulation/inverter,NAND2_tb_2,config/history_1/simulation/HSPICE_NAND2_FINAL/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,NAND2_tb_2,config/history_1/simulation/HSPICE_NAND2_FINAL/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,NAND2_tb_2,config/history_1/simulation/HSPICE_NAND2_FINAL/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[16:25:17.89] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.3 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession0 testbenchName HSPICE_NAND2_FINAL resultsDir /home/itsupport/simulation/inverter,NAND2_tb_2,config/history_1/simulation/HSPICE_NAND2_FINAL/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,NAND2_tb_2,config/history_1/simulation/HSPICE_NAND2_FINAL/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,NAND2_tb_2,config/history_1/simulation/HSPICE_NAND2_FINAL/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[16:25:17.89] /o false
+[16:25:39.02] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/inverter,NAND2_tb_2,config/history_1/simulation/HSPICE_NAND2_FINAL/HSPICE/nominal/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession0 testbenchName HSPICE_NAND2_FINAL resultsDir /home/itsupport/simulation/inverter,NAND2_tb_2,config/history_1/simulation/HSPICE_NAND2_FINAL/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,NAND2_tb_2,config/history_1/simulation/HSPICE_NAND2_FINAL/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,NAND2_tb_2,config/history_1/simulation/HSPICE_NAND2_FINAL/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[16:25:39.34] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.3 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession0 testbenchName HSPICE_NAND2_FINAL resultsDir /home/itsupport/simulation/inverter,NAND2_tb_2,config/history_1/simulation/HSPICE_NAND2_FINAL/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,NAND2_tb_2,config/history_1/simulation/HSPICE_NAND2_FINAL/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,NAND2_tb_2,config/history_1/simulation/HSPICE_NAND2_FINAL/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[16:25:39.34] /o false
+[16:30:40.25] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[16:30:40.33] /i ::sa::_backgroundSaeShell::parentRunning
+[16:30:40.33] /o 1779183040
+[16:30:44.52] /m Information: Stopped sharing "Custom WaveView" license. (WAVEFORM-111)
+[16:35:41.26] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[16:35:41.33] /i ::sa::_backgroundSaeShell::parentRunning
+[16:35:41.33] /o 1779183341
+[16:40:42.27] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[16:40:42.33] /i ::sa::_backgroundSaeShell::parentRunning
+[16:40:42.33] /o 1779183642
+[16:41:30.33] /i ::wf::viewerExited

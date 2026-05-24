@@ -1,0 +1,3 @@
+LAB3_NAND2::LAB3_NAND2 { P::P N::N }
+N::N { }
+P::P { }

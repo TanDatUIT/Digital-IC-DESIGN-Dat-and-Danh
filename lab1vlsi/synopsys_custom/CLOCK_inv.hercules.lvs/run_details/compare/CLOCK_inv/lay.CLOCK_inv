@@ -1,0 +1,11 @@
+{NETLIST CLOCK_inv
+{VERSION 1 0 0}
+
+{CELL CLOCK_inv
+    {PORT vdd! N_3 gnd! N_7 }
+    {INST M2=P {PROP n="P" x=-4.940 y=3.655 Length=0.1 Width=0.75 }
+	{PIN N_7=GATE N_3=SRC vdd!=DRN }}
+    {INST M1=N {PROP n="N" x=-4.940 y=2.615 Length=0.1 Width=0.3 }
+	{PIN N_7=GATE N_3=SRC gnd!=DRN }}
+}
+}

@@ -1,0 +1,14 @@
+{NETLIST TG_in
+{VERSION 1 0 0}
+
+/* Level 0 */
+
+{CELL TG_in
+	{PORT B A EN ENB}
+	{PROP top=6.705000 bottom=4.220000 left=6.210000 right=7.625000}
+	{INST M1=N {PROP x=6.870 y=4.580  l=0.100 w=0.180}
+		{PIN EN=GATE B=SRC A=DRN N_11=BULK }}
+	{INST M2=P {PROP x=6.940 y=6.085  l=0.100 w=0.420}
+		{PIN ENB=GATE B=SRC A=DRN N_13=BULK }}
+}
+}

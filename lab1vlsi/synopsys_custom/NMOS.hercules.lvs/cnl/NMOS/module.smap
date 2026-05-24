@@ -1,0 +1,28 @@
+<module name="vsl: BaiTap2 NMOS schematic vl: auCdl schematic symbol">
+<scope name="Instance">
+<forward>
+<mapping src="M0" dst="MM0"/>
+</forward>
+<reverse>
+<mapping src="MM0" dst="M0"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward/>
+<reverse/>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping src="&lt;unmappedTermOrder>" dst="D G S"/>
+<mapping src="&lt;termOrder>" dst="D G S"/>
+</forward>
+<reverse>
+<mapping src="D G S" dst="&lt;unmappedTermOrder>"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="n_4t">
+<instance name="M0"/>
+</instance_header>
+</master_instances>
+</module>

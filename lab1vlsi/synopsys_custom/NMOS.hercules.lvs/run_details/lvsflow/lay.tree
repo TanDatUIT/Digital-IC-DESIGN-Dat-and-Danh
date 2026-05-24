@@ -1,0 +1,11 @@
+NMOS Level=0 Count=1
+
+
+		CELL STATISTICS
+
+
+TOP CELL = NMOS
+	Ports                =	3
+
+CELL = NMOS
+	Flat Placements      =	0

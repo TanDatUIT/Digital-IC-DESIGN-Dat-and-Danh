@@ -1,0 +1,40 @@
+[18:15:10.26] /m Information: License 'SAE' checked out. (LICENSE-003)
+[18:15:11.36] /o sae_shell Version Custom Compiler N-2017.12-SP1-2
+              /c Build  (OPT) compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Execution time: Tue Apr 14 18:15:09 2026
+              /c Host: localhost.localdomain
+              /c 
+              /c Copyright © 2004-2018 Synopsys, Inc.
+              /c This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, or distribution of this software is strictly prohibited.
+              /c 
+              /c 
+[18:15:11.37] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[18:15:11.38] /o 	#######################################
+[18:15:11.38] /o 	PDK Library Name	: reference90RF
+[18:15:11.38] /o 	PDK Version		: 2.0
+[18:15:11.38] /o 	PDK Release Date	: 25-March-2010 
+[18:15:11.38] /o 	#######################################
+[18:15:11.38] /o 
+[18:15:11.38] /i ::sa::_backgroundSaeShell::signalProcessReady 1776165308
+[18:15:11.38] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::processReady 3
+[18:16:10.93] /i ::wf::viewerExited
+[18:20:12.39] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[18:20:12.43] /i ::sa::_backgroundSaeShell::parentRunning
+[18:20:12.43] /o 1776165612
+[18:25:13.39] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[18:25:13.43] /i ::sa::_backgroundSaeShell::parentRunning
+[18:25:13.43] /o 1776165913
+[18:26:31.33] /i ::wf::viewerExited
+[18:30:14.41] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[18:30:14.43] /i ::sa::_backgroundSaeShell::parentRunning
+[18:30:14.43] /o 1776166214
+[18:31:05.73] /i ::wf::viewerExited
+[18:35:15.42] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[18:35:15.43] /i ::sa::_backgroundSaeShell::parentRunning
+[18:35:15.43] /o 1776166515
+[18:40:16.44] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[18:40:16.53] /i ::sa::_backgroundSaeShell::parentRunning
+[18:40:16.53] /o 1776166816
+[18:42:26.33] /i ::wf::viewerExited
+[07:59:19.93] /m Information: Exiting due to non-response from parent process.
+[07:59:19.93] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::childFormallyExiting

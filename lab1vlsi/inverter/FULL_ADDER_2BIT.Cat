@@ -1,0 +1,5 @@
+TDMCHECKPOINT="1.0"
+keepEmptyCategory type="unknown"
+inverter/FA type="cell"
+inverter/FA_tb type="cell"
+inverter/LAB3_NAND2 type="cell"

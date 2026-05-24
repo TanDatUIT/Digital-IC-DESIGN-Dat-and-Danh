@@ -1,0 +1,30 @@
+[08:21:58.77] /m Information: License 'SAE' checked out. (LICENSE-003)
+[08:21:59.89] /o sae_shell Version Custom Compiler N-2017.12-SP1-2
+              /c Build  (OPT) compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Execution time: Wed May  6 08:21:57 2026
+              /c Host: localhost.localdomain
+              /c 
+              /c Copyright © 2004-2018 Synopsys, Inc.
+              /c This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, or distribution of this software is strictly prohibited.
+              /c 
+              /c 
+[08:21:59.90] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[08:21:59.90] /o 	#######################################
+[08:21:59.90] /o 	PDK Library Name	: reference90RF
+[08:21:59.90] /o 	PDK Version		: 2.0
+[08:21:59.90] /o 	PDK Release Date	: 25-March-2010 
+[08:21:59.90] /o 	#######################################
+[08:21:59.90] /o 
+[08:21:59.90] /i ::sa::_backgroundSaeShell::signalProcessReady 1778030517
+[08:21:59.90] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::processReady 2
+[08:27:00.92] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[08:27:00.97] /i ::sa::_backgroundSaeShell::parentRunning
+[08:27:00.97] /o 1778030820
+[08:32:01.93] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[08:32:01.97] /i ::sa::_backgroundSaeShell::parentRunning
+[08:32:01.97] /o 1778031121
+[08:37:02.95] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[08:37:02.97] /i ::sa::_backgroundSaeShell::parentRunning
+[08:37:02.97] /o 1778031422
+[08:37:20.02] /i ::sa::_backgroundSaeShell::exit
+[08:37:20.02] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::childFormallyExiting

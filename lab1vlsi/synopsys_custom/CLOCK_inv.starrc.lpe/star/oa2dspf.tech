@@ -1,0 +1,10 @@
+-oa2dspf
+-oa_lib_name project_d_ff
+-oa_cell_name CLOCK_inv
+-oa_view_name starrc
+-o ../starrc.dspf
+-oa_output_file ../starrc.oa.out
+-netlist_header_file netlist.hdr
+-oa_lib_def /home/itsupport/Desktop/lab1vlsi/synopsys_custom/CLOCK_inv.starrc.lpe/lib.defs
+-layer_info layer_info
+-ground_node_name 0

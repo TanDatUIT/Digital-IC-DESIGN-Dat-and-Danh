@@ -1,0 +1,8 @@
+inv_store
+	Cell Level Device Counts
+		NMOS[N] = 1
+		PMOS[P] = 1
+
+********  DEVICE EXTRACTION STATS    TOPBLOCK = inv_store  *******
+		NMOS[N] = 1
+		PMOS[P] = 1

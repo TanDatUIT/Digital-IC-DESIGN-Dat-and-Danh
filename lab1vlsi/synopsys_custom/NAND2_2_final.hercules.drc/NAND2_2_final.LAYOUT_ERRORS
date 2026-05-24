@@ -1,0 +1,36 @@
+		     LAYOUT ERRORS RESULTS: ERRORS
+
+		  ##### ####  ####   ###  ####   ####
+		  #     #   # #   # #   # #   # #    
+		  ####  ####  ####  #   # ####   ### 
+		  #     #  #  #  #  #   # #  #      #
+		  ##### #   # #   #  ###  #   # #### 
+
+===========================================================================
+
+Library name:  inverter
+Structure name:  NAND2_2_final
+
+			ERROR SUMMARY
+
+7.30: Minimum area of Metal 1 >= 0.04
+ AREA M1S { } (101) ..................................... 3 violations found.
+
+
+
+			ERROR DETAILS
+
+
+
+#####--- ERR_AREA -----------------------------------
+
+AREA M1S { 
+	COMMENT = "7.30: Minimum area of Metal 1 >= 0.04"
+	RANGE = [0.001,0.0399]} (101)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Structure               ( lower left x, y ) ( upper right x, y )   Area           
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+NAND2_2_final                (2.170, 2.330) (2.270, 2.500)         0.017          
+NAND2_2_final                (1.470, 2.330) (1.570, 2.500)         0.017          
+NAND2_2_final                (1.820, 2.330) (1.920, 2.500)         0.017          

@@ -1,0 +1,148 @@
+[00:24:11.65] /r giWindowId 0
+[00:24:11.65] /r giWindowGeometry 600x300
+[00:24:11.66] /o 
+              /c                                 Custom Compiler 
+              /c 
+              /c               Version N-2017.12-SP1-2 for linux64 - May 16, 2018 
+              /c 
+              /c                     Copyright (c) 2004 - 2018 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c             or distribution of this software is strictly prohibited.
+              /c 
+              /c Build  (OPT) Config 4182185 compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Invocation: /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/platform/bin/cdesigner
+              /c Execution time: Thu May 21 00:24:09 2026
+              /c Host: localhost.localdomain
+              /c Working directory: /home/itsupport/Desktop/lab1vlsi
+              /c 
+[00:24:13.45] /w Warning: Warning: "Unable to load job manager data: tag mismatch" (IPC-010)
+[00:24:13.51] /r giShowFrameTabs true
+[00:24:13.52] /r giWindowId 1
+[00:24:13.52] /r giWindowGeometry 1040x800
+[00:24:18.60] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/saConsole} -in [gi::getWindows 1]
+[00:24:18.61] /# 
+[00:24:18.61] /i sa::showConsole -session [sa::createSession -loadDefaults true]
+[00:24:20.20] /m Information: License 'SAE' checked out. (LICENSE-003)
+[00:24:20.22] /r giWindowId 2
+[00:24:20.23] /r giWindowGeometry 600x500
+[00:24:20.33] /o oa:0x21b49630
+[00:24:20.35] /m Information: Launching Background sae_shell Server Process "cd /home/itsupport/Desktop/lab1vlsi && sae_shell -log sae_shell_session0_job1 -libDefFile /home/itsupport/Desktop/lab1vlsi/lib.defs"
+[00:24:21.81] /i gi::createWindow -windowType [gi::getWindowTypes giHomePage]
+[00:24:21.81] /r giWindowId 3
+[00:24:21.81] /r giWindowGeometry 1040x800
+[00:24:22.52] /i gi::executeAction giCloseWindow -in [gi::getWindows 2]
+[00:24:22.54] /m Information: License 'SAE' checked in. (LICENSE-004)
+[00:24:23.97] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 3]
+[00:24:23.97] /# 
+[00:24:23.97] /i dm::openLibraryManager
+[00:24:23.97] /r giWindowId 4
+[00:24:23.98] /r giWindowGeometry 660x600+50+78
+[00:24:24.01] /o oa:0x2174a740
+[00:24:24.01] /i gi::closeWindows [gi::getWindows 3]
+[00:24:24.17] /m Information: Received ready-for-commands signal from background job 'sae_shell_session0_job1' after 4 seconds.
+[00:24:25.11] /i gi::setCurrentIndex {libs} -index {basic} -in [gi::getWindows 4]
+[00:24:25.14] /i gi::setItemSelection {libs} -index {basic} -in [gi::getWindows 4]
+[00:24:25.48] /i gi::setCurrentIndex {libs} -index {inverter} -in [gi::getWindows 4]
+[00:24:25.49] /i gi::setItemSelection {libs} -index {inverter} -in [gi::getWindows 4]
+[00:24:27.58] /i gi::setCurrentIndex {libs} -index {sample} -in [gi::getWindows 4]
+[00:24:27.60] /i gi::setItemSelection {libs} -index {sample} -in [gi::getWindows 4]
+[00:24:27.67] /i gi::setItemSelection {libs} -index {{sample} - {sheets}} -in [gi::getWindows 4]
+[00:24:27.67] /i gi::setCurrentIndex {libs} -index {sheets} -in [gi::getWindows 4]
+[00:24:28.05] /i gi::setCurrentIndex {libs} -index {reference90RF} -in [gi::getWindows 4]
+[00:24:28.06] /i gi::setItemSelection {libs} -index {reference90RF} -in [gi::getWindows 4]
+[00:24:28.32] /i gi::setCurrentIndex {libs} -index {project_d_ff} -in [gi::getWindows 4]
+[00:24:28.33] /i gi::setItemSelection {libs} -index {project_d_ff} -in [gi::getWindows 4]
+[00:24:29.10] /i gi::setCurrentIndex {cells} -index {inv_store_tb} -in [gi::getWindows 4]
+[00:24:29.10] /i gi::setItemSelection {cells} -index {inv_store_tb} -in [gi::getWindows 4]
+[00:24:30.34] /i gi::setCurrentIndex {cells} -index {inv_store} -in [gi::getWindows 4]
+[00:24:30.34] /i gi::setItemSelection {cells} -index {inv_store} -in [gi::getWindows 4]
+[00:24:30.85] /i gi::setCurrentIndex {views} -index {symbol} -in [gi::getWindows 4]
+[00:24:30.85] /i gi::setItemSelection {views} -index {symbol} -in [gi::getWindows 4]
+[00:24:31.83] /i gi::setCurrentIndex {cells} -index {inv_store_tb} -in [gi::getWindows 4]
+[00:24:31.83] /i gi::setItemSelection {cells} -index {inv_store_tb} -in [gi::getWindows 4]
+[00:24:32.43] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 4]
+[00:24:32.44] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 4]
+[00:24:32.59] /i gi::executeAction dmOpen -in [gi::getWindows 4]
+[00:24:32.61] /m Information: License 'Schematic' checked out. (LICENSE-003)
+[00:24:32.66] /r giWindowId 5
+[00:24:32.66] /r giWindowGeometry 1632x1020
+[00:24:32.81] /m Information: 
+[00:24:32.81] /o Checking "project_d_ff/inv_store_tb/schematic"
+[00:24:32.81] /o No rule violations found in "project_d_ff/inv_store_tb/schematic"
+[00:24:32.81] /m Information: Checking process is completed: marking the design violations
+[00:24:32.81] /m Information: Marking of designs is completed
+[00:24:34.24] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[00:24:34.56] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]] -value 290x865
+[00:24:34.56] /i db::setAttr dockSize -of [gi::getAssistants giConsole -from [gi::getWindows 5]] -value 1867x89
+[00:24:34.57] /i db::setAttr geometry -of [gi::getFrames 1] -value 1910x1101+5+56
+[00:24:35.32] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 5]
+[00:24:35.32] /i de::zoom -window [gi::getWindows 5] -factor 2.0 -center {2.83125 2.64375}
+[00:24:35.32] /o {2.00625 0.3875} {7.66875 3.50625}
+[00:24:36.02] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 5]
+[00:24:36.02] /i de::zoom -window [gi::getWindows 5] -factor 0.5 -center {2.6375 2.65625}
+[00:24:36.02] /o {1.375 -1.88125} {12.7 4.35625}
+[00:24:37.01] /# gi::executeAction seSchCheckAndSave -in [gi::getWindows 5]
+[00:24:37.01] /i ise::check
+[00:24:37.01] /m Information: 
+[00:24:37.01] /o Checking "project_d_ff/inv_store_tb/schematic"
+[00:24:37.01] /o No rule violations found in "project_d_ff/inv_store_tb/schematic"
+[00:24:37.01] /m Information: Checking process is completed: marking the design violations
+[00:24:37.04] /m Information: Marking of designs is completed
+[00:24:37.04] /o true
+[00:24:39.72] /# gi::executeAction seShowConsoleForWindow -in [gi::getWindows 5]
+[00:24:39.72] /i sa::showConsole -context [db::getNext [de::getContexts -window 5]]
+[00:24:39.73] /m Information: License 'SAE' checked out. (LICENSE-003)
+[00:24:39.75] /r giWindowId 6
+[00:24:39.76] /r giWindowGeometry 600x500
+[00:24:39.83] /o oa:0x22e3e200
+[00:24:39.85] /m Information: Launching Background sae_shell Server Process "cd /home/itsupport/Desktop/lab1vlsi && sae_shell -log sae_shell_session1_job1 -libDefFile /home/itsupport/Desktop/lab1vlsi/lib.defs"
+[00:24:42.31] /# gi::executeAction saLoadState -in [gi::getWindows 6]
+[00:24:42.31] /i sa::showLoadState -parent 6
+[00:24:42.56] /o oa:0x22e16c10
+[00:24:42.59] /m Information: Received ready-for-commands signal from background job 'sae_shell_session1_job1' after 3 seconds.
+[00:24:42.63] /i gi::setActiveDialog [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 6]]
+[00:24:42.88] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 6]] -value 603x720+778+424
+[00:24:43.71] /i gi::pressButton {/apply} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 6]]
+[00:24:44.08] /i gi::pressButton {/ok} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 6]]
+[00:24:45.05] /i gi::executeAction menuPreShow -in [gi::getWindows 6]
+[00:24:45.05] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 6]]
+[00:24:45.71] /# gi::executeAction saNetlistAndRun -in [gi::getWindows 6]
+[00:24:45.71] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 6] -mode overwrite
+[00:24:45.74] /r giWindowId 7
+[00:24:45.74] /r giWindowGeometry 800x600
+[00:24:45.80] /m Information: "Starting incremental netlisting for design "project_d_ff/inv_store_tb/schematic"..." (NETLISTING-010)
+[00:24:45.81] /o No Design Integrity rule violations found in "project_d_ff/inv_store_tb/schematic"
+[00:24:45.83] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[00:24:45.83] /o 	#######################################
+[00:24:45.83] /o 	PDK Library Name	: reference90RF
+[00:24:45.83] /o 	PDK Version		: 2.0
+[00:24:45.83] /o 	PDK Release Date	: 25-March-2010 
+[00:24:45.83] /o 	#######################################
+[00:24:45.83] /o 
+[00:24:45.85] /m Information: 
+[00:24:45.85] /o Checking "project_d_ff/inv_store/schematic"
+[00:24:45.85] /o No rule violations found in "project_d_ff/inv_store/schematic"
+[00:24:45.90] /m Information: "project_d_ff inv_store_tb schematic" renetlisted. (NETLISTING-056)
+[00:24:45.91] /m Information: "Netlisting design "project_d_ff/inv_store_tb/schematic" finished successfully." (NETLISTING-012)
+[00:24:45.92] /m Information: "Composing simulator input file for design "project_d_ff/inv_store_tb/schematic"..."
+[00:24:45.95] /m Information: "Simulator input file composed successfully for design "project_d_ff/inv_store_tb/schematic""
+[00:24:46.10] /m Information: "Starting HSPICE simulation for design: project_d_ff/inv_store_tb/schematic"
+[00:24:46.11] /# gi::collapse {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 7]
+[00:24:46.14] /o 1
+[00:24:46.58] /m Information: "Simulation completed successfully for design: project_d_ff/inv_store_tb/schematic "
+[00:24:46.77] /m Information: Launching Background sae_shell Server Process "cd /home/itsupport/Desktop/lab1vlsi && sae_shell -log sae_shell_session1_job2 -libDefFile /home/itsupport/Desktop/lab1vlsi/lib.defs"
+[00:24:46.78] /m Information: "Evaluating and plotting outputs..."
+[00:24:47.45] /m Information: Started sharing "Custom WaveView" license. (WAVEFORM-110)
+[00:24:47.47] /m Information: Launching Waveform Viewer "cd /home/itsupport/simulation/project_d_ff,inv_store_tb,schematic/history_1/simulation/HSPICE_inv_store/HSPICE/nominal/results &&  wv -k -cdesigner -spxkey /usr/synopsys/customcompiler/N-2017.12-SP1-2/auxx/waveform/sae.spxkey -spxrc /tmp/sae_spxrc_wUqWDk -unique_string 1198d7005d0426a469aa7f613a217c24125e8d2b0833b894ed40d2f5efbf27a2fb0c0fc5bd6190667c6b7d83dad0b27af65b323265a0d56f -lic_type 1    > /home/itsupport/simulation/project_d_ff,inv_store_tb,schematic/history_1/simulation/HSPICE_inv_store/HSPICE/nominal/results/viewer.log 2>&1"
+[00:24:47.47] /i gi::collapse {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 7]
+[00:24:47.69] /m Information: Measurement calculations completed for testbench: HSPICE_inv_store in 0s
+[00:24:48.79] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_6b3fd30_void_pp _6b86910_void_pp} 
+[00:24:48.83] /j ::wf::WaveView::plotSuccess WaveView_1 {} {_6b3fd30_void_pp _6b869d8_void_pp} 
+[00:24:49.67] /m Information: Received ready-for-commands signal from background job 'sae_shell_session1_job2' after 3 seconds.
+[00:24:49.96] /i gi::pressButton {ConsoleToggleButton} -in [db::getAttr statusbar -of [gi::getWindows 7]]
+[00:24:54.83] /i gi::setActiveWindow 6
+[00:24:54.83] /i gi::setActiveWindow 6 -raise true
+[00:24:56.85] /i gi::setActiveWindow 7
+[00:24:56.85] /i gi::setActiveWindow 7 -raise true

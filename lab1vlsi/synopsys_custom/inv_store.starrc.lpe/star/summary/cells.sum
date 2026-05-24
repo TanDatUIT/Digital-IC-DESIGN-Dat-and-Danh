@@ -1,0 +1,11 @@
+  
+InitDB        Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=429.2 
+ReadHNdb      Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=429.2 
+NetSelect     Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=429.2 
+CellSelect    Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=429.2 
+ImportCells   Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=429.2 
+Init          Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=429.2 
+ReadStdCells  Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=429.2 
+Cells         Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=429.2 
+  
+Done          Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=429.2 

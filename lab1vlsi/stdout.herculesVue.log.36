@@ -1,0 +1,204 @@
+DEBUG: ConnectToServer: localhost 51542
+DEBUG: connect back to cdesigner: 'localhost:51542'
+
+< LAYOUT: start_vue >
+V SET_COLOR white       white
+V SET_COLOR red         red
+V SET_COLOR darkRed     maroon
+V SET_COLOR green       lime
+V SET_COLOR darkGreen   forest
+V SET_COLOR blue        blue
+V SET_COLOR darkBlue    navy
+V SET_COLOR cyan        cyan
+V SET_COLOR darkCyan    cadetBlue
+V SET_COLOR magenta     magenta
+V SET_COLOR darkMagenta purple
+V SET_COLOR yellow      yellow
+V SET_FILL  blank       blank
+V SET_FILL  solid       solid
+V SET_FILL  backSlash   backSlash
+V SET_FILL  slash       slash
+V SET_FILL  dot         dots
+V SET_FILL  diagCross   X
+V SET_FILL  brick       brick
+V SET_FILL  horizontal  hLine
+V SET_FILL  vertical    vLine
+L CDESIGNER::StartFilter LAY
+L set curLayCell ""
+L set curLayView ""
+
+< LAYOUT: start_filter >
+  + INFO: Tcl-DP service had been loaded.
+DEBUG: ConnectToServer: localhost 51542
+DEBUG: return previous client localhost:51542
+
+< SCHEMATIC: start_vue >
+V SET_COLOR white       white
+V SET_COLOR red         red
+V SET_COLOR darkRed     maroon
+V SET_COLOR green       lime
+V SET_COLOR darkGreen   forest
+V SET_COLOR blue        blue
+V SET_COLOR darkBlue    navy
+V SET_COLOR cyan        cyan
+V SET_COLOR darkCyan    cadetBlue
+V SET_COLOR magenta     magenta
+V SET_COLOR darkMagenta purple
+V SET_COLOR yellow      yellow
+V SET_FILL  blank       blank
+V SET_FILL  solid       solid
+V SET_FILL  backSlash   backSlash
+V SET_FILL  slash       slash
+V SET_FILL  dot         dots
+V SET_FILL  diagCross   X
+V SET_FILL  brick       brick
+V SET_FILL  horizontal  hLine
+V SET_FILL  vertical    vLine
+S CDESIGNER::StartFilter SCH
+S set curSchCell ""
+S set curSchView ""
+
+< SCHEMATIC: start_filter >
+
+< SCHEMATIC: load_hercules >
+S set topSchLib "new_dff"
+S CDESIGNER::SendCommand setTopSchLib "$topSchLib"
+
+< LAYOUT: load_hercules >
+L set inlibPath  "/home/itsupport/Desktop/lab1vlsi/."
+L set topLayLib  "new_dff"
+L set topLayCell [lindex {"D_latch"} 0]
+L set topLayView "layout"
+L set curLayLib  "$topLayLib"
+L set curLayCell "$topLayCell"
+L set curLayView "$topLayView"
+L CDESIGNER::SendCommand setInlibPath "$inlibPath"
+L CDESIGNER::SendCommand setTopLayLCV "$topLayLib" "$topLayCell" "$topLayView"
+L CDESIGNER::SendCommand openCell "$curLayLib" "$curLayCell" "$curLayView"
+DEBUG: PushBackXprobeMessage{vueSetDbu 0.001
+}
+
+< SCHEMATIC: remove_hilites >
+S CDESIGNER::SendCommand clearAllHighlights "$curSchCell" "$curSchView"
+
+< LAYOUT: remove_hilites >
+L CDESIGNER::SendCommand clearAllHighlights "$curLayCell" "$curLayView"
+
+< SCHEMATIC: remove_hilites >
+S CDESIGNER::SendCommand clearAllHighlights "$curSchCell" "$curSchView"
+
+< SCHEMATIC: new_block >
+S CDESIGNER::SendCommand clearAllHighlights "$curSchCell" "$curSchView"
+S set curSchLib $topSchLib
+S set curSchCell [lindex {"D_latch"} 0]
+S set curSchView "schematic"
+S CDESIGNER::SendCommand openCell "$curSchLib" "$curSchCell" "$curSchView"
+DEBUG: PushBackXprobeMessage{vueSetDbu 0.00625
+}
+
+< LAYOUT: remove_hilites >
+L CDESIGNER::SendCommand clearAllHighlights "$curLayCell" "$curLayView"
+
+< LAYOUT: edit_in_place >
+V ZOOM_EXTENTS_RESET
+L CDESIGNER::SendCommand clearAllHighlights "$curLayCell" "$curLayView"
+L set curLayCell [lindex {"D_latch"} 0]
+L set curLayView "layout"
+L CDESIGNER::SendCommand openCellInstance "$topLayCell" "$topLayView" "$curLayCell" "$curLayView"
+
+< LAYOUT: remove_hilites >
+L CDESIGNER::SendCommand clearAllHighlights "$curLayCell" "$curLayView"
+
+< LAYOUT: remove_hilites >
+L CDESIGNER::SendCommand clearAllHighlights "$curLayCell" "$curLayView"
+
+< LAYOUT: before_hilite >
+V ZOOM_EXTENTS_RESET
+
+< LAYOUT: primary_hilite >
+L CDESIGNER::SendCommand setHighlightProperty "$curLayCell" "$curLayView" "yellow" "brick"
+
+< LAYOUT: poly_begin >
+L CDESIGNER::SendCommandNB addPolygonBegin "10"
+
+< LAYOUT: poly_point_set >
+L CDESIGNER::AddPolygonPoints {8.130 6.605 8.130 3.790 9.145 3.790 9.145 3.690 9.140 3.690 9.140 3.150 9.040 3.150 9.040 3.690 8.030 3.690 8.030 6.605 8.130 6.605}
+
+< LAYOUT: poly_end >
+L CDESIGNER::SendCommandNB addPolygonEnd
+
+< LAYOUT: after_hilite >
+L CDESIGNER::SendCommand drawHighlights "$curLayCell" "$curLayView" all
+
+< LAYOUT: zoom_extents >
+L CDESIGNER::SendCommand setViewPort extents [list 7.891 2.718 9.284 7.037] LAY
+
+< SCHEMATIC: remove_hilites >
+S CDESIGNER::SendCommand clearAllHighlights "$curSchCell" "$curSchView"
+
+< SCHEMATIC: remove_hilites >
+S CDESIGNER::SendCommand clearAllHighlights "$curSchCell" "$curSchView"
+
+< SCHEMATIC: before_hilite >
+S CDESIGNER::SendCommand clearAllHighlights "$curSchCell" "$curSchView"
+
+< SCHEMATIC: net_hilite >
+S CDESIGNER::SendCommand setHighlightProperty "$curSchCell" "$curSchView" "yellow" "brick"
+S CDESIGNER::SendCommand drawSchHighlight "CLK" "net"
+
+< SCHEMATIC: after_hilite >
+
+< LAYOUT: select_point >
+L CDESIGNER::SendCommand selectLayPoint
+
+< LAYOUT: remove_hilites >
+L CDESIGNER::SendCommand clearAllHighlights "$curLayCell" "$curLayView"
+
+< LAYOUT: remove_hilites >
+L CDESIGNER::SendCommand clearAllHighlights "$curLayCell" "$curLayView"
+
+< LAYOUT: before_hilite >
+V ZOOM_EXTENTS_RESET
+
+< LAYOUT: primary_hilite >
+L CDESIGNER::SendCommand setHighlightProperty "$curLayCell" "$curLayView" "yellow" "brick"
+
+< LAYOUT: poly_begin >
+L CDESIGNER::SendCommandNB addPolygonBegin "64"
+
+< LAYOUT: poly_point_set >
+L CDESIGNER::AddPolygonPoints {9.115 6.160 9.115 5.880 9.035 5.880 9.035 5.590 9.060 5.590 9.060 5.560 9.090 5.560 9.090 5.410 9.060 5.410 9.060 5.380 8.910 5.380 8.910 5.410 8.610 5.410 8.610 5.380 8.585 5.380 8.585 4.125 8.610 4.125 8.610 4.095 8.770 4.095 8.770 4.125 8.920 4.125 8.920 4.095 8.950 4.095 8.950 3.945 8.920 3.945 8.920 3.915 8.895 3.915 8.895 3.465 8.940 3.465 8.940 3.460 9.040 3.460 9.040 3.280 8.940 3.280 8.940 3.275 8.750 3.275 8.750 3.465 8.795 3.465 8.795 3.915 8.770 3.915 8.770 3.945 8.610 3.945 8.610 3.915 8.460 3.915 8.460 3.945 8.430 3.945 8.430 4.095 8.460 4.095 8.460 4.125 8.485 4.125 8.485 5.380 8.460 5.380 8.460 5.410 8.430 5.410 8.430 5.560 8.460 5.560 8.460 5.590 8.610 5.590 8.610 5.560 8.910 5.560 8.910 5.590 8.935 5.590 8.935 5.880 8.895 5.880 8.895 6.160 9.115 6.160}
+
+< LAYOUT: poly_end >
+L CDESIGNER::SendCommandNB addPolygonEnd
+
+< LAYOUT: after_hilite >
+L CDESIGNER::SendCommand drawHighlights "$curLayCell" "$curLayView" all
+
+< LAYOUT: zoom_extents >
+L CDESIGNER::SendCommand setViewPort extents [list 8.344 2.914 9.201 6.521] LAY
+
+< SCHEMATIC: remove_hilites >
+S CDESIGNER::SendCommand clearAllHighlights "$curSchCell" "$curSchView"
+
+< SCHEMATIC: remove_hilites >
+S CDESIGNER::SendCommand clearAllHighlights "$curSchCell" "$curSchView"
+
+< SCHEMATIC: before_hilite >
+S CDESIGNER::SendCommand clearAllHighlights "$curSchCell" "$curSchView"
+
+< SCHEMATIC: net_hilite >
+S CDESIGNER::SendCommand setHighlightProperty "$curSchCell" "$curSchView" "yellow" "brick"
+S CDESIGNER::SendCommand drawSchHighlight "D" "net"
+
+< SCHEMATIC: after_hilite >
+
+< SCHEMATIC: remove_hilites >
+S CDESIGNER::SendCommand clearAllHighlights "$curSchCell" "$curSchView"
+
+< LAYOUT: remove_hilites >
+L CDESIGNER::SendCommand clearAllHighlights "$curLayCell" "$curLayView"
++ INFO: Filter has been loaded successfully.
+        '/usr/synopsys/hercules/B-2008.09-SP5/lib-u/AMD.64/VUE/Layout/libhiCDesignerLE.so'
++ INFO: Filter has been loaded successfully.
+        '/usr/synopsys/hercules/B-2008.09-SP5/lib-u/AMD.64/VUE/Schematic/libhiCDesignerSE.so'

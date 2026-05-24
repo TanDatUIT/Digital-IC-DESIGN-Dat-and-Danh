@@ -1,0 +1,2 @@
+#!/bin/sh
+cd /home/itsupport/Desktop/lab1vlsi/synopsys_custom/CLOCK_inv.hercules.lvs; unset TCLLIBPATH; unset TCL_LIBRARY; exec-oa22.04.hercules hercules_oa -f openaccess -i project_d_ff -b CLOCK_inv -p . -O gdsii -o CLOCK_inv_result.gds -s /home/itsupport/Desktop/lab1vlsi/synopsys_custom/CLOCK_inv.hercules.lvs/CLOCK_inv.custom_compiler.sp -sf CDL -stb CLOCK_inv /home/itsupport/Desktop/lab1vlsi/synopsys_custom/CLOCK_inv.hercules.lvs/reference_lvs.lvs.evx > /home/itsupport/Desktop/lab1vlsi/synopsys_custom/CLOCK_inv.hercules.lvs/stdout.lvs.log 2>&1

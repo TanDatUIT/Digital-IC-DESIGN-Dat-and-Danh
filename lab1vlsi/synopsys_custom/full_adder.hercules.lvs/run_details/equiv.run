@@ -1,0 +1,14 @@
+/* User-defined equivalence points are listed in this section */
+
+/* Generated equivalence points are listed in this section ordered by option */
+/* by NAME_FULL */
+equiv NAND2_2=NAND2_2 { }
+
+/* by NAME_PREFIX */
+
+/* by NAME_SUBSTRING */
+
+/* by STATISTICAL */
+
+/* TOP */
+equiv full_adder=full_adder { }

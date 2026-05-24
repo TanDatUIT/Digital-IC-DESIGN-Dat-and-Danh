@@ -1,0 +1,2 @@
+#!/bin/sh
+cd /home/itsupport/Desktop/lab1vlsi/synopsys_custom/NAND2_2.hercules.drc; unset TCLLIBPATH; unset TCL_LIBRARY; exec-oa22.04.hercules hercules_oa -f openaccess -i inverter -b NAND2_2 -p . -O gdsii -o NAND2_2_result.gds /home/itsupport/Desktop/lab1vlsi/synopsys_custom/NAND2_2.hercules.drc/reference_drc.drc.evx > /home/itsupport/Desktop/lab1vlsi/synopsys_custom/NAND2_2.hercules.drc/stdout.drc.log 2>&1

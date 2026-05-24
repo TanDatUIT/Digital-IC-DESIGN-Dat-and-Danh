@@ -1,0 +1,8 @@
+D_latch
+	Cell Level Device Counts
+		NMOS[N] = 4
+		PMOS[P] = 4
+
+********  DEVICE EXTRACTION STATS    TOPBLOCK = D_latch  *******
+		NMOS[N] = 4
+		PMOS[P] = 4

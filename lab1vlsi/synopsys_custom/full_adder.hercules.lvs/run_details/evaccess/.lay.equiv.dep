@@ -1,0 +1,4 @@
+N { }
+full_adder { P N }
+P { }
+NAND2_2 { P N }

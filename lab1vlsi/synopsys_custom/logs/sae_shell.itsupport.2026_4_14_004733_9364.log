@@ -1,0 +1,99 @@
+[00:47:35.29] /m Information: License 'SAE' checked out. (LICENSE-003)
+[00:47:36.68] /o sae_shell Version Custom Compiler N-2017.12-SP1-2
+              /c Build  (OPT) compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Execution time: Tue Apr 14 00:47:33 2026
+              /c Host: localhost.localdomain
+              /c 
+              /c Copyright © 2004-2018 Synopsys, Inc.
+              /c This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, or distribution of this software is strictly prohibited.
+              /c 
+              /c 
+[00:47:36.72] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[00:47:36.72] /o 	#######################################
+[00:47:36.72] /o 	PDK Library Name	: reference90RF
+[00:47:36.72] /o 	PDK Version		: 2.0
+[00:47:36.72] /o 	PDK Release Date	: 25-March-2010 
+[00:47:36.72] /o 	#######################################
+[00:47:36.73] /o 
+[00:47:36.73] /i ::sa::_backgroundSaeShell::signalProcessReady 1776102452
+[00:47:36.73] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::processReady 4
+[00:49:24.69] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession0 testbenchName default resultsDir /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[00:49:25.52] /m Information: Started sharing "Custom WaveView" license. (WAVEFORM-110)
+[00:49:25.53] /o Tracing out
+[00:49:25.53] /o Tracing out (Found 0)
+[00:49:25.53] /o Tracing collected globals
+[00:49:25.53] /o Tracing out
+[00:49:25.53] /o Tracing out (Found 0)
+[00:49:25.54] /o Tracing collected globals
+[00:49:25.54] /o Tracing out
+[00:49:25.54] /o Tracing out (Found 0)
+[00:49:25.54] /o Tracing collected globals
+[00:49:25.69] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.9 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession0 testbenchName default resultsDir /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[00:49:25.69] /o false
+[00:49:45.02] /i ::wf::viewerExited
+[00:50:02.17] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession0 testbenchName default resultsDir /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[00:50:02.36] /o Tracing out
+[00:50:02.36] /o Tracing out (Found 0)
+[00:50:02.36] /o Tracing collected globals
+[00:50:02.36] /o Tracing out
+[00:50:02.36] /o Tracing out (Found 0)
+[00:50:02.36] /o Tracing collected globals
+[00:50:02.37] /o Tracing out
+[00:50:02.37] /o Tracing out (Found 0)
+[00:50:02.37] /o Tracing collected globals
+[00:50:02.44] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.2 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession0 testbenchName default resultsDir /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[00:50:02.44] /o false
+[00:50:33.71] /i ::wf::viewerExited
+[00:51:01.29] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession0 testbenchName default resultsDir /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[00:51:01.46] /o Tracing out
+[00:51:01.46] /o Tracing out (Found 0)
+[00:51:01.46] /o Tracing collected globals
+[00:51:01.46] /o Tracing out
+[00:51:01.46] /o Tracing out (Found 0)
+[00:51:01.46] /o Tracing collected globals
+[00:51:01.46] /o Tracing out
+[00:51:01.46] /o Tracing out (Found 0)
+[00:51:01.46] /o Tracing collected globals
+[00:51:01.53] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.2 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession0 testbenchName default resultsDir /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[00:51:01.53] /o false
+[00:51:14.32] /i ::wf::viewerExited
+[00:52:28.89] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession0 testbenchName default resultsDir /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[00:52:29.06] /o Tracing out
+[00:52:29.06] /o Tracing out (Found 0)
+[00:52:29.06] /o Tracing collected globals
+[00:52:29.06] /o Tracing out
+[00:52:29.06] /o Tracing out (Found 0)
+[00:52:29.06] /o Tracing collected globals
+[00:52:29.06] /o Tracing out
+[00:52:29.06] /o Tracing out (Found 0)
+[00:52:29.06] /o Tracing collected globals
+[00:52:29.13] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.2 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession0 testbenchName default resultsDir /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[00:52:29.13] /o false
+[00:53:50.81] /i ::wf::viewerExited
+[00:53:58.37] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession0 testbenchName default resultsDir /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[00:53:58.58] /o Tracing out
+[00:53:58.58] /o Tracing out (Found 0)
+[00:53:58.58] /o Tracing collected globals
+[00:53:58.58] /o Tracing out
+[00:53:58.58] /o Tracing out (Found 0)
+[00:53:58.58] /o Tracing collected globals
+[00:53:58.58] /o Tracing out
+[00:53:58.58] /o Tracing out (Found 0)
+[00:53:58.58] /o Tracing collected globals
+[00:53:58.65] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.2 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession0 testbenchName default resultsDir /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[00:53:58.65] /o false
+[00:54:21.81] /i ::wf::viewerExited
+[00:55:09.82] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession0 testbenchName default resultsDir /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[00:55:10.01] /o Tracing out
+[00:55:10.01] /o Tracing out (Found 0)
+[00:55:10.01] /o Tracing collected globals
+[00:55:10.01] /o Tracing out
+[00:55:10.01] /o Tracing out (Found 0)
+[00:55:10.01] /o Tracing collected globals
+[00:55:10.01] /o Tracing out
+[00:55:10.01] /o Tracing out (Found 0)
+[00:55:10.01] /o Tracing collected globals
+[00:55:10.08] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.2 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession0 testbenchName default resultsDir /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal databaseName /home/itsupport/simulation/inverter,tb,config/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[00:55:10.08] /o false
+[00:56:39.55] /i ::sa::_backgroundSaeShell::exit
+[00:56:39.56] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::childFormallyExiting

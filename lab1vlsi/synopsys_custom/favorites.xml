@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!-- created by Custom Compiler (TM), build #, on Sun May 24 15:59:11 2026
+-->
+<synopsysFile version="1.0" name="synopsysFavoriteDevices">
+        <favoriteDevices viewType="maskLayout">
+                <cellView library="reference90RF" cell="p_4t" view="layout">
+                        <alias name="p_4t"/>
+                        <category name="Recently Placed"/>
+                </cellView>
+                <cellView library="inverter" cell="NAND2_2" view="starrc">
+                        <alias name="NAND2_2"/>
+                        <category name="Recently Placed"/>
+                </cellView>
+                <cellView library="inverter" cell="inv" view="layout">
+                        <alias name="inv"/>
+                        <category name="Recently Placed"/>
+                </cellView>
+                <cellView library="inverter" cell="LAB3_NAND2" view="layout">
+                        <alias name="LAB3_NAND2"/>
+                        <category name="Recently Placed"/>
+                </cellView>
+                <cellView library="inverter" cell="NAND2_2" view="layout">
+                        <alias name="NAND2_2"/>
+                        <category name="Recently Placed"/>
+                </cellView>
+        </favoriteDevices>
+        <favoriteDevices viewType="schematic">
+                <cellView library="basic" cell="vdd" view="symbol">
+                        <alias name="vdd"/>
+                        <category name="Recently Placed"/>
+                </cellView>
+                <cellView library="project_d_ff" cell="BUFF_1" view="symbol">
+                        <alias name="BUFF_1"/>
+                        <category name="Recently Placed"/>
+                </cellView>
+                <cellView library="project_d_ff" cell="BUFF_2" view="symbol">
+                        <alias name="BUFF_2"/>
+                        <category name="Recently Placed"/>
+                </cellView>
+                <cellView library="analogLib" cell="cap" view="symbol">
+                        <alias name="cap"/>
+                        <category name="Recently Placed"/>
+                </cellView>
+                <cellView library="project_d_ff" cell="BUFFER" view="symbol">
+                        <alias name="BUFFER"/>
+                        <category name="Recently Placed"/>
+                </cellView>
+        </favoriteDevices>
+</synopsysFile>

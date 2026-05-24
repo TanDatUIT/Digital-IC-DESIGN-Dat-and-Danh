@@ -1,0 +1,3 @@
+CLOCK_inv::CLOCK_inv { P::P N::N }
+N::N { }
+P::P { }

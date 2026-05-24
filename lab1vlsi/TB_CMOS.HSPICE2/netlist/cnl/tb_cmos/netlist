@@ -1,0 +1,13 @@
+********************************************************************************
+* Library          : inverter
+* Cell             : TB_CMOS
+* View             : schematic
+* View Search List : hspice hspiceD cmos.sch cmos_sch schematic veriloga
+* View Stop List   : hspice hspiceD veriloga
+********************************************************************************
+xi8 net25 net26 cmos
+xi9 net26 out cmos
+xi0 net5 net25 cmos
+v1 vdd! gnd! dc=1.2
+v4 net5 gnd! dc=1.2 pulse ( 0 1.2 0 0.1p 0.1p 1n 2n )
+c6 out gnd! c=5f

@@ -1,0 +1,16 @@
+* SPICE INPUT		Wed May 20 04:24:57 2026	LAB3_NAND2
+* EV_NETLIST Version AMD.64 Release B-2008.09.SP5.26005 2012/07/14
+*
+*The following line needed for Star-CR:
+*CRU_OPT (KEEP_ELEMENTS "^[CR]D")
+*
+*The following line needed for CDL:
+*.BIPOLAR
+
+* Top of hierarchy  cell=LAB3_NAND2
+.subckt LAB3_NAND2 Y vdd! gnd!
+M_MM2 net19 A Y ln_N_21 N  l=0.100u w=0.240u
+M_MM3 gnd! B net19 ln_N_21 N  l=0.100u w=0.240u
+M_MM1 Y A vdd! ln_N_23 P  l=0.100u w=0.300u
+M_MM0 vdd! B Y ln_N_23 P  l=0.100u w=0.300u
+.ends LAB3_NAND2

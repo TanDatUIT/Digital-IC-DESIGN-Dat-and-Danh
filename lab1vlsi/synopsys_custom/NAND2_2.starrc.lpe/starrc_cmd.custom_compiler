@@ -1,0 +1,23 @@
+**---------------------------------------------------------------------------**
+** NOTICE: This StarRC command file was automatically generated
+**         by: Custom Compiler N-2017.12-SP1-2
+**---------------------------------------------------------------------------**
+
+BLOCK: NAND2_2
+CASE_SENSITIVE: YES
+COUPLE_TO_GROUND: NO
+EXTRACTION: RC
+HIERARCHICAL_SEPARATOR: |
+MILKYWAY_DATABASE: /home/itsupport/Desktop/lab1vlsi/synopsys_custom/NAND2_2.hercules.lvs/EXTRACT_VIEW
+MILKYWAY_EXTRACT_VIEW: YES
+NETLIST_FORMAT: OA
+NETLIST_GROUND_NODE_NAME: 0
+OA_LIB_DEF: /home/itsupport/Desktop/lab1vlsi/synopsys_custom/NAND2_2.starrc.lpe/lib.defs
+OA_LIB_NAME: inverter
+OA_MARKER_SIZE: .01
+OA_VIEW_NAME: starrc
+POWER_EXTRACT: No
+REDUCTION: LAYER
+REMOVE_FLOATING_NETS: YES
+XREF: Yes
+

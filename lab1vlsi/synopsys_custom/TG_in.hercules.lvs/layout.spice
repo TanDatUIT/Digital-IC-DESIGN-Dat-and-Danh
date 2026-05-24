@@ -1,0 +1,14 @@
+* SPICE INPUT		Sat May 23 21:47:30 2026	TG_in
+* EV_NETLIST Version AMD.64 Release B-2008.09.SP5.26005 2012/07/14
+*
+*The following line needed for Star-CR:
+*CRU_OPT (KEEP_ELEMENTS "^[CR]D")
+*
+*The following line needed for CDL:
+*.BIPOLAR
+
+* Top of hierarchy  cell=TG_in
+.subckt TG_in B A EN ENB
+M_MM0 A EN B ln_N_11 N  l=0.100u w=0.180u
+M_MM1 A ENB B ln_N_13 P  l=0.100u w=0.420u
+.ends TG_in

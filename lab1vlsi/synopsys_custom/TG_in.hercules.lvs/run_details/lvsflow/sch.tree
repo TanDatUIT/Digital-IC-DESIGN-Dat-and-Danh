@@ -1,0 +1,11 @@
+TG_in Level=0 Count=1
+
+
+		CELL STATISTICS
+
+
+TOP CELL = TG_in
+	Ports                =	6
+
+CELL = TG_in
+	Flat Placements      =	0

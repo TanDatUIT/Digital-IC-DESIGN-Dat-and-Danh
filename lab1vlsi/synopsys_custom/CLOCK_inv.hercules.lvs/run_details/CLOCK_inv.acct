@@ -1,0 +1,8 @@
+CLOCK_inv
+	Cell Level Device Counts
+		NMOS[N] = 1
+		PMOS[P] = 1
+
+********  DEVICE EXTRACTION STATS    TOPBLOCK = CLOCK_inv  *******
+		NMOS[N] = 1
+		PMOS[P] = 1

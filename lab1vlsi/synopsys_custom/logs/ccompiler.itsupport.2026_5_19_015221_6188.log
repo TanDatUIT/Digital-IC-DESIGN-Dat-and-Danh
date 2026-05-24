@@ -1,0 +1,41 @@
+[01:52:22.68] /r giWindowId 0
+[01:52:22.69] /r giWindowGeometry 600x300
+[01:52:22.69] /o 
+              /c                                 Custom Compiler 
+              /c 
+              /c               Version N-2017.12-SP1-2 for linux64 - May 16, 2018 
+              /c 
+              /c                     Copyright (c) 2004 - 2018 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c             or distribution of this software is strictly prohibited.
+              /c 
+              /c Build  (OPT) Config 4182185 compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Invocation: /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/platform/bin/cdesigner
+              /c Execution time: Tue May 19 01:52:21 2026
+              /c Host: localhost.localdomain
+              /c Working directory: /home/itsupport/Desktop/lab1vlsi
+              /c 
+[01:52:23.92] /r giWindowId 1
+[01:52:23.92] /r giWindowGeometry 800x600
+[01:52:23.96] /e Error: The job 'hercules_drc_2' started on host 'localhost' with process id 5926 failed to start or complete successfully; the job's return code is -1.
+[01:52:23.98] /r giShowFrameTabs true
+[01:52:27.87] /i gi::pressButton {ConsoleToggleButton} -in [db::getAttr statusbar -of [gi::getWindows 1]]
+[01:52:29.83] /i gi::pressButton {ConsoleToggleButton} -in [db::getAttr statusbar -of [gi::getWindows 1]]
+[01:52:31.92] /i db::setAttr geometry -of [gi::getFrames 1] -value 1436x913+100+151
+[01:52:32.85] /i gi::pressButton {ConsoleToggleButton} -in [db::getAttr statusbar -of [gi::getWindows 1]]
+[01:52:33.22] /i gi::pressButton {ConsoleToggleButton} -in [db::getAttr statusbar -of [gi::getWindows 1]]
+[01:52:37.52] /i db::setAttr iconified -of [gi::getFrames 1] -value true
+[14:36:19.25] /i db::setAttr geometry -of [gi::getFrames 1] -value 1436x913+100+124
+[14:42:42.55] /i db::setAttr geometry -of [gi::getFrames 1] -value 1436x913+100+164
+[15:11:51.51] /i db::setAttr iconified -of [gi::getFrames 1] -value false
+[15:11:57.09] /i gi::setActiveTab {tabs} -tabName {NAND2_2.RESULTS} -in [gi::getWindows 1]
+[15:11:58.61] /i gi::setActiveTab {tabs} -tabName {NAND2_2.LAYOUT_ERRORS} -in [gi::getWindows 1]
+[15:12:01.98] /i exit
+[15:12:02.05] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[15:12:02.32] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 419x181+741+465
+[15:12:03.41] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[15:12:03.49] /o Shutdown time: Tue May 19 15:12:03 2026
+[15:12:03.49] /o Elapsed session real time: 1 hour 51.88 minutes
+[15:12:03.49] /o Session terminated. Log is at /home/itsupport/Desktop/lab1vlsi/synopsys_custom/logs/ccompiler.itsupport.2026_5_19_015221_6188.log

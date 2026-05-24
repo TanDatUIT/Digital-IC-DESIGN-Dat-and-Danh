@@ -1,0 +1,2 @@
+#!/bin/sh
+cd /home/itsupport/Desktop/lab1vlsi/synopsys_custom/Final.hercules.lvs; unset TCLLIBPATH; unset TCL_LIBRARY; exec-oa22.04.hercules hercules_oa -C -b Final -p . -O gdsii -o Final_result.gds -s /home/itsupport/Desktop/lab1vlsi/synopsys_custom/Final.hercules.lvs/Final.custom_compiler.sp -sf CDL -stb Final /home/itsupport/Desktop/lab1vlsi/synopsys_custom/Final.hercules.lvs/reference_lvs.lvs.evx > /home/itsupport/Desktop/lab1vlsi/synopsys_custom/Final.hercules.lvs/stdout.lvs.log 2>&1

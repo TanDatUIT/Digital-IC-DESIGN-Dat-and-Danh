@@ -1,0 +1,615 @@
+00400000-0a742000 r-xp 00000000 fd:00 71093689                           /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/platform/bin/nti_shell
+0a942000-0affe000 rwxp 0a342000 fd:00 71093689                           /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/platform/bin/nti_shell
+0affe000-0d067000 rwxp 00000000 00:00 0 
+0d70c000-14e7d000 rwxp 00000000 00:00 0                                  [heap]
+7f40ac000000-7f40ac021000 rwxp 00000000 00:00 0 
+7f40ac021000-7f40b0000000 ---p 00000000 00:00 0 
+7f40b0000000-7f40b0021000 rwxp 00000000 00:00 0 
+7f40b0021000-7f40b4000000 ---p 00000000 00:00 0 
+7f40b4000000-7f40b4021000 rwxp 00000000 00:00 0 
+7f40b4021000-7f40b8000000 ---p 00000000 00:00 0 
+7f40b87f3000-7f40b87f4000 ---p 00000000 00:00 0 
+7f40b87f4000-7f40b8ff4000 rwxp 00000000 00:00 0 
+7f40b8ff4000-7f40ba1b1000 rwxs 00000000 00:04 32806                      /SYSVdf2dfed8 (deleted)
+7f40ba1b1000-7f40ba1b2000 ---p 00000000 00:00 0 
+7f40ba1b2000-7f40ba9b2000 rwxp 00000000 00:00 0 
+7f40ba9b2000-7f40bad7b000 r-xp 00000000 fd:00 101390246                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/auxx/auxx_tcl.rcc
+7f40bad7b000-7f40bae2b000 r-xp 00000000 fd:00 34381693                   /usr/share/fonts/dejavu/DejaVuSans.ttf
+7f40bae2b000-7f40bae45000 r-xp 00000000 fd:00 105120024                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/tcl-dp/lib/libdp42.so
+7f40bae45000-7f40bb044000 ---p 0001a000 fd:00 105120024                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/tcl-dp/lib/libdp42.so
+7f40bb044000-7f40bb046000 rwxp 00019000 fd:00 105120024                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/tcl-dp/lib/libdp42.so
+7f40bb07c000-7f40bb07e000 r-xs 00000000 fd:00 67352404                   /usr/lib/fontconfig/cache/fe6cf4d1-e0e9-4353-bb62-dedb80ced21a-le64.cache-7
+7f40bb07e000-7f40bb081000 r-xs 00000000 fd:00 69245243                   /usr/lib/fontconfig/cache/6ec56d6c-533a-44b6-a515-dd5c922a87f1-le64.cache-7
+7f40bb081000-7f40bb083000 r-xs 00000000 fd:00 69245242                   /usr/lib/fontconfig/cache/cfbb660a-a978-483e-af0a-057af3c2ab61-le64.cache-7
+7f40bb083000-7f40bb085000 r-xs 00000000 fd:00 69245241                   /usr/lib/fontconfig/cache/97e451e0-a955-4e6c-87ab-f0d027693ecc-le64.cache-7
+7f40bb085000-7f40bb09d000 r-xs 00000000 fd:00 69245240                   /usr/lib/fontconfig/cache/764ed5a4-7490-4034-ad32-77055bd8bebb-le64.cache-7
+7f40bb09d000-7f40bb0a8000 r-xs 00000000 fd:00 69245239                   /usr/lib/fontconfig/cache/bb739a14-108f-4444-b53a-5f0bb9058dca-le64.cache-7
+7f40bb0a8000-7f40bb0aa000 r-xs 00000000 fd:00 69245238                   /usr/lib/fontconfig/cache/7e054606-91d7-488b-8f7b-3526670c19d5-le64.cache-7
+7f40bb0aa000-7f40bb0ad000 r-xs 00000000 fd:00 69245237                   /usr/lib/fontconfig/cache/dc1a8146-ea92-46be-87b6-7db637ce9862-le64.cache-7
+7f40bb0ad000-7f40bb0ae000 r-xs 00000000 fd:00 69245236                   /usr/lib/fontconfig/cache/ff371e90-46af-4d84-82cd-66284c4dc70a-le64.cache-7
+7f40bb0ae000-7f40bb0af000 r-xs 00000000 fd:00 69245235                   /usr/lib/fontconfig/cache/2c672bf3-09fa-4406-960c-3aa2cfe95812-le64.cache-7
+7f40bb0af000-7f40bb0b0000 r-xs 00000000 fd:00 69245234                   /usr/lib/fontconfig/cache/d830aacb-1f71-43b2-9efd-d7287e5252d3-le64.cache-7
+7f40bb0b0000-7f40bb0b1000 r-xs 00000000 fd:00 69245233                   /usr/lib/fontconfig/cache/f592715e-72e3-4e88-bfb9-6f59a336c8a8-le64.cache-7
+7f40bb0b1000-7f40bb0b4000 r-xs 00000000 fd:00 69245232                   /usr/lib/fontconfig/cache/0b8d7193-235d-48b6-99bf-7b7fc19aa6c1-le64.cache-7
+7f40bb0b4000-7f40bb0b5000 r-xs 00000000 fd:00 69245231                   /usr/lib/fontconfig/cache/5f3c903a-4aef-479a-b0b5-0a67ea60f04f-le64.cache-7
+7f40bb0b5000-7f40bb0b9000 r-xs 00000000 fd:00 69245230                   /usr/lib/fontconfig/cache/045aac68-028f-4522-bb5b-a844e8fccf3f-le64.cache-7
+7f40bb0b9000-7f40bb0bd000 r-xs 00000000 fd:00 69245229                   /usr/lib/fontconfig/cache/52cbd4e2-a2fd-4546-bb7d-df809ffa94d1-le64.cache-7
+7f40bb0bd000-7f40bb0c0000 r-xs 00000000 fd:00 69245228                   /usr/lib/fontconfig/cache/d37490f6-d752-4561-affa-f099654cb461-le64.cache-7
+7f40bb0c0000-7f40bb0c1000 r-xs 00000000 fd:00 69245227                   /usr/lib/fontconfig/cache/756ed73a-eb08-4c08-8aef-7971a190aafb-le64.cache-7
+7f40bb0c1000-7f40bb0c2000 r-xs 00000000 fd:00 69245226                   /usr/lib/fontconfig/cache/41e73d50-067d-4da0-a884-6a744369626a-le64.cache-7
+7f40bb0c2000-7f40bb0c3000 r-xs 00000000 fd:00 69003070                   /usr/lib/fontconfig/cache/f4cc6074-e18a-482e-8c10-bf5ff0242b43-le64.cache-7
+7f40bb0c3000-7f40bb0c4000 r-xs 00000000 fd:00 67676483                   /usr/lib/fontconfig/cache/1b067c52-93f3-40d0-967d-ae6cf4c178b4-le64.cache-7
+7f40bb0c4000-7f40bb0c5000 r-xs 00000000 fd:00 67342838                   /usr/lib/fontconfig/cache/09604142-5463-4b77-97a0-05c325600780-le64.cache-7
+7f40bb0c5000-7f40bb0c6000 r-xs 00000000 fd:00 67352352                   /usr/lib/fontconfig/cache/ab1ea6b8-e7e6-48d1-9f5e-f9355ab1f76f-le64.cache-7
+7f40bb0c6000-7f40bb0c7000 r-xs 00000000 fd:00 67332235                   /usr/lib/fontconfig/cache/f90e154f-b139-430a-8c41-4989099f0be7-le64.cache-7
+7f40bb0c7000-7f40bb0c8000 r-xs 00000000 fd:00 67537813                   /usr/lib/fontconfig/cache/08427671-5dd5-4e2b-8d74-30367814947b-le64.cache-7
+7f40bb0c8000-7f40bb0c9000 r-xs 00000000 fd:00 67332234                   /usr/lib/fontconfig/cache/0d251ac2-e42c-46a6-8144-ddd31c0e19a5-le64.cache-7
+7f40bb0c9000-7f40bb0ca000 r-xs 00000000 fd:00 67332214                   /usr/lib/fontconfig/cache/32036537-4253-44a1-83d6-5b5ac0190b34-le64.cache-7
+7f40bb0ca000-7f40bb0cb000 r-xs 00000000 fd:00 67157460                   /usr/lib/fontconfig/cache/72637907-c6b7-4c80-ba4c-fd5c970fc3ea-le64.cache-7
+7f40bb0cb000-7f40bb0cc000 r-xs 00000000 fd:00 67352415                   /usr/lib/fontconfig/cache/b80fcf81-d251-4f50-983c-758bf04168c1-le64.cache-7
+7f40bb0cc000-7f40bb0cd000 r-xs 00000000 fd:00 67352414                   /usr/lib/fontconfig/cache/65fa1f41-1d7b-4d92-a13c-a64315c2da1f-le64.cache-7
+7f40bb0cd000-7f40bb0ce000 r-xs 00000000 fd:00 67352413                   /usr/lib/fontconfig/cache/75c55834-414d-43ce-8063-2c9172f0de87-le64.cache-7
+7f40bb0ce000-7f40bb0d3000 r-xs 00000000 fd:00 67352412                   /usr/lib/fontconfig/cache/db9c03b0-c71f-4378-8db8-5293e3292f01-le64.cache-7
+7f40bb0d3000-7f40bb0d5000 r-xs 00000000 fd:00 67352411                   /usr/lib/fontconfig/cache/88ebdb5c-e464-4db1-bcb0-31e61bb5bbc2-le64.cache-7
+7f40bb0d5000-7f40bb0d6000 r-xs 00000000 fd:00 67352410                   /usr/lib/fontconfig/cache/c4ce2c7e-3918-43d9-b3d9-f73be4b5c474-le64.cache-7
+7f40bb0d6000-7f40bb0d7000 r-xs 00000000 fd:00 67352409                   /usr/lib/fontconfig/cache/da87dcb0-c71a-465d-a30b-4ae04a5750ff-le64.cache-7
+7f40bb0d7000-7f40bb0d9000 r-xs 00000000 fd:00 67352408                   /usr/lib/fontconfig/cache/434c564e-1931-4f7b-90bf-95c738c10e55-le64.cache-7
+7f40bb0d9000-7f40bb0db000 r-xs 00000000 fd:00 67352407                   /usr/lib/fontconfig/cache/61041be1-2e47-448e-930f-928d9aff2746-le64.cache-7
+7f40bb0db000-7f40bb0e3000 r-xs 00000000 fd:00 67352406                   /usr/lib/fontconfig/cache/4a78c204-d04f-4f56-89d7-e6517b873d7d-le64.cache-7
+7f40bb0e3000-7f40bb0ee000 r-xs 00000000 fd:00 67352405                   /usr/lib/fontconfig/cache/f1e388ef-f473-4b1a-ba49-5a7e716d4f5d-le64.cache-7
+7f40bb0ee000-7f40bb0f6000 r-xs 00000000 fd:00 67352401                   /usr/lib/fontconfig/cache/ddaf9eb8-22dd-486d-842d-9b9082c07ce7-le64.cache-7
+7f40bb0f6000-7f40bb0f8000 r-xs 00000000 fd:00 67352400                   /usr/lib/fontconfig/cache/b2ad45e3-032f-4432-8d4e-7db99b752ef5-le64.cache-7
+7f40bb0f8000-7f40bb0fd000 r-xs 00000000 fd:00 69245244                   /usr/lib/fontconfig/cache/74d76ee4-6fbe-41ce-a2d0-cf55a48e4bc3-le64.cache-7
+7f40bb136000-7f40bb137000 ---p 00000000 00:00 0 
+7f40bb137000-7f40bb937000 rwxp 00000000 00:00 0 
+7f40bb937000-7f40bb993000 r-xp 00000000 fd:00 242140                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqwebp.so
+7f40bb993000-7f40bbb93000 ---p 0005c000 fd:00 242140                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqwebp.so
+7f40bbb93000-7f40bbb95000 rwxp 0005c000 fd:00 242140                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqwebp.so
+7f40bbb95000-7f40bbb96000 rwxp 00000000 00:00 0 
+7f40bbb96000-7f40bbb9b000 r-xp 00000000 fd:00 2569856                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqwbmp.so
+7f40bbb9b000-7f40bbd9a000 ---p 00005000 fd:00 2569856                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqwbmp.so
+7f40bbd9a000-7f40bbd9b000 rwxp 00004000 fd:00 2569856                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqwbmp.so
+7f40bbd9b000-7f40bbdfe000 r-xp 00000000 fd:00 1309126                    /usr/lib64/libtiff.so.3.9.4
+7f40bbdfe000-7f40bbffd000 ---p 00063000 fd:00 1309126                    /usr/lib64/libtiff.so.3.9.4
+7f40bbffd000-7f40bbfff000 r-xp 00062000 fd:00 1309126                    /usr/lib64/libtiff.so.3.9.4
+7f40bbfff000-7f40bc000000 rwxp 00064000 fd:00 1309126                    /usr/lib64/libtiff.so.3.9.4
+7f40bc000000-7f40bc021000 rwxp 00000000 00:00 0 
+7f40bc021000-7f40c0000000 ---p 00000000 00:00 0 
+7f40c0000000-7f40c0021000 rwxp 00000000 00:00 0 
+7f40c0021000-7f40c4000000 ---p 00000000 00:00 0 
+7f40c4000000-7f40c4021000 rwxp 00000000 00:00 0 
+7f40c4021000-7f40c8000000 ---p 00000000 00:00 0 
+7f40c801c000-7f40c8023000 r-xp 00000000 fd:00 2569860                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqtiff.so
+7f40c8023000-7f40c8223000 ---p 00007000 fd:00 2569860                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqtiff.so
+7f40c8223000-7f40c8224000 rwxp 00007000 fd:00 2569860                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqtiff.so
+7f40c8224000-7f40c8229000 r-xp 00000000 fd:00 2569859                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqtga.so
+7f40c8229000-7f40c8428000 ---p 00005000 fd:00 2569859                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqtga.so
+7f40c8428000-7f40c8429000 rwxp 00004000 fd:00 2569859                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqtga.so
+7f40c8429000-7f40c842e000 r-xp 00000000 fd:00 2569858                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqsvg.so
+7f40c842e000-7f40c862e000 ---p 00005000 fd:00 2569858                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqsvg.so
+7f40c862e000-7f40c862f000 rwxp 00005000 fd:00 2569858                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqsvg.so
+7f40c862f000-7f40c869c000 r-xp 00000000 fd:00 7723642                    /usr/lib64/libmng.so.1.0.0
+7f40c869c000-7f40c889c000 ---p 0006d000 fd:00 7723642                    /usr/lib64/libmng.so.1.0.0
+7f40c889c000-7f40c889f000 r-xp 0006d000 fd:00 7723642                    /usr/lib64/libmng.so.1.0.0
+7f40c889f000-7f40c88a1000 rwxp 00070000 fd:00 7723642                    /usr/lib64/libmng.so.1.0.0
+7f40c88a1000-7f40c88a7000 r-xp 00000000 fd:00 242143                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqmng.so
+7f40c88a7000-7f40c8aa6000 ---p 00006000 fd:00 242143                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqmng.so
+7f40c8aa6000-7f40c8aa7000 rwxp 00005000 fd:00 242143                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqmng.so
+7f40c8aa7000-7f40c8ae7000 r-xp 00000000 fd:00 2569861                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqjpeg.so
+7f40c8ae7000-7f40c8ce7000 ---p 00040000 fd:00 2569861                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqjpeg.so
+7f40c8ce7000-7f40c8ce8000 rwxp 00040000 fd:00 2569861                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqjpeg.so
+7f40c8ce8000-7f40c8d2b000 r-xp 00000000 fd:00 34263                      /usr/lib64/libjpeg.so.62.1.0
+7f40c8d2b000-7f40c8f2b000 ---p 00043000 fd:00 34263                      /usr/lib64/libjpeg.so.62.1.0
+7f40c8f2b000-7f40c8f2c000 r-xp 00043000 fd:00 34263                      /usr/lib64/libjpeg.so.62.1.0
+7f40c8f2c000-7f40c8f2d000 rwxp 00044000 fd:00 34263                      /usr/lib64/libjpeg.so.62.1.0
+7f40c8f2d000-7f40c8f3d000 rwxp 00000000 00:00 0 
+7f40c8f3d000-7f40c8f8c000 r-xp 00000000 fd:00 797763                     /usr/lib64/libjasper.so.1.0.0
+7f40c8f8c000-7f40c918b000 ---p 0004f000 fd:00 797763                     /usr/lib64/libjasper.so.1.0.0
+7f40c918b000-7f40c918c000 r-xp 0004e000 fd:00 797763                     /usr/lib64/libjasper.so.1.0.0
+7f40c918c000-7f40c9190000 rwxp 0004f000 fd:00 797763                     /usr/lib64/libjasper.so.1.0.0
+7f40c9190000-7f40c9197000 rwxp 00000000 00:00 0 
+7f40c91b0000-7f40c91b8000 r-xp 00000000 fd:00 2569862                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqjp2.so
+7f40c91b8000-7f40c93b7000 ---p 00008000 fd:00 2569862                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqjp2.so
+7f40c93b7000-7f40c93b8000 rwxp 00007000 fd:00 2569862                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqjp2.so
+7f40c93b8000-7f40c93bf000 r-xp 00000000 fd:00 242142                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqico.so
+7f40c93bf000-7f40c95be000 ---p 00007000 fd:00 242142                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqico.so
+7f40c95be000-7f40c95bf000 rwxp 00006000 fd:00 242142                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqico.so
+7f40c95bf000-7f40c95c8000 r-xp 00000000 fd:00 2569863                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqicns.so
+7f40c95c8000-7f40c97c7000 ---p 00009000 fd:00 2569863                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqicns.so
+7f40c97c7000-7f40c97c8000 rwxp 00008000 fd:00 2569863                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqicns.so
+7f40c97c8000-7f40c97ce000 r-xp 00000000 fd:00 242141                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqgif.so
+7f40c97ce000-7f40c99ce000 ---p 00006000 fd:00 242141                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqgif.so
+7f40c99ce000-7f40c99cf000 rwxp 00006000 fd:00 242141                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqgif.so
+7f40c99cf000-7f40c99da000 r-xp 00000000 fd:00 2569857                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqdds.so
+7f40c99da000-7f40c9bd9000 ---p 0000b000 fd:00 2569857                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqdds.so
+7f40c9bd9000-7f40c9bda000 rwxp 0000a000 fd:00 2569857                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/imageformats/libqdds.so
+7f40c9bda000-7f40c9fad000 r-xp 00000000 fd:00 1325658                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/auxx/images/images.rcc
+7f40c9fad000-7f40c9fbf000 r-xp 00000000 fd:00 1277904                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/auxx/fonts/COUR.ttf
+7f40c9fbf000-7f40c9fce000 r-xp 00000000 fd:00 1277917                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/auxx/fonts/INFOL___.TTF
+7f40c9fce000-7f40c9fea000 r-xp 00000000 fd:00 1277916                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/auxx/fonts/INFOT_Synopsys.ttf
+7f40c9fea000-7f40ca002000 r-xp 00000000 fd:00 1277908                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/auxx/fonts/AM196___.TTF
+7f40ca002000-7f40ca034000 r-xp 00000000 fd:00 1277915                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/auxx/fonts/TNR_WG__.ttf
+7f40ca034000-7f40ca040000 r-xp 00000000 fd:00 1277923                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/auxx/fonts/td______.pfb
+7f40ca040000-7f40ca052000 r-xp 00000000 fd:00 70710645                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaTclEngine.so
+7f40ca052000-7f40ca252000 ---p 00012000 fd:00 70710645                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaTclEngine.so
+7f40ca252000-7f40ca253000 rwxp 00012000 fd:00 70710645                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaTclEngine.so
+7f40ca253000-7f40ca32a000 r-xp 00000000 fd:00 104663935                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/platform/lib/librq_plugin.so
+7f40ca32a000-7f40ca529000 ---p 000d7000 fd:00 104663935                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/platform/lib/librq_plugin.so
+7f40ca529000-7f40ca52f000 rwxp 000d6000 fd:00 104663935                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/platform/lib/librq_plugin.so
+7f40ca52f000-7f40ca58c000 r-xp 00000000 fd:00 104663931                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/platform/lib/libpcell_caching.so
+7f40ca58c000-7f40ca78c000 ---p 0005d000 fd:00 104663931                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/platform/lib/libpcell_caching.so
+7f40ca78c000-7f40ca790000 rwxp 0005d000 fd:00 104663931                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/platform/lib/libpcell_caching.so
+7f40ca790000-7f40ca791000 ---p 00000000 00:00 0 
+7f40ca791000-7f40caf91000 rwxp 00000000 00:00 0 
+7f40caf91000-7f40caf92000 ---p 00000000 00:00 0 
+7f40caf92000-7f40cb179000 rwxp 00000000 00:00 0 
+7f40cb179000-7f40cb182000 r-xp 00000000 fd:00 70710633                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaNativeLock.so
+7f40cb182000-7f40cb382000 ---p 00009000 fd:00 70710633                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaNativeLock.so
+7f40cb382000-7f40cb383000 rwxp 00009000 fd:00 70710633                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaNativeLock.so
+7f40cb383000-7f40cb3b9000 r-xp 00000000 fd:00 70710640                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/libsnpsLibDef.so
+7f40cb3b9000-7f40cb5b9000 ---p 00036000 fd:00 70710640                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/libsnpsLibDef.so
+7f40cb5b9000-7f40cb5bb000 rwxp 00036000 fd:00 70710640                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/libsnpsLibDef.so
+7f40cb5bb000-7f40cb5bc000 ---p 00000000 00:00 0 
+7f40cb5bc000-7f40cbdbc000 rwxp 00000000 00:00 0 
+7f40cbdbc000-7f40cbdbf000 r-xp 00000000 fd:00 101554675                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-event.so.1.0.0
+7f40cbdbf000-7f40cbfbf000 ---p 00003000 fd:00 101554675                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-event.so.1.0.0
+7f40cbfbf000-7f40cbfc0000 rwxp 00003000 fd:00 101554675                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-event.so.1.0.0
+7f40cbfc0000-7f40cbfc2000 r-xp 00000000 fd:00 101554629                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-aux.so.0.0.0
+7f40cbfc2000-7f40cc1c2000 ---p 00002000 fd:00 101554629                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-aux.so.0.0.0
+7f40cc1c2000-7f40cc1c3000 rwxp 00002000 fd:00 101554629                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-aux.so.0.0.0
+7f40cc1c3000-7f40cc1c6000 r-xp 00000000 fd:00 101554653                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-atom.so.1.0.0
+7f40cc1c6000-7f40cc3c6000 ---p 00003000 fd:00 101554653                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-atom.so.1.0.0
+7f40cc3c6000-7f40cc3c7000 rwxp 00003000 fd:00 101554653                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-atom.so.1.0.0
+7f40cc3c7000-7f40cc3c9000 r-xp 00000000 fd:00 101554661                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-xinerama.so.0.0.0
+7f40cc3c9000-7f40cc5c8000 ---p 00002000 fd:00 101554661                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-xinerama.so.0.0.0
+7f40cc5c8000-7f40cc5c9000 rwxp 00001000 fd:00 101554661                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-xinerama.so.0.0.0
+7f40cc5c9000-7f40cc5cb000 r-xp 00000000 fd:00 101554648                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-keysyms.so.1.0.0
+7f40cc5cb000-7f40cc7ca000 ---p 00002000 fd:00 101554648                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-keysyms.so.1.0.0
+7f40cc7ca000-7f40cc7cb000 rwxp 00001000 fd:00 101554648                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-keysyms.so.1.0.0
+7f40cc7cb000-7f40cc7cd000 r-xp 00000000 fd:00 101554670                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-shape.so.0.0.0
+7f40cc7cd000-7f40cc9cd000 ---p 00002000 fd:00 101554670                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-shape.so.0.0.0
+7f40cc9cd000-7f40cc9ce000 rwxp 00002000 fd:00 101554670                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-shape.so.0.0.0
+7f40cc9ce000-7f40cc9d0000 r-xp 00000000 fd:00 101554627                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-shm.so.0.0.0
+7f40cc9d0000-7f40ccbcf000 ---p 00002000 fd:00 101554627                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-shm.so.0.0.0
+7f40ccbcf000-7f40ccbd0000 rwxp 00001000 fd:00 101554627                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-shm.so.0.0.0
+7f40ccbd0000-7f40ccbd4000 r-xp 00000000 fd:00 101554676                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-icccm.so.4.0.0
+7f40ccbd4000-7f40ccdd3000 ---p 00004000 fd:00 101554676                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-icccm.so.4.0.0
+7f40ccdd3000-7f40ccdd4000 rwxp 00003000 fd:00 101554676                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-icccm.so.4.0.0
+7f40ccdd4000-7f40ccdd8000 r-xp 00000000 fd:00 101554655                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-image.so.0.0.0
+7f40ccdd8000-7f40ccfd7000 ---p 00004000 fd:00 101554655                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-image.so.0.0.0
+7f40ccfd7000-7f40ccfd8000 rwxp 00003000 fd:00 101554655                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-image.so.0.0.0
+7f40ccfd8000-7f40ccfdb000 r-xp 00000000 fd:00 101554680                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-render-util.so.0.0.0
+7f40ccfdb000-7f40cd1da000 ---p 00003000 fd:00 101554680                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-render-util.so.0.0.0
+7f40cd1da000-7f40cd1db000 rwxp 00002000 fd:00 101554680                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-render-util.so.0.0.0
+7f40cd1db000-7f40cd1dc000 r-xp 00000000 fd:00 101554665                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libX11-xcb.so.1.0.0
+7f40cd1dc000-7f40cd3db000 ---p 00001000 fd:00 101554665                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libX11-xcb.so.1.0.0
+7f40cd3db000-7f40cd3dc000 rwxp 00000000 fd:00 101554665                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libX11-xcb.so.1.0.0
+7f40cd3dc000-7f40cd4bb000 r-xp 00000000 fd:00 101554632                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5XcbQpa.so.5.6.2
+7f40cd4bb000-7f40cd6ba000 ---p 000df000 fd:00 101554632                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5XcbQpa.so.5.6.2
+7f40cd6ba000-7f40cd6c2000 rwxp 000de000 fd:00 101554632                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5XcbQpa.so.5.6.2
+7f40cd6c2000-7f40cd6c4000 r-xp 00000000 fd:00 71093711                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/platforms/libqxcb.so
+7f40cd6c4000-7f40cd8c4000 ---p 00002000 fd:00 71093711                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/platforms/libqxcb.so
+7f40cd8c4000-7f40cd8c5000 rwxp 00002000 fd:00 71093711                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/plugins/platforms/libqxcb.so
+7f40cd8c5000-7f40d3e08000 r-xp 00000000 fd:00 100666071                  /usr/lib/locale/locale-archive
+7f40d4809000-7f40d4815000 r-xp 00000000 fd:00 33925                      /usr/lib64/libnss_files-2.17.so
+7f40d4815000-7f40d4a14000 ---p 0000c000 fd:00 33925                      /usr/lib64/libnss_files-2.17.so
+7f40d4a14000-7f40d4a15000 r-xp 0000b000 fd:00 33925                      /usr/lib64/libnss_files-2.17.so
+7f40d4a15000-7f40d4a16000 rwxp 0000c000 fd:00 33925                      /usr/lib64/libnss_files-2.17.so
+7f40d4a16000-7f40d4a1c000 rwxp 00000000 00:00 0 
+7f40d4a1c000-7f40d4a40000 r-xp 00000000 fd:00 3025013                    /usr/lib64/libselinux.so.1
+7f40d4a40000-7f40d4c3f000 ---p 00024000 fd:00 3025013                    /usr/lib64/libselinux.so.1
+7f40d4c3f000-7f40d4c40000 r-xp 00023000 fd:00 3025013                    /usr/lib64/libselinux.so.1
+7f40d4c40000-7f40d4c41000 rwxp 00024000 fd:00 3025013                    /usr/lib64/libselinux.so.1
+7f40d4c41000-7f40d4c43000 rwxp 00000000 00:00 0 
+7f40d4c43000-7f40d4c59000 r-xp 00000000 fd:00 33939                      /usr/lib64/libresolv-2.17.so
+7f40d4c59000-7f40d4e59000 ---p 00016000 fd:00 33939                      /usr/lib64/libresolv-2.17.so
+7f40d4e59000-7f40d4e5a000 r-xp 00016000 fd:00 33939                      /usr/lib64/libresolv-2.17.so
+7f40d4e5a000-7f40d4e5b000 rwxp 00017000 fd:00 33939                      /usr/lib64/libresolv-2.17.so
+7f40d4e5b000-7f40d4e5d000 rwxp 00000000 00:00 0 
+7f40d4e5d000-7f40d4e60000 r-xp 00000000 fd:00 67641                      /usr/lib64/libkeyutils.so.1.5
+7f40d4e60000-7f40d505f000 ---p 00003000 fd:00 67641                      /usr/lib64/libkeyutils.so.1.5
+7f40d505f000-7f40d5060000 r-xp 00002000 fd:00 67641                      /usr/lib64/libkeyutils.so.1.5
+7f40d5060000-7f40d5061000 rwxp 00003000 fd:00 67641                      /usr/lib64/libkeyutils.so.1.5
+7f40d5061000-7f40d506f000 r-xp 00000000 fd:00 387851                     /usr/lib64/libkrb5support.so.0.1
+7f40d506f000-7f40d526f000 ---p 0000e000 fd:00 387851                     /usr/lib64/libkrb5support.so.0.1
+7f40d526f000-7f40d5270000 r-xp 0000e000 fd:00 387851                     /usr/lib64/libkrb5support.so.0.1
+7f40d5270000-7f40d5271000 rwxp 0000f000 fd:00 387851                     /usr/lib64/libkrb5support.so.0.1
+7f40d5271000-7f40d52a2000 r-xp 00000000 fd:00 67821                      /usr/lib64/libk5crypto.so.3.1
+7f40d52a2000-7f40d54a1000 ---p 00031000 fd:00 67821                      /usr/lib64/libk5crypto.so.3.1
+7f40d54a1000-7f40d54a3000 r-xp 00030000 fd:00 67821                      /usr/lib64/libk5crypto.so.3.1
+7f40d54a3000-7f40d54a4000 rwxp 00032000 fd:00 67821                      /usr/lib64/libk5crypto.so.3.1
+7f40d54a4000-7f40d54a7000 r-xp 00000000 fd:00 33634                      /usr/lib64/libcom_err.so.2.1
+7f40d54a7000-7f40d56a6000 ---p 00003000 fd:00 33634                      /usr/lib64/libcom_err.so.2.1
+7f40d56a6000-7f40d56a7000 r-xp 00002000 fd:00 33634                      /usr/lib64/libcom_err.so.2.1
+7f40d56a7000-7f40d56a8000 rwxp 00003000 fd:00 33634                      /usr/lib64/libcom_err.so.2.1
+7f40d56a8000-7f40d5781000 r-xp 00000000 fd:00 387849                     /usr/lib64/libkrb5.so.3.3
+7f40d5781000-7f40d5980000 ---p 000d9000 fd:00 387849                     /usr/lib64/libkrb5.so.3.3
+7f40d5980000-7f40d598e000 r-xp 000d8000 fd:00 387849                     /usr/lib64/libkrb5.so.3.3
+7f40d598e000-7f40d5991000 rwxp 000e6000 fd:00 387849                     /usr/lib64/libkrb5.so.3.3
+7f40d5991000-7f40d59db000 r-xp 00000000 fd:00 67816                      /usr/lib64/libgssapi_krb5.so.2.2
+7f40d59db000-7f40d5bdb000 ---p 0004a000 fd:00 67816                      /usr/lib64/libgssapi_krb5.so.2.2
+7f40d5bdb000-7f40d5bdc000 r-xp 0004a000 fd:00 67816                      /usr/lib64/libgssapi_krb5.so.2.2
+7f40d5bdc000-7f40d5bde000 rwxp 0004b000 fd:00 67816                      /usr/lib64/libgssapi_krb5.so.2.2
+7f40d5bde000-7f40d5be0000 r-xp 00000000 fd:00 3024992                    /usr/lib64/libfreebl3.so
+7f40d5be0000-7f40d5ddf000 ---p 00002000 fd:00 3024992                    /usr/lib64/libfreebl3.so
+7f40d5ddf000-7f40d5de0000 r-xp 00001000 fd:00 3024992                    /usr/lib64/libfreebl3.so
+7f40d5de0000-7f40d5de1000 rwxp 00002000 fd:00 3024992                    /usr/lib64/libfreebl3.so
+7f40d5de1000-7f40d5e06000 r-xp 00000000 fd:00 67472                      /usr/lib64/libtinfo.so.5.9
+7f40d5e06000-7f40d6006000 ---p 00025000 fd:00 67472                      /usr/lib64/libtinfo.so.5.9
+7f40d6006000-7f40d600a000 r-xp 00025000 fd:00 67472                      /usr/lib64/libtinfo.so.5.9
+7f40d600a000-7f40d600b000 rwxp 00029000 fd:00 67472                      /usr/lib64/libtinfo.so.5.9
+7f40d600b000-7f40d6030000 r-xp 00000000 fd:00 67843                      /usr/lib64/liblzma.so.5.2.2
+7f40d6030000-7f40d622f000 ---p 00025000 fd:00 67843                      /usr/lib64/liblzma.so.5.2.2
+7f40d622f000-7f40d6230000 r-xp 00024000 fd:00 67843                      /usr/lib64/liblzma.so.5.2.2
+7f40d6230000-7f40d6231000 rwxp 00025000 fd:00 67843                      /usr/lib64/liblzma.so.5.2.2
+7f40d6231000-7f40d6315000 r-xp 00000000 fd:00 71016457                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_regex-mt.so.1.59.0
+7f40d6315000-7f40d6514000 ---p 000e4000 fd:00 71016457                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_regex-mt.so.1.59.0
+7f40d6514000-7f40d651a000 rwxp 000e3000 fd:00 71016457                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_regex-mt.so.1.59.0
+7f40d651a000-7f40d6531000 r-xp 00000000 fd:00 71015736                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_filesystem-mt.so.1.59.0
+7f40d6531000-7f40d6731000 ---p 00017000 fd:00 71015736                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_filesystem-mt.so.1.59.0
+7f40d6731000-7f40d6732000 rwxp 00017000 fd:00 71015736                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_filesystem-mt.so.1.59.0
+7f40d6732000-7f40d6741000 r-xp 00000000 fd:00 67855                      /usr/lib64/libbz2.so.1.0.6
+7f40d6741000-7f40d6940000 ---p 0000f000 fd:00 67855                      /usr/lib64/libbz2.so.1.0.6
+7f40d6940000-7f40d6941000 r-xp 0000e000 fd:00 67855                      /usr/lib64/libbz2.so.1.0.6
+7f40d6941000-7f40d6942000 rwxp 0000f000 fd:00 67855                      /usr/lib64/libbz2.so.1.0.6
+7f40d6942000-7f40d6944000 r-xp 00000000 fd:00 68092                      /usr/lib64/libXau.so.6.0.0
+7f40d6944000-7f40d6b44000 ---p 00002000 fd:00 68092                      /usr/lib64/libXau.so.6.0.0
+7f40d6b44000-7f40d6b45000 r-xp 00002000 fd:00 68092                      /usr/lib64/libXau.so.6.0.0
+7f40d6b45000-7f40d6b46000 rwxp 00003000 fd:00 68092                      /usr/lib64/libXau.so.6.0.0
+7f40d6b46000-7f40d6b6c000 r-xp 00000000 fd:00 102031706                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/PyCellStudio/plat_linux_gcc52_64/lib/libexpat.so.1
+7f40d6b6c000-7f40d6d6b000 ---p 00026000 fd:00 102031706                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/PyCellStudio/plat_linux_gcc52_64/lib/libexpat.so.1
+7f40d6d6b000-7f40d6d6e000 rwxp 00025000 fd:00 102031706                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/PyCellStudio/plat_linux_gcc52_64/lib/libexpat.so.1
+7f40d6d6e000-7f40d6d73000 r-xp 00000000 fd:00 68157                      /usr/lib64/libXfixes.so.3.1.0
+7f40d6d73000-7f40d6f72000 ---p 00005000 fd:00 68157                      /usr/lib64/libXfixes.so.3.1.0
+7f40d6f72000-7f40d6f73000 r-xp 00004000 fd:00 68157                      /usr/lib64/libXfixes.so.3.1.0
+7f40d6f73000-7f40d6f74000 rwxp 00005000 fd:00 68157                      /usr/lib64/libXfixes.so.3.1.0
+7f40d6f74000-7f40d6f78000 r-xp 00000000 fd:00 34252                      /usr/lib64/libuuid.so.1.3.0
+7f40d6f78000-7f40d7177000 ---p 00004000 fd:00 34252                      /usr/lib64/libuuid.so.1.3.0
+7f40d7177000-7f40d7178000 r-xp 00003000 fd:00 34252                      /usr/lib64/libuuid.so.1.3.0
+7f40d7178000-7f40d7179000 rwxp 00004000 fd:00 34252                      /usr/lib64/libuuid.so.1.3.0
+7f40d7179000-7f40d71d9000 r-xp 00000000 fd:00 67546                      /usr/lib64/libpcre.so.1.2.0
+7f40d71d9000-7f40d73d9000 ---p 00060000 fd:00 67546                      /usr/lib64/libpcre.so.1.2.0
+7f40d73d9000-7f40d73da000 r-xp 00060000 fd:00 67546                      /usr/lib64/libpcre.so.1.2.0
+7f40d73da000-7f40d73db000 rwxp 00061000 fd:00 67546                      /usr/lib64/libpcre.so.1.2.0
+7f40d73db000-7f40d7594000 r-xp 00000000 fd:00 242095                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/lib/libcrypto.so.1.0.1e
+7f40d7594000-7f40d7793000 ---p 001b9000 fd:00 242095                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/lib/libcrypto.so.1.0.1e
+7f40d7793000-7f40d77ae000 r-xp 001b8000 fd:00 242095                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/lib/libcrypto.so.1.0.1e
+7f40d77ae000-7f40d77ba000 rwxp 001d3000 fd:00 242095                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/lib/libcrypto.so.1.0.1e
+7f40d77ba000-7f40d77be000 rwxp 00000000 00:00 0 
+7f40d77be000-7f40d7820000 r-xp 00000000 fd:00 242094                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/lib/libssl.so.1.0.1e
+7f40d7820000-7f40d7a1f000 ---p 00062000 fd:00 242094                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/lib/libssl.so.1.0.1e
+7f40d7a1f000-7f40d7a23000 r-xp 00061000 fd:00 242094                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/lib/libssl.so.1.0.1e
+7f40d7a23000-7f40d7a2a000 rwxp 00065000 fd:00 242094                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/lib/libssl.so.1.0.1e
+7f40d7a2a000-7f40d7bee000 r-xp 00000000 fd:00 33463                      /usr/lib64/libc-2.17.so
+7f40d7bee000-7f40d7ded000 ---p 001c4000 fd:00 33463                      /usr/lib64/libc-2.17.so
+7f40d7ded000-7f40d7df1000 r-xp 001c3000 fd:00 33463                      /usr/lib64/libc-2.17.so
+7f40d7df1000-7f40d7df3000 rwxp 001c7000 fd:00 33463                      /usr/lib64/libc-2.17.so
+7f40d7df3000-7f40d7df8000 rwxp 00000000 00:00 0 
+7f40d7df8000-7f40d7e0d000 r-xp 00000000 fd:00 242096                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/lib/libgcc_s.so.1
+7f40d7e0d000-7f40d800d000 ---p 00015000 fd:00 242096                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/lib/libgcc_s.so.1
+7f40d800d000-7f40d800e000 rwxp 00015000 fd:00 242096                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/lib/libgcc_s.so.1
+7f40d800e000-7f40d802e000 r-xp 00000000 fd:00 242101                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/lib/libgomp.so.1.0.0
+7f40d802e000-7f40d822e000 ---p 00020000 fd:00 242101                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/lib/libgomp.so.1.0.0
+7f40d822e000-7f40d822f000 rwxp 00020000 fd:00 242101                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/lib/libgomp.so.1.0.0
+7f40d822f000-7f40d8237000 r-xp 00000000 fd:00 33467                      /usr/lib64/libcrypt-2.17.so
+7f40d8237000-7f40d8436000 ---p 00008000 fd:00 33467                      /usr/lib64/libcrypt-2.17.so
+7f40d8436000-7f40d8437000 r-xp 00007000 fd:00 33467                      /usr/lib64/libcrypt-2.17.so
+7f40d8437000-7f40d8438000 rwxp 00008000 fd:00 33467                      /usr/lib64/libcrypt-2.17.so
+7f40d8438000-7f40d8466000 rwxp 00000000 00:00 0 
+7f40d8466000-7f40d846d000 r-xp 00000000 fd:00 33941                      /usr/lib64/librt-2.17.so
+7f40d846d000-7f40d866c000 ---p 00007000 fd:00 33941                      /usr/lib64/librt-2.17.so
+7f40d866c000-7f40d866d000 r-xp 00006000 fd:00 33941                      /usr/lib64/librt-2.17.so
+7f40d866d000-7f40d866e000 rwxp 00007000 fd:00 33941                      /usr/lib64/librt-2.17.so
+7f40d866e000-7f40d8673000 r-xp 00000000 fd:00 105120234                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/tdk/lib/libtbcload-O.so
+7f40d8673000-7f40d8872000 ---p 00005000 fd:00 105120234                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/tdk/lib/libtbcload-O.so
+7f40d8872000-7f40d8873000 rwxp 00004000 fd:00 105120234                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/tdk/lib/libtbcload-O.so
+7f40d8873000-7f40d8899000 r-xp 00000000 fd:00 67462                      /usr/lib64/libncurses.so.5.9
+7f40d8899000-7f40d8a98000 ---p 00026000 fd:00 67462                      /usr/lib64/libncurses.so.5.9
+7f40d8a98000-7f40d8a99000 r-xp 00025000 fd:00 67462                      /usr/lib64/libncurses.so.5.9
+7f40d8a99000-7f40d8a9a000 rwxp 00026000 fd:00 67462                      /usr/lib64/libncurses.so.5.9
+7f40d8a9a000-7f40d8ae5000 r-xp 00000000 fd:00 70710643                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaUtil.so
+7f40d8ae5000-7f40d8ce5000 ---p 0004b000 fd:00 70710643                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaUtil.so
+7f40d8ce5000-7f40d8ce8000 rwxp 0004b000 fd:00 70710643                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaUtil.so
+7f40d8ce8000-7f40d8ceb000 rwxp 00000000 00:00 0 
+7f40d8ceb000-7f40d8cf0000 r-xp 00000000 fd:00 70710637                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaDMFileSysBase.so
+7f40d8cf0000-7f40d8ef0000 ---p 00005000 fd:00 70710637                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaDMFileSysBase.so
+7f40d8ef0000-7f40d8ef1000 rwxp 00005000 fd:00 70710637                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaDMFileSysBase.so
+7f40d8ef1000-7f40d8f39000 r-xp 00000000 fd:00 70710646                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaDMFileSys.so
+7f40d8f39000-7f40d9138000 ---p 00048000 fd:00 70710646                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaDMFileSys.so
+7f40d9138000-7f40d913b000 rwxp 00047000 fd:00 70710646                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaDMFileSys.so
+7f40d913b000-7f40d913c000 rwxp 00000000 00:00 0 
+7f40d913c000-7f40d91df000 r-xp 00000000 fd:00 70710630                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaWafer.so
+7f40d91df000-7f40d93df000 ---p 000a3000 fd:00 70710630                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaWafer.so
+7f40d93df000-7f40d93e6000 rwxp 000a3000 fd:00 70710630                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaWafer.so
+7f40d93e6000-7f40d93e7000 rwxp 00000000 00:00 0 
+7f40d93e7000-7f40d941e000 r-xp 00000000 fd:00 70710634                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaCM.so
+7f40d941e000-7f40d961e000 ---p 00037000 fd:00 70710634                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaCM.so
+7f40d961e000-7f40d9621000 rwxp 00037000 fd:00 70710634                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaCM.so
+7f40d9621000-7f40d9623000 r-xp 00000000 fd:00 70710653                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaTclPlugIn.so
+7f40d9623000-7f40d9823000 ---p 00002000 fd:00 70710653                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaTclPlugIn.so
+7f40d9823000-7f40d9824000 rwxp 00002000 fd:00 70710653                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaTclPlugIn.so
+7f40d9824000-7f40d9e2a000 r-xp 00000000 fd:00 70710626                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaTclHelp.so
+7f40d9e2a000-7f40da029000 ---p 00606000 fd:00 70710626                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaTclHelp.so
+7f40da029000-7f40da02a000 rwxp 00605000 fd:00 70710626                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaTclHelp.so
+7f40da02a000-7f40da114000 r-xp 00000000 fd:00 70710628                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaDM.so
+7f40da114000-7f40da313000 ---p 000ea000 fd:00 70710628                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaDM.so
+7f40da313000-7f40da31d000 rwxp 000e9000 fd:00 70710628                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaDM.so
+7f40da31d000-7f40da31f000 rwxp 00000000 00:00 0 
+7f40da31f000-7f40da34e000 r-xp 00000000 fd:00 70710647                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaCommon.so
+7f40da34e000-7f40da54e000 ---p 0002f000 fd:00 70710647                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaCommon.so
+7f40da54e000-7f40da54f000 rwxp 0002f000 fd:00 70710647                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaCommon.so
+7f40da54f000-7f40da765000 r-xp 00000000 fd:00 70710655                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaTech.so
+7f40da765000-7f40da965000 ---p 00216000 fd:00 70710655                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaTech.so
+7f40da965000-7f40da97d000 rwxp 00216000 fd:00 70710655                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaTech.so
+7f40da97d000-7f40da97f000 rwxp 00000000 00:00 0 
+7f40da97f000-7f40dacfc000 r-xp 00000000 fd:00 70710631                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaBase.so
+7f40dacfc000-7f40daefb000 ---p 0037d000 fd:00 70710631                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaBase.so
+7f40daefb000-7f40daf1d000 rwxp 0037c000 fd:00 70710631                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaBase.so
+7f40daf1d000-7f40daf42000 rwxp 00000000 00:00 0 
+7f40daf42000-7f40db751000 r-xp 00000000 fd:00 70710641                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaDesign.so
+7f40db751000-7f40db950000 ---p 0080f000 fd:00 70710641                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaDesign.so
+7f40db950000-7f40db9a3000 rwxp 0080e000 fd:00 70710641                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaDesign.so
+7f40db9a3000-7f40db9a9000 rwxp 00000000 00:00 0 
+7f40db9a9000-7f40db9b2000 r-xp 00000000 fd:00 70710650                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaLangBase.so
+7f40db9b2000-7f40dbbb1000 ---p 00009000 fd:00 70710650                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaLangBase.so
+7f40dbbb1000-7f40dbbb2000 rwxp 00008000 fd:00 70710650                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaLangBase.so
+7f40dbbb2000-7f40dbbc2000 r-xp 00000000 fd:00 70710652                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaPlugIn.so
+7f40dbbc2000-7f40dbdc1000 ---p 00010000 fd:00 70710652                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaPlugIn.so
+7f40dbdc1000-7f40dbdc3000 rwxp 0000f000 fd:00 70710652                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaPlugIn.so
+7f40dbdc3000-7f40dbfe1000 r-xp 00000000 fd:00 70710629                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaLangInfo.so
+7f40dbfe1000-7f40dc1e0000 ---p 0021e000 fd:00 70710629                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaLangInfo.so
+7f40dc1e0000-7f40dc1fd000 rwxp 0021d000 fd:00 70710629                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaLangInfo.so
+7f40dc1fd000-7f40dc20b000 r-xp 00000000 fd:00 70710644                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaTclCommon.so
+7f40dc20b000-7f40dc40b000 ---p 0000e000 fd:00 70710644                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaTclCommon.so
+7f40dc40b000-7f40dc40c000 rwxp 0000e000 fd:00 70710644                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaTclCommon.so
+7f40dc40c000-7f40dc41c000 r-xp 00000000 fd:00 70710648                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaTclBase.so
+7f40dc41c000-7f40dc61c000 ---p 00010000 fd:00 70710648                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaTclBase.so
+7f40dc61c000-7f40dc61d000 rwxp 00010000 fd:00 70710648                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaTclBase.so
+7f40dc61d000-7f40dd2dc000 r-xp 00000000 fd:00 70710625                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaTcl.so
+7f40dd2dc000-7f40dd4db000 ---p 00cbf000 fd:00 70710625                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaTcl.so
+7f40dd4db000-7f40dd4f8000 rwxp 00cbe000 fd:00 70710625                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/OA/lib/linux_rhel50_gcc48x_64/opt/liboaTcl.so
+7f40dd4f8000-7f40dd681000 r-xp 00000000 fd:00 45119494                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/MYMLibrary/lib/libsym_datacore-O.so
+7f40dd681000-7f40dd880000 ---p 00189000 fd:00 45119494                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/MYMLibrary/lib/libsym_datacore-O.so
+7f40dd880000-7f40dd88c000 rwxp 00188000 fd:00 45119494                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/MYMLibrary/lib/libsym_datacore-O.so
+7f40dd88c000-7f40dd8b2000 r-xp 00000000 fd:00 45119490                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/MYMLibrary/lib/libmym_core-O.so
+7f40dd8b2000-7f40ddab1000 ---p 00026000 fd:00 45119490                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/MYMLibrary/lib/libmym_core-O.so
+7f40ddab1000-7f40ddab4000 rwxp 00025000 fd:00 45119490                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/MYMLibrary/lib/libmym_core-O.so
+7f40ddab4000-7f40ddb94000 r-xp 00000000 fd:00 45119489                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/MYMLibrary/lib/libgui_controls-O.so
+7f40ddb94000-7f40ddd94000 ---p 000e0000 fd:00 45119489                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/MYMLibrary/lib/libgui_controls-O.so
+7f40ddd94000-7f40ddd9c000 rwxp 000e0000 fd:00 45119489                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/MYMLibrary/lib/libgui_controls-O.so
+7f40ddd9c000-7f40de250000 r-xp 00000000 fd:00 45119493                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/MYMLibrary/lib/libsnpsst-O.so
+7f40de250000-7f40de44f000 ---p 004b4000 fd:00 45119493                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/MYMLibrary/lib/libsnpsst-O.so
+7f40de44f000-7f40de472000 rwxp 004b3000 fd:00 45119493                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/MYMLibrary/lib/libsnpsst-O.so
+7f40de472000-7f40de5d0000 r-xp 00000000 fd:00 33627                      /usr/lib64/libxml2.so.2.9.1
+7f40de5d0000-7f40de7d0000 ---p 0015e000 fd:00 33627                      /usr/lib64/libxml2.so.2.9.1
+7f40de7d0000-7f40de7d8000 r-xp 0015e000 fd:00 33627                      /usr/lib64/libxml2.so.2.9.1
+7f40de7d8000-7f40de7da000 rwxp 00166000 fd:00 33627                      /usr/lib64/libxml2.so.2.9.1
+7f40de7da000-7f40de7dc000 rwxp 00000000 00:00 0 
+7f40de7dc000-7f40de989000 r-xp 00000000 fd:00 253311                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/fsdb/lib/libnsys.so
+7f40de989000-7f40deb88000 ---p 001ad000 fd:00 253311                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/fsdb/lib/libnsys.so
+7f40deb88000-7f40deb94000 rwxp 001ac000 fd:00 253311                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/fsdb/lib/libnsys.so
+7f40deb94000-7f40deba5000 rwxp 00000000 00:00 0 
+7f40deba5000-7f40df129000 r-xp 00000000 fd:00 242081                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/fsdb/lib/libnffr.so
+7f40df129000-7f40df328000 ---p 00584000 fd:00 242081                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/fsdb/lib/libnffr.so
+7f40df328000-7f40df34d000 rwxp 00583000 fd:00 242081                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/fsdb/lib/libnffr.so
+7f40df34d000-7f40dfdcb000 rwxp 00000000 00:00 0 
+7f40dfdcb000-7f40dff36000 r-xp 00000000 fd:00 242099                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/lib/libstdc++.so.6.0.21
+7f40dff36000-7f40e0135000 ---p 0016b000 fd:00 242099                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/lib/libstdc++.so.6.0.21
+7f40e0135000-7f40e013f000 r-xp 0016a000 fd:00 242099                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/lib/libstdc++.so.6.0.21
+7f40e013f000-7f40e0141000 rwxp 00174000 fd:00 242099                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/lib/libstdc++.so.6.0.21
+7f40e0141000-7f40e0145000 rwxp 00000000 00:00 0 
+7f40e0145000-7f40e0156000 r-xp 00000000 fd:00 71016481                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_date_time-mt.so.1.59.0
+7f40e0156000-7f40e0356000 ---p 00011000 fd:00 71016481                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_date_time-mt.so.1.59.0
+7f40e0356000-7f40e0357000 rwxp 00011000 fd:00 71016481                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_date_time-mt.so.1.59.0
+7f40e0357000-7f40e035d000 r-xp 00000000 fd:00 71016464                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_chrono-mt.so.1.59.0
+7f40e035d000-7f40e055d000 ---p 00006000 fd:00 71016464                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_chrono-mt.so.1.59.0
+7f40e055d000-7f40e055e000 rwxp 00006000 fd:00 71016464                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_chrono-mt.so.1.59.0
+7f40e055e000-7f40e05f9000 r-xp 00000000 fd:00 71015740                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_log_setup-mt.so.1.59.0
+7f40e05f9000-7f40e07f9000 ---p 0009b000 fd:00 71015740                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_log_setup-mt.so.1.59.0
+7f40e07f9000-7f40e07fe000 rwxp 0009b000 fd:00 71015740                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_log_setup-mt.so.1.59.0
+7f40e07fe000-7f40e0800000 rwxp 00000000 00:00 0 
+7f40e0800000-7f40e08aa000 r-xp 00000000 fd:00 71015743                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_log-mt.so.1.59.0
+7f40e08aa000-7f40e0aaa000 ---p 000aa000 fd:00 71015743                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_log-mt.so.1.59.0
+7f40e0aaa000-7f40e0ab0000 rwxp 000aa000 fd:00 71015743                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_log-mt.so.1.59.0
+7f40e0ab0000-7f40e0ad5000 r-xp 00000000 fd:00 71016461                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_thread-mt.so.1.59.0
+7f40e0ad5000-7f40e0cd5000 ---p 00025000 fd:00 71016461                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_thread-mt.so.1.59.0
+7f40e0cd5000-7f40e0cd7000 rwxp 00025000 fd:00 71016461                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_thread-mt.so.1.59.0
+7f40e0cd7000-7f40e0cda000 r-xp 00000000 fd:00 71015742                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_system-mt.so.1.59.0
+7f40e0cda000-7f40e0ed9000 ---p 00003000 fd:00 71015742                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_system-mt.so.1.59.0
+7f40e0ed9000-7f40e0eda000 rwxp 00002000 fd:00 71015742                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_system-mt.so.1.59.0
+7f40e0eda000-7f40e0ee0000 r-xp 00000000 fd:00 71015737                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_chrono.so.1.59.0
+7f40e0ee0000-7f40e10e0000 ---p 00006000 fd:00 71015737                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_chrono.so.1.59.0
+7f40e10e0000-7f40e10e1000 rwxp 00006000 fd:00 71015737                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_chrono.so.1.59.0
+7f40e10e1000-7f40e10e5000 r-xp 00000000 fd:00 71016475                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_timer.so.1.59.0
+7f40e10e5000-7f40e12e4000 ---p 00004000 fd:00 71016475                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_timer.so.1.59.0
+7f40e12e4000-7f40e12e5000 rwxp 00003000 fd:00 71016475                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_timer.so.1.59.0
+7f40e12e5000-7f40e130e000 r-xp 00000000 fd:00 71016473                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_wserialization.so.1.59.0
+7f40e130e000-7f40e150e000 ---p 00029000 fd:00 71016473                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_wserialization.so.1.59.0
+7f40e150e000-7f40e1510000 rwxp 00029000 fd:00 71016473                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_wserialization.so.1.59.0
+7f40e1510000-7f40e1527000 r-xp 00000000 fd:00 71016460                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_signals.so.1.59.0
+7f40e1527000-7f40e1727000 ---p 00017000 fd:00 71016460                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_signals.so.1.59.0
+7f40e1727000-7f40e1728000 rwxp 00017000 fd:00 71016460                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_signals.so.1.59.0
+7f40e1728000-7f40e1763000 r-xp 00000000 fd:00 71016477                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_serialization.so.1.59.0
+7f40e1763000-7f40e1963000 ---p 0003b000 fd:00 71016477                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_serialization.so.1.59.0
+7f40e1963000-7f40e1966000 rwxp 0003b000 fd:00 71016477                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_serialization.so.1.59.0
+7f40e1966000-7f40e1a4a000 r-xp 00000000 fd:00 71016455                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_regex.so.1.59.0
+7f40e1a4a000-7f40e1c4a000 ---p 000e4000 fd:00 71016455                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_regex.so.1.59.0
+7f40e1c4a000-7f40e1c4f000 rwxp 000e4000 fd:00 71016455                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_regex.so.1.59.0
+7f40e1c4f000-7f40e1ccc000 r-xp 00000000 fd:00 71015734                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_program_options.so.1.59.0
+7f40e1ccc000-7f40e1ecc000 ---p 0007d000 fd:00 71015734                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_program_options.so.1.59.0
+7f40e1ecc000-7f40e1ed0000 rwxp 0007d000 fd:00 71015734                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_program_options.so.1.59.0
+7f40e1ed0000-7f40e1ee8000 r-xp 00000000 fd:00 71016459                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_iostreams.so.1.59.0
+7f40e1ee8000-7f40e20e7000 ---p 00018000 fd:00 71016459                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_iostreams.so.1.59.0
+7f40e20e7000-7f40e20e9000 rwxp 00017000 fd:00 71016459                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_iostreams.so.1.59.0
+7f40e20e9000-7f40e2100000 r-xp 00000000 fd:00 71016462                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_filesystem.so.1.59.0
+7f40e2100000-7f40e2300000 ---p 00017000 fd:00 71016462                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_filesystem.so.1.59.0
+7f40e2300000-7f40e2301000 rwxp 00017000 fd:00 71016462                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_filesystem.so.1.59.0
+7f40e2301000-7f40e2304000 r-xp 00000000 fd:00 71016479                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_system.so.1.59.0
+7f40e2304000-7f40e2503000 ---p 00003000 fd:00 71016479                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_system.so.1.59.0
+7f40e2503000-7f40e2504000 rwxp 00002000 fd:00 71016479                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_system.so.1.59.0
+7f40e2504000-7f40e2515000 r-xp 00000000 fd:00 71016458                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_date_time.so.1.59.0
+7f40e2515000-7f40e2715000 ---p 00011000 fd:00 71016458                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_date_time.so.1.59.0
+7f40e2715000-7f40e2716000 rwxp 00011000 fd:00 71016458                   /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/boost/lib/libsnps_boost_1_59_0_date_time.so.1.59.0
+7f40e2716000-7f40e271b000 r-xp 00000000 fd:00 101554625                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-xfixes.so.0.0.0
+7f40e271b000-7f40e291b000 ---p 00005000 fd:00 101554625                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-xfixes.so.0.0.0
+7f40e291b000-7f40e291c000 rwxp 00005000 fd:00 101554625                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-xfixes.so.0.0.0
+7f40e291c000-7f40e2920000 r-xp 00000000 fd:00 101554637                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-sync.so.0.0.0
+7f40e2920000-7f40e2b1f000 ---p 00004000 fd:00 101554637                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-sync.so.0.0.0
+7f40e2b1f000-7f40e2b20000 rwxp 00003000 fd:00 101554637                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-sync.so.0.0.0
+7f40e2b20000-7f40e2b28000 r-xp 00000000 fd:00 101554656                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-render.so.0.0.0
+7f40e2b28000-7f40e2d28000 ---p 00008000 fd:00 101554656                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-render.so.0.0.0
+7f40e2d28000-7f40e2d29000 rwxp 00008000 fd:00 101554656                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-render.so.0.0.0
+7f40e2d29000-7f40e2d32000 r-xp 00000000 fd:00 101554681                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-randr.so.0.1.0
+7f40e2d32000-7f40e2f32000 ---p 00009000 fd:00 101554681                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-randr.so.0.1.0
+7f40e2f32000-7f40e2f33000 rwxp 00009000 fd:00 101554681                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb-randr.so.0.1.0
+7f40e2f33000-7f40e2f50000 r-xp 00000000 fd:00 101554630                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb.so.1.1.0
+7f40e2f50000-7f40e3150000 ---p 0001d000 fd:00 101554630                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb.so.1.1.0
+7f40e3150000-7f40e3151000 rwxp 0001d000 fd:00 101554630                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb.so.1.1.0
+7f40e3151000-7f40e497b000 r-xp 00000000 fd:00 104663894                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/icu/lib/libicudata.so.54
+7f40e497b000-7f40e4b7a000 ---p 0182a000 fd:00 104663894                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/icu/lib/libicudata.so.54
+7f40e4b7a000-7f40e4b7b000 rwxp 01829000 fd:00 104663894                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/icu/lib/libicudata.so.54
+7f40e4b7b000-7f40e4d1f000 r-xp 00000000 fd:00 104663876                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/icu/lib/libicuuc.so.54
+7f40e4d1f000-7f40e4f1f000 ---p 001a4000 fd:00 104663876                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/icu/lib/libicuuc.so.54
+7f40e4f1f000-7f40e4f30000 rwxp 001a4000 fd:00 104663876                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/icu/lib/libicuuc.so.54
+7f40e4f30000-7f40e4f35000 rwxp 00000000 00:00 0 
+7f40e4f35000-7f40e51a7000 r-xp 00000000 fd:00 104663898                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/icu/lib/libicui18n.so.54
+7f40e51a7000-7f40e53a7000 ---p 00272000 fd:00 104663898                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/icu/lib/libicui18n.so.54
+7f40e53a7000-7f40e53b8000 rwxp 00272000 fd:00 104663898                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/icu/lib/libicui18n.so.54
+7f40e53b8000-7f40e53b9000 rwxp 00000000 00:00 0 
+7f40e53b9000-7f40e54f0000 r-xp 00000000 fd:00 101554686                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libX11.so.6.3.0
+7f40e54f0000-7f40e56f0000 ---p 00137000 fd:00 101554686                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libX11.so.6.3.0
+7f40e56f0000-7f40e56f6000 rwxp 00137000 fd:00 101554686                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libX11.so.6.3.0
+7f40e56f6000-7f40e5707000 r-xp 00000000 fd:00 68155                      /usr/lib64/libXext.so.6.4.0
+7f40e5707000-7f40e5906000 ---p 00011000 fd:00 68155                      /usr/lib64/libXext.so.6.4.0
+7f40e5906000-7f40e5907000 r-xp 00010000 fd:00 68155                      /usr/lib64/libXext.so.6.4.0
+7f40e5907000-7f40e5908000 rwxp 00011000 fd:00 68155                      /usr/lib64/libXext.so.6.4.0
+7f40e5908000-7f40e5948000 r-xp 00000000 fd:00 67805                      /usr/lib64/libfontconfig.so.1.11.1
+7f40e5948000-7f40e5b47000 ---p 00040000 fd:00 67805                      /usr/lib64/libfontconfig.so.1.11.1
+7f40e5b47000-7f40e5b49000 r-xp 0003f000 fd:00 67805                      /usr/lib64/libfontconfig.so.1.11.1
+7f40e5b49000-7f40e5b4a000 rwxp 00041000 fd:00 67805                      /usr/lib64/libfontconfig.so.1.11.1
+7f40e5b4a000-7f40e5bc6000 r-xp 00000000 fd:00 242098                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/lib/libfreetype.so.6.3.20
+7f40e5bc6000-7f40e5dc5000 ---p 0007c000 fd:00 242098                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/lib/libfreetype.so.6.3.20
+7f40e5dc5000-7f40e5dcb000 rwxp 0007b000 fd:00 242098                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/lib/libfreetype.so.6.3.20
+7f40e5dcb000-7f40e5dcd000 r-xp 00000000 fd:00 68178                      /usr/lib64/libXinerama.so.1.0.0
+7f40e5dcd000-7f40e5fcc000 ---p 00002000 fd:00 68178                      /usr/lib64/libXinerama.so.1.0.0
+7f40e5fcc000-7f40e5fcd000 r-xp 00001000 fd:00 68178                      /usr/lib64/libXinerama.so.1.0.0
+7f40e5fcd000-7f40e5fce000 rwxp 00002000 fd:00 68178                      /usr/lib64/libXinerama.so.1.0.0
+7f40e5fce000-7f40e5fd7000 r-xp 00000000 fd:00 1148786                    /usr/lib64/libXcursor.so.1.0.2
+7f40e5fd7000-7f40e61d7000 ---p 00009000 fd:00 1148786                    /usr/lib64/libXcursor.so.1.0.2
+7f40e61d7000-7f40e61d8000 r-xp 00009000 fd:00 1148786                    /usr/lib64/libXcursor.so.1.0.2
+7f40e61d8000-7f40e61d9000 rwxp 0000a000 fd:00 1148786                    /usr/lib64/libXcursor.so.1.0.2
+7f40e61d9000-7f40e61e3000 r-xp 00000000 fd:00 68172                      /usr/lib64/libXrandr.so.2.2.0
+7f40e61e3000-7f40e63e2000 ---p 0000a000 fd:00 68172                      /usr/lib64/libXrandr.so.2.2.0
+7f40e63e2000-7f40e63e3000 r-xp 00009000 fd:00 68172                      /usr/lib64/libXrandr.so.2.2.0
+7f40e63e3000-7f40e63e4000 rwxp 0000a000 fd:00 68172                      /usr/lib64/libXrandr.so.2.2.0
+7f40e63e4000-7f40e63ed000 r-xp 00000000 fd:00 68170                      /usr/lib64/libXrender.so.1.3.0
+7f40e63ed000-7f40e65ed000 ---p 00009000 fd:00 68170                      /usr/lib64/libXrender.so.1.3.0
+7f40e65ed000-7f40e65ee000 r-xp 00009000 fd:00 68170                      /usr/lib64/libXrender.so.1.3.0
+7f40e65ee000-7f40e65ef000 rwxp 0000a000 fd:00 68170                      /usr/lib64/libXrender.so.1.3.0
+7f40e65ef000-7f40e65fe000 r-xp 00000000 fd:00 68159                      /usr/lib64/libXi.so.6.1.0
+7f40e65fe000-7f40e67fd000 ---p 0000f000 fd:00 68159                      /usr/lib64/libXi.so.6.1.0
+7f40e67fd000-7f40e67fe000 r-xp 0000e000 fd:00 68159                      /usr/lib64/libXi.so.6.1.0
+7f40e67fe000-7f40e67ff000 rwxp 0000f000 fd:00 68159                      /usr/lib64/libXi.so.6.1.0
+7f40e67ff000-7f40e6816000 r-xp 00000000 fd:00 67878                      /usr/lib64/libICE.so.6.3.0
+7f40e6816000-7f40e6a15000 ---p 00017000 fd:00 67878                      /usr/lib64/libICE.so.6.3.0
+7f40e6a15000-7f40e6a16000 r-xp 00016000 fd:00 67878                      /usr/lib64/libICE.so.6.3.0
+7f40e6a16000-7f40e6a17000 rwxp 00017000 fd:00 67878                      /usr/lib64/libICE.so.6.3.0
+7f40e6a17000-7f40e6a1b000 rwxp 00000000 00:00 0 
+7f40e6a1b000-7f40e6a22000 r-xp 00000000 fd:00 68009                      /usr/lib64/libSM.so.6.0.1
+7f40e6a22000-7f40e6c21000 ---p 00007000 fd:00 68009                      /usr/lib64/libSM.so.6.0.1
+7f40e6c21000-7f40e6c22000 r-xp 00006000 fd:00 68009                      /usr/lib64/libSM.so.6.0.1
+7f40e6c22000-7f40e6c23000 rwxp 00007000 fd:00 68009                      /usr/lib64/libSM.so.6.0.1
+7f40e6c23000-7f40e6c49000 r-xp 00000000 fd:00 1308818                    /usr/lib64/libpng12.so.0.50.0
+7f40e6c49000-7f40e6e48000 ---p 00026000 fd:00 1308818                    /usr/lib64/libpng12.so.0.50.0
+7f40e6e48000-7f40e6e49000 r-xp 00025000 fd:00 1308818                    /usr/lib64/libpng12.so.0.50.0
+7f40e6e49000-7f40e6e4a000 rwxp 00026000 fd:00 1308818                    /usr/lib64/libpng12.so.0.50.0
+7f40e6e4a000-7f40e6e89000 r-xp 00000000 fd:00 101554631                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5WebKitWidgets.so.5.5.1
+7f40e6e89000-7f40e7089000 ---p 0003f000 fd:00 101554631                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5WebKitWidgets.so.5.5.1
+7f40e7089000-7f40e708d000 rwxp 0003f000 fd:00 101554631                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5WebKitWidgets.so.5.5.1
+7f40e708d000-7f40e8da2000 r-xp 00000000 fd:00 101554685                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5WebKit.so.5.5.1
+7f40e8da2000-7f40e8fa1000 ---p 01d15000 fd:00 101554685                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5WebKit.so.5.5.1
+7f40e8fa1000-7f40e911b000 rwxp 01d14000 fd:00 101554685                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5WebKit.so.5.5.1
+7f40e911b000-7f40e9147000 rwxp 00000000 00:00 0 
+7f40e9147000-7f40e9197000 r-xp 00000000 fd:00 101554674                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Svg.so.5.6.2
+7f40e9197000-7f40e9397000 ---p 00050000 fd:00 101554674                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Svg.so.5.6.2
+7f40e9397000-7f40e939a000 rwxp 00050000 fd:00 101554674                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Svg.so.5.6.2
+7f40e939a000-7f40e93ca000 r-xp 00000000 fd:00 101554628                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Test.so.5.6.2
+7f40e93ca000-7f40e95c9000 ---p 00030000 fd:00 101554628                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Test.so.5.6.2
+7f40e95c9000-7f40e95cb000 rwxp 0002f000 fd:00 101554628                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Test.so.5.6.2
+7f40e95cb000-7f40e95cf000 rwxp 00000000 00:00 0 
+7f40e95cf000-7f40e9639000 r-xp 00000000 fd:00 101554657                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5PrintSupport.so.5.6.2
+7f40e9639000-7f40e9838000 ---p 0006a000 fd:00 101554657                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5PrintSupport.so.5.6.2
+7f40e9838000-7f40e983d000 rwxp 00069000 fd:00 101554657                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5PrintSupport.so.5.6.2
+7f40e983d000-7f40e987a000 r-xp 00000000 fd:00 101554679                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Positioning.so.5.6.2
+7f40e987a000-7f40e9a7a000 ---p 0003d000 fd:00 101554679                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Positioning.so.5.6.2
+7f40e9a7a000-7f40e9a7c000 rwxp 0003d000 fd:00 101554679                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Positioning.so.5.6.2
+7f40e9a7c000-7f40e9ab5000 r-xp 00000000 fd:00 101554640                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Sensors.so.5.6.2
+7f40e9ab5000-7f40e9cb4000 ---p 00039000 fd:00 101554640                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Sensors.so.5.6.2
+7f40e9cb4000-7f40e9cb8000 rwxp 00038000 fd:00 101554640                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Sensors.so.5.6.2
+7f40e9cb8000-7f40e9cbb000 r-xp 00000000 fd:00 101554651                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5X11Extras.so.5.6.2
+7f40e9cbb000-7f40e9eba000 ---p 00003000 fd:00 101554651                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5X11Extras.so.5.6.2
+7f40e9eba000-7f40e9ebb000 rwxp 00002000 fd:00 101554651                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5X11Extras.so.5.6.2
+7f40e9ebb000-7f40ea4b3000 r-xp 00000000 fd:00 101554667                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Widgets.so.5.6.2
+7f40ea4b3000-7f40ea6b2000 ---p 005f8000 fd:00 101554667                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Widgets.so.5.6.2
+7f40ea6b2000-7f40ea6e2000 rwxp 005f7000 fd:00 101554667                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Widgets.so.5.6.2
+7f40ea6e2000-7f40eabc4000 r-xp 00000000 fd:00 101554678                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Gui.so.5.6.2
+7f40eabc4000-7f40eadc3000 ---p 004e2000 fd:00 101554678                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Gui.so.5.6.2
+7f40eadc3000-7f40eadd8000 rwxp 004e1000 fd:00 101554678                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Gui.so.5.6.2
+7f40eadd8000-7f40eaddc000 rwxp 00000000 00:00 0 
+7f40eaddc000-7f40eae8d000 r-xp 00000000 fd:00 67993                      /usr/lib64/libsqlite3.so.0.8.6
+7f40eae8d000-7f40eb08c000 ---p 000b1000 fd:00 67993                      /usr/lib64/libsqlite3.so.0.8.6
+7f40eb08c000-7f40eb08e000 r-xp 000b0000 fd:00 67993                      /usr/lib64/libsqlite3.so.0.8.6
+7f40eb08e000-7f40eb091000 rwxp 000b2000 fd:00 67993                      /usr/lib64/libsqlite3.so.0.8.6
+7f40eb091000-7f40eb192000 r-xp 00000000 fd:00 33912                      /usr/lib64/libm-2.17.so
+7f40eb192000-7f40eb391000 ---p 00101000 fd:00 33912                      /usr/lib64/libm-2.17.so
+7f40eb391000-7f40eb392000 r-xp 00100000 fd:00 33912                      /usr/lib64/libm-2.17.so
+7f40eb392000-7f40eb393000 rwxp 00101000 fd:00 33912                      /usr/lib64/libm-2.17.so
+7f40eb393000-7f40eb3af000 r-xp 00000000 fd:00 242097                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/lib/libz.so.1.2.11
+7f40eb3af000-7f40eb5af000 ---p 0001c000 fd:00 242097                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/lib/libz.so.1.2.11
+7f40eb5af000-7f40eb5b0000 rwxp 0001c000 fd:00 242097                     /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/lib/libz.so.1.2.11
+7f40eb5b0000-7f40eb6c4000 r-xp 00000000 fd:00 68216                      /usr/lib64/libglib-2.0.so.0.5600.1
+7f40eb6c4000-7f40eb8c3000 ---p 00114000 fd:00 68216                      /usr/lib64/libglib-2.0.so.0.5600.1
+7f40eb8c3000-7f40eb8c4000 r-xp 00113000 fd:00 68216                      /usr/lib64/libglib-2.0.so.0.5600.1
+7f40eb8c4000-7f40eb8c5000 rwxp 00114000 fd:00 68216                      /usr/lib64/libglib-2.0.so.0.5600.1
+7f40eb8c5000-7f40eb8c6000 rwxp 00000000 00:00 0 
+7f40eb8c6000-7f40eb8c7000 r-xp 00000000 fd:00 123484                     /usr/lib64/libgthread-2.0.so.0.5600.1
+7f40eb8c7000-7f40ebac6000 ---p 00001000 fd:00 123484                     /usr/lib64/libgthread-2.0.so.0.5600.1
+7f40ebac6000-7f40ebac7000 r-xp 00000000 fd:00 123484                     /usr/lib64/libgthread-2.0.so.0.5600.1
+7f40ebac7000-7f40ebac8000 rwxp 00001000 fd:00 123484                     /usr/lib64/libgthread-2.0.so.0.5600.1
+7f40ebac8000-7f40ebadf000 r-xp 00000000 fd:00 33937                      /usr/lib64/libpthread-2.17.so
+7f40ebadf000-7f40ebcde000 ---p 00017000 fd:00 33937                      /usr/lib64/libpthread-2.17.so
+7f40ebcde000-7f40ebcdf000 r-xp 00016000 fd:00 33937                      /usr/lib64/libpthread-2.17.so
+7f40ebcdf000-7f40ebce0000 rwxp 00017000 fd:00 33937                      /usr/lib64/libpthread-2.17.so
+7f40ebce0000-7f40ebce4000 rwxp 00000000 00:00 0 
+7f40ebce4000-7f40ebdf7000 r-xp 00000000 fd:00 101554658                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Sql.so.5.6.2
+7f40ebdf7000-7f40ebff6000 ---p 00113000 fd:00 101554658                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Sql.so.5.6.2
+7f40ebff6000-7f40ebffc000 rwxp 00112000 fd:00 101554658                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Sql.so.5.6.2
+7f40ebffc000-7f40ec15a000 r-xp 00000000 fd:00 101554530                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Network.so.5.6.2
+7f40ec15a000-7f40ec35a000 ---p 0015e000 fd:00 101554530                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Network.so.5.6.2
+7f40ec35a000-7f40ec362000 rwxp 0015e000 fd:00 101554530                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Network.so.5.6.2
+7f40ec362000-7f40ec87f000 r-xp 00000000 fd:00 101554634                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Core.so.5.6.2
+7f40ec87f000-7f40eca7f000 ---p 0051d000 fd:00 101554634                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Core.so.5.6.2
+7f40eca7f000-7f40eca8c000 rwxp 0051d000 fd:00 101554634                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Core.so.5.6.2
+7f40eca8c000-7f40eca90000 rwxp 00000000 00:00 0 
+7f40eca90000-7f40ece30000 r-xp 00000000 fd:00 101554663                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5XmlPatterns.so.5.6.2
+7f40ece30000-7f40ed02f000 ---p 003a0000 fd:00 101554663                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5XmlPatterns.so.5.6.2
+7f40ed02f000-7f40ed066000 rwxp 0039f000 fd:00 101554663                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5XmlPatterns.so.5.6.2
+7f40ed066000-7f40ed09e000 r-xp 00000000 fd:00 101554529                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Xml.so.5.6.2
+7f40ed09e000-7f40ed29d000 ---p 00038000 fd:00 101554529                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Xml.so.5.6.2
+7f40ed29d000-7f40ed29f000 rwxp 00037000 fd:00 101554529                  /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libQt5Xml.so.5.6.2
+7f40ed29f000-7f40ed2a1000 r-xp 00000000 fd:00 33470                      /usr/lib64/libdl-2.17.so
+7f40ed2a1000-7f40ed4a1000 ---p 00002000 fd:00 33470                      /usr/lib64/libdl-2.17.so
+7f40ed4a1000-7f40ed4a2000 r-xp 00002000 fd:00 33470                      /usr/lib64/libdl-2.17.so
+7f40ed4a2000-7f40ed4a3000 rwxp 00003000 fd:00 33470                      /usr/lib64/libdl-2.17.so
+7f40ed4a3000-7f40ed4c5000 r-xp 00000000 fd:00 33456                      /usr/lib64/ld-2.17.so
+7f40ed4ce000-7f40ed6a9000 rwxp 00000000 00:00 0 
+7f40ed6ab000-7f40ed6b2000 r-xs 00000000 fd:00 34241                      /usr/lib64/gconv/gconv-modules.cache
+7f40ed6b2000-7f40ed6b3000 rwxp 00000000 00:00 0 
+7f40ed6b3000-7f40ed6be000 r-xp 00000000 fd:00 1277906                    /usr/synopsys/customcompiler/N-2017.12-SP1-2/auxx/fonts/lc______.ttf
+7f40ed6be000-7f40ed6c4000 rwxp 00000000 00:00 0 
+7f40ed6c4000-7f40ed6c5000 r-xp 00021000 fd:00 33456                      /usr/lib64/ld-2.17.so
+7f40ed6c5000-7f40ed6c6000 rwxp 00022000 fd:00 33456                      /usr/lib64/ld-2.17.so
+7f40ed6c6000-7f40ed6c7000 rwxp 00000000 00:00 0 
+7ffe35bf2000-7ffe35c16000 rwxp 00000000 00:00 0                          [stack]
+7ffe35daf000-7ffe35db1000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]

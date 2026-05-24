@@ -1,0 +1,33 @@
+[22:33:05.23] /m Information: License 'SAE' checked out. (LICENSE-003)
+[22:33:06.34] /o sae_shell Version Custom Compiler N-2017.12-SP1-2
+              /c Build  (OPT) compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Execution time: Sat May 23 22:33:04 2026
+              /c Host: localhost.localdomain
+              /c 
+              /c Copyright © 2004-2018 Synopsys, Inc.
+              /c This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, or distribution of this software is strictly prohibited.
+              /c 
+              /c 
+[22:33:06.35] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[22:33:06.35] /o 	#######################################
+[22:33:06.35] /o 	PDK Library Name	: reference90RF
+[22:33:06.35] /o 	PDK Version		: 2.0
+[22:33:06.35] /o 	PDK Release Date	: 25-March-2010 
+[22:33:06.35] /o 	#######################################
+[22:33:06.35] /o 
+[22:33:06.35] /i ::sa::_backgroundSaeShell::signalProcessReady 1779550384
+[22:33:06.35] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::processReady 2
+[22:34:03.81] /i ::wf::viewerExited
+[22:34:50.12] /i ::wf::viewerExited
+[22:38:07.36] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[22:38:07.41] /i ::sa::_backgroundSaeShell::parentRunning
+[22:38:07.41] /o 1779550687
+[22:43:08.38] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[22:43:08.41] /i ::sa::_backgroundSaeShell::parentRunning
+[22:43:08.41] /o 1779550988
+[22:48:09.39] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[22:48:09.42] /i ::sa::_backgroundSaeShell::parentRunning
+[22:48:09.43] /o 1779551289
+[22:51:04.12] /i ::wf::viewerExited
+[22:51:08.87] /i ::sa::_backgroundSaeShell::exit
+[22:51:08.87] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::childFormallyExiting

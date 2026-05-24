@@ -1,0 +1,11 @@
+CLOCK_inv Level=0 Count=1
+
+
+		CELL STATISTICS
+
+
+TOP CELL = CLOCK_inv
+	Ports                =	4
+
+CELL = CLOCK_inv
+	Flat Placements      =	0

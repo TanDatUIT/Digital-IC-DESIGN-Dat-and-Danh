@@ -1,0 +1,15 @@
+{NETLIST NAND2_2
+{VERSION 1 0 0}
+
+{CELL NAND2_2
+    {PORT N_2 N_20 vdd! gnd! N_17 }
+    {INST M2=N {PROP n="N" x=-9.425 y=6.655 Length=0.1 Width=0.24 }
+	{PIN N_17=GATE N_2=SRC N_7=DRN }}
+    {INST M1=N {PROP n="N" x=-9.775 y=6.655 Length=0.1 Width=0.24 }
+	{PIN N_20=GATE N_7=SRC gnd!=DRN }}
+    {INST M4=P {PROP n="P" x=-9.595 y=11.425 Length=0.1 Width=0.3 }
+	{PIN N_17=GATE vdd!=SRC N_2=DRN }}
+    {INST M3=P {PROP n="P" x=-9.945 y=11.425 Length=0.1 Width=0.3 }
+	{PIN N_20=GATE N_2=SRC vdd!=DRN }}
+}
+}

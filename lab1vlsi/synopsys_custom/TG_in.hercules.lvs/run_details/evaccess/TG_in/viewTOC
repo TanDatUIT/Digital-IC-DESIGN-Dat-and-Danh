@@ -1,0 +1,4 @@
+# 0 V2.0
+runset 6 #1
+grafnet 2 #2
+schematic_netlist 3 #3

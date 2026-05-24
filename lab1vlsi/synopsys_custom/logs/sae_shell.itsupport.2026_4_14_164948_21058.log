@@ -1,0 +1,64 @@
+[16:49:49.35] /m Information: License 'SAE' checked out. (LICENSE-003)
+[16:49:50.41] /o sae_shell Version Custom Compiler N-2017.12-SP1-2
+              /c Build  (OPT) compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Execution time: Tue Apr 14 16:49:48 2026
+              /c Host: localhost.localdomain
+              /c 
+              /c Copyright © 2004-2018 Synopsys, Inc.
+              /c This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, or distribution of this software is strictly prohibited.
+              /c 
+              /c 
+[16:49:50.42] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[16:49:50.43] /o 	#######################################
+[16:49:50.43] /o 	PDK Library Name	: reference90RF
+[16:49:50.43] /o 	PDK Version		: 2.0
+[16:49:50.43] /o 	PDK Release Date	: 25-March-2010 
+[16:49:50.43] /o 	#######################################
+[16:49:50.43] /o 
+[16:49:50.43] /i ::sa::_backgroundSaeShell::signalProcessReady 1776160188
+[16:49:50.43] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::processReady 2
+[16:50:08.82] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession7 testbenchName HSPICE_NMOS resultsDir /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric/results testSuiteDir /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric databaseName /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[16:50:09.08] /m Information: Started sharing "Custom WaveView" license. (WAVEFORM-110)
+[16:50:09.49] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.6 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession7 testbenchName HSPICE_NMOS resultsDir /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric/results testSuiteDir /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric databaseName /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[16:50:09.49] /o false
+[16:50:39.13] /i ::wf::viewerExited
+[16:55:10.46] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[16:55:10.53] /i ::sa::_backgroundSaeShell::parentRunning
+[16:55:10.53] /o 1776160510
+[16:55:13.82] /m Information: Stopped sharing "Custom WaveView" license. (WAVEFORM-111)
+[17:00:11.47] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[17:00:11.53] /i ::sa::_backgroundSaeShell::parentRunning
+[17:00:11.53] /o 1776160811
+[17:05:12.48] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[17:05:12.53] /i ::sa::_backgroundSaeShell::parentRunning
+[17:05:12.53] /o 1776161112
+[17:08:39.04] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession7 testbenchName HSPICE_NMOS resultsDir /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric/results testSuiteDir /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric databaseName /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[17:08:39.27] /m Information: Started sharing "Custom WaveView" license. (WAVEFORM-110)
+[17:08:39.56] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.5 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession7 testbenchName HSPICE_NMOS resultsDir /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric/results testSuiteDir /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric databaseName /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[17:08:39.56] /o false
+[17:13:40.51] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[17:13:40.53] /i ::sa::_backgroundSaeShell::parentRunning
+[17:13:40.54] /o 1776161620
+[17:13:43.82] /m Information: Stopped sharing "Custom WaveView" license. (WAVEFORM-111)
+[17:18:41.52] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[17:18:41.63] /i ::sa::_backgroundSaeShell::parentRunning
+[17:18:41.63] /o 1776161921
+[17:22:10.28] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession7 testbenchName HSPICE_NMOS resultsDir /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric/results testSuiteDir /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric databaseName /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[17:22:10.54] /m Information: Started sharing "Custom WaveView" license. (WAVEFORM-110)
+[17:22:10.76] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.4 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession7 testbenchName HSPICE_NMOS resultsDir /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric/results testSuiteDir /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric databaseName /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[17:22:10.76] /o false
+[17:27:11.53] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[17:27:11.63] /i ::sa::_backgroundSaeShell::parentRunning
+[17:27:11.63] /o 1776162431
+[17:27:15.82] /m Information: Stopped sharing "Custom WaveView" license. (WAVEFORM-111)
+[17:28:31.83] /i ::wf::viewerExited
+[17:28:47.72] /i ::sa::_backgroundSaeShell::runScript /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession7 testbenchName HSPICE_NMOS resultsDir /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric/results testSuiteDir /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric databaseName /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[17:28:47.93] /m Information: Started sharing "Custom WaveView" license. (WAVEFORM-110)
+[17:28:48.14] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 0.4 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession7 testbenchName HSPICE_NMOS resultsDir /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric/results testSuiteDir /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric databaseName /home/itsupport/simulation/inverter,tb_nmos,schematic/history_1/simulation/HSPICE_NMOS/HSPICE/parametric/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[17:28:48.14] /o false
+[17:33:49.55] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::pingBack
+[17:33:49.63] /i ::sa::_backgroundSaeShell::parentRunning
+[17:33:49.63] /o 1776162829
+[17:33:52.82] /m Information: Stopped sharing "Custom WaveView" license. (WAVEFORM-111)
+[17:34:29.58] /i ::sa::_backgroundSaeShell::exit
+[17:34:29.58] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::childFormallyExiting

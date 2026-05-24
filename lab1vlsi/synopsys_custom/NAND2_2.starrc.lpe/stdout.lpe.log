@@ -1,0 +1,34 @@
+
+                                  StarRC (TM)
+
+               Version O-2018.06-SP1 for linux64 - Jul 19, 2018 
+
+                    Copyright (c) 1999 - 2018 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+ExecName: /usr/synopsys/starrc/O-2018.06-SP1/linux64_starrc/bin/StarXtract
+Version: O-2018.06-SP1
+Built on: Jul 19 2018 21:37:47
+Start Time: Tue May 19 19:09:26 2026
+
+Host ............ localhost.localdomain
+
+xTractorName: /usr/synopsys/starrc/O-2018.06-SP1/linux64_starrc/bin/xTractor
+Version: O-2018.06-SP1
+Built on: Jul 19 2018 21:37:30
+WARNING: Schematic device 'cmim_3t' equates to undefined layout device 'cmim_3t'. (SX-2284)
+WARNING: Schematic device 'MOSVAR_1V2' equates to undefined layout device 'MOSVAR_1V2'. (SX-2284)
+WARNING: Following option "DETECT_PERMUTABLE_PORTS" detected in Hercules/ICV runset is not supported
+         in StarXtract. (SX-2775)
+WARNING: Following option "PUSH_DOWN_PINS" detected in Hercules/ICV runset is not supported in
+         StarXtract. (SX-2776)
+WARNING: Following option "PUSH_DOWN_DEVICES" detected in Hercules/ICV runset is not supported in
+         StarXtract. (SX-2777)
+WARNING: Hercules COMPARE option MEMORY_ARRAY_COMPARISON is not supported for XREF extractions. (SX-2274)
+WARNING: Command -clean is obsoleted for GATE level extraction and turned on by default. (SX-3582)
+WARNING: Option 'NO' for TRANSLATE_RETAIN_BULK_LAYERS will become obsolete from the next release.
+         Recommend to use 'CONLY'. (SX-3602)
+ERROR: A MAPPING_FILE command must be specified in the StarRC command file. (SX-0337)

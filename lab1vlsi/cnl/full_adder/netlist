@@ -1,0 +1,28 @@
+********************************************************************************
+* Library          : inverter
+* Cell             : full_adder
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt full_adder A B Cin Cout S
+*.PININFO A:I B:I Cin:I Cout:O S:O
+XI8  NAND2
+XI7  NAND2
+XI6  NAND2
+XI5  NAND2
+XI4  NAND2
+XI3  NAND2
+XI59  NAND2
+XI58  NAND2
+XI17 net103 net104 Cout NAND2_2
+XI16 net105 net106 S NAND2_2
+XI15 net103 Cin net106 NAND2_2
+XI14 net107 Cin net103 NAND2_2
+XI13 net107 net103 net105 NAND2_2
+XI12 net104 B net110 NAND2_2
+XI11 net109 net110 net107 NAND2_2
+XI10 A B net104 NAND2_2
+XI9 A net104 net109 NAND2_2
+.ends full_adder
+

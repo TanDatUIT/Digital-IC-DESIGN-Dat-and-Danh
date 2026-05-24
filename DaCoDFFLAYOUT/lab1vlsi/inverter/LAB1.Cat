@@ -1,0 +1,6 @@
+TDMCHECKPOINT="1.0"
+keepEmptyCategory type="unknown"
+inverter/CMOS type="cell"
+inverter/CMOS_NEW type="cell"
+inverter/TB_CMOS type="cell"
+inverter/TB_CMOS_2 type="cell"

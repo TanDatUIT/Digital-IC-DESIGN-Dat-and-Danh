@@ -242,3 +242,7 @@ Kết quả mô phỏng cho thấy clock skew giữa latch Master và latch Slav
 Khi tăng `DelaySlave`, độ lệch thực tế giữa hai clock tăng dần. Race-through giảm dần vì Slave mở muộn hơn so với Master. Trường hợp `DelaySlave = 2 ns` cho kết quả gần lý tưởng nhất với `Δt ≈ 1.09 ns`, tạo khoảng non-overlap khoảng 190 ps nên phù hợp để chọn làm trường hợp hoạt động đúng. Nếu tiếp tục tăng lên `DelaySlave = 2.1 ns`, skew trở thành dương lớn hơn, giúp tránh race nhưng làm Q cập nhật muộn hơn và có thể ảnh hưởng timing của tầng sau.
 
 Do đó, khi thiết kế D Flip-Flop Master-Slave, cần đảm bảo hai clock điều khiển Master và Slave có độ lệch pha phù hợp, tránh trường hợp cùng pha hoặc overlap. Clock skew âm lớn là nguyên nhân chính gây race condition và hold violation, còn clock skew dương quá lớn có thể làm giảm timing margin sau ngõ ra Q.
+
+---
+
+**Lưu ý:** Các kết quả đo đạc timing (Setup/Hold) chi tiết sau khi trích xuất ký sinh Layout (Post-layout) có thể tham khảo tại báo cáo: [BAO_CAO_post_layout_timing.md](./BAO_CAO_post_layout_timing.md). Kết quả cho thấy $t_{setup} \approx 30\text{ ps}$ và $t_{hold} \approx 20\text{ ps}$ ở mức Post-layout.

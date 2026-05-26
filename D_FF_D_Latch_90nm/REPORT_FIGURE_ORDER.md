@@ -175,6 +175,20 @@ Noi dung can viet:
 - TG khong co source/drain co dinh theo chuc nang logic; trong layout nen gan nhan theo net `D side`, `n1 side`, `Q side`. Inverter thi PMOS source gan VDD, NMOS source gan GND.
 - Neu can thao tac/de phong chu de nhau, mo file HTML. Ban HTML co zoom/pan, bat/tat layer va click module de xem chi tiet rieng.
 
+## 9. Mo phong Post-layout Timing (Setup/Hold)
+
+Hinh:
+
+- `race/17p.jpg` (t_setup = 17 ps)
+- `race/t_hold_post_layout_20p.jpg` (t_hold = 20 ps)
+
+Noi dung can viet:
+
+- Sau khi trich xuat ky sinh (PEX), thuc hien mo phong lai Setup va Hold time.
+- `t_setup` post-layout dat 17 ps (cuc tot cho 90nm).
+- `t_hold` post-layout dat 20 ps.
+- Ket qua cho thay layout toi uu giup duy tri performance tot ngay ca khi co ky sinh.
+
 ## Trang thai file hinh
 
 Da tao va kiem tra XML hop le:
